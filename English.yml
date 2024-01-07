@@ -1,0 +1,2350 @@
+authors:
+ - "BowieD"
+version: 1
+cultureCode: "en-US"
+keys:
+  view:
+    mainWindow:
+      title: "BowieD's Unturned Asset Editor [{0}]"
+      menu:
+        file:
+          header: "File"
+          new: "New Project"
+          open: "Open Project"
+          save: "Save Project"
+          saveAs: "Save Project As"
+          close: "Close Project"
+          legacy:
+            header: "Legacy"
+            openNpcMakerProject: "Open NPC Maker Project"
+          recent:
+            header: "Recent Projects"
+          recover: 
+            header: "Recover Projects"
+            item: 
+              normal: "Crash Save #{0}"
+              recent: "Crash Save #{0} (Most Recent)"
+          export: "Export Project"
+          exportToSandbox: "Export Project to Unturned Sandbox"
+          exit: "Exit"
+        edit:
+          header: "Edit"
+          findReplace: "Search & Replace..."
+          flagList: "Project Flags"
+        tools:
+          header: "Tools"
+          idTables: "ID Table Generator"
+          addons: "Add-ons"
+        options: "Options"
+        addons: "Add-ons"
+        about: "About"
+      project:
+        assetTab:
+          readOnly: "READ-ONLY"
+          cloneToProject: "Clone to project"
+          context:
+            close: "Close (Ctrl + W)"
+            closeAll: "Close All"
+            closeOthers: "Close others"
+            closeToLeft: "Close tabs to left"
+            closeToRight: "Close tabs to right"
+            deselect: "Deselect"
+            float: "Make floating"
+        assetBrowser:
+          header: "Asset Browser"
+          origin:
+            vanilla: "Unturned"
+            workshop: "Installed Workshop"
+          quickSearch:
+            watermark: "Quick Search..."
+        masterBundleBrowser:
+          header: "Master Bundle Browser"
+          quickSearch:
+            watermark: "Quick Search..."
+        projectAssets:
+          header: "Project Assets"
+          addHint:
+            text0: "Use Right Mouse Button to add assets to your project."
+            hide: "Hide this message"
+          viewExportStructure:
+            button: "View Export Structure"
+            header: "Export Structure"
+          quickSearch:
+            watermark: "Quick Search..."
+          contextMenu:
+            asset:
+              copyAsset:
+                full: "Copy Asset"
+                newGuid: "Copy Asset (New Guid)"
+              duplicateAsset:
+                full: "Duplicate Asset"
+                newGuid: "Duplicate Asset (New Guid)"
+              copyGuid: "Copy Guid"
+              copyId: "Copy ID"
+              findReplaceIn: "Search & Replace In"
+              export:
+                header: "Export..."
+                toDirectory: "...to folder"
+                toSandbox: "...to Unturned Sandbox"
+              delete: "Delete (Del)"
+            bundle:
+              copyPath: "Copy Path"
+            bundleCollection:
+              copyPath: "Copy Path"
+            collection:
+              addAsset:
+                header: "Add Asset"
+                npc:
+                  header: "NPC"
+                  character: "Character"
+                  dialogue: "Dialogue"
+                  vendor: "Vendor"
+                  quest: "Quest"
+                  workarounds: 
+                    header: "Workarounds"
+                    nightCharacter: "Night Character"
+                item:
+                  header: "Item"
+                  arrest:
+                    end: "Arrest End"
+                    start: "Arrest Start"
+                  clothing:
+                    header: "Clothing"
+                    hat: "Hat"
+                    glasses: "Glasses"
+                    mask: "Mask"
+                    shirt: "Shirt"
+                    backpack: "Backpack"
+                    vest: "Vest"
+                    pants: "Pants"
+                  attachments:
+                    header: "Attachments"
+                    barrel: "Barrel"
+                    grip: "Grip"
+                    sight: "Sight"
+                    tactical: "Tactical"
+                    magazine: "Magazine"
+                  barricade:
+                    header: "Barricade"
+                    barricade: "Generic"
+                    beacon: "Beacon"
+                    charge: "Charge"
+                    farm: "Plant"
+                    generator: "Generator"
+                    library: "Library"
+                    oilPump: "Oil Pump"
+                    storage: "Storage"
+                    sentry: "Sentry"
+                    tank: "Tank"
+                    trap: "Trap"
+                  consumeable:
+                    header: "Consumeable"
+                    food: "Food"
+                    medical: "Medical"
+                    water: "Drink"
+                  weapon:
+                    header: "Weapon"
+                    melee: "Melee"
+                    gun: "Gun"
+                  cloud: "Umbrella"
+                  detonator: "Detonator"
+                  filter: "Filter"
+                  fisher: "Fishing Rod"
+                  fuel: "Fuel Can"
+                  grower: "Fertilizer"
+                  map: "Chart"
+                  optic: "Binoculars"
+                  refill: "Water Can"
+                  structure: "Structure"
+                  supply: "Supply"
+                  throwable: "Throwable"
+                  tire: "Tire"
+                  tool: "Tool"
+                vehicle: 
+                  header: "Vehicles"
+                  vehicle: "Vehicle"
+                  physicsProfile: "Physics Profile"
+                animal: "Animal"
+                object:
+                  header: "Object"
+                  normal: "Normal Object"
+                  decal: "Decal"
+                resource: "Resource"
+                spawnTable: "Spawn Table"
+                song: "Song"
+                currency: "Currency"
+                weather: "Weather"
+                zombieDifficulty: "Zombie Difficulty"
+                levelAsset: "Level Asset"
+                effect: "Effect"
+                craftingBlacklist: "Crafting Blacklist"
+                airdrop: "Airdrop"
+                outfit: "Outfit"
+              addAssetGroup:
+                header: "Add Asset Group"
+              addFolder: "Add Folder"
+              addFile:
+                ref: "Add File Reference"
+                embed: "Add Embedded File"
+              import:
+                header: "Import..."
+                file: "...from file"
+                folder: "...from folder"
+              export:
+                header: "Export..."
+                toDirectory: "...to folder"
+                toSandbox: "...to Unturned Sandbox"
+              rename: "Rename (F2)"
+              copy: "Copy"
+              duplicate: "Duplicate"
+              paste: "Paste"
+              openAll:
+                topLevel: "Open All In Folder"
+                recursive: "Open All In Subfolders"
+              sortAll:
+                topLevel: "Sort All In Folder"
+                recursive: "Sort All In Subfolders"
+              idTable: "Generate ID table"
+              findReplaceIn: "Search & Replace In"
+              regenerateGuids: "Regenerate GUIDs"
+              delete: "Delete (Del)"
+        errors:
+          header: "Errors"
+          grid:
+            quickFix:
+              header: "Fix"
+              button: "Fix"
+            severity: "Severity"
+            message: "Message"
+            source: "Source"
+            code: "Code"
+          buttons:
+            checkForErrors: "Check for errors"
+            fixAllErrors:
+              label: "Batch fix"
+              header: "Batch fix"
+              everything: "Everything"
+              onlyTips: "Only tips and optimizations"
+              onlyAboveWarn: "Warnings and errors"
+              onlyWarn: "Only warnings"
+              onlyAboveError: "Only errors"
+            clearErrors: "Clear errors"
+        tools:
+          projectSettings:
+            header: "Project Settings"
+            idRange:
+              header: "ID Range"
+              min: "Min ID"
+              max: "Max ID"
+            watermark: "Watermark"
+            defaultLanguage: "Source Language"
+            currentLanguage: "Target Language"
+            defaultUnityVersion: "Unity Version"
+          notifications:
+            header: "Notifications"
+        link:
+          buttons: 
+            link: "Link Unturned Assets"
+            cancel: "Cancel"
+    configurationWindow:
+      title: "Configuration"
+      tabs:
+        general:
+          header: "General"
+          localization: 
+            location: "Localization File Location"
+            select: "Select"
+            export: "Dump loaded localization"
+          builtInLocalization: "Built-In Localization"
+          doNotAskBeforeDeleting: "Do not ask before deleting"
+          virtualFeatures:
+            header: "Virtual Features"
+            pageConditionsAndRewards: "Enable page conditions and rewards"
+            flagPlaceholder: "Enable flag placeholder"
+            goToIssueTracker: "Open Issue Tracker for details"
+        interface:
+          header: "Interface"
+          theme:
+            header: "Theme"
+            selected: "Selected Theme"
+            settings:
+              header: "Settings"
+              shared:
+                accentColor: "Accent Color"
+                isDarkMode: "Use Dark Mode"
+          uiScale: "UI Scale"
+          background:
+            workArea: "Work Area Background"
+            welcomeScreen: "Welcome Screen Background"
+            workAreaUsesWelcomeScreen: "Work Area uses Welcome Screen Settings"
+        import:
+          header: "Link"
+          autoImportOnStartUp: "Automatically link assets on startup"
+          includes:
+            vanilla: "Link Vanilla Assets"
+            workshop: "Link Workshop Assets"
+          location: "Unturned Location"
+          setManual: "Set manually"
+          findAuto: "Find automatically"
+          modFilter:
+            header: "Mod Filter"
+            isAllowList:
+              label: "Load only selected mods"
+              toolTip: "If enabled, only mods from the list below will be loaded. Otherwise, mods from the list below will be excluded from loading."
+            refresh: "Refresh"
+            clear: "Clear"
+        export:
+          header: "Export"
+          obfuscate:
+            notInDemo:
+              text: "Obfuscation is only available in full version."
+              link: "Get the full version by supporting development on Boosty."
+            header: "Obfuscation"
+            isEnabled: "Obfuscate exported assets"
+            garbage:
+              isEnabled: "Enable Garbage"
+              amount: "Garbage Amount"
+            dupe:
+              isEnabled: "Enable Duplication"
+              amount: "Duplication Amount"
+            randomExportName:
+              isEnabled: "Randomize Export Names"
+          globalAssetWatermark:
+            notInDemo:
+              text: "Asset watermark is only available in full version."
+              link: "Get the full version by supporting development on Boosty."
+            name: "Global asset watermark"
+            toolTip: "This watermark will be written in every project you export."
+        addons:
+          notInDemo:
+            text: "Addons are only available in full version."
+            link: "Get the full version by supporting development on Boosty."
+          header: "Add-ons"
+          enableAddons: "Enable Add-ons & Custom Themes"
+          goToAddonsFolder: "Go to add-ons folder"
+          installAddonFromZip:
+            button: "Install from .zip file"
+            update:
+              caption: "Update add-on"
+              text: "You already have this add-on installed.\nDo you want to update it?"
+            success:
+              install:
+                caption: "Install successful"
+                text: "Add-on installed successfully!"
+              update:
+                caption: "Update successful"
+                text: "Add-on will update on next launch of the app"
+          warning: "WARNING! Addons are not safe to use if you download them from untrusted sources. Use addons at your own risk!"
+        misc:
+          header: "Miscellaneous"
+          showVerboseOperations: "Show verbose operations"
+          showResetFieldAlways: "Always show reset field for conditions"
+          showLocalizationFieldAlways: "Always show localization field for conditions and rewards"
+          showLocalizationPreview: "Show localization preview"
+          rawTextEditorByDefault: "Raw Text Editor by default"
+          useClassicCharacterEditor: "Use classic character editor"
+          useClassicCollectionEditor: "Use classic collection editor"
+          saveMainForegroundInRichText: "Save Main Foreground In Rich Text"
+        advanced:
+          header: "Advanced"
+          forceSoftwareRendering: "Force Software Rendering"
+          useFastDialogueUI: "Use fast dialogue UI (less fancy, more speed)"
+          useOldAssetExportWhenPossible: "Use legacy asset export system when possible"
+          versionControlCompatibility:
+            label: "Version Control Compatibility"
+            toolTip: "Indents project structure on save, which takes more space on hard drive, but allows for line-based version control"
+          goToDataFolder: "Go to data folder"
+          copySourceTranslationToTarget: 
+            label: "Copy source translation to target language"
+            toolTip: "Copy source translation to target language when switching between languages and text is not yet have been created"
+          selectedClipboardManager: "Clipboard Manager"
+      buttons:
+        loadDefaults: "Load Defaults"
+        close: "Close"
+        apply: "Apply"
+        saveClose: "Save"
+      shared:
+        reloadRequired: "Requires restart to apply"
+    about:
+      title: "About"
+    setup:
+      title: "First Setup"
+      buttons:
+        skip: "Skip"
+        prev: "Back"
+        next: "Next"
+        done: "Done"
+      step0:
+        text: "Welcome to Unturned Asset Editor by BowieD!\n\nLooks liks this is the first time you use this app on this computer.\nLet's make your experience personalised to fit your needs as close as possible!\n\nClick \"Next\" in bottom right corner to begin initial setup.\nClick \"Skip\" if you want to use default settings."
+      step1:
+        header: "Step 1. Character Editor"
+        text: "Select which character editor style fits you most."
+        option:
+          classic: "Classic Editor"
+          remixed: "Remixed Editor"
+      step2:
+        header: "Step 2. Other Settings"
+        text: "Configure these little settings for your specific needs."
+      stepLast:
+        text: "You have finished setting up Unturned Asset Editor!\n\nHave fun using the app!\n\nClick \"Done\" in bottom right corner to begin using the app with these settings."
+    flagListWindow:
+      title: "Flag List"
+      buttons:
+        add: "Add Flag"
+        edit: "Edit Flag"
+        delete: "Delete Flag"
+    addonListWindow:
+      title: "Add-ons"
+      buttons:
+        reloadAll:
+          label: "Reload All"
+          toolTip: "Reload All Add-ons"
+      addon:
+        state: "State:"
+        buttons:
+          load: "Load"
+          unload: "Unload"
+          reload: "Reload"
+        tags: "Tags:"
+    notesWindow:
+      title: "Notes"
+    findReplaceWindow:
+      title: "Search & Replace"
+      format: "Search Replace Format"
+      findWith: "Find With"
+      replaceWith: "Replace With"
+      searchResult: "Search Result"
+      buttons:
+        find: "Search"
+        replace: "Replace"
+        goto: "Go To Target"
+        close: "Close"
+    genericPropertyEditor:
+      title: "Object Editor"
+      properties:
+        header: "Properties"
+      controls:
+        save: "Save"
+        cancel: "Cancel"
+    editVisibleResponses:
+      title: "Edit Visible Responses"
+      visible:
+        header: "Visible Responses"
+      invisible:
+        header: "Invisible Responses"
+      controls:
+        save: "Save"
+        toggleAllOn: "Toggle All On"
+        toggleAllOff: "Toggle All Off"
+        cancel: "Cancel"
+    assetSelector:
+      title: "Asset Selector"
+      filter:
+        header: "Filters"
+        searchBox:
+          watermark: "Search..."
+      controls:
+        select: "Select"
+        random: "Random"
+  modal:
+    newProject:
+      name: "Project Name"
+      preset: "Preset"
+      defaultUnityVersion: "Unity Version"
+    addFile:
+      fileName: "File Name"
+    flagEdit:
+      id: "Flag ID"
+      name: "Flag Name"
+      desc: "Flag Description"
+      values: "Flag Values (separate with spaces, ex. 1 2 3..5)"
+    foregroundTask:
+      forceStop:
+        text: "Force Stop"
+        toolTip: "Cancels current task"
+    errorCheck:
+      asset:
+        spawn:
+          table:
+            legacy:
+              toV2:
+                title: "Multiple assets found"
+                caption: "Select an asset to use in Spawn Table #{0} instead of legacy ID '{1}'\n\nPath to spawn table\n{2}"
+                assetToolTip: "GUID: {0}\nType: {1}"
+    assetLoadingErrorLogWindow:
+      title: "Errors occured during import"
+      severity: "Severity"
+      text: "Text"
+      pathToAsset: "Path"
+  task:
+    importFolder:
+      title: "Importing folder"
+      step:
+        scan: "Scanning folder"
+        load: "Importing assets [{0:P0}]"
+  message:
+    earlyAccess:
+      caption: "Thanks for supporting!"
+      text: "You are using an early access build of the app, things may change.\nThank you for supporting me! This app is possible thanks to people supporting me!"
+    demo:
+      caption: "Welcome to demo version!"
+      text: "You are using a demo build of the app.\nTo upgrade to full version, please, consider supporting development of the app on Boosty. Thank you!"
+    loadLegacyProject:
+      error: "Could not load NPC Maker project."
+    saveUnsavedChanges:
+      caption: "Unsaved Changes"
+      text: "You have unsaved changes in your project.\nDo you want to save your changes before proceeding?"
+    addons:
+      reload:
+        success:
+          caption: "Reload All Add-ons"
+          text: "Reloaded {0} add-ons."
+    saveAndExportDiff:
+      caption: "Save & Export"
+      text: "Please, note, that saving and exporting is not the same.\nIf you want to export current project as a mod for Unturned, you need to use 'Export' function, instead of a 'Save'.\nAnswer 'Yes' if you want this message to appear again next time."
+    export:
+      notEmpty:
+        caption: "Directory not empty"
+        text: "Folder you are trying to export your project to is not empty.\nErase everything inside of this directory and proceed?\nWarning: everything inside '{0}' will be deleted."
+    askDelete:
+      caption: "Confirm deletion"
+      text: "Are you sure you want to delete this? This action cannot be undone."
+  page:
+    welcome:
+      getStarted:
+        header: "Get Started"
+        guideSteam: "Read Official Guide on Steam"
+        videoTutorialsOfficial: "Watch official tutorials"
+        videoTutorialsCommunity: "Watch community tutorials"
+        reportIssue: "Report an issue on GitHub"
+      quickActions:
+        header: "Quick Actions"
+        newProject: "New Project"
+        loadProject: "Load Project"
+        loadLegacyProject: "Load NPC Maker Project"
+        options: "Options"
+      recent:
+        header: "Recent Projects"
+        location: "Location:"
+        assetCount: "Assets:"
+        lastSave: "last saved on"
+      footer:
+        patreon:
+          part1: "Consider supporting on"
+          part2: "Patreon"
+          part3: "or"
+          part4: "Boosty"
+          part5: "or other way by contacting me directly"
+        discord:
+          part1: "Join discussion on"
+          part2: "Discord"
+      tips:
+        header: "Tip of the day"
+        prefix: "Tip"
+        getAnother: "Get another tip"
+    editor:
+      notSupported:
+        text: "This asset type is not yet supported to view or edit in the app."
+      notInDemo:
+        text: 
+          main: "This asset type is only available in full version of the app."
+          link: "Get the full version by supporting development on Boosty."
+      tempNotAvailable:
+        text: "This asset type is disabled temporarily."
+      character:
+        generalInformation:
+          header: "General Information"
+          objectName: "Editor Name"
+          characterName: "Character Name"
+          dialogue: "Start Dialogue"
+          holidayRestriction: "Holiday Restriction"
+          playerKnowsNameFlagID: "Player Knows Name Flag ID"
+          conditions: "Visibility Conditions"
+        appearance:
+          header: "Appearance"
+          skinColor:
+            label: "Skin Color"
+            random:
+              toolTip: "Random Skin Color"
+          hairColor:
+            label: "Hair Color"
+            random:
+              toolTip: "Random Hair Color"
+          pose:
+            header: "Pose Settings"
+            pose: "Pose"
+            isLefty: "Is Lefty"
+            pitch: "Pitch (Forward Leaning)"
+            lean: "Lean (Left and Right)"
+            headOffset: "Head Offset (Forward)"
+          face:
+            label: "Face"
+            random:
+              toolTip: "Random Face"
+          hair:
+            label: "Hair"
+            random:
+              toolTip: "Random Hair Style"
+          beard:
+            label: "Beard"
+            random:
+              toolTip: "Random Beard Type"
+          random:
+            label: "Random Appearance"
+            toolTip: "Randomize face, hair, beard, hair color and skin color."
+          context:
+            copyAppearance: "Copy Appearance"
+            pasteAppearance: "Paste Appearance"
+        equipment:
+          header: "Equipment"
+          primary: "Primary"
+          secondary: "Secondary"
+          tertiary: "Tertiary"
+          equipped: "Selected Slot"
+        clothing:
+          header: "Clothing"
+          kind:
+            default: "Default"
+            halloween: "Halloween"
+            christmas: "Christmas"
+          type:
+            hat: "Hat"
+            glasses: "Glasses"
+            mask: "Mask"
+            vest: "Vest"
+            shirt: "Shirt"
+            pants: "Pants"
+            backpack: "Backpack"
+          notSelected: "Select an outfit"
+          context:
+            copyClothing: "Copy outfit"
+            pasteClothing: "Paste outfit"
+            resetClothing: "Reset outfit"
+          random: "Random Clothing"
+        nightWorkaround:
+          header: "Night Setup"
+          midnightSecond:
+            pre: "Pre-Midnight Second"
+            post: "Post-Midnight Second"
+          secondAsset:
+            guid: "Second Character Guid"
+            id: "Second Character ID"
+      dialogue:
+        messages:
+          header: "Messages"
+          addButton: "Add Message"
+        responses:
+          header: "Responses"
+          addButton: "Add Response"
+        orderMode: "Order Mode"
+      vendor:
+        properties:
+          header: "Vendor Properties"
+          title: "Title"
+          description: "Description"
+          autoSort: "Enable Auto Sorting"
+          currency: "Currency GUID"
+          faceOverride:
+            label: "Face Override"
+            clear: "Use default face"
+        buying:
+          header: "Buying"
+        selling:
+          header: "Selling"
+        csv:
+          import:
+            toolTip: "Import from .csv table"
+            fail: "Could not import .csv table. Error: {0}"
+            errors: "Could not import some parts of .csv table. Data is not complete."
+          export:
+            toolTip: "Export as .csv table"
+            fail: "Could not export .csv table. Error: {0}"
+      quest:
+        properties:
+          header: "Quest Properties"
+          title: "Title"
+          description: "Description"
+        conditions: "Conditions / Goals"
+        rewards: "Rewards"
+  controls:
+    asset:
+      idControl:
+        contextMenu:
+          selectAsset: "Select Asset"
+          goToAsset: "Go to Asset"
+      base:
+        header: "Common Asset Properties"
+        exportName: "Export Name"
+        guid: "Guid"
+        id: "ID"
+        advanced:
+          header: "Advanced"
+          ignoreNPOT: 
+            label: "Ignore NPOT"
+            toolTip: "Ignore errors in Unity related to texture being the size of non-power of two"
+          ignoreTexRW:
+            label: "Ignore Texture Read/Write"
+            toolTip: "Ignore errors in Unity related to material being allowed to disable read/write to save perfomance"
+          bypassIdLimit: "Bypass ID Limit"
+          masterBundle: "Master Bundle Override"
+          bundlePath: "Bundle Path"
+          assetBundleVersion: "Asset Bundle Version"
+          excludeFromMasterBundle: "Exclude from Master Bundle"
+          enableShaderConsolidation: "Enable Shader Consolidation"
+          unityBundleLocation: ".unity3d Bundle Location"
+        editor:
+          header: "Editor"
+          comment: "Comment"
+          marker: "Color marker"
+      item:
+        base:
+          type: "Item"
+          header: "Common Item Properties"
+          name: "Item Name"
+          description: "Item Description"
+          rarity: "Item Rarity"
+          amount: "Max Amount In Slot"
+          slot: "Slot"
+          size:
+            header: "Inventory Size"
+            width: "Width"
+            height: "Height"
+          spawn:
+            header: "Spawn Settings"
+            quality:
+              min: "Minimum Quality"
+              max: "Maximum Quality"
+            amount:
+              min: "Minimum Amount"
+              max: "Maximum Amount"
+          isPro: "Is Skin"
+          overrideShowQuality: "Override Show Quality"
+          equipableMovementSpeedMultiplier: "Player Speed Multiplier When Held"
+          blueprints: "Blueprints"
+          icon:
+            header: "Icon Settings"
+            auto: "Use Automatic Icon Measurements"
+            sizeZ: "Inventory Ortographic Size"
+            sizeZ2: "Skin Ortographic Size"
+          advanced:
+            header: "Advanced Properties"
+            canPlayerEquip:
+              label: "Can Player Equip"
+              preview:
+                ifTrue: "Item will be equipable"
+                ifFalse: "Item will NOT be equipable"
+            canUseUnderwater:
+              label: "Can Use Underwater"
+              preview:
+                ifTrue: "Item will be useable underwater"
+                ifFalse: "Item will NOT be useable underwater"
+            isBackward: "Is Backward"
+            shouldProcedurallyAnimateInertia: "Should Procedurally Animate Inertia"
+            bypassHashVerify: "Bypass Hash Verification"
+            shouldDropOnDeath:
+              label: "Should Drop On Death"
+              toolTip: "Note: disabling this will destroy item on death instead of keeping it in players inventory!"
+            shouldDeleteAtZeroQuality: "Should Delete At Zero Quality"
+            allowManualDrop: "Allow Manual Drop"
+            shouldDestroyItemColliders: "Should Destroy Item Colliders"
+            instantiatedItemNameOverride: "Instantiated Item Name Override"
+            useableType: "Useable Type"
+            sharedSkinLookupId: "Shared Skin Lookup ID"
+            automaticallyAddAutoStatDescriptions: "Automatically Add Stat Descriptions"
+            shouldLeftHandedCharactersMirrorEquippedItem: "Should Left Handed Players Have This Item Mirrored"
+            econIconUseId: "Econ Icon Uses ID"
+            inventoryAudio: "Inventory Audio"
+            equipAudio: "Equip Audio"
+            inspectAudio: "Inspect Audio"
+            equipablePrefab: "Equipable Prefab"
+        caliber:
+          base: 
+            type: "Caliber"
+            header: "Common Caliber Properties"
+            recoil:
+              header: "Recoil Properties"
+              x: "Horizontal"
+              y: "Vertical"
+              aimingMultiplier: "Aiming Multiplier"
+            spread: "Spread"
+            sway: "Sway"
+            shake: "Shake"
+            ballisticDamage: "Ballistic Damage Multiplier"
+            aimingMovementSpeedMultiplier: "Aiming Movement Speed Multiplier"
+            aimDurationMultiplier: "Aim Duration Multiplier"
+            isPaintable: "Is Paintable"
+            isBipod: "Is Bipod"
+            calibers: "Calibers"
+            shouldDestroyAttachmentColliders: "Destroy Attachment Colliders"
+            instantiatedAttachmentName: "Instantiated Attachment Name Override"
+          sight:
+            type: "Sight"
+            header: "Sight Properties"
+            vision: "Vision Type"
+            nightVision:
+              color: "Night Vision Color"
+              fogIntensity: "Night Vision Fog Intensity"
+            zoom:
+              firstPerson: "1st Person Zoom Factor"
+              thirdPerson: "3rd Person Zoom Factor"
+              isUsingEyes: "Is Using Eyes"
+            isHolographic: "Is Holographic"
+            shouldOffsetScopeOverlayByOneTexel: "Should Offset Scope Overlay By One Texel"
+            distanceMarkers: "Distance Markers"
+          tactical:
+            type: "Tactical"
+            header: "Tactical Properties"
+            laser:
+              toggled: "Is Laser"
+              color: "Laser Color"
+            light:
+              toggled: "Is Light"
+              color: "Light Configuration"
+            rangefinder:
+              toggled: "Is Rangefinder"
+            melee:
+              toggled: "Is Melee"
+          magazine:
+            type: "Magazine"
+            header: "Magazine Properties"
+            pellets: "Pellets"
+            stuck: "Ammo durability decrease on hit"
+            range: "Range"
+            speed: "Speed"
+            isExplosive: "Is Explosive"
+            damage:
+              player: "Player Damage"
+              zombie: "Zombie Damage"
+              animal: "Animal Damage"
+              barricade: "Barricade Damage"
+              structure: "Structure Damage"
+              vehicle: "Vehicle Damage"
+              resource: "Resource Damage"
+              object: "Object Damage"
+            projectileDamageMultiplier: "Projectile Damage Multiplier"
+            projectileBlastRadiusMultiplier: "Projectile Blast Radius Multiplier"
+            projectileLaunchForceMultiplier: "Projectile Launch Force Multiplier"
+            explosionLaunchSpeed: "Explosion Launch Speed"
+            explosion: "Explosion Effect"
+            tracer: "Tracer Effect"
+            impact: "Impact Effect"
+            spawnExplosionOnServer: "Spawn Explosion On Server"
+            deleteEmpty: "Delete Empty"
+            shouldFillAfterDetach: "Should Fill After Detach"
+          barrel:
+            type: "Barrel"
+            header: "Barrel Properties"
+            isBraked: "Is Braked"
+            isSilenced: "Is Silenced"
+            volume: "Volume"
+            durability: "Durability Decrease Amount"
+            ballisticDrop: "Ballistic Drop"
+            gunshotRolloffDistanceMultiplier: "Gunshot Rolloff Distance Multiplier"
+        clothing:
+          base:
+            type: "Clothing"
+          bag:
+            base:
+              type: "Bag"
+            shirt:
+              type: "Shirt"
+            pants:
+              type: "Pants"
+            vest:
+              type: "Vest"
+            backpack:
+              type: "Backpack"
+          gear:
+            base:
+              type: "Gear"
+            glasses:
+              type: "Glasses"
+            mask:
+              type: "Mask"
+            hat:
+              type: "Hat"
+        consumeable:
+          base:
+            type: "Consumeable"
+          food:
+            type: "Food"
+          water:
+            type: "Drinkable"
+          medical:
+            type: "Medical"
+        placeable:
+          base:
+            type: "Placeable"
+          structure:
+            type: "Structure"
+          barricade:
+            base:
+              type: "Barricade"
+            beacon:
+              type: "Horde Beacon"
+            charge:
+              type: "Charge"
+            farm:
+              type: "Crop"
+            generator:
+              type: "Generator"
+            library:
+              type: "Library"
+            oilPump:
+              type: "Oil Pump"
+            storage:
+              base:
+                type: "Storage"
+              sentry:
+                type: "Sentry"
+            tank:
+              type: "Tank"
+            trap:
+              type: "Trap"
+        weapon:
+          base:
+            type: "Weapon"
+          gun:
+            type: "Gun"
+          melee:
+            type: "Melee Weapon"
+          throwable:
+            type: "Throwable"
+      npc:
+        dialogue:
+          message:
+            addPageButton: "Add Page"
+            nextDialogue: "Next Dialogue"
+            conditions: "Conditions"
+            rewards: "Rewards"
+            editVisibleResponsesButton: "Edit Visible Responses"
+            faceOverride:
+              label: "Face Override"
+              clear: "Use default face"
+          page:
+            conditions: "Conditions"
+            rewards: "Rewards"
+          response:
+            text: "Response Text"
+            conditions: "Conditions"
+            rewards: "Rewards"
+    editable:
+      distanceMarker:
+        distance: "Distance"
+        lineOffset: "Line Offset"
+        lineWidth: "Line Width"
+        side: "Side"
+        hasLabel: "Has Label"
+        color: "Color"
+      spotLight:
+        isEnabled: "Is Enabled"
+        range: "Range"
+        angle: "Angle"
+        intensity: "Intensity"
+        color: "Color"
+    genericCollection:
+      addButton: "Add New"
+      pasteButton: "Paste"
+    richTextBox:
+      context:
+        common:
+          copy: "Copy (Ctrl + C)"
+          paste: "Paste (Ctrl + V)"
+          cut: "Cut (Ctrl + X)"
+          bold: "Bold Text (Ctrl + B)"
+          italic: "Italic Text (Ctrl + I)"
+          superScript: "SuperScript²"
+          subScript: "SubScript₂"
+          textColor: "Text Color"
+          backColor: "Background Color"
+          dialogue:
+            charName: "Insert Player Name"
+            npcName: "Insert NPC Name"
+            pause: "Insert Pause (Pause)"
+          color:
+            unity: "Unity"
+            unturned: 
+              header: "Unturned"
+              skin: "Skin"
+              hair: "Hair"
+              rarity: "Rarity"
+              other: "Other"
+            custom:
+              header: "Custom Color..."
+              value: "Color"
+        raw:
+          toggleRich: "Enter rich edit mode"
+        rich:
+          reset: "Reset formatting"
+          toggleRaw: "Enter raw edit mode"
+    vector3:
+      "x": "X:"
+      "y": "Y:"
+      "z": "Z:"
+    spotLight:
+      range: "Range"
+      angle: "Angle"
+      intensity: "Intensity"
+      color: "Color"
+      isEnabled: "Is Enabled"
+    bgSetting:
+      imageLocation: 
+        label: "Image(s) Location"
+        buttons:
+          file: "File"
+          folder: "Folder"
+      opacity: "Opacity"
+      blurRadius: "Blur Radius"
+      alignment:
+        horizontal: "Horizontal Alignment"
+        vertical: "Vertical Alignment"
+      stretch: "Stretch"
+      volume: "Volume"
+      preview: "Preview"
+  enum:
+    clipboardManager:
+      system:
+        label: "System Clipboard"
+        toolTip: "Uses System Clipboard.\nCapable of storing data in between two instances of the app."
+      internal:
+        label: "App Clipboard"
+        toolTip: "Does not use System Clipboard. Experimental.\nCapable of storing text and objects alongside each other."
+    addonState:
+      none: "None"
+      loaded: "Loaded"
+      notLoaded: "Not Loaded"
+      unloaded: "Unloaded"
+      error: "Error"
+    addonTag:
+      none: "None"
+      ui: "UI"
+      automation: "Automation"
+      feature: "Feature"
+      fix: "Fix"
+      tool: "Tool"
+      theme: "Theme"
+    actionGun:
+      trigger: "Trigger"
+      bolt: "Bolt"
+      pump: "Pump"
+      rail: "Railgun"
+      string: "Bow-like"
+      break: "Break"
+      rocket: "Rocket Launcher"
+      minigun: "Minigun"
+    actionType:
+      blueprint: "Blueprint"
+    animalBehaviour:
+      none: "None"
+      offense: "Offense"
+      defense: "Defense"
+      ignore: "Ignore"
+    armorTier:
+      low: "Low"
+      high: "High"
+    assetBundleVersion:
+      v1: "1: Unity 5"
+      v2: "2: Unity 2017 (LTS)"
+      v3: "3: Unity 2018/2019 (LTS)"
+      v4: "4: Unity 2020 (LTS)"
+      v5: "5: Unity 2021 (LTS)"
+    assetOrigin:
+      official: "Official"
+      curated: "Curated"
+      workshop: "Workshop"
+      misc: "Miscellaneous"
+    batteryMode:
+      none: "None"
+      burn: "Burn"
+      charge: "Charge"
+    bleeding:
+      none: "None"
+      heal: "Heal"
+      cut: "Apply Bleeding"
+    blueprintSkill:
+      none: "None"
+      craft: "Crafting"
+      cook: "Cooking"
+      repair: "Repair"
+    blueprintType:
+      tool: "Tool"
+      apparel: "Apparel"
+      supply: "Supply"
+      gear: "Gear"
+      ammo: "Ammo"
+      barricade: "Barricade"
+      structure: "Structure"
+      utilities: "Utility"
+      furniture: "Furniture"
+      repair: "Repair"
+    bones:
+      none: "None"
+      heal: "Heal"
+      break: "Break Bones"
+    barricade:
+      build:
+        fortification: "Fortification"
+        barricade: 
+          generic: "Barricade"
+          wall: "Wall Barricade"
+        door: "Door"
+        gate: "Gate"
+        bed: "Bed"
+        ladder: "Ladder"
+        storage: 
+          normal: "Storage"
+          wall: "Wall Storage"
+        farm: "Crop"
+        torch: "Torch"
+        campfire: "Campfire"
+        spike: "Spike"
+        wire: "Barbed Wire"
+        generator: "Generator"
+        spot: "Spotlight"
+        safezone: "Safezone"
+        freeform: "Freeform"
+        sign: 
+          normal: "Sign"
+          wall: "Wall Sign"
+        vehicle: "Vehicle"
+        claim: "Claim Flag"
+        beacon: "Beacon"
+        barrelRain: "Rain Barrel"
+        oil: "Oil Pump"
+        cage: "Cage"
+        shutter: "Shutter"
+        tank: "Resource Tank"
+        charge: "Charge"
+        sentry: 
+          normal: "Sentry"
+          freeform: "Freeform Sentry"
+        oven: "Oven"
+        library: "XP Storage"
+        oxygenator: "Oxygenator"
+        glass: "Glass"
+        note: "Note"
+        hatch: "Hatch"
+        mannequin: "Mannequin"
+        stereo: "Stereo"
+        clock: "Clock"
+    construct:
+      floor:
+        normal: "Floor"
+        poly: "Triangular Floor"
+      wall: "Wall"
+      rampart: "Rampart"
+      roof:
+        normal: "Roof"
+        poly: "Triangular Roof"
+      pillar: "Pillar"
+      post: "Post"
+    engine:
+      car: "Car"
+      plane: "Plane"
+      heli: "Helicopter"
+      blimp: "Blimp"
+      boat: "Boat"
+      train: "Train"
+    graphics:
+      quality:
+        "off": "Off"
+        low: "Low"
+        medium: "Medium"
+        high: "High"
+        ultra: "Ultra"
+    item:
+      useableType:
+        none: "None"
+        barricade: "Barricade"
+        batteryVehicle: "Vehicle Battery"
+        carjack: "Carjack"
+        clothing: "Clothing"
+        consumeable: "Consumeable"
+        fisher: "Fishing Tool"
+        fuel: "Fuel"
+        grower: "Grower"
+        gun: "Gun"
+        melee: "Melee"
+        optic: "Optic"
+        refill: "Refill"
+        structure: "Structure"
+        throwable: "Throwable"
+        tire: "Tire"
+        cloud: "Fall Speed Decreaser"
+        arrest:
+          start: "Handcuffs"
+          end: "Handcuff Breaker"
+        detonator: "Detonator"
+        filter: "Filter"
+        carLockPick: "Car Lockpick"
+        walkieTalkie: "Walkie Talkie"
+        housingPlanner: "Housing Planner"
+      origin:
+        world: "Natural Spawn"
+        admin: "Given via commands"
+        craft: "Crafting"
+        nature: "Nature"
+      rarity:
+        common: "Common"
+        uncommon: "Uncommon"
+        rare: "Rare"
+        epic: "Epic"
+        legendary: "Legendary"
+        mythical: "Mythical"
+    lighting:
+      color:
+        sun: "Sun"
+        sea: "Sea"
+        fog: "Fog"
+        skySky: "Sky - Sky"
+        skyEquator: "Sky - Equator"
+        skyGround: "Sky - Ground"
+        ambientSky: "Ambient - Sky"
+        ambientEquator: "Ambient - Equator"
+        ambientGround: "Ambient - Ground"
+        clouds: "Clouds"
+        rays: "Rays"
+        particleLighting: "Particle Lighting"
+        customOverride: "Custom"
+      vision:
+        none: "None"
+        military: "Military Night Vision"
+        civilian: "Civilian Night Vision"
+        headlamp: "Headlamp"
+    npc:
+      conditionType:
+        virtual:
+          flag:
+            shortRange: "[Virtual] Flag Range (Number)"
+          timeRange: "[Virtual] Time Range"
+        experience: "Experience"
+        reputation: "Reputation"
+        flag:
+          bool: "Flag (Boolean)"
+          short: "Flag (Number)"
+          compare: "Compare Flags"
+        quest: "Quest"
+        skillset: "Skillset"
+        item: "Item"
+        kills:
+          zombie: "Kills (Zombies)"
+          horde: "Kills (Horde)"
+          animal: "Kills (Animals)"
+          player: "Kills (Players)"
+          object: "Kills (Objects)"
+          tree: "Kills (Resources)"
+        timeOfDay: "Time of Day"
+        player:
+          life:
+            health: "Player Life (Health)"
+            food: "Player Life (Food)"
+            water: "Player Life (Water)"
+            virus: "Player Life (Virus)"
+        holiday: "Holiday"
+        currency: "Currency"
+        weather:
+          status: "Weather (Status)"
+          blendAlpha: "Weather (Blend)"
+        isFullMoon: "Is Full Moon"
+        dateCounter: "Date Counter"
+      holiday:
+        none: "Normal Day"
+        halloween: "Halloween"
+        christmas: "Christmas"
+        aprilFools: "April Fools"
+        valentines: "Valentine's Day"
+        prideMonth: "Pride Month"
+      logic:
+        normal:
+          none: "None"
+          lt: "<"
+          ltoreq: "<="
+          eq: "=="
+          noteq: "!="
+          gtoreq: ">="
+          gt: ">"
+        alt:
+          none: "None"
+          lt: "Less Than"
+          ltoreq: "Less Than or Equal"
+          eq: "Equal"
+          noteq: "Not Equal"
+          gtoreq: "Greater Than or Equal"
+          gt: "Greater Than"
+      modification:
+        normal:
+          none: "None"
+          assign: ":="
+          increm: "+="
+          decrem: "-="
+        alt:
+          none: "None"
+          assign: "Assign"
+          increm: "Increase"
+          decrem: "Decrease"
+      operation:
+        normal:
+          none: "None"
+          assign: ":="
+          add: "+="
+          sub: "-="
+          mult: "*="
+          div: "/="
+          mod: "%="
+        alt:
+          none: "None"
+          assign: "Assign"
+          add: "Add"
+          sub: "Subtract"
+          mult: "Multiply"
+          div: "Divide"
+          mod: "Modulo"
+      pose:
+        stand: "Stand"
+        sit: "Sitting"
+        asleep: "Stand (Asleep)"
+        passive: "Stand (Passive)"
+        crouch: "Crouching"
+        prone: "Proning"
+        underArrest: "In Handcuffs"
+        rest: "Resting"
+        surrender: "Surrending"
+      quest:
+        status:
+          none: "None"
+          active: "Active"
+          ready: "Ready to Complete"
+          completed: "Completed"
+      rewardType:
+        experience: "Experience"
+        reputation: "Reputation"
+        flag:
+          bool: "Flag (Boolean)"
+          short: "Flag (Number)"
+          shortRandom: "Flag (Random Number)"
+          math: "Flag (Math)"
+        quest: "Quest"
+        item: "Item"
+        itemRandom: "Item (Random)"
+        achievement: "Steam Achievement"
+        vehicle: "Vehicle"
+        teleport: "Teleport"
+        event: "Mod Event Hook"
+        currency: "Currency"
+        hint: "Text Message"
+        playerSpawnpoint: "Player Spawnpoint"
+        player:
+          life:
+            health: "Player Life (Health)"
+            food: "Player Life (Food)"
+            water: "Player Life (Water)"
+            virus: "Player Life (Virus)"
+      weather:
+        status:
+          active: "Active"
+          fadeIn: "Fading In"
+          fadedIn: "Faded In"
+          fadeOut: "Fading Out"
+          fadedOut: "Faded Out"
+          transition: "Transition"
+    object:
+      chart:
+        none: "None"
+        ground: "Ground"
+        ignore: "Ignore"
+        highway: "Highway"
+        road: "Road"
+        street: "Street"
+        path: "Path"
+        large: "Large Object"
+        medium: "Medium Object"
+        water: "Water"
+        cliff: "Cliff"
+      interactability:
+        type:
+          none: "None"
+          binaryState: "Binary State"
+          dropper: "Dropper"
+          note: "Note"
+          water: "Water"
+          fuel: "Fuel"
+          rubble: "Rubble"
+          npc: "NPC"
+          quest: "Quest"
+        editor:
+          none: "Normal"
+          toggle: "Toggled"
+        hint:
+          door: "Door"
+          switch: "Switch"
+          fire: "Fire"
+          generator: "Generator"
+          use: "Use"
+          custom: "Custom Text"
+        nav:
+          none: "None"
+          "on": "On"
+          "off": "Off"
+        power:
+          none: "None"
+          toggle: "Requires power to toggle"
+          stay: "Requires power to stay on"
+      lod:
+        none: "None"
+        mesh: "Mesh"
+        area: "Area"
+      rubble:
+        type:
+          none: "None"
+          destroy: "Rubble"
+        editor:
+          alive: "Alive"
+          dead: "Destroyed"
+      type:
+        large: "Large"
+        medium: "Medium"
+        small: "Small"
+        npc: "NPC"
+        decal: "Decal"
+    skill:
+      offense:
+        overkill: "Overkill"
+        sharpshooter: "Sharpshooter"
+        dexterity: "Dexterity"
+        cardio: "Cardio"
+        exercise: "Exercise"
+        diving: "Diving"
+        parkour: "Parkour"
+      defense:
+        sneakybeaky: "Sneakybeaky"
+        vitality: "Vitality"
+        immunity: "Immunity"
+        toughness: "Toughness"
+        strength: "Strength"
+        warmblooded: "Warmblooded"
+        survival: "Survival"
+      support:
+        healing: "Healing"
+        crafting: "Crafting"
+        outdoors: "Outdoors"
+        cooking: "Cooking"
+        fishing: "Fishing"
+        agriculture: "Agriculture"
+        mechanic: "Mechanic"
+        engineer: "Engineer"
+    skillset:
+      none: "None"
+      fire: "Firefighter"
+      police: "Police"
+      army: "Army"
+      farm: "Farmer"
+      fish: "Fisherman"
+      camp: "Camper"
+      work: "Worker"
+      chef: "Chef"
+      thief: "Thief"
+      medic: "Medic"
+    temperature:
+      freezing: "Freezing"
+      cold: "Cold"
+      warm: "Warm"
+      burning: "Burning"
+      none: "None"
+      covered: "Covered"
+      acid: "Acid"
+    projectPreset:
+      empty: "Empty"
+      npcs: "NPCs"
+      fullBundles: "Full Bundles"
+    sentryMode:
+      neutral: "Neutral"
+      friendly: "Friendly"
+      hostile: "Hostile"
+    slotType:
+      none: "None"
+      primary: "Primary"
+      secondary: "Secondary"
+      tertiary: "Tertiary"
+      any: "Any"
+    tankSource:
+      none: "None"
+      water: "Water"
+      fuel: "Fuel"
+    useable:
+      tireMode:
+        add: "Add tire"
+        remove: "Remove tire"
+    vendor:
+      buying:
+        type:
+          virtual:
+            itemMultiple: "[Virtual] Multiple Item Types"
+          item: "Item"
+      selling:
+        type:
+          virtual:
+            itemMultiple: "[Virtual] Multiple Item Types"
+            vehicleMultiple: "[Virtual] Multiple Vehicle Types"
+          item: "Item"
+          vehicle: "Vehicle"
+    zombie:
+      speciality:
+        none: "Any"
+        normal: "Normal"
+        mega: "Boss"
+        crawler: "Crawler"
+        sprinter: "Sprinter"
+        flanker:
+          friendly: "Flanker (Idle)"
+          stalk: "Flanker (Stalking)"
+        burner: "Burner"
+        acid: "Acid"
+        boss:
+          electric: "Boss (Electric)"
+          wind: "Boss (Wind)"
+          fire: "Boss (Fire)"
+          all: "Boss (Omni)"
+          magma: "Boss (Magma)"
+          spirit: "Boss (Spirit)"
+          nuclear: "Boss (Nuclear)"
+          elver:
+            stomper: "Elver - Boss (Stomp)"
+        spirit: "Spirit"
+        dl:
+          volatile:
+            red: "Dying Light - Red Volatile"
+            blue: "Dying Light - Blue Volatile"
+      stunOverride:
+        none: "Default"
+        never: "Never stun"
+        always: "Always stun"
+  condition:
+    base:
+      text: "Localization"
+      reset: "Reset"
+      logic:
+        logic: "Logic"
+      flag:
+        id: "Flag ID"
+        allowUnset: "Allow Unset"
+      ui:
+        localizationPreviewer:
+          header: "Localization Preview"
+      uiRequirements:
+        label: "Required Conditions Indicies"
+        toolTip: "Makes this condition invisible until all required conditions have been met.\nIndicies start from zero, values separated by a comma, for instance, '0,1,2'.\n\nThis is a temporary solution and a much better UI for this will be made in future."
+    virtual:
+      flagRange:
+        minValue: "Lower range value"
+        minInclusive: "Is lower range inclusive"
+        maxValue: "Upper range value"
+        maxInclusive: "Is upper range inclusive"
+        display: "Short value of flag '{0}' is in between {1} and {2}"
+      timeRange:
+        minSecond: "Lower range time"
+        minInclusive: "Is lower range inclusive"
+        maxSecond: "Upper range time"
+        maxInclusive: "Is upper range inclusive"
+        display: "Time of day is in between {0} and {1}"
+    experience:
+      value: "Value"
+      reset: "Take experience from player"
+      display: "Player has {1} {0} of experience"
+    reputation:
+      value: "Value"
+      display: "Player's reputation {1} {0}"
+    flagBool:
+      value: "Flag Value"
+      reset: "Make flag unset"
+      display: "Boolean value of flag '{0}' {1} {2}"
+    flagShort:
+      value: "Flag Value"
+      reset: "Make flag unset"
+      display: "Short value of flag '{0}' {1} {2}"
+    quest:
+      id: "Quest ID"
+      status: "Status"
+      reset: "Advance quest status"
+      display: "Quest Status of '{0}' {1} '{2}'"
+    skillset:
+      value: "Skillset"
+      display: "Player has skillset {1} '{0}'"
+    item:
+      id: "Item ID"
+      amount: "Amount"
+      reset: "Take item from player"
+      display: "Player has {1} {2} of '{0}'"
+    kills:
+      zombie:
+        speciality: "Speciality"
+        value: "Count"
+        spawn: "Do spawn on approach"
+        spawnQuantity: "Spawn Quantity"
+        radius: "Max Kill Distance"
+        minRadius: "Min Kill Distance"
+        nav: "Navigation ID"
+        flag: "Storing Flag ID"
+        reset: "Make storing flag unset"
+        display: "Kill {0} zombies of type '{1}' at nav '{2}' in range [{3:0.#};{4:0.#}] and use flag '{5}' to store progress"
+      horde:
+        nav: "Navigation ID"
+        value: "Count"
+        flag: "Storing Flag ID"
+        reset: "Make storing flag unset"
+        display: "Clear {0} hordes at nav '{1}' and use flag '{2}' to store progress"
+      animal:
+        animal: "Animal ID"
+        value: "Count"
+        flag: "Storing Flag ID"
+        reset: "Make storing flag unset"
+        display: "Kill {0} animals of type '{1}' and use flag '{2}' to store progress"
+      player:
+        value: "Count"
+        flag: "Storing Flag ID"
+        reset: "Make storing flag unset"
+        display: "Kill {0} players and use flag '{1}' to store progress"
+      object:
+        object: "Object ID"
+        value: "Count"
+        nav: "Navigation ID"
+        flag: "Storing Flag ID"
+        reset: "Make storing flag unset"
+        display: "Destroy {0} objects of type '{1}' in area of nav '{2}' and use flag '{3}' to store progress"
+      tree:
+        guid: "Resource ID"
+        value: "Count"
+        flag: "Storing Flag ID"
+        reset: "Make storing flag unset"
+        display: "Harvest {0} resources of '{1}' and use flag '{2}' to store progress"
+    compareFlags:
+      flagA: "Flag A ID"
+      flagB: "Flag B ID"
+      allowUnsetA: "Allow Unset A"
+      allowUnsetB: "Allow Unset B"
+      reset: "Make both flags unset"
+      display: "Player's flag with ID '{0}' {1} flag with ID '{2}'"
+    timeOfDay:
+      second: "In-Game Second"
+      display: "Time of day {1} {0}"
+      ui:
+        times: "Day: 06:00 (21600)\nNight: 18:00 (64800)"
+        command:
+          morning:
+            label: "Morning"
+            toolTip: "Set time to 06:00 AM"
+          noon:
+            label: "Noon"
+            toolTip: "Set time to 12:00 PM"
+          evening:
+            label: "Evening"
+            toolTip: "Set time to 06:00 PM"
+          midnight:
+            label: "Midnight"
+            toolTip: "Set time to 12:00 AM"
+    player:
+      life:
+        health:
+          value: "Health Percentage"
+          display: "Player Health {0} {1}"
+        food:
+          value: "Food Percentage"
+          display: "Player Food {0} {1}"
+        water:
+          value: "Water Percentage"
+          display: "Player Water {0} {1}"
+        virus: 
+          value: "Virus Percentage"
+          display: "Player Virus {0} {1}"
+    holiday:
+      value: "Holiday"
+      display: "Holiday: {0}"
+    currency:
+      guid: "Currency ID"
+      value: "Value"
+      reset: "Take currency from player"
+      display: "Player has {1} {2} of currency '{0}'"
+    weather:
+      status:
+        value: "Status"
+        guid: "Weather ID"
+        display: "Weather '{0}' status {1} '{2}'"
+      blendAlpha:
+        value: "Blend Value"
+        guid: "Weather ID"
+        display: "Weather '{0}' blend value {1} '{2:P2}'"
+    isFullMoon:
+      value: "Is Full Moon"
+      display:
+        checked: "Only in Full Moon"
+        notChecked: "Any phase other than Full Moon"
+    dateCounter:
+      value: "Value"
+      divisor: "Divisor"
+      display: "Once per {0} days ({2} Day #{1}/{0})"
+  reward:
+    base:
+      text: "Localization"
+      grantDelay: "Grant Delay"
+    experience:
+      value: "Value"
+      display: "Give {0} XP"
+    reputation:
+      value: "Value"
+      display: "Change reputation by {0}"
+    flag:
+      bool:
+        id: "Flag ID"
+        value: "Flag Value"
+        display: "Set value of flag '{0}' to '{1}'"
+      short:
+        id: "Flag ID"
+        value: "Flag Value"
+        modification: "Modification"
+        display: "Flag '{0}' {1} {2}"
+      shortRandom:
+        id: "Flag ID"
+        min: "Min Value (inclusive)"
+        max: "Max Value (inclusive)"
+        modification: "Modification"
+        display: "Flag '{0}' {1} value from range [{2};{3}]"
+        ui:
+          valueRange: "Value Range"
+      math:
+        flagA: "Flag A ID"
+        flagB: "Flag B ID"
+        valueB: "Flag Value B"
+        operation: "Operation"
+        display: "Flag '{0}' {1} value of flag '{2}' or default value '{3}'"
+    quest:
+      id: "Quest ID"
+      display: "Give quest '{0}'"
+    item:
+      id: "Item ID"
+      amount: "Amount"
+      sight: "Sight ID"
+      tactical: "Tactical ID"
+      grip: "Grip ID"
+      barrel: "Barrel ID"
+      magazine: "Magazine ID"
+      ammo: "Ammo in magazine"
+      autoEquip: "Equip when given"
+      origin: "Origin"
+      display: "Give item '{0}' x{1}"
+    itemRandom:
+      id: "Spawn Table ID"
+      amount: "Amount"
+      autoEquip: "Equip when given"
+      origin: "Origin"
+      display: "Give x{1} items from spawn table '{0}'"
+    achievement:
+      id: "Steam Achievement ID"
+      display: "Give Steam Achievement '{0}'"
+    vehicle:
+      id: "Vehicle ID"
+      spawnpoint: "Spawnpoint ID"
+      display: "Spawn vehicle '{0}' at '{1}'"
+    teleport:
+      spawnpoint: "Spawnpoint ID"
+      display: "Teleport player to '{0}'"
+    event:
+      id: "Event ID"
+      display: "Trigger event '{0}'"
+    currency:
+      guid: "Currency ID"
+      value: "Value"
+      display: "Give {0} of currency '{1}'"
+    hint:
+      duration: "Duration (seconds)"
+      display: "Display hint with text '{0}' for {1:0.##} seconds"
+    playerSpawnpoint:
+      spawnpoint: "Spawnpoint ID"
+      display: "Change player spawnpoint to '{0}'"
+    player:
+      life:
+        health:
+          value: "Value"
+          display: "Change health by {0}"
+        food:
+          value: "Value"
+          display: "Change food by {0}"
+        water:
+          value: "Value"
+          display: "Change water by {0}"
+        virus:
+          value: "Value"
+          display: "Change virus by {0}"
+  vendorItem:
+    virtual:
+      buying:
+        itemMultiple:
+          display: "x{0} item types for {1}"
+          manualValues: "Item IDs (separate with spaces, ex. 1 2 3..5)"
+      selling:
+        itemMultiple:
+          display: "x{0} item types for {1}"
+          manualValues: "Item IDs (separate with spaces, ex. 1 2 3..5)"
+        vehicleMultiple:
+          display: "x{0} vehicle types for {1} at '{2}'"
+          manualValues: "Vehicle IDs (separate with spaces, ex. 1 2 3..5)"
+    base:
+      id: "ID"
+      cost: "Cost"
+      conditions: "Conditions"
+      rewards: "Rewards"
+    buying:
+      item:
+        display: "Item '{0}' for {1}"
+        contextMenu:
+          convertToSelling: "Convert to selling"
+    selling:
+      item:
+        display: "Item '{0}' for {1}"
+        contextMenu:
+          convertToBuying: "Convert to buying"
+      vehicle:
+        spawnpoint: "Spawnpoint"
+        display: "Vehicle '{0}' for {1} at '{2}'"
+  blueprint:
+    repair:
+      displayText: "Repair with: {0}"
+    ammo:
+      displayText: "Fill ammo with: {0}"
+  color:
+    none: "None"
+    red: "Red"
+    blue: "Blue"
+    green: "Green"
+    cyan: "Cyan"
+    purple: "Purple"
+    pink: "Pink"
+    orange: "Orange"
+    yellow: "Yellow"
+    white: "White"
+    amber: "Amber"
+    brown: "Brown"
+    cobalt: "Cobalt"
+    crimson: "Crimson"
+    emerald: "Emerald"
+    indigo: "Indigo"
+    lime: "Lime"
+    magenta: "Magenta"
+    mauve: "Mauve"
+    olive: "Olive"
+    sienna: "Sienna"
+    steel: "Steel"
+    taupe: "Taupe"
+    teal: "Teal"
+    violet: "Violet"
+    black: "Black"
+    aqua: "Aqua"
+    darkBlue: "Dark Blue"
+    gray: "Gray"
+    lightBlue: "Light Blue"
+    maroon: "Maroon"
+    navy: "Navy"
+    silver: "Silver"
+    unturned:
+      rarity:
+        common: "Common"
+        uncommon: "Uncommon"
+        rare: "Rare"
+        epic: "Epic"
+        legendary: "Legendary"
+        mythical: "Mythical"
+      other:
+        admin: "Admin Color"
+        server: "Server Message"
+        gold: "Gold Account"
+        nightVision:
+          civilian: "Civilian Night Vision"
+          military: "Military Night Vision"
+  appearance:
+    face:
+      fnone: "None"
+      f0: "Smile #1"
+      f1: "Nelson"
+      f2: "Happy #1"
+      f3: "Angry"
+      f4: "Neutral"
+      f5: "Cool"
+      f6: "Baby"
+      f7: "Catface"
+      f8: "Smile #2"
+      f9: "Suspicious #1"
+      f10: "Tongue"
+      f11: "Suspicious #2"
+      f12: "Surprised"
+      f13: "Happy #2"
+      f14: "Anomaly"
+      f15: "Griefer"
+      f16: "Woozy"
+      f17: "Laugh"
+      f18: "Delightful #1"
+      f19: "Zombie"
+      f20: "Smile #3"
+      f21: "Pokerface"
+      f22: "Unamused #1"
+      f23: "Happy #3"
+      f24: "Eyelashes"
+      f25: "Unamused #2"
+      f26: "Amazed"
+      f27: "Delightful #2"
+      f28: "Lennyface"
+      f29: "Wink"
+      f30: "Heart Eyes"
+      f31: "Money Eyes"
+    hair:
+      h0: "Bald"
+      h1: "Normal"
+      h2: "Short"
+      h3: "Baby"
+      h4: "Medium Back"
+      h5: "Dreads"
+      h6: "Mohawk"
+      h7: "Bun"
+      h8: "Long Back"
+      h9: "Nelson"
+      h10: "Tall"
+      h11: "Spiky"
+      h12: "Separated"
+      h13: "Spiky Mohawk"
+      h14: "Long Chest"
+      h15: "Ponytail"
+      h16: "Medium"
+      h17: "Face Right"
+      h18: "Face Left"
+      h19: "Spiky Pompadour"
+      h20: "Pompadour"
+      h21: "Afro"
+      h22: "Long"
+    beard:
+      b0: "None"
+      b1: "Beard #1"
+      b2: "Mustache #1"
+      b3: "Beard #2"
+      b4: "Mustache #2"
+      b5: "Curly Mustache"
+      b6: "Chin Beard"
+      b7: "French Mustache"
+      b8: "Large Beard"
+      b9: "Viking Beard"
+      b10: "Long Beard"
+      b11: "Hobo Beard"
+      b12: "Long Mustache"
+      b13: "Long Thin Mustache"
+      b14: "Large Chin Beard"
+      b15: "Goatee"
+    skinColor:
+      format: "Skin #{0}"
+    hairColor:
+      format: "Hair #{0}"
+  logicDescriptor:
+    values:
+      none: "No values will match"
+      list: "Values that will match: {0}"
+    logic:
+      set:
+        none: "Nothing will match"
+        lessThan: "Anything less than '{0}' will match"
+        lessThanOrEqual: "'{0}' and anything less will match"
+        equal: "'{0}' will match"
+        notEqual: "Anything besides '{0}' will match"
+        greaterThan: "Anything greater than '{0}' will match"
+        greaterThanOrEqual: "'{0}' and anything greater will match"
+      unset:
+        none: "Only unset will match"
+        lessThan: "Unset and anything less than '{0}' will match"
+        lessThanOrEqual: "Unset, '{0}' and anything less will match"
+        equal: "Unset and '{0}' will match"
+        notEqual: "Unset and anything besides '{0}' will match"
+        greaterThan: "Unset and anything greater than '{0}' will match"
+        greaterThanOrEqual: "Unset, '{0}' and anything greater will match"
+  format:
+    file:
+      project: "Asset Editor Project"
+      legacyProject: "NPC Maker Project"
+      addon: "Compressed Zip Archive"
+      vendorTable: "CSV Table"
+      image: "Supported Background Format"
+    findReplace:
+      character:
+        id: "Character ID"
+        guid: "Character GUID"
+        guidid: "Character GUID/ID"
+      dialogue:
+        id: "Dialogue ID"
+        guid: "Dialogue GUID"
+        guidid: "Dialogue GUID/ID"
+      vendor:
+        id: "Vendor ID"
+        guid: "Vendor GUID"
+        guidid: "Vendor GUID/ID"
+      quest:
+        id: "Quest ID"
+        guid: "Quest GUID"
+        guidid: "Quest GUID/ID"
+      item:
+        id: "Item ID"
+        guid: "Item GUID"
+        guidid: "Item GUID/ID"
+      vehicle:
+        id: "Vehicle ID"
+        guid: "Vehicle GUID"
+        guidid: "Vehicle GUID/ID"
+      spawn:
+        id: "Spawn ID"
+        guid: "Spawn GUID"
+        guidid: "Spawn GUID/ID"
+      object:
+        id: "Object ID"
+        guid: "Object GUID"
+        guidid: "Object GUID/ID"
+      spawnpoint: "Spawnpoint ID"
+      flag:
+        id: "Flag ID"
+      currency:
+        guid: "Currency GUID"
+      animal:
+        id: "Animal ID"
+        guid: "Animal GUID"
+        guidid: "Animal GUID/ID"
+      weather:
+        guid: "Weather GUID"
+  filter:
+    asset:
+      equippable: "Equippable"
+      destructible: "Destructible"
+      origin:
+        vanilla: "Only Vanilla Assets"
+        workshop: "Only Workshop Assets"
+        project: "Only Project Assets"
+  link:
+    step:
+      assets:
+        scan:
+          unturned: "Scanning Unturned assets"
+          workshop: "Scanning Workshop assets [{0}]"
+        import:
+          unturned: "Linking Unturned assets"
+          workshop: "Linking Workshop assets [{0}]"
+      masterBundle:
+        scan:
+          unturned: "Scanning Unturned bundles"
+          workshop: "Scanning Workshop bundles"
+        import:
+          unturned: "Linking Unturned bundles"
+          workshop: "Linking Workshop bundles"
+      levels:
+        import:
+          unturned: "Linking Unturned maps"
+          workshop: "Linking Workshop maps"
+      activate:
+        text: "Activating assets"
+  error:
+    common:
+      guidId:
+        upgrade: "It is highly discouraged to continue using old IDs."
+      conditionType:
+        notSupported: "Condition of type '{0}' is not supported in '{1}'."
+      limit:
+        normal:
+          exceed: "There are more items in collection ({0}) than supported ({1})"
+        virtual:
+          exceed: "There are more items in collection when exported ({0}) than supported ({1})"
+    asset:
+      name:
+        invalid: "Export name contains one or more prohibited symbols ({0})."
+        language: "Export name cannot be the same as one of the Steam languages."
+      guid:
+        zero: "Guid cannot be empty."
+        taken: "Guid '{0:N}' is already taken by '{1}'."
+      id:
+        zero: "ID cannot be zero."
+        officialRange: "ID cannot be within official range. Allowed range: [{0} -> {1}]."
+        taken: "ID '{0}' is already taken by '{1}'."
+      bypassidlimit: "It is recommended to leave 'Bypass ID Limit' disabled."
+      item:
+        useable:
+          unexpected: "Unexpected useable type for this type of item."
+        barricade:
+          build:
+            unexpected: "Unexpected build type for this type of barricade."
+        generator:
+          wirerange:
+            limit: "Wirerange is greater than max supported power range of {0}."
+          burn:
+            zero: "Burn rate should be greater than zero. Otherwise, generator will use all of its fuel in a moment."
+        storage:
+          capacity:
+            width:
+              zero: "Horizontal capacity should not be zero."
+            height:
+              zero: "Vertical capacity should not be zero."
+        map:
+          none: "Map item does nothing in terms of... mapping."
+        optic:
+          zoom:
+            zero: "Zoom value should not be equal to zero."
+        weapon:
+          gun:
+            range:
+              mismatch: "Range and Manual Ballistic range are mismatched by {0} meters. Recommended to only have one or the other specified!"
+      npc:
+        character:
+          equipment:
+            equipped:
+              empty: "Selected equipped slot is empty."
+        dialogue:
+          messages:
+            none: "Dialogue must contain at least one message."
+            nonConditioned: "Messages after message #{0} will never appear."
+          message:
+            pages:
+              none: "Message #{0} does not have any pages in it."
+            page:
+              text:
+                empty: "Page #{0} is empty."
+          response:
+            text:
+              empty: "Response #{0} is empty."
+        vendor:
+          name:
+            empty: "Empty vendor name."
+          description:
+            empty: "Empty vendor description."
+          items:
+            none: "It is recommended for a vendor to have items to sell/buy."
+            buying:
+              max: "Too many items in 'Buying' section. Maximum: {0}"
+            selling:
+              max: "Too many items in 'Selling' section. Maximum: {0}"
+          element:
+            base:
+              id:
+                zero: "Vendor Item #{0} has an id of zero."
+              cost:
+                zero: "Vendor Item #{0} is free."
+            selling:
+              vehicle:
+                spawnpoint:
+                  empty: "Selling vehicle #{0} has an empty spawnpoint ID."
+        quest:
+          name:
+            empty: "Empty quest name."
+          description:
+            empty: "Empty quest description."
+          conditions:
+            none: "It is required for a quest to have conditions."
+          rewards:
+            none: "It is recommended for a quest to have rewards."
+      object:
+        normal:
+          interactability:
+            rubble: "Do not use interactability rubble (app limitation)."
+            npc: "Do not use interactability NPC. Use Character asset instead."
+      vehicle:
+        turrets:
+          max: "Max count of turrets ({0}/{1}) exceeded."
+      spawn:
+        root:
+          spawnId:
+            zero: "Root #{0} has no Spawn ID."
+            recursion: "Root #{0} has same Spawn ID, resulting in recursion."
+          weight:
+            zero: "Root #{0} has no weight."
+          legacy:
+            toV2: "Root #{0} can be turned to V2 form."
+        table:
+          spawnId:
+            zero: "Table #{0} has no Spawn ID."
+            recursion: "Table #{0} has same Spawn ID, resulting in recursion."
+          assetId:
+            zero: "Table #{0} has no Asset ID."
+          weight:
+            zero: "Table #{0} has no weight."
+          legacy:
+            toV2: "Table #{0} can be turned to V2 form."
+      currency:
+        entries:
+          none: "It is required for a currency to have at least one entry."
+          valueOfOne: "It is highly recommended for a currency to have an entry with value of one."
+        item:
+          id:
+            empty: "Currency Item #{0} has an empty id."
+          value:
+            zero: "Currency Item #{0} has zero value."
+        format:
+          invalid: "Currency value format is not valid."
+          noEffect: "Currency value format has no effect because of missing placeholder."
+        conditionFormat:
+          invalid: "Currency condition value format is not valid."
+          noEffect: "Currency condition value format has no effect because of missing placeholder."
+    blueprint:
+      supply:
+        id:
+          zero: "Blueprint Supply #{0} has item id of zero."
+      output:
+        id:
+          zero: "Blueprint Product #{0} has item id of zero."
+    condition:
+      base:
+        uiRequirements:
+          parseError: "In condition #{0} UI requirements index '{1}' is not a number."
+          outOfBounds: "In condition #{0} UI requirements index '{1}' is out of bounds (allowed range is from 0 to {2})."
+      logic:
+        none: "Condition #{0} has logic 'NONE', which will result in this condition being always false."
+      currency:
+        guid:
+          none: "Condition #{0} has no currency GUID specified."
+      kills:
+        tree:
+          guid:
+            none: "Condition #{0} has no resource GUID specified."
+          value:
+            nonPositive: "Condition #{0} has value less than one, resulting in condition instantly completing."
+        object:
+          value:
+            lessThanOne: "Condition #{0} has value less than one, resulting in condition instantly completing."
+          guid:
+            none: "Condition #{0} has no object GUID specified."
+        zombie:
+          spawnQuantity:
+            nonPositive: "Condition #{0} has spawn quantity less than one."
+          value:
+            nonPositive: "Condition #{0} has value less than one, resulting in condition instantly completing."
+      quest:
+        reset:
+          noneStatus: "Condition #{0} tries to reset a quest with a 'none' status."
+        id:
+          none: "Condition #{0} has no quest GUID/ID specified."
+      player:
+        life:
+          food:
+            value:
+              outOfRange: "Condition #{0} has player food value being outside of 0 to 100 range."
+          health:
+            value:
+              outOfRange: "Condition #{0} has player health value being outside of 0 to 100 range."
+          water:
+            value:
+              outOfRange: "Condition #{0} has player water value being outside of 0 to 100 range."
+          virus:
+            value:
+              outOfRange: "Condition #{0} has player virus value being outside of 0 to 100 range."
+      weather:
+        blendAlpha:
+          guid:
+            none: "Condition #{0} has no weather GUID specified."
+        status:
+          guid:
+            none: "Condition #{0} has no weather GUID specified."
+      dateCounter:
+        divisor:
+          zero: "Condition #{0} has division by zero."
+    reward:
+      achievement:
+        id:
+          none: "Reward #{0} has no achievement ID specified."
+      currency:
+        guid:
+          none: "Reward #{0} has no currency GUID specified."
+      event:
+        id:
+          none: "Reward #{0} has no event ID specified."
+      experience:
+        value:
+          none: "Reward #{0} has value less than one, making it useless."
+      flag:
+        math:
+          operation:
+            none: "Reward #{0} has no operation specified."
+        short:
+          modification:
+            none: "Reward #{0} has no modification specified."
+        shortRandom:
+          modification:
+            none: "Reward #{0} has no modification specified."
+          value:
+            equal: "Reward #{0} can be optimized by changing type from random to fixed."
+      hint:
+        duration:
+          nonPositive: "Reward #{0} has a non-positive duration."
+      item:
+        id:
+          none: "Reward #{0} has no item GUID/ID specified."
+      quest:
+        id:
+          none: "Reward #{0} has no quest GUID/ID specified."
+      itemRandom:
+        id:
+          none: "Reward #{0} has no spawn ID specified."
+      reputation:
+        value:
+          none: "Reward #{0} has value that is zero, making it useless."
+      teleport:
+        spawnpoint:
+          none: "Reward #{0} has no spawnpoint ID specified."
+      vehicle:
+        id:
+          none: "Reward #{0} has no vehicle ID specified."
+      player:
+        life:
+          health:
+            value:
+              none: "Reward #{0} has value that is zero, making it useless."
+    node:
+      asset:
+        name:
+          taken: "File name '{0}' is already taken."
+      multiAsset:
+        name:
+          taken: "File name '{0}' is already taken."
+      collection:
+        name:
+          taken: "Folder name '{0}' is already taken."
+          invalid:
+            trail: "Folder name '{0}' is invalid. Remove these symbols from end of the name: '{1}'"
+        empty: "Folder '{0}' is empty. Empty folders should be removed to reduce risk of any problems."
+      file:
+        ref:
+          name:
+            taken: "File name '{0}' is already taken."
+          content:
+            notFound: "File '{0}' does not exist."
+        embed:
+          name:
+            taken: "File name '{0}' is already taken."
+  unit:
+    meter: "m."
+    second: "sec."
+    health: "HP"
+    food: "FP"
+    water: "WP"
+    virus: "VP"
+    experience: "XP"
+    reputation: "rep."
+    meterPerSecond: "m/s"
+    newton: "N"
+    degree: "°"
+externalKeys:
+  "System.Windows.HorizontalAlignment.Left": "Left"
+  "System.Windows.HorizontalAlignment.Center": "Center"
+  "System.Windows.HorizontalAlignment.Right": "Right"
+  "System.Windows.HorizontalAlignment.Stretch": "Stretch"
+
+  "System.Windows.VerticalAlignment.Top": "Top"
+  "System.Windows.VerticalAlignment.Center": "Center"
+  "System.Windows.VerticalAlignment.Bottom": "Bottom"
+  "System.Windows.VerticalAlignment.Stretch": "Stretch"
+
+  "System.Windows.Media.Stretch.None": "None"
+  "System.Windows.Media.Stretch.Fill": "Fill"
+  "System.Windows.Media.Stretch.Uniform": "Uniform"
+  "System.Windows.Media.Stretch.UniformToFill": "Uniform To Fill"
+tips:
+ - "You can clone linked assets to your project by clicking 'Clone to project' button"
+ - "You can link game assets to view them in app as if they were made in it"
+ - "You can drag most items in lists"
+ - "Hold 'Ctrl' and drag item to copy it"
+ - "Hold 'Ctrl' to duplicate element in collection while clicking on 'Copy' button"
+ - "Hold 'Ctrl + Shift' to duplicate element in collection and place it next to original item while clicking on 'Copy' button"
