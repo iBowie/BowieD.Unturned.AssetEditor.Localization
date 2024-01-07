@@ -12,7 +12,7 @@ Thanks in advance for contributing!
 
 # Utilites
 
-## SyncLoc
+## [SyncLoc](https://github.com/iBowie/BowieD.Unturned.AssetEditor.LocalizationTools/tree/master/SyncLoc)
 
 You can use this app to update localization, adding missing keys from the target one.
 
