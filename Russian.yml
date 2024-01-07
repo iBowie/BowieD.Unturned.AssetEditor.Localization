@@ -1,5 +1,5 @@
 authors:
- - "BowieD"
+- "BowieD"
 version: 1
 cultureCode: "ru-RU"
 keys:
@@ -19,9 +19,9 @@ keys:
             openNpcMakerProject: "Открыть проект NPC Maker"
           recent:
             header: "Недавние проекты"
-          recover: 
+          recover:
             header: "Восстановление проектов"
-            item: 
+            item:
               normal: "Сохранение при вылете #{0}"
               recent: "Сохранение при вылете #{0} (Самое недавнее)"
           export: "Экспорт проекта"
@@ -100,7 +100,7 @@ keys:
                   dialogue: "Диалог"
                   vendor: "Магазин"
                   quest: "Задание"
-                  workarounds: 
+                  workarounds:
                     header: "Временные решения"
                     nightCharacter: "Ночной персонаж"
                 item:
@@ -160,7 +160,7 @@ keys:
                   throwable: "Кидаемое"
                   tire: "Колесо"
                   tool: "Инструмент"
-                vehicle: 
+                vehicle:
                   header: "Транспорт"
                   vehicle: "Транспорт"
                   physicsProfile: "Физический профиль"
@@ -243,7 +243,7 @@ keys:
           notifications:
             header: "Уведомления"
         link:
-          buttons: 
+          buttons:
             link: "Связать ассеты Unturned"
             cancel: "Отмена"
     configurationWindow:
@@ -251,7 +251,7 @@ keys:
       tabs:
         general:
           header: "Общее"
-          localization: 
+          localization:
             location: "Расположение файла локализации"
             select: "Выбрать"
             export: "Сделать дамп загруженной локализации"
@@ -354,7 +354,7 @@ keys:
             label: "Совместимость с системами контроля версий"
             toolTip: "Добавляет отступы в файл проекта, что занимает больше места на диске, но упрощает работу с системами контроля версий по типу GitHub."
           goToDataFolder: "Открыть папку с данными"
-          copySourceTranslationToTarget: 
+          copySourceTranslationToTarget:
             label: "Копировать исходный перевод в целевой"
             toolTip: "Копировать исходный перевод в целевой при переключении языка и когда перевод для него ещё не был создан"
           selectedClipboardManager: "Буфер обмена"
@@ -546,7 +546,7 @@ keys:
       notSupported:
         text: "Этот ассет пока что не поддерживается программой."
       notInDemo:
-        text: 
+        text:
           main: "Этот ассет доступен только в полной версии программы."
           link: "Получите полную версию, поддержав разработку на Boosty."
       tempNotAvailable:
@@ -679,7 +679,7 @@ keys:
         id: "ID"
         advanced:
           header: "Продвинутое"
-          ignoreNPOT: 
+          ignoreNPOT:
             label: "Игнорировать NPOT"
             toolTip: "Игнорировать ошибки в Unity, связанные с размером текстур не кратным двум."
           ignoreTexRW:
@@ -758,7 +758,7 @@ keys:
             inspectAudio: "Звук осмотра"
             equipablePrefab: "Префаб экипируемого предмета"
         caliber:
-          base: 
+          base:
             type: "Модуль"
             header: "Общие свойства модулей"
             recoil:
@@ -963,7 +963,7 @@ keys:
             pause: "Вставить паузу (Pause)"
           color:
             unity: "Unity"
-            unturned: 
+            unturned:
               header: "Unturned"
               skin: "Кожа"
               hair: "Волосы"
@@ -978,9 +978,9 @@ keys:
           reset: "Сбросить форматирование"
           toggleRaw: "Перейти в режим без форматирования"
     vector3:
-      "x": "X:"
-      "y": "Y:"
-      "z": "Z:"
+      x: "X:"
+      y: "Y:"
+      z: "Z:"
     spotLight:
       range: "Дальность"
       angle: "Угол"
@@ -988,7 +988,7 @@ keys:
       color: "Цвет"
       isEnabled: "Включить"
     bgSetting:
-      imageLocation: 
+      imageLocation:
         label: "Расположение изображения(-ий)"
         buttons:
           file: "Файл"
@@ -1084,14 +1084,14 @@ keys:
     barricade:
       build:
         fortification: "Укрепление"
-        barricade: 
+        barricade:
           generic: "Баррикада"
           wall: "Настенная баррикада"
         door: "Дверь"
         gate: "Ворота"
         bed: "Кровать"
         ladder: "Лестница"
-        storage: 
+        storage:
           normal: "Хранилище"
           wall: "Настенное хранилище"
         farm: "Растение"
@@ -1103,7 +1103,7 @@ keys:
         spot: "Прожектор"
         safezone: "Генератор безопасной зоны"
         freeform: "Свободная установка"
-        sign: 
+        sign:
           normal: "Табличка"
           wall: "Настенная табличка"
         vehicle: "Транспорт"
@@ -1115,7 +1115,7 @@ keys:
         shutter: "Ставни"
         tank: "Цистерна"
         charge: "Бомба"
-        sentry: 
+        sentry:
           normal: "Турель"
           freeform: "Свободная турель"
         oven: "Плита"
@@ -1147,7 +1147,7 @@ keys:
       train: "Поезд"
     graphics:
       quality:
-        "off": "Выкл."
+        off: "Выкл."
         low: "Низк."
         medium: "Средн."
         high: "Высок."
@@ -1383,8 +1383,8 @@ keys:
           custom: "Свой текст"
         nav:
           none: "Нет"
-          "on": "Включено"
-          "off": "Выключено"
+          on: "Включено"
+          off: "Выключено"
         power:
           none: "Нет"
           toggle: "Требует энергию для переключения"
@@ -1652,7 +1652,7 @@ keys:
         water:
           value: "Процент жажды"
           display: "Жажда игрока {0} {1}"
-        virus: 
+        virus:
           value: "Процент заражения"
           display: "Заражение игрока {0} {1}"
     holiday:
@@ -2331,20 +2331,19 @@ externalKeys:
   "System.Windows.HorizontalAlignment.Center": "По центру"
   "System.Windows.HorizontalAlignment.Right": "Справа"
   "System.Windows.HorizontalAlignment.Stretch": "Растянуть"
-
   "System.Windows.VerticalAlignment.Top": "Сверху"
   "System.Windows.VerticalAlignment.Center": "По центру"
   "System.Windows.VerticalAlignment.Bottom": "Снизу"
   "System.Windows.VerticalAlignment.Stretch": "Растянуть"
-
   "System.Windows.Media.Stretch.None": "Нет"
   "System.Windows.Media.Stretch.Fill": "Заполнить"
   "System.Windows.Media.Stretch.Uniform": "Вместить"
   "System.Windows.Media.Stretch.UniformToFill": "Вместить без краёв"
 tips:
- - "Вы можете клонировать связанные ассеты в свой проект нажав кнопку 'Клонировать в проект'"
- - "Вы можете связать ассеты из игры в программу для просмотра и улучшения функционала"
- - "Вы можете таскать предметы в списках"
- - "Удерживайте 'Ctrl' и перетаскивайте элемент списка чтобы скопировать его"
- - "Удерживайте 'Ctrl' чтобы дублировать предмет в списке, нажимая на кнопку 'Копировать'"
- - "Удерживайте 'Ctrl + Shift' чтобы дублировать предмет в списке и разместить тут же, нажимая на кнопку 'Копировать'"
+- "Вы можете клонировать связанные ассеты в свой проект нажав кнопку 'Клонировать в проект'"
+- "Вы можете связать ассеты из игры в программу для просмотра и улучшения функционала"
+- "Вы можете таскать предметы в списках"
+- "Удерживайте 'Ctrl' и перетаскивайте элемент списка чтобы скопировать его"
+- "Удерживайте 'Ctrl' чтобы дублировать предмет в списке, нажимая на кнопку 'Копировать'"
+- "Удерживайте 'Ctrl + Shift' чтобы дублировать предмет в списке и разместить тут же, нажимая на кнопку 'Копировать'"
+...

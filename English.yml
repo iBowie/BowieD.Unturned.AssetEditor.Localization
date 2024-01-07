@@ -1,5 +1,5 @@
 authors:
- - "BowieD"
+- "BowieD"
 version: 1
 cultureCode: "en-US"
 keys:
@@ -19,9 +19,9 @@ keys:
             openNpcMakerProject: "Open NPC Maker Project"
           recent:
             header: "Recent Projects"
-          recover: 
+          recover:
             header: "Recover Projects"
-            item: 
+            item:
               normal: "Crash Save #{0}"
               recent: "Crash Save #{0} (Most Recent)"
           export: "Export Project"
@@ -100,7 +100,7 @@ keys:
                   dialogue: "Dialogue"
                   vendor: "Vendor"
                   quest: "Quest"
-                  workarounds: 
+                  workarounds:
                     header: "Workarounds"
                     nightCharacter: "Night Character"
                 item:
@@ -160,7 +160,7 @@ keys:
                   throwable: "Throwable"
                   tire: "Tire"
                   tool: "Tool"
-                vehicle: 
+                vehicle:
                   header: "Vehicles"
                   vehicle: "Vehicle"
                   physicsProfile: "Physics Profile"
@@ -243,7 +243,7 @@ keys:
           notifications:
             header: "Notifications"
         link:
-          buttons: 
+          buttons:
             link: "Link Unturned Assets"
             cancel: "Cancel"
     configurationWindow:
@@ -251,7 +251,7 @@ keys:
       tabs:
         general:
           header: "General"
-          localization: 
+          localization:
             location: "Localization File Location"
             select: "Select"
             export: "Dump loaded localization"
@@ -354,7 +354,7 @@ keys:
             label: "Version Control Compatibility"
             toolTip: "Indents project structure on save, which takes more space on hard drive, but allows for line-based version control"
           goToDataFolder: "Go to data folder"
-          copySourceTranslationToTarget: 
+          copySourceTranslationToTarget:
             label: "Copy source translation to target language"
             toolTip: "Copy source translation to target language when switching between languages and text is not yet have been created"
           selectedClipboardManager: "Clipboard Manager"
@@ -546,7 +546,7 @@ keys:
       notSupported:
         text: "This asset type is not yet supported to view or edit in the app."
       notInDemo:
-        text: 
+        text:
           main: "This asset type is only available in full version of the app."
           link: "Get the full version by supporting development on Boosty."
       tempNotAvailable:
@@ -679,7 +679,7 @@ keys:
         id: "ID"
         advanced:
           header: "Advanced"
-          ignoreNPOT: 
+          ignoreNPOT:
             label: "Ignore NPOT"
             toolTip: "Ignore errors in Unity related to texture being the size of non-power of two"
           ignoreTexRW:
@@ -758,7 +758,7 @@ keys:
             inspectAudio: "Inspect Audio"
             equipablePrefab: "Equipable Prefab"
         caliber:
-          base: 
+          base:
             type: "Caliber"
             header: "Common Caliber Properties"
             recoil:
@@ -963,7 +963,7 @@ keys:
             pause: "Insert Pause (Pause)"
           color:
             unity: "Unity"
-            unturned: 
+            unturned:
               header: "Unturned"
               skin: "Skin"
               hair: "Hair"
@@ -978,9 +978,9 @@ keys:
           reset: "Reset formatting"
           toggleRaw: "Enter raw edit mode"
     vector3:
-      "x": "X:"
-      "y": "Y:"
-      "z": "Z:"
+      x: "X:"
+      y: "Y:"
+      z: "Z:"
     spotLight:
       range: "Range"
       angle: "Angle"
@@ -988,7 +988,7 @@ keys:
       color: "Color"
       isEnabled: "Is Enabled"
     bgSetting:
-      imageLocation: 
+      imageLocation:
         label: "Image(s) Location"
         buttons:
           file: "File"
@@ -1084,14 +1084,14 @@ keys:
     barricade:
       build:
         fortification: "Fortification"
-        barricade: 
+        barricade:
           generic: "Barricade"
           wall: "Wall Barricade"
         door: "Door"
         gate: "Gate"
         bed: "Bed"
         ladder: "Ladder"
-        storage: 
+        storage:
           normal: "Storage"
           wall: "Wall Storage"
         farm: "Crop"
@@ -1103,7 +1103,7 @@ keys:
         spot: "Spotlight"
         safezone: "Safezone"
         freeform: "Freeform"
-        sign: 
+        sign:
           normal: "Sign"
           wall: "Wall Sign"
         vehicle: "Vehicle"
@@ -1115,7 +1115,7 @@ keys:
         shutter: "Shutter"
         tank: "Resource Tank"
         charge: "Charge"
-        sentry: 
+        sentry:
           normal: "Sentry"
           freeform: "Freeform Sentry"
         oven: "Oven"
@@ -1147,7 +1147,7 @@ keys:
       train: "Train"
     graphics:
       quality:
-        "off": "Off"
+        off: "Off"
         low: "Low"
         medium: "Medium"
         high: "High"
@@ -1383,8 +1383,8 @@ keys:
           custom: "Custom Text"
         nav:
           none: "None"
-          "on": "On"
-          "off": "Off"
+          on: "On"
+          off: "Off"
         power:
           none: "None"
           toggle: "Requires power to toggle"
@@ -1652,7 +1652,7 @@ keys:
         water:
           value: "Water Percentage"
           display: "Player Water {0} {1}"
-        virus: 
+        virus:
           value: "Virus Percentage"
           display: "Player Virus {0} {1}"
     holiday:
@@ -2331,20 +2331,19 @@ externalKeys:
   "System.Windows.HorizontalAlignment.Center": "Center"
   "System.Windows.HorizontalAlignment.Right": "Right"
   "System.Windows.HorizontalAlignment.Stretch": "Stretch"
-
   "System.Windows.VerticalAlignment.Top": "Top"
   "System.Windows.VerticalAlignment.Center": "Center"
   "System.Windows.VerticalAlignment.Bottom": "Bottom"
   "System.Windows.VerticalAlignment.Stretch": "Stretch"
-
   "System.Windows.Media.Stretch.None": "None"
   "System.Windows.Media.Stretch.Fill": "Fill"
   "System.Windows.Media.Stretch.Uniform": "Uniform"
   "System.Windows.Media.Stretch.UniformToFill": "Uniform To Fill"
 tips:
- - "You can clone linked assets to your project by clicking 'Clone to project' button"
- - "You can link game assets to view them in app as if they were made in it"
- - "You can drag most items in lists"
- - "Hold 'Ctrl' and drag item to copy it"
- - "Hold 'Ctrl' to duplicate element in collection while clicking on 'Copy' button"
- - "Hold 'Ctrl + Shift' to duplicate element in collection and place it next to original item while clicking on 'Copy' button"
+- "You can clone linked assets to your project by clicking 'Clone to project' button"
+- "You can link game assets to view them in app as if they were made in it"
+- "You can drag most items in lists"
+- "Hold 'Ctrl' and drag item to copy it"
+- "Hold 'Ctrl' to duplicate element in collection while clicking on 'Copy' button"
+- "Hold 'Ctrl + Shift' to duplicate element in collection and place it next to original item while clicking on 'Copy' button"
+...
