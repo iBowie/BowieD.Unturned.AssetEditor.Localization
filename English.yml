@@ -195,6 +195,8 @@ keys:
                 toDirectory: "...to folder"
                 toSandbox: "...to Unturned Sandbox"
               rename: "Rename (F2)"
+              expandAll: "Expand All"
+              collapseAll: "Collapse All"
               copy: "Copy"
               duplicate: "Duplicate"
               paste: "Paste"

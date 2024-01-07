@@ -195,6 +195,8 @@ keys:
                 toDirectory: "...в папку"
                 toSandbox: "...в песочницу Unturned"
               rename: "Переименовать (F2)"
+              expandAll: "Развернуть всё"
+              collapseAll: "Свернуть всё"
               copy: "Копировать"
               duplicate: "Дублировать"
               paste: "Вставить"
