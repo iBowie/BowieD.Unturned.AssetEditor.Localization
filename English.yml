@@ -914,6 +914,7 @@ keys:
             type: "Throwable"
       npc:
         dialogue:
+          type: "NPC Dialogue"
           message:
             addPageButton: "Add Page"
             nextDialogue: "Next Dialogue"
@@ -930,6 +931,50 @@ keys:
             text: "Response Text"
             conditions: "Conditions"
             rewards: "Rewards"
+        vendor:
+          type: "NPC Vendor"
+        quest:
+          type: "NPC Quest"
+      object:
+        base:
+          type: "Object"
+        decal:
+          type: "Decal"
+        normal:
+          type: "Object"
+        npc:
+          type: "NPC Character"
+      animal:
+        type: "Animal"
+      effect:
+        type: "Effect"
+      airdrop:
+        type: "Airdrop"
+      craftingBlockList:
+        type: "Crafting Blocklist"
+      level:
+        type: "Level"
+      outfit:
+        type: "Outfit"
+      skin:
+        type: "Skin"
+      song:
+        type: "Song"
+      resource:
+        type: "Resource"
+      spawn:
+        type: "Spawn"
+      vehicle:
+        type: "Vehicle"
+      vehiclePhysicsProfile:
+        type: "Vehicle Physics Profile"
+      weather:
+        base:
+          type: "Weather Base"
+        basic:
+          type: "Weather"
+      zombieDifficulty:
+        type: "Zombie Difficulty"
     editable:
       distanceMarker:
         distance: "Distance"
@@ -944,6 +989,19 @@ keys:
         angle: "Angle"
         intensity: "Intensity"
         color: "Color"
+      vehicle:
+        turretInfo:
+          display: "Seat Index: {0}"
+          seatIndex: "Seat Index"
+          itemId: "Item"
+          yaw:
+            min: "Min Yaw"
+            max: "Max Yaw"
+          pitch:
+            min: "Min Pitch"
+            max: "Max Pitch"
+          useAimCamera: "Use Aim Camera"
+          aimOffset: "Aim Offset"
     genericCollection:
       addButton: "Add New"
       pasteButton: "Paste"

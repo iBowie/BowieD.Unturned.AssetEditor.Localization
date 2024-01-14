@@ -914,6 +914,7 @@ keys:
             type: "Бросаемое оружие"
       npc:
         dialogue:
+          type: "Диалог NPC"
           message:
             addPageButton: "Добавить страницу"
             nextDialogue: "Возвратный диалог"
@@ -930,6 +931,50 @@ keys:
             text: "Текст ответа"
             conditions: "Условия"
             rewards: "Награды"
+        vendor:
+          type: "Магазин NPC"
+        quest:
+          type: "Задание NPC"
+      object:
+        base:
+          type: "Объект"
+        decal:
+          type: "Декаль"
+        normal:
+          type: "Объект"
+        npc:
+          type: "Персонаж NPC"
+      animal:
+        type: "Животное"
+      effect:
+        type: "Эффект"
+      airdrop:
+        type: "Аирдроп"
+      craftingBlockList:
+        type: "Запрещённые чертежи"
+      level:
+        type: "Уровень"
+      outfit:
+        type: "Костюм"
+      skin:
+        type: "Скин"
+      song:
+        type: "Музыка"
+      resource:
+        type: "Ресурс"
+      spawn:
+        type: "Спавн"
+      vehicle:
+        type: "Транспорт"
+      vehiclePhysicsProfile:
+        type: "Физический профиль транспорта"
+      weather:
+        base:
+          type: "База для погоды"
+        basic:
+          type: "Погода"
+      zombieDifficulty:
+        type: "Сложность зомби"
     editable:
       distanceMarker:
         distance: "Расстояние"
@@ -944,6 +989,19 @@ keys:
         angle: "Угол"
         intensity: "Интенсивность"
         color: "Цвет"
+      vehicle:
+        turretInfo:
+          display: "Индекс сиденья: {0}"
+          seatIndex: "Индекс сиденья"
+          itemId: "Предмет"
+          yaw:
+            min: "Минимальный угол"
+            max: "Максимальный угол"
+          pitch:
+            min: "Минимальный наклон"
+            max: "Максимальный наклон"
+          useAimCamera: "Использовать камеру прицела"
+          aimOffset: "Смещение прицела"
     genericCollection:
       addButton: "Добавить"
       pasteButton: "Вставить"
