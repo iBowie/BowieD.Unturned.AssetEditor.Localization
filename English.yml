@@ -231,6 +231,14 @@ keys:
               onlyWarn: "Only warnings"
               onlyAboveError: "Only errors"
             clearErrors: "Clear errors"
+          error:
+            contextMenu:
+              applyQuick: "Apply Quick Fix"
+              ignore:
+                label: "Ignore this error..."
+                globally: "Globally"
+                project: "In Current Project"
+              additionalFixes: "Additional fixes..."
         tools:
           projectSettings:
             header: "Project Settings"

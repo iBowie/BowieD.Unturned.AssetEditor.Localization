@@ -231,6 +231,14 @@ keys:
               onlyWarn: "Только предупреждения"
               onlyAboveError: "Только ошибки"
             clearErrors: "Очистить список"
+          error:
+            contextMenu:
+              applyQuick: "Применить быстрый фикс"
+              ignore:
+                label: "Игнорировать эту ошибку..."
+                globally: "Глобально"
+                project: "В текущем проекте"
+              additionalFixes: "Дополнительные фиксы..."
         tools:
           projectSettings:
             header: "Настройки проекта"
