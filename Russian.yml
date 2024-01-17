@@ -682,6 +682,7 @@ keys:
         contextMenu:
           selectAsset: "Выбрать ассет"
           goToAsset: "Перейти к ассету"
+          findUnusedId: "Найти неиспользованный ID"
       base:
         header: "Общие свойства ассета"
         exportName: "Имя при экспорте"

@@ -682,6 +682,7 @@ keys:
         contextMenu:
           selectAsset: "Select Asset"
           goToAsset: "Go to Asset"
+          findUnusedId: "Find unused ID"
       base:
         header: "Common Asset Properties"
         exportName: "Export Name"
