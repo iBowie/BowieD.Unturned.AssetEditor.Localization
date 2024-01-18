@@ -854,26 +854,71 @@ keys:
         clothing:
           base:
             type: "Одежда"
+            header: "Общие свойства одежды"
+            armor:
+              damage: "Множитель получаемого урона"
+              explosion: "Множитель получаемого урона от взрывов"
+              falling: "Множитель получаемого урона от падения"
+            proof:
+              water: "Даёт кислород под водой"
+              fire: "Даёт защиту от огня"
+              virus: "Даёт защиту от вируса"
+            preventFallingBreakingBones: "Предотвращает ломание ног от падения"
+            movementSpeedMultiplier: "Множитель скорости перемещения"
+            isVisibleOnRagdoll: "Отображается на трупе"
+            isHairVisible: "Не скрывает волосы игрока"
+            isBeardVisible: "Не скрывает бороду игрока"
+            mirrorLeftHanded: "Отражается для левши"
+            wearAudio: "Звук надевания"
+            shouldDestroyClothingColliders: "Уничтожать коллайдеры одежды"
+            priorityOverCosmeticOverride: "Имеет приоритет над скином"
+            skinOverride: "Перезапись скина"
           bag:
             base:
               type: "Сумка"
+              header: "Общие свойства сумок"
+              capacity:
+                x: "Вместимость по горизонтали"
+                y: "Вместимость по вертикали"
             shirt:
               type: "Верх"
+              header: "Свойства верха"
+              meshOverride:
+                firstPerson: "Есть замена модели для первого лица"
+                lods: "Количество моделей для замены от третьего лица"
+              hasMaterialOverride: "Есть замена материала"
+              ignoreHand: "Игнорировать руку"
             pants:
               type: "Штаны"
+              header: "Свойства штанов"
             vest:
               type: "Жилет"
+              header: "Свойства жилета"
             backpack:
               type: "Рюкзак"
+              header: "Свойства рюкзака"
           gear:
             base:
               type: "Снаряжение"
+              header: "Общие свойства снаряжения"
+              hairOverride: "Модель для замены волос"
             glasses:
               type: "Очки"
+              header: "Свойства очков"
+              isBlindfold: "Не даёт видеть"
+              vision: "Тип зрения"
+              nightVision:
+                color: "Цвет ночного видения"
+                fogIntensity: "Интенсивность тумана в ночном видении"
+                isAllowedInThirdPerson: "Ночное видение работает от третьего лица"
+              spotLight: "Настройки света"
             mask:
               type: "Маска"
+              header: "Свойства маски"
+              isEarpiece: "Наушник"
             hat:
               type: "Головной убор"
+              header: "Свойства головного убора"
         consumeable:
           base:
             type: "Расходуемое"

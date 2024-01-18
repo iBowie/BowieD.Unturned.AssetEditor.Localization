@@ -854,26 +854,71 @@ keys:
         clothing:
           base:
             type: "Clothing"
+            header: "Common Clothing Properties"
+            armor:
+              damage: "Incoming Damage Multiplier"
+              explosion: "Incoming Explosion Damage Multiplier"
+              falling: "Incoming Falling Damage Multiplier"
+            proof:
+              water: "Gives Oxygen Underwater"
+              fire: "Gives Fire Resistance"
+              virus: "Gives Virus Resistance"
+            preventFallingBreakingBones: "Prevents Breaking Bones From Falling"
+            movementSpeedMultiplier: "Movement Speed Multiplier"
+            isVisibleOnRagdoll: "Is Visible On Ragdoll"
+            isHairVisible: "Is Hair Visible"
+            isBeardVisible: "Is Beard Visible"
+            mirrorLeftHanded: "Should Mirror Left Handed Model"
+            wearAudio: "Wear Audio"
+            shouldDestroyClothingColliders: "Should Destroy Clothing Colliders"
+            priorityOverCosmeticOverride: "Override Priority Over Cosmetic"
+            skinOverride: "Skin Override"
           bag:
             base:
               type: "Bag"
+              header: "Common Bag Properties"
+              capacity:
+                x: "Width Capacity"
+                y: "Height Capacity"
             shirt:
               type: "Shirt"
+              header: "Shirt Properties"
+              meshOverride:
+                firstPerson: "Has First Person Mesh Override"
+                lods: "Third Person Mesh Override LODs"
+              hasMaterialOverride: "Has Material Override"
+              ignoreHand: "Ignore Hand"
             pants:
               type: "Pants"
+              header: "Pants Properties"
             vest:
               type: "Vest"
+              header: "Vest Properties"
             backpack:
               type: "Backpack"
+              header: "Backpack Properties"
           gear:
             base:
               type: "Gear"
+              header: "Common Gear Properties"
+              hairOverride: "Hair Override Model"
             glasses:
               type: "Glasses"
+              header: "Glasses Properties"
+              isBlindfold: "Is Blindfold"
+              vision: "Vision Type"
+              nightVision:
+                color: "Night Vision Color"
+                fogIntensity: "Night Vision Fog Intensity"
+                isAllowedInThirdPerson: "Is Night Vision Allowed In Third Person"
+              spotLight: "Spotlight Configuration"
             mask:
               type: "Mask"
+              header: "Mask Properties"
+              isEarpiece: "Is Earpiece"
             hat:
               type: "Hat"
+              header: "Hat Properties"
         consumeable:
           base:
             type: "Consumeable"
