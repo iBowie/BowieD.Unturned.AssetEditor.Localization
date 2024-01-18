@@ -936,6 +936,7 @@ keys:
               add: "Энергия"
             vision:
               add: "Галлюцинации"
+            oxygen: "Кислород"
             warmth:
               add: "Согревание"
             experience: "Опыт"

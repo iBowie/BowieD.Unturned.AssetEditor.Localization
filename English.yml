@@ -936,6 +936,7 @@ keys:
               add: "Energy"
             vision:
               add: "Hallucination"
+            oxygen: "Oxygen"
             warmth:
               add: "Warmth"
             experience: "Experience"
