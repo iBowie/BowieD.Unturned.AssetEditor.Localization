@@ -2466,6 +2466,8 @@ keys:
     food: "FP"
     water: "WP"
     virus: "VP"
+    energy: "AP"
+    oxygen: "OP"
     experience: "XP"
     reputation: "rep."
     meterPerSecond: "m/s"

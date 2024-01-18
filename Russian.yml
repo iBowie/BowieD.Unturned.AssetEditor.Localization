@@ -2466,6 +2466,8 @@ keys:
     food: "ОС"
     water: "ОЖ"
     virus: "ОВ"
+    energy: "ОД"
+    oxygen: "ОК"
     experience: "опыт(а)"
     reputation: "реп."
     meterPerSecond: "м/с"
