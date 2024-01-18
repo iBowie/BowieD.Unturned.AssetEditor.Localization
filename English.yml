@@ -922,12 +922,43 @@ keys:
         consumeable:
           base:
             type: "Consumeable"
+            header: "Common Consumeable Properties"
+            health:
+              add: "Health"
+            food:
+              add: "Food"
+            water:
+              add: "Water"
+            virus:
+              add: "Virus"
+              sub: "Disinfectant"
+            energy:
+              add: "Energy"
+            vision:
+              add: "Hallucination"
+            warmth:
+              add: "Warmth"
+            experience: "Experience"
+            rewards:
+              spawn: "Reward Spawn ID"
+              min: "Min Rewards"
+              max: "Max Rewards"
+              quest: "Rewards On Use"
+            bleeding: "Bleeding Modifier"
+            bones: "Bones Modifier"
+            effect: "Effect On Use"
+            aid: "Can Be Used On Other Players"
+            shouldDelete: "Should Delete After Use"
+            consumeAudio: "Consume Audio"
           food:
             type: "Food"
+            header: "Food Properties"
           water:
             type: "Drinkable"
+            header: "Drinkable Properties"
           medical:
             type: "Medical"
+            header: "Medical Properties"
         placeable:
           base:
             type: "Placeable"

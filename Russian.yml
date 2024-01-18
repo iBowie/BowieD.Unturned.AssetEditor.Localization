@@ -922,12 +922,43 @@ keys:
         consumeable:
           base:
             type: "Расходуемое"
+            header: "Общие свойства расходников"
+            health:
+              add: "Здоровье"
+            food:
+              add: "Еда"
+            water:
+              add: "Вода"
+            virus:
+              add: "Заражение"
+              sub: "Обеззараживание"
+            energy:
+              add: "Энергия"
+            vision:
+              add: "Галлюцинации"
+            warmth:
+              add: "Согревание"
+            experience: "Опыт"
+            rewards:
+              spawn: "ID спавна наград"
+              min: "Минимум наград"
+              max: "Максимум наград"
+              quest: "Награды при использовании"
+            bleeding: "Кровотечение"
+            bones: "Кости"
+            effect: "Эффект при использовании"
+            aid: "Можно использовать на других игроках"
+            shouldDelete: "Удалять после использования"
+            consumeAudio: "Звук использования"
           food:
             type: "Еда"
+            header: "Свойства еды"
           water:
             type: "Напиток"
+            header: "Свойства напитка"
           medical:
             type: "Медикамент"
+            header: "Свойства медикамента"
         placeable:
           base:
             type: "Постройка"
