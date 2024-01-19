@@ -732,6 +732,7 @@ keys:
           overrideShowQuality: "Отображение качества"
           equipableMovementSpeedMultiplier: "Множитель скорости игрока пока в руках"
           blueprints: "Чертежи"
+          actions: "Действия"
           icon:
             header: "Свойства иконки"
             auto: "Использовать автоматическое измерение размеров"
@@ -1095,6 +1096,15 @@ keys:
         origin: "Происхождение предмета"
         contextMenu:
           convertToSupply: "Преобразовать в ингредиент"
+      craftAction:
+        type: "Тип действия"
+        sourceItemId: "ID исходного предмета"
+        text: "Текст"
+        toolTip: "Подсказка"
+        blueprints: "Связанные чертежи"
+      craftActionBlueprint:
+        blueprintIndex: "Индекс чертежа"
+        isBlueprintLink: "Ссылка на чертёж"
       distanceMarker:
         distance: "Расстояние"
         lineOffset: "Смещение линии"
@@ -2360,6 +2370,11 @@ keys:
       output:
         id:
           zero: "Результат чертежа #{0} имеет нулевой ID предмета."
+    craftAction:
+      text:
+        empty: "Craft Action #{0} has empty action text."
+      blueprint:
+        invalidIndex: "Craft Action #{0}'s related blueprint #{1} has invalid blueprint index."
     condition:
       base:
         uiRequirements:

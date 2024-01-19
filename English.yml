@@ -732,6 +732,7 @@ keys:
           overrideShowQuality: "Override Show Quality"
           equipableMovementSpeedMultiplier: "Player Speed Multiplier When Held"
           blueprints: "Blueprints"
+          actions: "Actions"
           icon:
             header: "Icon Settings"
             auto: "Use Automatic Icon Measurements"
@@ -1095,6 +1096,15 @@ keys:
         origin: "Item Origin"
         contextMenu:
           convertToSupply: "Convert To Supply"
+      craftAction:
+        type: "Action Type"
+        sourceItemId: "Source Item ID"
+        text: "Action Text"
+        toolTip: "Action ToolTip"
+        blueprints: "Related Blueprints"
+      craftActionBlueprint:
+        blueprintIndex: "Blueprint Index"
+        isBlueprintLink: "Is Blueprint Link"
       distanceMarker:
         distance: "Distance"
         lineOffset: "Line Offset"
@@ -2360,6 +2370,11 @@ keys:
       output:
         id:
           zero: "Blueprint Product #{0} has item id of zero."
+    craftAction:
+      text:
+        empty: "Craft Action #{0} has empty action text."
+      blueprint:
+        invalidIndex: "Craft Action #{0}'s related blueprint #{1} has invalid blueprint index."
     condition:
       base:
         uiRequirements:
