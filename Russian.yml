@@ -1062,6 +1062,39 @@ keys:
       zombieDifficulty:
         type: "Сложность зомби"
     editable:
+      blueprint:
+        base:
+          supplies: "Ингредиенты"
+          tool: "Инструмент"
+          isToolCritical: "Для отображения нужен инструмент"
+          skill:
+            type: "Требуемый навык"
+            level: "Требуемый уровень навыка"
+          effect: "Эффект при создании"
+          map: "Карта"
+          conditions: "Условия"
+          rewards: "Награды"
+        normal:
+          products: "Результат"
+          transferState: "Перенос состояния"
+        repair:
+          displayText: "Ремонт при помощи: {0}"
+        ammo:
+          displayText: "Заполнение патронов при помощи: {0}"
+      blueprintSupply:
+        shouldRefParentItem: "Использовать содержащий предмет как ID"
+        item: "Предмет"
+        amount: "Количество"
+        isCritical: "Необходим для отображения"
+        contextMenu:
+          convertToOutput: "Преобразовать в результат"
+      blueprintOutput:
+        shouldRefParentItem: "Использовать содержащий предмет как ID"
+        item: "Предмет"
+        amount: "Количество"
+        origin: "Происхождение предмета"
+        contextMenu:
+          convertToSupply: "Преобразовать в ингредиент"
       distanceMarker:
         distance: "Расстояние"
         lineOffset: "Смещение линии"
@@ -1950,11 +1983,6 @@ keys:
       vehicle:
         spawnpoint: "Точка появления"
         display: "Транспорт '{0}' за {1} на '{2}'"
-  blueprint:
-    repair:
-      displayText: "Ремонт при помощи: {0}"
-    ammo:
-      displayText: "Заполнение патронов при помощи: {0}"
   color:
     none: "Нет"
     red: "Красный"

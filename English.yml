@@ -1062,6 +1062,39 @@ keys:
       zombieDifficulty:
         type: "Zombie Difficulty"
     editable:
+      blueprint:
+        base:
+          supplies: "Supplies"
+          tool: "Tool"
+          isToolCritical: "Is Tool Critical"
+          skill:
+            type: "Required Skill"
+            level: "Required Skill Level"
+          effect: "Craft Effect"
+          map: "Map"
+          conditions: "Conditions"
+          rewards: "Rewards"
+        normal:
+          products: "Products"
+          transferState: "Transfer State"
+        repair:
+          displayText: "Repair with: {0}"
+        ammo:
+          displayText: "Fill ammo with: {0}"
+      blueprintSupply:
+        shouldRefParentItem: "Use Parent Item as ID"
+        item: "Item"
+        amount: "Amount"
+        isCritical: "Is Critical"
+        contextMenu:
+          convertToOutput: "Convert To Output"
+      blueprintOutput:
+        shouldRefParentItem: "Use Parent Item as ID"
+        item: "Item"
+        amount: "Amount"
+        origin: "Item Origin"
+        contextMenu:
+          convertToSupply: "Convert To Supply"
       distanceMarker:
         distance: "Distance"
         lineOffset: "Line Offset"
@@ -1950,11 +1983,6 @@ keys:
       vehicle:
         spawnpoint: "Spawnpoint"
         display: "Vehicle '{0}' for {1} at '{2}'"
-  blueprint:
-    repair:
-      displayText: "Repair with: {0}"
-    ammo:
-      displayText: "Fill ammo with: {0}"
   color:
     none: "None"
     red: "Red"
