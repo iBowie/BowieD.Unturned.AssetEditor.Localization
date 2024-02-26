@@ -325,6 +325,9 @@ keys:
               link: "Get the full version by supporting development on Boosty."
             name: "Global asset watermark"
             toolTip: "This watermark will be written in every project you export."
+          writeDescriptiveComments:
+            name: "Write Descriptive Comments"
+            toolTip: "Writes descriptive comments (i.e. item names next to item IDs) in exported assets. This significantly increases exporting time."
         addons:
           notInDemo:
             text: "Addons are only available in full version."
