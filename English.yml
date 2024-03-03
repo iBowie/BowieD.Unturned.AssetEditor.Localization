@@ -495,7 +495,13 @@ keys:
       step:
         scan: "Scanning folder"
         load: "Importing assets [{0:P0}]"
+  status:
+    project:
+      saved: "Project saved!"
+      exported: "Export complete!"
   message:
+    common:
+      close: "Close"
     earlyAccess:
       caption: "Thanks for supporting!"
       text: "You are using an early access build of the app, things may change.\nThank you for supporting me! This app is possible thanks to people supporting me!"
@@ -519,6 +525,11 @@ keys:
       notEmpty:
         caption: "Directory not empty"
         text: "Folder you are trying to export your project to is not empty.\nErase everything inside of this directory and proceed?\nWarning: everything inside '{0}' will be deleted."
+      complete:
+        caption: "Export complete!"
+        text: "Your project has been exported successfully."
+        commands:
+          goToResult: "Open folder"
     askDelete:
       caption: "Confirm deletion"
       text: "Are you sure you want to delete this? This action cannot be undone."
