@@ -418,6 +418,7 @@ keys:
           load: "Загрузить"
           unload: "Выгрузить"
           reload: "Перезагрузить"
+          configuration: "Настройка"
         tags: "Метки:"
     notesWindow:
       title: "Блокнот"

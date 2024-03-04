@@ -418,6 +418,7 @@ keys:
           load: "Load"
           unload: "Unload"
           reload: "Reload"
+          configuration: "Config"
         tags: "Tags:"
     notesWindow:
       title: "Notes"
