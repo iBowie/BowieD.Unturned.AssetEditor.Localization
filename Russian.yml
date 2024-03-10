@@ -8,36 +8,36 @@ keys:
       title: "BowieD's Unturned Asset Editor [{0}]"
       menu:
         file:
-          header: "Файл"
-          new: "Новый проект"
-          open: "Открыть проект"
-          save: "Сохранить проект"
-          saveAs: "Сохранить проект как..."
-          close: "Закрыть проект"
+          header: "_Файл"
+          new: "_Новый проект"
+          open: "_Открыть проект"
+          save: "_Сохранить проект"
+          saveAs: "Сохранить проект _как..."
+          close: "_Закрыть проект"
           legacy:
-            header: "Устаревшее"
-            openNpcMakerProject: "Открыть проект NPC Maker"
+            header: "_Устаревшее"
+            openNpcMakerProject: "_Открыть проект NPC Maker"
           recent:
-            header: "Недавние проекты"
+            header: "_Недавние проекты"
           recover:
-            header: "Восстановление проектов"
+            header: "_Восстановление проектов"
             item:
               normal: "Сохранение при вылете #{0}"
               recent: "Сохранение при вылете #{0} (Самое недавнее)"
-          export: "Экспорт проекта"
-          exportToSandbox: "Экспорт проекта в Unturned Sandbox"
-          exit: "Выход"
+          export: "_Экспорт проекта"
+          exportToSandbox: "_Экспорт проекта в Unturned Sandbox"
+          exit: "Вы_ход"
         edit:
-          header: "Правка"
-          findReplace: "Поиск и замена..."
-          flagList: "Флаги проекта"
+          header: "_Правка"
+          findReplace: "_Поиск и замена..."
+          flagList: "_Флаги проекта"
         tools:
-          header: "Инструменты"
-          idTables: "Генератор таблицы ID"
-          addons: "Аддоны"
-        options: "Настройки"
-        addons: "Аддоны"
-        about: "О программе"
+          header: "_Инструменты"
+          idTables: "Генератор _таблицы ID"
+          addons: "_Аддоны"
+        options: "_Настройки"
+        addons: "_Аддоны"
+        about: "_О программе"
       project:
         assetTab:
           readOnly: "ТОЛЬКО ДЛЯ ЧТЕНИЯ"

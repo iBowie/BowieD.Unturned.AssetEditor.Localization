@@ -8,36 +8,36 @@ keys:
       title: "BowieD's Unturned Asset Editor [{0}]"
       menu:
         file:
-          header: "File"
-          new: "New Project"
-          open: "Open Project"
-          save: "Save Project"
-          saveAs: "Save Project As"
-          close: "Close Project"
+          header: "_File"
+          new: "_New Project"
+          open: "_Open Project"
+          save: "_Save Project"
+          saveAs: "Save Project _As"
+          close: "_Close Project"
           legacy:
-            header: "Legacy"
-            openNpcMakerProject: "Open NPC Maker Project"
+            header: "_Legacy"
+            openNpcMakerProject: "_Open NPC Maker Project"
           recent:
-            header: "Recent Projects"
+            header: "_Recent Projects"
           recover:
-            header: "Recover Projects"
+            header: "Recover _Projects"
             item:
               normal: "Crash Save #{0}"
               recent: "Crash Save #{0} (Most Recent)"
-          export: "Export Project"
-          exportToSandbox: "Export Project to Unturned Sandbox"
-          exit: "Exit"
+          export: "_Export Project"
+          exportToSandbox: "Export Project to _Unturned Sandbox"
+          exit: "E_xit"
         edit:
-          header: "Edit"
-          findReplace: "Search & Replace..."
-          flagList: "Project Flags"
+          header: "_Edit"
+          findReplace: "_Search & Replace..."
+          flagList: "Project _Flags"
         tools:
-          header: "Tools"
-          idTables: "ID Table Generator"
-          addons: "Add-ons"
-        options: "Options"
-        addons: "Add-ons"
-        about: "About"
+          header: "_Tools"
+          idTables: "ID _Table Generator"
+          addons: "_Add-ons"
+        options: "_Options"
+        addons: "_Add-ons"
+        about: "A_bout"
       project:
         assetTab:
           readOnly: "READ-ONLY"
