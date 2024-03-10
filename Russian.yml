@@ -691,6 +691,10 @@ keys:
           description: "Описание"
         conditions: "Условия / Цели"
         rewards: "Награды"
+      currency:
+        valueFormat: "Формат валюты"
+        conditionValueFormat: "Формат валюты в условиях"
+        items: "Предметы"
   controls:
     asset:
       idControl:
@@ -1014,6 +1018,75 @@ keys:
             type: "Оружие ближнего боя"
           throwable:
             type: "Бросаемое оружие"
+        arrestStart:
+          type: "Наручники"
+          header: "Свойства наручников"
+          strength: "Сила"
+        arrestEnd:
+          type: "Ключ от наручников"
+          header: "Свойства ключа от наручников"
+          recover: "Открывает"
+        cloud:
+          type: "Зонт"
+          header: "Свойства зонта"
+          gravity: "Множитель гравитации"
+        detonator:
+          type: "Детонатор"
+        filter:
+          type: "Фильтр"
+        fisher:
+          type: "Удочка"
+          header: "Свойства удочки"
+          reward: "Таблица наград"
+        fuel:
+          type: "Канистра"
+          header: "Свойства канистры"
+          fuelAmount:
+            value: "Количество топлива"
+            estimation: "x{0} обычных канистр / x{1} промышленных канистр"
+          deleteAfterFillingTarget: "Удалять после заполнения цели"
+          alwaysSpawnFull: "Всегда появляется полной"
+        grower:
+          type: "Удобрение"
+        map:
+          type: "Карта"
+          header: "Свойства карты"
+          enableCompass: "Активирует компас"
+          enableChart: "Активирует карту"
+          enableGPS: "Активирует GPS"
+        optic:
+          type: "Оптика"
+          header: "Свойства оптики"
+          zoom: "Множитель увеличения"
+        refill:
+          type: "Фляга"
+          header: "Свойства фляги"
+          consumeAudioClip: "Звук потребления"
+          waterStats:
+            clean: "Эффект чистой воды"
+            salty: "Эффект солёной воды"
+            dirty: "Эффект грязной воды"
+            stat:
+              health: "Здоровье"
+              food: "Еда"
+              water: "Жажда"
+              virus: "Заражение"
+              stamina: "Энергия"
+              oxygen: "Кислород"
+        supply:
+          type: "Материал"
+        vehicleRepairTool:
+          base:
+            type: "Инструмент для автомобиля"
+          tire:
+            type: "Шина"
+            header: "Свойства шины"
+            mode: "Режим"
+        tool:
+          type: "Инструмент"
+      currency:
+        type: "Валюта"
+        error: "Ошибка"
       npc:
         dialogue:
           type: "Диалог NPC"
@@ -1120,6 +1193,10 @@ keys:
       craftActionBlueprint:
         blueprintIndex: "Индекс чертежа"
         isBlueprintLink: "Ссылка на чертёж"
+      currencyItem:
+        item: "Предмет"
+        value: "Стоимость"
+        isVisibleInVendorMenu: "Отображается в углу магазина"
       distanceMarker:
         distance: "Расстояние"
         lineOffset: "Смещение линии"

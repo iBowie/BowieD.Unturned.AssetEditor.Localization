@@ -691,6 +691,10 @@ keys:
           description: "Description"
         conditions: "Conditions / Goals"
         rewards: "Rewards"
+      currency:
+        valueFormat: "Value Format"
+        conditionValueFormat: "Condition Value Format"
+        items: "Items"
   controls:
     asset:
       idControl:
@@ -1014,6 +1018,75 @@ keys:
             type: "Melee Weapon"
           throwable:
             type: "Throwable"
+        arrestStart:
+          type: "Arrest Start"
+          header: "Arrest Start Properties"
+          strength: "Strength"
+        arrestEnd:
+          type: "Arrest End"
+          header: "Arrest End Properties"
+          recover: "Recover From"
+        cloud:
+          type: "Umbrella"
+          header: "Umbrella Properties"
+          gravity: "Gravity Multiplier"
+        detonator:
+          type: "Detonator"
+        filter:
+          type: "Filter"
+        fisher:
+          type: "Fishing Rod"
+          header: "Fishing Rod Properties"
+          reward: "Reward"
+        fuel:
+          type: "Fuel"
+          header: "Fuel Properties"
+          fuelAmount:
+            value: "Fuel Amount"
+            estimation: "x{0} normal gas cans / x{1} industrial gas cans"
+          deleteAfterFillingTarget: "Delete After Filling Target"
+          alwaysSpawnFull: "Always Spawn Full"
+        grower: 
+          type: "Fertilizer"
+        map:
+          type: "Map"
+          header: "Map Properties"
+          enableCompass: "Enables Compass"
+          enableChart: "Enables Chart"
+          enableGPS: "Enables GPS"
+        optic:
+          type: "Optic"
+          header: "Optic Properties"
+          zoom: "Zoom Factor"
+        refill:
+          type: "Refillable"
+          header: "Refillable Properties"
+          consumeAudioClip: "Consume Audio Clip"
+          waterStats:
+            clean: "Clean Water Stats"
+            salty: "Salty Water Stats"
+            dirty: "Dirty Water Stats"
+            stat:
+              health: "Health"
+              food: "Food"
+              water: "Water"
+              virus: "Virus"
+              stamina: "Stamina"
+              oxygen: "Oxygen"
+        supply:
+          type: "Supply"
+        vehicleRepairTool:
+          base:
+            type: "Vehicle Repair Tool"
+          tire:
+            type: "Tire"
+            header: "Tire Properties"
+            mode: "Mode"
+        tool:
+          type: "Tool"
+      currency:
+        type: "Currency"
+        error: "ERROR"
       npc:
         dialogue:
           type: "NPC Dialogue"
@@ -1120,6 +1193,10 @@ keys:
       craftActionBlueprint:
         blueprintIndex: "Blueprint Index"
         isBlueprintLink: "Is Blueprint Link"
+      currencyItem:
+        item: "Item"
+        value: "Value"
+        isVisibleInVendorMenu: "Is Visible In Vendor Menu"
       distanceMarker:
         distance: "Distance"
         lineOffset: "Line Offset"
