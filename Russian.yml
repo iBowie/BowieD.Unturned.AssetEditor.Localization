@@ -1090,6 +1090,24 @@ keys:
           type: "Погода"
       zombieDifficulty:
         type: "Сложность зомби"
+        header: "Свойства сложности зомби"
+        overridesSpawnChance: "Перезаписывает шансы спавна"
+        allowHordeBeacon: "Разрешить маяк орды"
+        chance:
+          crawler: "Шанс ползающего"
+          sprinter: "Шанс бегающего"
+          flanker: "Шанс невидимого"
+          burner: "Шанс огненного"
+          acid: "Шанс кислотного"
+          spirit: "Шанс призрачного"
+          dlRedVolatile: "Шанс красного прыгуна из Dying Light"
+          dlBlueVolatile: "Шанс синего прыгуна из Dying Light"
+          bossElectric: "Шанс электрического мега-зомби"
+          bossWind: "Шанс ветряного мега-зомби"
+          bossFire: "Шанс огненного мега-зомби"
+          bossElverStomper: "Шанс давящего мега-зомби (Elver)"
+        stunThresholdNormal: "Порог оглушения обычного зомби"
+        stunThresholdMega: "Порог оглушения мега-зомби"
     editable:
       blueprint:
         base:

@@ -1090,6 +1090,24 @@ keys:
           type: "Weather"
       zombieDifficulty:
         type: "Zombie Difficulty"
+        header: "Zombie Difficulty Properties"
+        overridesSpawnChance: "Overrides Spawn Chance"
+        allowHordeBeacon: "Allow Horde Beacon"
+        chance:
+          crawler: "Crawler Chance"
+          sprinter: "Sprinter Chance"
+          flanker: "Flanker Chance"
+          burner: "Burner Chance"
+          acid: "Acid Chance"
+          spirit: "Spirit Chance"
+          dlRedVolatile: "Dying Light Red Volatile Chance"
+          dlBlueVolatile: "Dying Light Blue Volatile Chance"
+          bossElectric: "Electric Boss Chance"
+          bossWind: "Wind Boss Chance"
+          bossFire: "Fire Boss Chance"
+          bossElverStomper: "Elver Stomper Boss Chance"
+        stunThresholdNormal: "Normal Stun Threshold"
+        stunThresholdMega: "Mega Stun Threshold"
     editable:
       blueprint:
         base:
