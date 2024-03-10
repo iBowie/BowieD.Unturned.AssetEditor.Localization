@@ -1076,6 +1076,9 @@ keys:
         type: "Resource"
       spawn:
         type: "Spawn"
+        header: "Spawn Asset Properties"
+        tables: "Tables"
+        roots: "Roots"
       vehicle:
         type: "Vehicle"
       vehiclePhysicsProfile:
@@ -1147,6 +1150,24 @@ keys:
         angle: "Angle"
         intensity: "Intensity"
         color: "Color"
+      spawn:
+        table:
+          base:
+            weight: "Weight"
+          legacyAsset:
+            id: "Asset"
+          legacySpawn:
+            id: "Spawn"
+          v2:
+            guid: "Asset or Spawn"
+        root:
+          base:
+            weight: "Weight"
+            isOverride: "Is Override"
+          legacySpawn:
+            id: "Spawn"
+          v2:
+            guid: "Spawn"
       vehicle:
         turretInfo:
           display: "Seat Index: {0}"

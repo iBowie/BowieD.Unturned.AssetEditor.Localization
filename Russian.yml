@@ -1076,6 +1076,9 @@ keys:
         type: "Ресурс"
       spawn:
         type: "Спавн"
+        header: "Свойства таблицы спавнов"
+        tables: "Таблицы"
+        roots: "Корни"
       vehicle:
         type: "Транспорт"
       vehiclePhysicsProfile:
@@ -1147,6 +1150,24 @@ keys:
         angle: "Угол"
         intensity: "Интенсивность"
         color: "Цвет"
+      spawn:
+        table:
+          base:
+            weight: "Вес"
+          legacyAsset:
+            id: "Ассет"
+          legacySpawn:
+            id: "Таблица спавнов"
+          v2:
+            guid: "Ассет или таблица спавнов"
+        root:
+          base:
+            weight: "Вес"
+            isOverride: "Перезаписывает оригинал"
+          legacySpawn:
+            id: "Таблица спавнов"
+          v2:
+            guid: "Таблица спавнов"
       vehicle:
         turretInfo:
           display: "Индекс сиденья: {0}"
