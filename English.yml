@@ -1790,6 +1790,9 @@ keys:
       uiRequirements:
         label: "Required Conditions Indicies"
         toolTip: "Makes this condition invisible until all required conditions have been met.\nIndicies start from zero, values separated by a comma, for instance, '0,1,2'.\n\nThis is a temporary solution and a much better UI for this will be made in future."
+      toolTip:
+        willReset: "Will reset"
+        willNotReset: "Will not reset"
     virtual:
       flagRange:
         minValue: "Lower range value"
