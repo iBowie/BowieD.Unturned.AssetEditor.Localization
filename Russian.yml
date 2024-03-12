@@ -222,6 +222,7 @@ keys:
             workArea: "Фон рабочей области"
             welcomeScreen: "Фон экрана приветствия"
             workAreaUsesWelcomeScreen: "Рабочая область использует настройки экрана приветствия"
+          disableAdvancedToolTips: "Отключить продвинутые подсказки"
         import:
           header: "Связка"
           autoImportOnStartUp: "Автоматически связывать ассеты при запуске"
