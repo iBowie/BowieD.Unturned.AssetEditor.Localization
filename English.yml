@@ -29,7 +29,8 @@ keys:
           exit: "E_xit"
         edit:
           header: "_Edit"
-          findReplace: "_Search & Replace..."
+          find: "_Search..."
+          findReplace: "Search & _Replace..."
           flagList: "Project _Flags"
         tools:
           header: "_Tools"
@@ -142,6 +143,7 @@ keys:
                 topLevel: "Sort All In Folder"
                 recursive: "Sort All In Subfolders"
               idTable: "Generate ID table"
+              findIn: "Search In"
               findReplaceIn: "Search & Replace In"
               regenerateGuids: "Regenerate GUIDs"
               delete: "Delete (Del)"
@@ -367,6 +369,14 @@ keys:
       buttons:
         find: "Search"
         replace: "Replace"
+        goto: "Go To Target"
+        close: "Close"
+    findWindow:
+      title: "Search"
+      findWith: "Find With"
+      searchResult: "Search Result"
+      buttons:
+        find: "Search"
         goto: "Go To Target"
         close: "Close"
     genericPropertyEditor:

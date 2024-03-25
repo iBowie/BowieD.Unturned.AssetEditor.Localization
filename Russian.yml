@@ -29,7 +29,8 @@ keys:
           exit: "Вы_ход"
         edit:
           header: "_Правка"
-          findReplace: "_Поиск и замена..."
+          find: "_Поиск..."
+          findReplace: "Поиск и _замена..."
           flagList: "_Флаги проекта"
         tools:
           header: "_Инструменты"
@@ -142,6 +143,7 @@ keys:
                 topLevel: "Сортировать всё в папке"
                 recursive: "Сортировать всё в под-папках"
               idTable: "Создать таблицу ID"
+              findIn: "Поиск в..."
               findReplaceIn: "Поиск и замена в..."
               regenerateGuids: "Перегенерировать GUIDы"
               delete: "Удалить (Del)"
@@ -367,6 +369,14 @@ keys:
       buttons:
         find: "Искать"
         replace: "Заменить"
+        goto: "Открыть цель"
+        close: "Закрыть"
+    findWindow:
+      title: "Поиск"
+      findWith: "Искать с"
+      searchResult: "Результат поиска"
+      buttons:
+        find: "Искать"
         goto: "Открыть цель"
         close: "Закрыть"
     genericPropertyEditor:
