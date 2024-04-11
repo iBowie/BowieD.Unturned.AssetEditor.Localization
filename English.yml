@@ -641,6 +641,108 @@ keys:
         valueFormat: "Value Format"
         conditionValueFormat: "Condition Value Format"
         items: "Items"
+      vehicle:
+        vehicleName: "Vehicle Name"
+        rarity: "Rarity"
+        engine: "Engine Type"
+        health:
+          header: "Health and vulnerability"
+          health: "Health"
+          healthOnSpawn:
+            min: "Min Health On Spawn"
+            max: "Max Health On Spawn"
+          isVulnerable: "Is Vulnerable"
+          isVulnerableToExplosions: "Is Vulnerable To Explosions"
+          isVulnerableToEnvironment: "Is Vulnerable To Environment"
+          isVulnerableToBumper: "Is Vulnerable To Bumper Hits"
+          isVulnerableTires: "Are Tires Vulnerable"
+        toggles:
+          header: "Toggles"
+          hasZip: "Has Zip"
+          hasBicycle: "Has Bicycle"
+          isReclined: "Is Reclined"
+          hasCrawler: "Has Crawler"
+          hasLockMouse: "Has Lock Mouse"
+          hasTraction: "Has Traction"
+          hasSleds: "Has Sleds"
+          hasClipPrefab: "Has Clip Prefab"
+        handling:
+          header: "Handling"
+          speed:
+            min: "Min Speed"
+            max: "Max Speed"
+          brake: "Brake Power"
+          lift: "Lift Power"
+          steer:
+            min: "Min Steer"
+            max: "Max Steer"
+            air:
+              min: "Min Air Steer"
+              max: "Max Air Steer"
+          airTurnResponsiveness: "Air Turn Responsiveness"
+          staminaBoost: "Stamina Boost"
+          staminaPowered: "Is Stamina Powered"
+          batteryPowered: "Is Battery Powered"
+          vehiclePhysicsProfile: "Physics Profile"
+        explosion:
+          header: "Explosion"
+          effect: "Explosion Effect"
+          causeDamage: "Should Explosion Cause Damage"
+          burnMaterials: "Should Explosion Burn Materials"
+        camera:
+          header: "Camera"
+          followDistance: "Follow Distance"
+          driverOffset: "Driver Offset"
+          passengerOffset: "Passenger Offset"
+        animation:
+          header: "Animation and sounds"
+          pitch:
+            idle: "Pitch Idle"
+            drive: "Pitch Drive"
+          bicycleAnimationSpeed: "Bicycle Animation Speed"
+        fuel:
+          header: "Fuel"
+          capacity: "Fuel Capacity"
+          burnRate: "Fuel Burn Rate"
+          fuelAtSpawn:
+            min: "Min Fuel At Spawn"
+            max: "Max Fuel At Spawn"
+          preview:
+            capacityInGasCans: "Capacity in gas cans:"
+            capacityInIndustrialGasCans: "Capacity in industrial gas cans:"
+            resultBurnRate: "Result burn rate: "
+            timeUntilEmpty:
+              a: "Time until empty: "
+              b: "seconds"
+        battery:
+          header: "Battery"
+          default: "Default Battery"
+          spawnChargeMultiplier: "Battery Spawn Charge Multiplier"
+          burnRate: "Battery Burn Rate"
+          whileDriving: "While Driving"
+          whileEmpty: "While Empty"
+          whileLightsOn: "While Headlights Are On"
+          whileSirensOn: "While Sirens Are On"
+          cannotSpawnWithBattery: "Cannot Spawn With A Battery"
+        turrets:
+          header: "Turrets"
+        trunk:
+          header: "Trunk"
+          width: "Capacity Width"
+          height: "Capacity Height"
+        skins:
+          header: "Skins"
+          sizeZ2: "Ortographic Camera Size"
+          sharedSkinName: "Shared Skin Name"
+          sharedSkinLookupId: "Shared Skin Lookup ID"
+        validation:
+          header: "Validation"
+          speed:
+            horizontal: "Valid Speed Horizontal"
+            up: "Valid Speed Up"
+            down: "Valid Speed Down"
+        ignitionAudioClip: "Ignition Audio Clip"
+        hornAudioClip: "Horn Audio Clip"
   controls:
     asset:
       idControl:

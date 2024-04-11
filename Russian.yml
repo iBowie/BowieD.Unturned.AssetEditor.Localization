@@ -641,6 +641,108 @@ keys:
         valueFormat: "Формат валюты"
         conditionValueFormat: "Формат валюты в условиях"
         items: "Предметы"
+      vehicle:
+        vehicleName: "Имя транспорта"
+        rarity: "Редкость"
+        engine: "Тип двигателя"
+        health:
+          header: "Прочность и уязвимость"
+          health: "Прочность"
+          healthOnSpawn:
+            min: "Мин. прочности при спавне"
+            max: "Макс. прочности при спавне"
+          isVulnerable: "Уязвим"
+          isVulnerableToExplosions: "Уязвим ко взрывам"
+          isVulnerableToEnvironment: "Уязвим к окружению"
+          isVulnerableToBumper: "Уязвим к ударам бампером"
+          isVulnerableTires: "Непробиваемые колёса"
+        toggles:
+          header: "Переключатели"
+          hasZip: "Использовать анимацию держания за руль велосипеда"
+          hasBicycle: "Использовать анимацию велосипеда"
+          isReclined: "Использовать альтернативную анимацию персонажа"
+          hasCrawler: "Отключить поворот колёс"
+          hasLockMouse: "Фиксирование мыши"
+          hasTraction: "Есть тяга на снегу"
+          hasSleds: "Есть сани"
+          hasClipPrefab: "Есть Clip префаб"
+        handling:
+          header: "Управление"
+          speed:
+            min: "Мин. скорость"
+            max: "Макс. скорость"
+          brake: "Сила тормоза"
+          lift: "Сила подъёма"
+          steer:
+            min: "Угол поворота медленный"
+            max: "Угол поворота на скорости"
+            air:
+              min: "Угол поворота в воздухе медленно"
+              max: "Угол поворота в воздухе на скорости"
+          airTurnResponsiveness: "Чувствительность поворота в воздухе"
+          staminaBoost: "Ускорение за счёт выносливости"
+          staminaPowered: "Использует энергию персонажа"
+          batteryPowered: "Использует энергию аккумулятора"
+          vehiclePhysicsProfile: "Физический профиль"
+        explosion:
+          header: "Взрыв"
+          effect: "Эффект взрыва"
+          causeDamage: "Взрыв причиняет урон"
+          burnMaterials: "Взрыв \"сжигает\" материалы"
+        camera:
+          header: "Камера"
+          followDistance: "Расстояние"
+          driverOffset: "Смещение водителя"
+          passengerOffset: "Смещение пассажира"
+        animation:
+          header: "Анимация и звуки"
+          pitch:
+            idle: "Высота звука в простое"
+            drive: "Высота звука в движении"
+          bicycleAnimationSpeed: "Скорость анимации велосипеда"
+        fuel:
+          header: "Топливо"
+          capacity: "Вместимость бака"
+          burnRate: "Скорость сжигания топлива"
+          fuelAtSpawn:
+            min: "Мин. топлива при спавне"
+            max: "Макс. топлива при спавне"
+          preview:
+            capacityInGasCans: "Вместимость в обычных канистрах:"
+            capacityInIndustrialGasCans: "Вместимость в промышленных канистрах:"
+            resultBurnRate: "Итоговая скорость сжигания:"
+            timeUntilEmpty:
+              a: "Время до опустошения бака:"
+              b: "сек."
+        battery:
+          header: "Аккумулятор"
+          default: "Аккумулятор по умолчанию"
+          spawnChargeMultiplier: "Множитель заряда аккумулятора при спавне"
+          burnRate: "Скорость расхода аккумулятора"
+          whileDriving: "Во время движения"
+          whileEmpty: "Без игроков в транспорте"
+          whileLightsOn: "С включенными фарами"
+          whileSirensOn: "С включенной сиреной"
+          cannotSpawnWithBattery: "Не может заспавниться с аккумулятором"
+        turrets:
+          header: "Турели"
+        trunk:
+          header: "Багажник"
+          width: "Вместимость по горизонтали"
+          height: "Вместимость по вертикали"
+        skins:
+          header: "Скины"
+          sizeZ2: "Ортографический размер камеры"
+          sharedSkinName: "Общее название скина"
+          sharedSkinLookupId: "Общий ID скина"
+        validation:
+          header: "Проверка"
+          speed:
+            horizontal: "Валидная скорость по горизонтали"
+            up: "Валидная скорость вверх"
+            down: "Валидная скорость вниз"
+        ignitionAudioClip: "Звук зажигания двигателя"
+        hornAudioClip: "Звук гудка"
   controls:
     asset:
       idControl:
