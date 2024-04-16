@@ -656,6 +656,8 @@ keys:
           isVulnerableToEnvironment: "Is Vulnerable To Environment"
           isVulnerableToBumper: "Is Vulnerable To Bumper Hits"
           isVulnerableTires: "Are Tires Vulnerable"
+          passengerExplosionArmorMultiplier: "Passenger Explosion Armor Multiplier"
+          childExplosionArmorMultiplier: "Buildables Explosion Armor Multiplier"
         toggles:
           header: "Toggles"
           hasZip: "Has Zip"
@@ -666,6 +668,12 @@ keys:
           hasTraction: "Has Traction"
           hasSleds: "Has Sleds"
           hasClipPrefab: "Has Clip Prefab"
+          supportsMobileBuildables: "Supports Mobile Buildables"
+          shouldSpawnSeatCapsules: "Should Spawn Seat Capsules"
+          canRepairWhileSeated: "Can Repair While Seated"
+          canBeLocked: "Can Be Locked"
+          canStealBattery: "Can Battery Be Stolen"
+          bypassHashVerify: "Bypass Hash Verification"
         handling:
           header: "Handling"
           speed:
@@ -684,11 +692,28 @@ keys:
           staminaPowered: "Is Stamina Powered"
           batteryPowered: "Is Battery Powered"
           vehiclePhysicsProfile: "Physics Profile"
+          centerOfMass: "Center Of Mass"
+          wheelColliderMassOverride: "Wheel Collider Mass Override"
         explosion:
           header: "Explosion"
           effect: "Explosion Effect"
           causeDamage: "Should Explosion Cause Damage"
           burnMaterials: "Should Explosion Burn Materials"
+          force:
+            min: "Min Explosion Force"
+            max: "Max Explosion Force"
+          drops:
+            min: "Min Drops"
+            max: "Max Drops"
+            tableId: "Drops Table ID"
+        exit: "Exit Distance"
+        bumperMultiplier: "Bumper Multiplier"
+        tireId: "Tire ID"
+        train:
+          header: "Train Settings"
+          trackOffset: "Track Offset"
+          wheelOffset: "Wheel Offset"
+          carLength: "Car Length"
         camera:
           header: "Camera"
           followDistance: "Follow Distance"
@@ -719,6 +744,7 @@ keys:
           default: "Default Battery"
           spawnChargeMultiplier: "Battery Spawn Charge Multiplier"
           burnRate: "Battery Burn Rate"
+          chargeRate: "Battery Charge Rate"
           whileDriving: "While Driving"
           whileEmpty: "While Empty"
           whileLightsOn: "While Headlights Are On"
@@ -726,6 +752,8 @@ keys:
           cannotSpawnWithBattery: "Cannot Spawn With A Battery"
         turrets:
           header: "Turrets"
+        steeringTires:
+          header: "Steering Tires"
         trunk:
           header: "Trunk"
           width: "Capacity Width"
@@ -1300,6 +1328,9 @@ keys:
           v2:
             guid: "Spawn"
       vehicle:
+        steeringTireInfo:
+          display: "Tire Index: {0}"
+          tireIndex: "Tire Index"
         turretInfo:
           display: "Seat Index: {0}"
           seatIndex: "Seat Index"

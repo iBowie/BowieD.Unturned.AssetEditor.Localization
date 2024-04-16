@@ -656,6 +656,8 @@ keys:
           isVulnerableToEnvironment: "Уязвим к окружению"
           isVulnerableToBumper: "Уязвим к ударам бампером"
           isVulnerableTires: "Непробиваемые колёса"
+          passengerExplosionArmorMultiplier: "Множитель брони у пассажира при взрыве"
+          childExplosionArmorMultiplier: "Множитель брони у построек при взрыве"
         toggles:
           header: "Переключатели"
           hasZip: "Использовать анимацию держания за руль велосипеда"
@@ -666,6 +668,12 @@ keys:
           hasTraction: "Есть тяга на снегу"
           hasSleds: "Есть сани"
           hasClipPrefab: "Есть Clip префаб"
+          supportsMobileBuildables: "Поддерживает постройки на транспорте"
+          shouldSpawnSeatCapsules: "Спавнить коллайдеры на местах пассажиров"
+          canRepairWhileSeated: "Можно чинить сидя в транспорте"
+          canBeLocked: "Можно закрыть на замок"
+          canStealBattery: "Можно украсть батарею"
+          bypassHashVerify: "Обход проверки целостности ассета"
         handling:
           header: "Управление"
           speed:
@@ -684,11 +692,28 @@ keys:
           staminaPowered: "Использует энергию персонажа"
           batteryPowered: "Использует энергию аккумулятора"
           vehiclePhysicsProfile: "Физический профиль"
+          centerOfMass: "Центр массы"
+          wheelColliderMassOverride: "Перезапись массы коллайдера колеса"
         explosion:
           header: "Взрыв"
           effect: "Эффект взрыва"
           causeDamage: "Взрыв причиняет урон"
           burnMaterials: "Взрыв \"сжигает\" материалы"
+          force:
+            min: "Мин. сила взрыва"
+            max: "Макс. сила взрыва"
+          drops:
+            min: "Мин. выпадающих предметов"
+            max: "Макс. выпадающих предметов"
+            tableId: "Таблица выпадающих предметов"
+        exit: "Расстояние для выхода"
+        bumperMultiplier: "Множитель бампера"
+        tireId: "ID колёс"
+        train:
+          header: "Свойства поезда"
+          trackOffset: "Смещение над рельсами"
+          wheelOffset: "Смещение колёс"
+          carLength: "Расстояние между вагонами"
         camera:
           header: "Камера"
           followDistance: "Расстояние"
@@ -719,6 +744,7 @@ keys:
           default: "Аккумулятор по умолчанию"
           spawnChargeMultiplier: "Множитель заряда аккумулятора при спавне"
           burnRate: "Скорость расхода аккумулятора"
+          chargeRate: "Скорость заряда аккумулятора"
           whileDriving: "Во время движения"
           whileEmpty: "Без игроков в транспорте"
           whileLightsOn: "С включенными фарами"
@@ -726,6 +752,8 @@ keys:
           cannotSpawnWithBattery: "Не может заспавниться с аккумулятором"
         turrets:
           header: "Турели"
+        steeringTires:
+          header: "Рулевые колёса"
         trunk:
           header: "Багажник"
           width: "Вместимость по горизонтали"
@@ -1300,6 +1328,9 @@ keys:
           v2:
             guid: "Таблица спавнов"
       vehicle:
+        steeringTireInfo:
+          display: "Индекс колеса: {0}"
+          tireIndex: "Индекс колеса"
         turretInfo:
           display: "Индекс сиденья: {0}"
           seatIndex: "Индекс сиденья"
