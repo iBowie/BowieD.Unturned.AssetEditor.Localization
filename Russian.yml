@@ -802,6 +802,10 @@ keys:
           header: "Редактор"
           comment: "Комментарий"
           marker: "Цветовой маркер"
+      rewards:
+        type: "Таблица наград"
+        conditions: "Условия"
+        rewards: "Награды"
       item:
         base:
           type: "Предмет"
@@ -1641,6 +1645,7 @@ keys:
             food: "Состояние игрока (Еда)"
             water: "Состояние игрока (Жажда)"
             virus: "Состояние игрока (Заражение)"
+            stamina: "Состояние игрока (Энергия)"
         holiday: "Праздник"
         currency: "Валюта"
         weather:
@@ -1740,6 +1745,9 @@ keys:
             food: "Состояние игрока (Еда)"
             water: "Состояние игрока (Жажда)"
             virus: "Состояние игрока (Заражение)"
+            stamina: "Состояние игрока (Энергия)"
+        rewardsList: "Таблица наград"
+        cutsceneMode: "Режим катсцены"
       weather:
         status:
           active: "Активно"
@@ -1988,6 +1996,7 @@ keys:
         minRadius: "Минимальная дальность убийства"
         nav: "ID навигации"
         flag: "ID флага"
+        levelTableOverride: "Таблица зомби"
         reset: "Сброс флага"
         display: "Убить {0} зомби вида '{1}' на навигации '{2}' на расстоянии [{3:0.#};{4:0.#}] и использовать флаг '{5}' для хранения прогресса"
       horde:
@@ -2059,6 +2068,9 @@ keys:
         virus:
           value: "Процент заражения"
           display: "Заражение игрока {0} {1}"
+        stamina:
+          value: "Процент энергии"
+          display: "Энергия игрока {0} {1}"
     holiday:
       value: "Праздник"
       display: "Праздник: {0}"
@@ -2163,6 +2175,14 @@ keys:
     playerSpawnpoint:
       spawnpoint: "ID точки появления"
       display: "Изменить точку появления игрока на '{0}'"
+    cutsceneMode:
+      value: "Активировать"
+      display:
+        on: "Включить режим катсцены"
+        off: "Отключить режим катсцены"
+    rewardsList:
+      assetRef: "Таблица наград"
+      display: "Выдать награды из таблицы {0}"
     player:
       life:
         health:
@@ -2177,6 +2197,9 @@ keys:
         virus:
           value: "Количество"
           display: "Изменить заражение на {0}"
+        stamina:
+          value: "Количество"
+          display: "Изменить энергию на {0}"
   vendorItem:
     virtual:
       buying:

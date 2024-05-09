@@ -802,6 +802,10 @@ keys:
           header: "Editor"
           comment: "Comment"
           marker: "Color marker"
+      rewards:
+        type: "Rewards Table"
+        conditions: "Conditions"
+        rewards: "Rewards"
       item:
         base:
           type: "Item"
@@ -1641,6 +1645,7 @@ keys:
             food: "Player Life (Food)"
             water: "Player Life (Water)"
             virus: "Player Life (Virus)"
+            stamina: "Player Life (Stamina)"
         holiday: "Holiday"
         currency: "Currency"
         weather:
@@ -1740,6 +1745,9 @@ keys:
             food: "Player Life (Food)"
             water: "Player Life (Water)"
             virus: "Player Life (Virus)"
+            stamina: "Player Life (Stamina)"
+        rewardsList: "Rewards List"
+        cutsceneMode: "Cutscene Mode"
       weather:
         status:
           active: "Active"
@@ -1988,6 +1996,7 @@ keys:
         minRadius: "Min Kill Distance"
         nav: "Navigation ID"
         flag: "Storing Flag ID"
+        levelTableOverride: "Level Table Override"
         reset: "Make storing flag unset"
         display: "Kill {0} zombies of type '{1}' at nav '{2}' in range [{3:0.#};{4:0.#}] and use flag '{5}' to store progress"
       horde:
@@ -2059,6 +2068,9 @@ keys:
         virus:
           value: "Virus Percentage"
           display: "Player Virus {0} {1}"
+        stamina:
+          value: "Stamina Percentage"
+          display: "Player Stamina {0} {1}"
     holiday:
       value: "Holiday"
       display: "Holiday: {0}"
@@ -2163,6 +2175,14 @@ keys:
     playerSpawnpoint:
       spawnpoint: "Spawnpoint ID"
       display: "Change player spawnpoint to '{0}'"
+    cutsceneMode:
+      value: "Toggle"
+      display:
+        on: "Enable Cutscene Mode"
+        off: "Disable Cutscene Mode"
+    rewardsList:
+      assetRef: "Rewards Table"
+      display: "Give rewards from table {0}"
     player:
       life:
         health:
@@ -2177,6 +2197,9 @@ keys:
         virus:
           value: "Value"
           display: "Change virus by {0}"
+        stamina:
+          value: "Value"
+          display: "Change stamina by {0}"
   vendorItem:
     virtual:
       buying:
