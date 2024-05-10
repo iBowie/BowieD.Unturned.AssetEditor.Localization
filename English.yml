@@ -455,6 +455,8 @@ keys:
     demo:
       caption: "Welcome to demo version!"
       text: "You are using a demo build of the app.\nTo upgrade to full version, please, consider supporting development of the app on Boosty. Thank you!"
+    loadProject:
+      error: "Could not load Asset Editor project."
     loadLegacyProject:
       error: "Could not load NPC Maker project."
     saveUnsavedChanges:

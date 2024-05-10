@@ -455,6 +455,8 @@ keys:
     demo:
       caption: "Добро пожаловать в демо версию!"
       text: "Вы используете демо версию программы.\nДля улучшения до полной версии, пожалуйста, поддержите разработку программы на Boosty. Спасибо!"
+    loadProject:
+      error: "Не удалось загрузить проект Asset Editor."
     loadLegacyProject:
       error: "Не удалось загрузить проект NPC Maker."
     saveUnsavedChanges:
