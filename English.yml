@@ -1406,6 +1406,9 @@ keys:
       stretch: "Stretch"
       volume: "Volume"
       preview: "Preview"
+      normal: "Normal"
+      tabOpen: "With Tab Open"
+      simulateOpenTab: "Simulate Open Tab"
   enum:
     clipboardManager:
       system:

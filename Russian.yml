@@ -1406,6 +1406,9 @@ keys:
       stretch: "Растяжение"
       volume: "Громкость"
       preview: "Предпросмотр"
+      normal: "Обычный режим"
+      tabOpen: "С открытой вкладкой"
+      simulateOpenTab: "Симулировать открытую вкладку"
   enum:
     clipboardManager:
       system:
