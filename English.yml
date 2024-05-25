@@ -445,6 +445,7 @@ keys:
         scan: "Scanning folder"
         load: "Importing assets [{0:P0}]"
   status:
+    welcome: "Welcome back!"
     project:
       saved: "Project saved!"
       exported: "Export complete!"
