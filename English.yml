@@ -465,6 +465,9 @@ keys:
     saveUnsavedChanges:
       caption: "Unsaved Changes"
       text: "You have unsaved changes in your project.\nDo you want to save your changes before proceeding?"
+    configurationRequireRestart:
+      caption: "Restart to apply some changes"
+      text: "Some changes in configuration cannot be applied while running.\nRestart the app to apply these changes."
     addons:
       reload:
         success:
