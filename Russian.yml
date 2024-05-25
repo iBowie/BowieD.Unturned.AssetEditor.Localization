@@ -116,6 +116,8 @@ keys:
                   header: "Транспорт"
                 object:
                   header: "Объект"
+                foliage:
+                  header: "Растительность"
               addAssetGroup:
                 header: "Добавить группу ассетов"
               addFolder: "Добавить папку"
@@ -1255,7 +1257,56 @@ keys:
           bossElverStomper: "Шанс давящего мега-зомби (Elver)"
         stunThresholdNormal: "Порог оглушения обычного зомби"
         stunThresholdMega: "Порог оглушения мега-зомби"
+      foliage:
+        base:
+          header: "Общие свойства растительности"
+          density: "Плотность"
+          normalPositionOffset:
+            vector: "Смещение позиции нормали"
+            min: "Мин. смещение позиции нормали"
+            max: "Макс. смещение позиции нормали"
+          normalRotationAlignment: "Вращение нормали"
+          surface:
+            weight:
+              min: "Мин. вес на поверхности"
+              max: "Макс. вес на поверхности"
+            angle:
+              min: "Мин. угол на поверхности"
+              max: "Макс. угол на поверхности"
+          rotation:
+            min: "Мин. вращение"
+            max: "Макс. вращение"
+          scale:
+            min: "Мин. масштаб"
+            max: "Макс. масштаб"
+        instancedMesh:
+          type: "Инстанцированный меш растительности"
+          header: "Свойства инстанцированного меша растительности"
+          mesh: "Модель"
+          material: "Материал"
+          castShadows: "Отбрасывает тень"
+          tileDither: "Дизеринг тайла"
+          drawDistance: "Дальности отрисовки"
+          christmasRedirect: "Перенаправление на рождество"
+          halloweenRedirect: "Перенаправление на хэллоуин"
+        object:
+          type: "Объект растительности"
+          header: "Свойства объекта растительности"
+          objectGuid: "Объект"
+          obstructionRadius: "Радиус заграждения"
+        resource:
+          type: "Ресурс растительности"
+          header: "Свойства ресурса растительности"
+          resourceGuid: "Ресурс"
+          obstructionRadius: "Радиус заграждения"
+      foliageCollection:
+        type: "Список растительности"
+        header: "Свойства списка растительности"
+        elements: "Элементы растительности"
     editable:
+      foliageCollectionElement:
+        asset: "Ассет растительности"
+        weight: "Вес"
       blueprint:
         base:
           supplies: "Ингредиенты"

@@ -116,6 +116,8 @@ keys:
                   header: "Vehicles"
                 object:
                   header: "Object"
+                foliage:
+                  header: "Foliage"
               addAssetGroup:
                 header: "Add Asset Group"
               addFolder: "Add Folder"
@@ -1255,7 +1257,56 @@ keys:
           bossElverStomper: "Elver Stomper Boss Chance"
         stunThresholdNormal: "Normal Stun Threshold"
         stunThresholdMega: "Mega Stun Threshold"
+      foliage:
+        base:
+          header: "Common Foliage Properties"
+          density: "Density"
+          normalPositionOffset:
+            vector: "Normal Position Offset"
+            min: "Min Normal Position Offset"
+            max: "Max Normal Position Offset"
+          normalRotationAlignment: "Normal Rotation Alignment"
+          surface:
+            weight:
+              min: "Min Surface Weight"
+              max: "Max Surface Weight"
+            angle:
+              min: "Min Surface Angle"
+              max: "Max Surface Angle"
+          rotation:
+            min: "Min Rotation"
+            max: "Max Rotation"
+          scale:
+            min: "Min Scale"
+            max: "Max Scale"
+        instancedMesh:
+          type: "Foliage Instanced Mesh"
+          header: "Foliage Instanced Mesh Properties"
+          mesh: "Mesh"
+          material: "Material"
+          castShadows: "Cast Shadows"
+          tileDither: "Tile Dither"
+          drawDistance: "Draw Distance"
+          christmasRedirect: "Christmas Redirect"
+          halloweenRedirect: "Halloween Redirect"
+        object:
+          type: "Foliage Object"
+          header: "Foliage Object Properties"
+          objectGuid: "Object"
+          obstructionRadius: "Obstruction Radius"
+        resource:
+          type: "Foliage Resource"
+          header: "Foliage Resource Properties"
+          resourceGuid: "Resource"
+          obstructionRadius: "Obstruction Radius"
+      foliageCollection:
+        type: "Foliage Collection"
+        header: "Foliage Collection Properties"
+        elements: "Foliage Elements"
     editable:
+      foliageCollectionElement:
+        asset: "Foliage Asset"
+        weight: "Weight"
       blueprint:
         base:
           supplies: "Supplies"
