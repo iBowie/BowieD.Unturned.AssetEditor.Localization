@@ -1,5 +1,5 @@
 authors:
-- "BowieD"
+  - "BowieD"
 version: 1
 cultureCode: "en-US"
 keys:
@@ -676,7 +676,6 @@ keys:
           hasTraction: "Has Traction"
           hasSleds: "Has Sleds"
           hasClipPrefab: "Has Clip Prefab"
-          supportsMobileBuildables: "Supports Mobile Buildables"
           shouldSpawnSeatCapsules: "Should Spawn Seat Capsules"
           canRepairWhileSeated: "Can Repair While Seated"
           canBeLocked: "Can Be Locked"
@@ -717,6 +716,7 @@ keys:
         exit: "Exit Distance"
         bumperMultiplier: "Bumper Multiplier"
         tireId: "Tire ID"
+        buildablePlacementRule: "Buildable Placement Rule"
         train:
           header: "Train Settings"
           trackOffset: "Track Offset"
@@ -840,6 +840,7 @@ keys:
           equipableMovementSpeedMultiplier: "Player Speed Multiplier When Held"
           blueprints: "Blueprints"
           actions: "Actions"
+          addDefaultActions: "Add Default Actions"
           icon:
             header: "Icon Settings"
             auto: "Use Automatic Icon Measurements"
@@ -1136,7 +1137,7 @@ keys:
             estimation: "x{0} normal gas cans / x{1} industrial gas cans"
           deleteAfterFillingTarget: "Delete After Filling Target"
           alwaysSpawnFull: "Always Spawn Full"
-        grower: 
+        grower:
           type: "Fertilizer"
         map:
           type: "Map"
@@ -1943,6 +1944,11 @@ keys:
       tireMode:
         add: "Add tire"
         remove: "Remove tire"
+    vehicle:
+      buildablePlacementRule:
+        none: "Default"
+        alwaysAllow: "Always Allow"
+        block: "Block"
     vendor:
       buying:
         type:
@@ -2829,10 +2835,9 @@ externalKeys:
   "System.Windows.Media.Stretch.Uniform": "Uniform"
   "System.Windows.Media.Stretch.UniformToFill": "Uniform To Fill"
 tips:
-- "You can clone linked assets to your project by clicking 'Clone to project' button"
-- "You can link game assets to view them in app as if they were made in it"
-- "You can drag most items in lists"
-- "Hold 'Ctrl' and drag item to copy it"
-- "Hold 'Ctrl' to duplicate element in collection while clicking on 'Copy' button"
-- "Hold 'Ctrl + Shift' to duplicate element in collection and place it next to original item while clicking on 'Copy' button"
-...
+  - "You can clone linked assets to your project by clicking 'Clone to project' button"
+  - "You can link game assets to view them in app as if they were made in it"
+  - "You can drag most items in lists"
+  - "Hold 'Ctrl' and drag item to copy it"
+  - "Hold 'Ctrl' to duplicate element in collection while clicking on 'Copy' button"
+  - "Hold 'Ctrl + Shift' to duplicate element in collection and place it next to original item while clicking on 'Copy' button"
