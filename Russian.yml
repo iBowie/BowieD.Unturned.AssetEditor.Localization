@@ -676,7 +676,6 @@ keys:
           hasTraction: "Есть тяга на снегу"
           hasSleds: "Есть сани"
           hasClipPrefab: "Есть Clip префаб"
-          supportsMobileBuildables: "Поддерживает постройки на транспорте"
           shouldSpawnSeatCapsules: "Спавнить коллайдеры на местах пассажиров"
           canRepairWhileSeated: "Можно чинить сидя в транспорте"
           canBeLocked: "Можно закрыть на замок"
