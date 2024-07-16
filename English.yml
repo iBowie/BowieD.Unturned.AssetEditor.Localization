@@ -1200,15 +1200,21 @@ keys:
               oxygen: "Oxygen"
         supply:
           type: "Supply"
-        vehicleRepairTool:
-          base:
-            type: "Vehicle Repair Tool"
-          tire:
-            type: "Tire"
-            header: "Tire Properties"
-            mode: "Mode"
         tool:
-          type: "Tool"
+          base:
+            type: "Tool"
+          vehicleRepairTool:
+            base:
+              type: "Vehicle Repair Tool"
+            tire:
+              type: "Tire"
+              header: "Tire Properties"
+              mode: "Mode"
+          vehiclePaintTool:
+            base:
+              type: "Vehicle Paint"
+              header: "Vehicle Paint Properties"
+              paintColor: "Paint Color"
       currency:
         type: "Currency"
         error: "ERROR"
@@ -1342,6 +1348,12 @@ keys:
         type: "Foliage Collection"
         header: "Foliage Collection Properties"
         elements: "Foliage Elements"
+      vehicleRedirector:
+        type: "Vehicle Redirector"
+        header: "Vehicle Redirector Properties"
+        targetVehicle: "Target Vehicle"
+        loadPaintColor: "Paint Color On Load"
+        spawnPaintColor: "Paint Color On Spawn"
     editable:
       foliageCollectionElement:
         asset: "Foliage Asset"
@@ -1424,6 +1436,24 @@ keys:
           v2:
             guid: "Spawn"
       vehicle:
+        wheelConfiguration:
+          display: "Collider: {0}; Model: {1}"
+          wheelColliderPath: "Path to Wheel Collider"
+          isColliderSteered: "Is Collider Steered"
+          isColliderPowered: "Is Collider Powered"
+          modelPath: "Path to Wheel Model"
+          isModelSteered: "Is Model Steered"
+          modelUseColliderPose: "Model Uses Collider Pose"
+        paintableSection:
+          display: "Material #{1} at path: {0}"
+          path: "GameObject Path"
+          materialIndex: "Material Index"
+        rpmEngineSoundConfiguration:
+          display: "Pitch [{0:P2}->{2:P2}]; Volume [{1:P2}->{3:P2}]"
+          idlePitch: "Idle Pitch"
+          maxPitch: "Max Pitch"
+          idleVolume: "Idle Volume"
+          maxVolume: "Max Volume"
         steeringTireInfo:
           display: "Tire Index: {0}"
           tireIndex: "Tire Index"
@@ -1983,6 +2013,9 @@ keys:
         none: "Default"
         alwaysAllow: "Always Allow"
         block: "Block"
+      engineSoundType:
+        legacy: "Legacy"
+        engineRPMSimple: "Simple RPM"
     vendor:
       buying:
         type:

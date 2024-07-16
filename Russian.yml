@@ -1200,15 +1200,21 @@ keys:
               oxygen: "Кислород"
         supply:
           type: "Материал"
-        vehicleRepairTool:
-          base:
-            type: "Инструмент для автомобиля"
-          tire:
-            type: "Шина"
-            header: "Свойства шины"
-            mode: "Режим"
         tool:
-          type: "Инструмент"
+          base:
+            type: "Инструмент"
+          vehicleRepairTool:
+            base:
+              type: "Инструмент для автомобиля"
+            tire:
+              type: "Шина"
+              header: "Свойства шины"
+              mode: "Режим"
+          vehiclePaintTool:
+            base:
+              type: "Покраска транспорта"
+              header: "Свойства покраски транспорта"
+              paintColor: "Цвет"
       currency:
         type: "Валюта"
         error: "Ошибка"
@@ -1342,6 +1348,12 @@ keys:
         type: "Список растительности"
         header: "Свойства списка растительности"
         elements: "Элементы растительности"
+      vehicleRedirector:
+        type: "Перенаправление транспорта"
+        header: "Свойства перенаправления транспорта"
+        targetVehicle: "Целевой транспорт"
+        loadPaintColor: "Цвет при загрузке"
+        spawnPaintColor: "Цвет при спавне"
     editable:
       foliageCollectionElement:
         asset: "Ассет растительности"
@@ -1424,6 +1436,24 @@ keys:
           v2:
             guid: "Таблица спавнов"
       vehicle:
+        wheelConfiguration:
+          display: "Коллайдер: {0}; Модель: {1}"
+          wheelColliderPath: "Путь к коллайдеру колеса"
+          isColliderSteered: "Рулевой коллайдер"
+          isColliderPowered: "Ведущий коллайдер"
+          modelPath: "Путь к модели колеса"
+          isModelSteered: "Рулевая модель"
+          modelUseColliderPose: "Модель использует угол коллайдера"
+        paintableSection:
+          display: "Материал #{1} по пути: {0}"
+          path: "Путь к игровому объекту"
+          materialIndex: "Индекс материала"
+        rpmEngineSoundConfiguration:
+          display: "Высота [{0:P2}->{2:P2}]; Громкость [{1:P2}->{3:P2}]"
+          idlePitch: "Высота звука в простое"
+          maxPitch: "Максимальная высота звука"
+          idleVolume: "Громкость звука в простое"
+          maxVolume: "Максимальная громкость звука"
         steeringTireInfo:
           display: "Индекс колеса: {0}"
           tireIndex: "Индекс колеса"
@@ -1983,6 +2013,9 @@ keys:
         none: "По умолчанию"
         alwaysAllow: "Всегда разрешать"
         block: "Запретить"
+      engineSoundType:
+        legacy: "Старая"
+        engineRPMSimple: "Используя обороты в минуту"
     vendor:
       buying:
         type:
