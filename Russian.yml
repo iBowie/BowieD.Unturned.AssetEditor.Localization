@@ -904,6 +904,7 @@ keys:
             instantiatedItemNameOverride: "Перезапись имени объекта в Unity при спавне"
             useableType: "Используемый тип"
             sharedSkinLookupId: "ID предмета для общих скинов"
+            sharedSkinShouldApplyVisuals: "Применять визуал с общего скина"
             automaticallyAddAutoStatDescriptions: "Автоматически добавлять описание статистики предмета"
             shouldLeftHandedCharactersMirrorEquippedItem: "Должен ли этот предмет отражаться для игроков-левш"
             econIconUseId: "Иконка скина использует ID"
@@ -929,6 +930,7 @@ keys:
             isPaintable: "Может быть окрашено в скин"
             isBipod: "Является цевье"
             calibers: "Калибры"
+            canDamageInvulernableEntities: "Может наносить урон неуязвимым сущностям"
             shouldDestroyAttachmentColliders: "Уничтожать коллайдеры модуля"
             instantiatedAttachmentName: "Перезапись имени объекта в Unity при спавне"
           sight:
@@ -1061,6 +1063,7 @@ keys:
               type: "Маска"
               header: "Свойства маски"
               isEarpiece: "Наушник"
+              filterDegradationRateMultiplier: "Скорость приведения фильтра в негодность"
             hat:
               type: "Головной убор"
               header: "Свойства головного убора"
@@ -1354,6 +1357,11 @@ keys:
         targetVehicle: "Целевой транспорт"
         loadPaintColor: "Цвет при загрузке"
         spawnPaintColor: "Цвет при спавне"
+      redirector:
+        type: "Перенаправление ассета"
+        header: "Свойства перенаправления ассета"
+        assetCategoryOverride: "Категория"
+        targetGuid: "Целевой ассет"
     editable:
       foliageCollectionElement:
         asset: "Ассет растительности"

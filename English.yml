@@ -904,6 +904,7 @@ keys:
             instantiatedItemNameOverride: "Instantiated Item Name Override"
             useableType: "Useable Type"
             sharedSkinLookupId: "Shared Skin Lookup ID"
+            sharedSkinShouldApplyVisuals: "Shared Skin Should Apply Visuals"
             automaticallyAddAutoStatDescriptions: "Automatically Add Stat Descriptions"
             shouldLeftHandedCharactersMirrorEquippedItem: "Should Left Handed Players Have This Item Mirrored"
             econIconUseId: "Econ Icon Uses ID"
@@ -929,6 +930,7 @@ keys:
             isPaintable: "Is Paintable"
             isBipod: "Is Bipod"
             calibers: "Calibers"
+            canDamageInvulernableEntities: "Can Damage Invulnerable Entities"
             shouldDestroyAttachmentColliders: "Destroy Attachment Colliders"
             instantiatedAttachmentName: "Instantiated Attachment Name Override"
           sight:
@@ -1061,6 +1063,7 @@ keys:
               type: "Mask"
               header: "Mask Properties"
               isEarpiece: "Is Earpiece"
+              filterDegradationRateMultiplier: "Filter Degradation Rate Multiplier"
             hat:
               type: "Hat"
               header: "Hat Properties"
@@ -1354,6 +1357,11 @@ keys:
         targetVehicle: "Target Vehicle"
         loadPaintColor: "Paint Color On Load"
         spawnPaintColor: "Paint Color On Spawn"
+      redirector:
+        type: "Asset Redirector"
+        header: "Asset Redirector Properties"
+        assetCategoryOverride: "Category"
+        targetGuid: "Target Asset"
     editable:
       foliageCollectionElement:
         asset: "Foliage Asset"
