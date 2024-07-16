@@ -704,6 +704,8 @@ keys:
           vehiclePhysicsProfile: "Физический профиль"
           centerOfMass: "Центр массы"
           wheelColliderMassOverride: "Перезапись массы коллайдера колеса"
+          engine:
+            maxTorque: "Максимальный крутящий момент"
         explosion:
           header: "Взрыв"
           effect: "Эффект взрыва"
@@ -769,6 +771,10 @@ keys:
           header: "Багажник"
           width: "Вместимость по горизонтали"
           height: "Вместимость по вертикали"
+        paint:
+          header: "Покраска"
+          sections: "Окрашиваемые сегменты"
+          isPaintable: "Может быть покрашено"
         skins:
           header: "Скины"
           sizeZ2: "Ортографический размер камеры"
@@ -780,8 +786,33 @@ keys:
             horizontal: "Валидная скорость по горизонтали"
             up: "Валидная скорость вверх"
             down: "Валидная скорость вниз"
-        ignitionAudioClip: "Звук зажигания двигателя"
-        hornAudioClip: "Звук гудка"
+        sound:
+          header: "Звук"
+          ignitionAudioClip: "Звук зажигания двигателя"
+          hornAudioClip: "Звук гудка"
+          engineSoundType: "Тип звука двигателя"
+          engineSoundConfiguration:
+            header: "Настройка звука двигателя"
+            pitch:
+              idle: "Высота звука в простое"
+              max: "Максимальная высота звука"
+            volume:
+              idle: "Громкость звука в простое"
+              max: "Максимальная громкость звука"
+        gearshift:
+          header: "Коробка передач"
+          forwardGearRatios: "Передаточные числа вперёд"
+          reverseGearRatios: "Передаточное число назад"
+          shiftUpThresholdRpm: "Порог об/мин для повышения передачи"
+          shiftDownThresholdRpm: "Порог об/мин для понижения передачи"
+          shiftInterval: "Интервал переключения передачи"
+          shiftDuration: "Продолжительность переключения передачи"
+          engineIdleRpm: "Обороты двигателя в простое"
+          engineMaxRpm: "Максимальные обороты двигателя"
+          engineRpmIncreaseRate: "Скорость повышения оборотов двигателя"
+          engineRpmDecreaseRate: "Скорость уменьшения оборотов двигателя"
+        wheelConfigurations: "Конфигурация колёс"
+        defaultPaintColors: "Стандартные цвета покраски"
   controls:
     asset:
       idControl:

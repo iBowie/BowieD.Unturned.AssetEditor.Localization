@@ -704,6 +704,8 @@ keys:
           vehiclePhysicsProfile: "Physics Profile"
           centerOfMass: "Center Of Mass"
           wheelColliderMassOverride: "Wheel Collider Mass Override"
+          engine:
+            maxTorque: "Max Torque"
         explosion:
           header: "Explosion"
           effect: "Explosion Effect"
@@ -769,6 +771,10 @@ keys:
           header: "Trunk"
           width: "Capacity Width"
           height: "Capacity Height"
+        paint:
+          header: "Paint"
+          sections: "Paintable Sections"
+          isPaintable: "Is Paintable"
         skins:
           header: "Skins"
           sizeZ2: "Ortographic Camera Size"
@@ -780,8 +786,33 @@ keys:
             horizontal: "Valid Speed Horizontal"
             up: "Valid Speed Up"
             down: "Valid Speed Down"
-        ignitionAudioClip: "Ignition Audio Clip"
-        hornAudioClip: "Horn Audio Clip"
+        sound:
+          header: "Sound"
+          ignitionAudioClip: "Ignition Audio Clip"
+          hornAudioClip: "Horn Audio Clip"
+          engineSoundType: "Engine Sound Type"
+          engineSoundConfiguration:
+            header: "Engine Sound Configuration"
+            pitch:
+              idle: "Idle Pitch"
+              max: "Max Pitch"
+            volume:
+              idle: "Idle Volume"
+              max: "Max Volume"
+        gearshift:
+          header: "Gearshift"
+          forwardGearRatios: "Forward Gear Ratios"
+          reverseGearRatios: "Reverse Gear Ratio"
+          shiftUpThresholdRpm: "Shift Up RPM Threshold"
+          shiftDownThresholdRpm: "Shift Down RPM Threshold"
+          shiftInterval: "Shift Interval"
+          shiftDuration: "Shift Duration"
+          engineIdleRpm: "Engine Idle RPM"
+          engineMaxRpm: "Engine Max RPM"
+          engineRpmIncreaseRate: "Engine RPM Increase Rate"
+          engineRpmDecreaseRate: "Engine RPM Decrease Rate"
+        wheelConfigurations: "Wheel Configurations"
+        defaultPaintColors: "Default Paint Colors"
   controls:
     asset:
       idControl:
