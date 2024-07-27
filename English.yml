@@ -2703,7 +2703,8 @@ keys:
       object:
         normal:
           interactability:
-            rubble: "Do not use interactability rubble (app limitation)."
+            rubble:
+              withOldRubble: "Do not use interactability rubble and normal rubble together."
             npc: "Do not use interactability NPC. Use Character asset instead."
       vehicle:
         turrets:
