@@ -1890,6 +1890,7 @@ keys:
             stamina: "Состояние игрока (Энергия)"
         rewardsList: "Таблица наград"
         cutsceneMode: "Режим катсцены"
+        effect: "Эффект"
       weather:
         status:
           active: "Активно"
@@ -1898,7 +1899,6 @@ keys:
           fadeOut: "Заканчивается"
           fadedOut: "Закончилось"
           transition: "Переходит"
-      effect: "Эффект"
     object:
       chart:
         none: "Нет"
