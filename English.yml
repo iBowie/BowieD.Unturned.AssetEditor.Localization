@@ -648,6 +648,7 @@ keys:
           description: "Description"
         conditions: "Conditions / Goals"
         rewards: "Rewards"
+        abandonmentRewards: "Quest Abandonment Rewards"
       currency:
         valueFormat: "Value Format"
         conditionValueFormat: "Condition Value Format"
@@ -706,6 +707,9 @@ keys:
           wheelColliderMassOverride: "Wheel Collider Mass Override"
           engine:
             maxTorque: "Max Torque"
+          wheelBalancingForceMultiplier: "Wheel Balancing Force Multiplier"
+          wheelBalancingUprightExponent: "Wheel Balancing Upright Exponent"
+          rollAngularVelocityDamping: "Roll Angular Velocity Damping"
         explosion:
           header: "Explosion"
           effect: "Explosion Effect"
@@ -811,8 +815,10 @@ keys:
           engineMaxRpm: "Engine Max RPM"
           engineRpmIncreaseRate: "Engine RPM Increase Rate"
           engineRpmDecreaseRate: "Engine RPM Decrease Rate"
+          isVisibleInHud: "Is Visible In HUD"
         wheelConfigurations: "Wheel Configurations"
-        defaultPaintColors: "Default Paint Colors"
+        paintColor:
+          header: "Paint Colors"
   controls:
     asset:
       idControl:
@@ -1165,7 +1171,10 @@ keys:
         fisher:
           type: "Fishing Rod"
           header: "Fishing Rod Properties"
-          reward: "Reward"
+          reward: "Spawn Table Reward"
+          rewardExperienceMin: "Min Experience Reward"
+          rewardExperienceMax: "Max Experience Reward"
+          questRewards: "Rewards"
         fuel:
           type: "Fuel"
           header: "Fuel Properties"
@@ -1889,6 +1898,7 @@ keys:
           fadeOut: "Fading Out"
           fadedOut: "Faded Out"
           transition: "Transition"
+      effect: "Effect"
     object:
       chart:
         none: "None"
@@ -2024,6 +2034,10 @@ keys:
       engineSoundType:
         legacy: "Legacy"
         engineRPMSimple: "Simple RPM"
+      defaultPaintColorMode:
+        none: "No default paint color"
+        list: "List of default paint colors"
+        randomHueOrGrayscale: "Random hue or grayscale as paint color"
     vendor:
       buying:
         type:
@@ -2299,6 +2313,7 @@ keys:
     vehicle:
       id: "Vehicle ID"
       spawnpoint: "Spawnpoint ID"
+      paintColor: "Paint color"
       display: "Spawn vehicle '{0}' at '{1}'"
     teleport:
       spawnpoint: "Spawnpoint ID"
@@ -2341,6 +2356,12 @@ keys:
         stamina:
           value: "Value"
           display: "Change stamina by {0}"
+    effect:
+      display: "Spawn effect '{0}' at '{1}'"
+      asset: "Effect"
+      spawnpoint: "Spawnpoint"
+      overrideRelevantDistance: "Override Relevant Distance"
+      isReliable: "Is Reliable"
   vendorItem:
     virtual:
       buying:

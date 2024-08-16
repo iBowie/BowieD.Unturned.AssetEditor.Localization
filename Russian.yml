@@ -648,6 +648,7 @@ keys:
           description: "Описание"
         conditions: "Условия / Цели"
         rewards: "Награды"
+        abandonmentRewards: "Награды при отмене задания"
       currency:
         valueFormat: "Формат валюты"
         conditionValueFormat: "Формат валюты в условиях"
@@ -706,6 +707,9 @@ keys:
           wheelColliderMassOverride: "Перезапись массы коллайдера колеса"
           engine:
             maxTorque: "Максимальный крутящий момент"
+          wheelBalancingForceMultiplier: "Множитель силы балансировки колеса"
+          wheelBalancingUprightExponent: "Экспонента балансировки колеса вверх"
+          rollAngularVelocityDamping: "Погашение скорости наклона"
         explosion:
           header: "Взрыв"
           effect: "Эффект взрыва"
@@ -811,8 +815,10 @@ keys:
           engineMaxRpm: "Максимальные обороты двигателя"
           engineRpmIncreaseRate: "Скорость повышения оборотов двигателя"
           engineRpmDecreaseRate: "Скорость уменьшения оборотов двигателя"
+          isVisibleInHud: "Видно в интерфейсе"
         wheelConfigurations: "Конфигурация колёс"
-        defaultPaintColors: "Стандартные цвета покраски"
+        paintColor:
+          header: "Цвета покраски"
   controls:
     asset:
       idControl:
@@ -1166,6 +1172,9 @@ keys:
           type: "Удочка"
           header: "Свойства удочки"
           reward: "Таблица наград"
+          rewardExperienceMin: "Мин. опыта в награду"
+          rewardExperienceMax: "Макс. опыта в награду"
+          questRewards: "Награды"
         fuel:
           type: "Канистра"
           header: "Свойства канистры"
@@ -1889,6 +1898,7 @@ keys:
           fadeOut: "Заканчивается"
           fadedOut: "Закончилось"
           transition: "Переходит"
+      effect: "Эффект"
     object:
       chart:
         none: "Нет"
@@ -2024,6 +2034,10 @@ keys:
       engineSoundType:
         legacy: "Старая"
         engineRPMSimple: "Используя обороты в минуту"
+      defaultPaintColorMode:
+        none: "Без цвета по умолчанию"
+        list: "Список цветов по умолчанию"
+        randomHueOrGrayscale: "Случайный оттенок или серый цвет по умолчанию"
     vendor:
       buying:
         type:
@@ -2299,6 +2313,7 @@ keys:
     vehicle:
       id: "ID транспорта"
       spawnpoint: "ID точки появления"
+      paintColor: "Цвет транспорта"
       display: "Выдать транспорт '{0}' на '{1}'"
     teleport:
       spawnpoint: "ID точки появления"
@@ -2341,6 +2356,12 @@ keys:
         stamina:
           value: "Количество"
           display: "Изменить энергию на {0}"
+    effect:
+      display: "Заспавнить эффект '{0}' на '{1}'"
+      asset: "Эффект"
+      spawnpoint: "ID точки появления"
+      overrideRelevantDistance: "Максимальное расстояние спавна"
+      isReliable: "Надёжный спавн"
   vendorItem:
     virtual:
       buying:
