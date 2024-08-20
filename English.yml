@@ -1247,8 +1247,16 @@ keys:
             rewards: "Rewards"
           response:
             text: "Response Text"
+            dialogue:
+              text: "Dialogue"
+            vendor:
+              text: "Vendor"
+            quest:
+              text: "Quest"
             conditions: "Conditions"
             rewards: "Rewards"
+            copy: "Copy"
+            delete: "Delete"
         vendor:
           type: "NPC Vendor"
         quest:

@@ -1247,8 +1247,16 @@ keys:
             rewards: "Награды"
           response:
             text: "Текст ответа"
+            dialogue:
+              text: "Диалог"
+            vendor:
+              text: "Магазин"
+            quest:
+              text: "Задание"
             conditions: "Условия"
             rewards: "Награды"
+            copy: "Копировать"
+            delete: "Удалить"
         vendor:
           type: "Магазин NPC"
         quest:
