@@ -2654,6 +2654,8 @@ keys:
         zero: "ID cannot be zero."
         officialRange: "ID cannot be within official range. Allowed range: [{0} -> {1}]."
         taken: "ID '{0}' is already taken by '{1}'."
+      unity3dBundle:
+        missing: "Specified unity asset bundle file is missing. It will not be copied upon export."
       bypassidlimit: "It is recommended to leave 'Bypass ID Limit' disabled."
       item:
         useable:
