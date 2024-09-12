@@ -452,6 +452,7 @@ keys:
   message:
     common:
       close: "Close"
+      copied: "Copied!"
     nightly:
       caption: "Thanks for supporting! But also, be careful!"
       text: "You are using a nightly build of the app, things WILL change, and are unstable.\nMake sure to backup often, and if you find anything not working - it's most probably best to notify me about it!\n\nWith that out of the way...\nThank you for supporting me! This app is possible thanks to people supporting me!"
