@@ -2102,6 +2102,8 @@ keys:
       ui:
         localizationPreviewer:
           header: "Localization Preview"
+        formatArgs:
+          header: "Available Placeholders"
       uiRequirements:
         label: "Required Conditions Indicies"
         toolTip: "Makes this condition invisible until all required conditions have been met.\nIndicies start from zero, values separated by a comma, for instance, '0,1,2'.\n\nThis is a temporary solution and a much better UI for this will be made in future."
@@ -2125,17 +2127,28 @@ keys:
       value: "Value"
       reset: "Take experience from player"
       display: "Player has {1} {0} of experience"
+      formatArgs:
+        arg0: "Current Player Experience"
+        arg1: "Required Player Experience"
     reputation:
       value: "Value"
       display: "Player's reputation {1} {0}"
+      formatArgs:
+        arg0: "Current Reputation"
+        arg1: "Required Reputation"
     flagBool:
       value: "Flag Value"
       reset: "Make flag unset"
       display: "Boolean value of flag '{0}' {1} {2}"
+      formatArgs:
+        arg0: "Displays 0 if 'false' or unset, and 1 if 'true'"
     flagShort:
       value: "Flag Value"
       reset: "Make flag unset"
       display: "Short value of flag '{0}' {1} {2}"
+      formatArgs:
+        arg0: "Current Value"
+        arg1: "Required Value"
     quest:
       id: "Quest ID"
       status: "Status"
@@ -2149,6 +2162,10 @@ keys:
       amount: "Amount"
       reset: "Take item from player"
       display: "Player has {1} {2} of '{0}'"
+      formatArgs:
+        arg0: "Current Item Amount"
+        arg1: "Required Item Amount"
+        arg2: "Required Item Name"
     kills:
       zombie:
         speciality: "Speciality"
@@ -2162,23 +2179,35 @@ keys:
         levelTableOverride: "Level Table Override"
         reset: "Make storing flag unset"
         display: "Kill {0} zombies of type '{1}' at nav '{2}' in range [{3:0.#};{4:0.#}] and use flag '{5}' to store progress"
+        formatArgs:
+          arg0: "Current Count"
+          arg1: "Required Count"
       horde:
         nav: "Navigation ID"
         value: "Count"
         flag: "Storing Flag ID"
         reset: "Make storing flag unset"
         display: "Clear {0} hordes at nav '{1}' and use flag '{2}' to store progress"
+        formatArgs:
+          arg0: "Current Count"
+          arg1: "Required Count"
       animal:
         animal: "Animal ID"
         value: "Count"
         flag: "Storing Flag ID"
         reset: "Make storing flag unset"
         display: "Kill {0} animals of type '{1}' and use flag '{2}' to store progress"
+        formatArgs:
+          arg0: "Current Count"
+          arg1: "Required Count"
       player:
         value: "Count"
         flag: "Storing Flag ID"
         reset: "Make storing flag unset"
         display: "Kill {0} players and use flag '{1}' to store progress"
+        formatArgs:
+          arg0: "Current Count"
+          arg1: "Required Count"
       object:
         object: "Object ID"
         value: "Count"
@@ -2186,12 +2215,19 @@ keys:
         flag: "Storing Flag ID"
         reset: "Make storing flag unset"
         display: "Destroy {0} objects of type '{1}' in area of nav '{2}' and use flag '{3}' to store progress"
+        formatArgs:
+          arg0: "Current Count"
+          arg1: "Required Count"
       tree:
         guid: "Resource ID"
         value: "Count"
         flag: "Storing Flag ID"
         reset: "Make storing flag unset"
         display: "Harvest {0} resources of '{1}' and use flag '{2}' to store progress"
+        formatArgs:
+          arg0: "Current Count"
+          arg1: "Required Count"
+          arg2: "Required Resource Name"
     compareFlags:
       flagA: "Flag A ID"
       flagB: "Flag B ID"
@@ -2202,6 +2238,8 @@ keys:
     timeOfDay:
       second: "In-Game Second"
       display: "Time of day {1} {0}"
+      formatArgs:
+        arg0: "Required Time"
       ui:
         times: "Day: 06:00 (21600)\nNight: 18:00 (64800)"
         command:
@@ -2222,18 +2260,33 @@ keys:
         health:
           value: "Health Percentage"
           display: "Player Health {0} {1}"
+          formatArgs:
+            arg0: "Current Health Percentage"
+            arg1: "Required Health Percentage"
         food:
           value: "Food Percentage"
           display: "Player Food {0} {1}"
+          formatArgs:
+            arg0: "Current Food Percentage"
+            arg1: "Required Food Percentage"
         water:
           value: "Water Percentage"
           display: "Player Water {0} {1}"
+          formatArgs:
+            arg0: "Current Water Percentage"
+            arg1: "Required Water Percentage"
         virus:
           value: "Virus Percentage"
           display: "Player Virus {0} {1}"
+          formatArgs:
+            arg0: "Current Virus Percentage"
+            arg1: "Required Virus Percentage"
         stamina:
           value: "Stamina Percentage"
           display: "Player Stamina {0} {1}"
+          formatArgs:
+            arg0: "Current Stamina Percentage"
+            arg1: "Required Stamina Percentage"
     holiday:
       value: "Holiday"
       display: "Holiday: {0}"
@@ -2242,6 +2295,8 @@ keys:
       value: "Value"
       reset: "Take currency from player"
       display: "Player has {1} {2} of currency '{0}'"
+      formatArgs:
+        arg0: "Value In Player Inventory"
     weather:
       status:
         value: "Status"
