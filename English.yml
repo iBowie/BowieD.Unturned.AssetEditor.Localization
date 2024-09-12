@@ -2791,6 +2791,13 @@ keys:
         uiRequirements:
           parseError: "In condition #{0} UI requirements index '{1}' is not a number."
           outOfBounds: "In condition #{0} UI requirements index '{1}' is out of bounds (allowed range is from 0 to {2})."
+      virtual:
+        flagRange:
+          maxEqualMin: "In condition #{0} max value equals min, meaning unnecessary creation of two conditions."
+          maxLessThanMin: "In condition #{0} max value is less than min."
+        timeRange:
+          maxEqualMin: "In condition #{0} max value equals min, meaning unnecessary creation of two conditions."
+          maxLessThanMin: "In condition #{0} max value is less than min."
       logic:
         none: "Condition #{0} has logic 'NONE', which will result in this condition being always false."
       currency:
@@ -2848,6 +2855,13 @@ keys:
       currency:
         guid:
           none: "Reward #{0} has no currency GUID specified."
+      effect:
+        assetRef:
+          invalid: "Reward #{0} has no effect ID specified."
+        spawnpoint:
+          empty: "Reward #{0} has no spawnpoint specified."
+        overrideRelevantDistance:
+          lessThanZero: "Reward #{0} has override relevant distance set to less than zero."
       event:
         id:
           none: "Reward #{0} has no event ID specified."
