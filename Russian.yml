@@ -88,6 +88,19 @@ keys:
                 toDirectory: "...в папку"
                 toSandbox: "...в песочницу Unturned"
               delete: "Удалить (Del)"
+            multiAsset:
+              copyAsset:
+                full: "Копировать группу ассетов"
+                newGuid: "Копировать группу ассетов (Новые Guidы)"
+              duplicateAsset:
+                full: "Дублировать группу ассетов"
+                newGuid: "Дублировать группу ассетов (Новые Guidы)"
+              flatten: "Преобразовать в раздельные ассеты"
+              export:
+                header: "Экспорт..."
+                toDirectory: "...в папку"
+                toSandbox: "...в песочницу Unturned"
+              delete: "Удалить (Del)"
             bundle:
               copyPath: "Копировать путь"
             bundleCollection:
@@ -492,6 +505,12 @@ keys:
     askDelete:
       caption: "Подтвердите удаление"
       text: "Вы уверены что хотите удалить это? Это действие нельзя отменить."
+    askFlatten:
+      caption: "Подтвердите преобразование"
+      text: "Вы уверены что хотите преобразовать группу ассетов в раздельные ({0} ассетов)? Это действие нельзя отменить."
+    askRegenerateGuids:
+      caption: "Подтвердите перегенерацию Guidов"
+      text: "Вы уверены что хотите заново сгенерировать Guidы в этой папке ({0})? Это действие нельзя отменить."
   page:
     welcome:
       getStarted:
@@ -534,6 +553,32 @@ keys:
           link: "Получите полную версию, поддержав разработку на Boosty."
       tempNotAvailable:
         text: "Этот тип ассета временно недоступен для редактирования."
+      multiAsset:
+        assetGroup:
+          header: "Атрибуты группы ассетов"
+          count: "Количество ассетов"
+          attributes:
+            guid:
+              header: "Guid элемента"
+            id:
+              header: "ID элемента"
+            name:
+              header: "Имя элемента"
+          placeholders:
+            header: "Подстановки"
+            guid:
+              text: "%ATTRIB_GUID% -> Guid элемента"
+            id:
+              text: "%ATTRIB_ID% -> ID элемента"
+            name:
+              text: "%ATTRIB_NAME% -> Имя элемента"
+              toolTip: "Старое написание %GROUP_NAME% также работает!"
+          commands:
+            defaultUnturnedColors:
+              text: "Установить стандартные цвета Unturned"
+            setIdsDownward:
+              text: "Установить ID по нарастанию"
+          baseAsset: "Базовый ассет"
       character:
         generalInformation:
           header: "Общая информация"

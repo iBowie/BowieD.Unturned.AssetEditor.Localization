@@ -88,6 +88,19 @@ keys:
                 toDirectory: "...to folder"
                 toSandbox: "...to Unturned Sandbox"
               delete: "Delete (Del)"
+            multiAsset:
+              copyAsset:
+                full: "Copy Asset Group"
+                newGuid: "Copy Asset Group (New Guids)"
+              duplicateAsset:
+                full: "Duplicate Asset Group"
+                newGuid: "Duplicate Asset Group (New Guids)"
+              flatten: "Flatten Asset Group"
+              export:
+                header: "Export..."
+                toDirectory: "...to folder"
+                toSandbox: "...to Unturned Sandbox"
+              delete: "Delete (Del)"
             bundle:
               copyPath: "Copy Path"
             bundleCollection:
@@ -492,6 +505,12 @@ keys:
     askDelete:
       caption: "Confirm deletion"
       text: "Are you sure you want to delete this? This action cannot be undone."
+    askFlatten:
+      caption: "Confirm flattening"
+      text: "Are you sure you want to flatten this group into separate assets ({0} assets)? This action cannot be undone."
+    askRegenerateGuids:
+      caption: "Confirm Guid regeneration"
+      text: "Are you sure you want to regenerate Guids in this folder ({0})? This action cannot be undone."
   page:
     welcome:
       getStarted:
@@ -534,6 +553,32 @@ keys:
           link: "Get the full version by supporting development on Boosty."
       tempNotAvailable:
         text: "This asset type is disabled temporarily."
+      multiAsset:
+        assetGroup:
+          header: "Group Item Attributes"
+          count: "Asset Count"
+          attributes:
+            guid:
+              header: "Element Guid"
+            id:
+              header: "Element ID"
+            name:
+              header: "Element Name"
+          placeholders:
+            header: "Placeholders"
+            guid:
+              text: "%ATTRIB_GUID% -> Element Guid"
+            id:
+              text: "%ATTRIB_ID% -> Element ID"
+            name:
+              text: "%ATTRIB_NAME% -> Element Name"
+              toolTip: "Legacy option %GROUP_NAME% still works too!"
+          commands:
+            defaultUnturnedColors:
+              text: "Set to default Unturned colors"
+            setIdsDownward:
+              text: "Set IDs downward"
+          baseAsset: "Base Asset"
       character:
         generalInformation:
           header: "General Information"
