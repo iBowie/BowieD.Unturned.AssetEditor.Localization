@@ -240,6 +240,7 @@ keys:
             welcomeScreen: "Фон экрана приветствия"
             workAreaUsesWelcomeScreen: "Рабочая область использует настройки экрана приветствия"
           disableAdvancedToolTips: "Отключить продвинутые подсказки"
+          doNotSaveAndRestoreUi: "Не сохранять положение и размеры интерфейса"
         import:
           header: "Связка"
           autoImportOnStartUp: "Автоматически связывать ассеты при запуске"
