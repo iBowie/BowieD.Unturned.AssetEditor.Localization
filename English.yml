@@ -256,6 +256,7 @@ keys:
               label: "Load only selected mods"
               toolTip: "If enabled, only mods from the list below will be loaded. Otherwise, mods from the list below will be excluded from loading."
             refresh: "Refresh"
+            selectAll: "Select all"
             clear: "Clear"
         export:
           header: "Export"
