@@ -2479,10 +2479,14 @@ keys:
         itemMultiple:
           display: "x{0} item types for {1}"
           manualValues: "Item IDs (separate with spaces, ex. 1 2 3..5)"
+          itemsPreview:
+            header: "Items"
       selling:
         itemMultiple:
           display: "x{0} item types for {1}"
           manualValues: "Item IDs (separate with spaces, ex. 1 2 3..5)"
+          itemsPreview:
+            header: "Items"
         vehicleMultiple:
           display: "x{0} vehicle types for {1} at '{2}'"
           manualValues: "Vehicle IDs (separate with spaces, ex. 1 2 3..5)"

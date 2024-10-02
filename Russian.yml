@@ -2479,10 +2479,14 @@ keys:
         itemMultiple:
           display: "x{0} типов предметов за {1}"
           manualValues: "ID предметов (разделять пробелом, пример: 1 2 3..5)"
+          itemsPreview:
+            header: "Предметы"
       selling:
         itemMultiple:
           display: "x{0} типов предметов за {1}"
           manualValues: "ID предметов (разделять пробелом, пример: 1 2 3..5)"
+          itemsPreview:
+            header: "Предметы"
         vehicleMultiple:
           display: "x{0} типов транспорта за {1} на '{2}'"
           manualValues: "ID транспорта (разделять пробелом, пример: 1 2 3..5)"
