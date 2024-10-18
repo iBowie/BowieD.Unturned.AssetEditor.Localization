@@ -1446,6 +1446,7 @@ keys:
         normal:
           products: "Результат"
           transferState: "Перенос состояния"
+          transferStateWithoutAttachments: "Перенос состояния без модулей на оружие"
         repair:
           displayText: "Ремонт при помощи: {0}"
         ammo:
@@ -1895,6 +1896,9 @@ keys:
           mult: "*="
           div: "/="
           mod: "%="
+          random:
+            inclusive: "rand[]"
+            exclusive: "rand[)"
         alt:
           none: "Нет"
           assign: "Присвоить"
@@ -1903,6 +1907,9 @@ keys:
           mult: "Умножить"
           div: "Разделить"
           mod: "Остаток от деления"
+          random:
+            inclusive: "Случайное число (Включительно)"
+            exclusive: "Случайное число (Исключительно)"
       pose:
         stand: "Стоит"
         sit: "Сидит"
@@ -1979,6 +1986,7 @@ keys:
           rubble: "Разрушаемое"
           npc: "NPC"
           quest: "Задание"
+          dialogue: "Диалог"
         editor:
           none: "Обычно"
           toggle: "Включено"
@@ -2367,6 +2375,7 @@ keys:
     base:
       text: "Текст"
       grantDelay: "Задержка выдачи"
+      grantDelayApplyWhenInterrupted: "Применить если задержка выдачи была прервана"
     experience:
       value: "Количество"
       display: "Выдать {0} опыта"
@@ -2502,6 +2511,14 @@ keys:
           convertToSelling: "Преобразовать в продаваемый предмет"
     selling:
       item:
+        attachments:
+          header: "Модули"
+          sight: "Прицел"
+          tactical: "Тактический модуль"
+          grip: "Цевье"
+          barrel: "Ствол"
+          magazine: "Магазин"
+          ammo: "Количенство патронов"
         display: "Предмет '{0}' за {1}"
         contextMenu:
           convertToBuying: "Преобразовать в скупаемый предмет"
@@ -2844,6 +2861,8 @@ keys:
             rubble:
               withOldRubble: "Не используйте взаимодействие 'Разрушаемое' вместе с обычной разрушаемостью."
             npc: "Не используйте взаимодействие 'NPC'. Используйте ассет персонажа."
+            dialogue:
+              empty: "Диалог не указан для взаимодействия 'Диалог'"
       vehicle:
         turrets:
           max: "Максимальное количество турелей ({0}/{1}) превышено."

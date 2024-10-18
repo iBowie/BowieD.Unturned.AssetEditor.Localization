@@ -1446,6 +1446,7 @@ keys:
         normal:
           products: "Products"
           transferState: "Transfer State"
+          transferStateWithoutAttachments: "Transfer State Without Attachments"
         repair:
           displayText: "Repair with: {0}"
         ammo:
@@ -1895,6 +1896,9 @@ keys:
           mult: "*="
           div: "/="
           mod: "%="
+          random:
+            inclusive: "rand[]"
+            exclusive: "rand[)"
         alt:
           none: "None"
           assign: "Assign"
@@ -1903,6 +1907,9 @@ keys:
           mult: "Multiply"
           div: "Divide"
           mod: "Modulo"
+          random:
+            inclusive: "Random (Inclusive)"
+            exclusive: "Random (Exclusive)"
       pose:
         stand: "Stand"
         sit: "Sitting"
@@ -1979,6 +1986,7 @@ keys:
           rubble: "Rubble"
           npc: "NPC"
           quest: "Quest"
+          dialogue: "Dialogue"
         editor:
           none: "Normal"
           toggle: "Toggled"
@@ -2367,6 +2375,7 @@ keys:
     base:
       text: "Localization"
       grantDelay: "Grant Delay"
+      grantDelayApplyWhenInterrupted: "Apply If Grant Delay Is Interrupted"
     experience:
       value: "Value"
       display: "Give {0} XP"
@@ -2502,6 +2511,14 @@ keys:
           convertToSelling: "Convert to selling"
     selling:
       item:
+        attachments:
+          header: "Attachments"
+          sight: "Sight"
+          tactical: "Tactical"
+          grip: "Grip"
+          barrel: "Barrel"
+          magazine: "Magazine"
+          ammo: "Ammo"
         display: "Item '{0}' for {1}"
         contextMenu:
           convertToBuying: "Convert to buying"
@@ -2844,6 +2861,8 @@ keys:
             rubble:
               withOldRubble: "Do not use interactability rubble and normal rubble together."
             npc: "Do not use interactability NPC. Use Character asset instead."
+            dialogue:
+              empty: "Dialogue is not specified for interaction type 'Dialogue'"
       vehicle:
         turrets:
           max: "Max count of turrets ({0}/{1}) exceeded."
