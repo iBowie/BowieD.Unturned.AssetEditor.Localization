@@ -877,6 +877,7 @@ keys:
         contextMenu:
           selectAsset: "Выбрать ассет"
           goToAsset: "Перейти к ассету"
+          createAsset: "Создать ассет"
           findUnusedId: "Найти неиспользованный ID"
       base:
         header: "Общие свойства ассета"

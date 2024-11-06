@@ -877,6 +877,7 @@ keys:
         contextMenu:
           selectAsset: "Select Asset"
           goToAsset: "Go to Asset"
+          createAsset: "Create Asset"
           findUnusedId: "Find unused ID"
       base:
         header: "Common Asset Properties"
