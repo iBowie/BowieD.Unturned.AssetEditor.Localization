@@ -1550,7 +1550,16 @@ keys:
           aimOffset: "Смещение прицела"
     genericCollection:
       addButton: "Добавить"
-      pasteButton: "Вставить"
+      pasteButton:
+        toolTip: "Вставить"
+      selection:
+        header: "Выделено {0} элементов:"
+        unselectButton:
+          toolTip: "Снять выделение"
+        copyButton:
+          toolTip: "Копировать выделенное"
+        deleteButton:
+          toolTip: "Удалить выделенное"
     richTextBox:
       context:
         common:

@@ -1550,7 +1550,16 @@ keys:
           aimOffset: "Aim Offset"
     genericCollection:
       addButton: "Add New"
-      pasteButton: "Paste"
+      pasteButton:
+        toolTip: "Paste"
+      selection:
+        header: "Selected {0} items:"
+        unselectButton:
+          toolTip: "De-select All"
+        copyButton:
+          toolTip: "Copy Selected"
+        deleteButton:
+          toolTip: "Delete Selected"
     richTextBox:
       context:
         common:
