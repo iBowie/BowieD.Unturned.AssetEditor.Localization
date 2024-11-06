@@ -663,9 +663,13 @@ keys:
         messages:
           header: "Сообщения"
           addButton: "Добавить сообщение"
+          pasteButton:
+            toolTip: "Вставить сообщение"
         responses:
           header: "Ответы"
           addButton: "Добавить ответ"
+          pasteButton:
+            toolTip: "Вставить ответ"
         orderMode: "Режим сортировки"
       vendor:
         properties:

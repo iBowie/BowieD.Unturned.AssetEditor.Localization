@@ -663,9 +663,13 @@ keys:
         messages:
           header: "Messages"
           addButton: "Add Message"
+          pasteButton:
+            toolTip: "Paste Message"
         responses:
           header: "Responses"
           addButton: "Add Response"
+          pasteButton:
+            toolTip: "Paste Response"
         orderMode: "Order Mode"
       vendor:
         properties:
