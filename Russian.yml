@@ -517,10 +517,11 @@ keys:
     welcome:
       getStarted:
         header: "Начало"
-        guideSteam: "Прочитать официальный гайд в Steam"
+        communityRepo: "Полезные ресурсы"
+        reportIssue: "Сообщить об ошибке"
+        wiki: "Оффициальная вики"
         videoTutorialsOfficial: "Смотреть официальные туториалы"
         videoTutorialsCommunity: "Смотреть туториалы сообщества"
-        reportIssue: "Сообщить об ошибке на GitHub"
       quickActions:
         header: "Быстрые действия"
         newProject: "Новый проект"

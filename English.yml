@@ -517,10 +517,11 @@ keys:
     welcome:
       getStarted:
         header: "Get Started"
-        guideSteam: "Read Official Guide on Steam"
+        communityRepo: "Useful resources"
+        reportIssue: "Report an issue"
+        wiki: "Official wiki"
         videoTutorialsOfficial: "Watch official tutorials"
         videoTutorialsCommunity: "Watch community tutorials"
-        reportIssue: "Report an issue on GitHub"
       quickActions:
         header: "Quick Actions"
         newProject: "New Project"
