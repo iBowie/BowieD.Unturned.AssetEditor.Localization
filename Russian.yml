@@ -2031,6 +2031,9 @@ keys:
         editor:
           alive: "Целое"
           dead: "Разрушенное"
+        navMode:
+          unaffected: "Без изменений"
+          deactivateIfAllDead: "Деактивировать если разрушено"
       type:
         large: "Большой"
         medium: "Средний"

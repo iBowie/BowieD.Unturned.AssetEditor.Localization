@@ -2031,6 +2031,9 @@ keys:
         editor:
           alive: "Alive"
           dead: "Destroyed"
+        navMode:
+          unaffected: "Unaffected"
+          deactivateIfAllDead: "Deactivate If All Dead"
       type:
         large: "Large"
         medium: "Medium"
