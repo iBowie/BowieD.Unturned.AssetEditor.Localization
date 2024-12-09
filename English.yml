@@ -751,6 +751,10 @@ keys:
             air:
               min: "Min Air Steer"
               max: "Max Air Steer"
+            angleTurnSpeed: "Angle Turn Speed"
+            leaningForceMultiplier: "Leaning Steering Force Multiplier"
+            leaningForceScaleWithSpeed: "Scale Steering Leaning Force With Speed"
+            leaningForceSpeedExponent: "Steering Leaning Force Speed Exponent"
           airTurnResponsiveness: "Air Turn Responsiveness"
           staminaBoost: "Stamina Boost"
           staminaPowered: "Is Stamina Powered"
@@ -763,6 +767,10 @@ keys:
           wheelBalancingForceMultiplier: "Wheel Balancing Force Multiplier"
           wheelBalancingUprightExponent: "Wheel Balancing Upright Exponent"
           rollAngularVelocityDamping: "Roll Angular Velocity Damping"
+          crawlerTrackSteering:
+            torque: "Crawler Track Torque"
+            sidewaysFrictionMultiplier: "Crawler Track Sideways Friction Multiplier"
+            maxSpeedScale: "Crawler Track Max Speed Scale"
         explosion:
           header: "Explosion"
           effect: "Explosion Effect"

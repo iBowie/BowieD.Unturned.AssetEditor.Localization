@@ -751,6 +751,10 @@ keys:
             air:
               min: "Угол поворота в воздухе медленно"
               max: "Угол поворота в воздухе на скорости"
+            angleTurnSpeed: "Скорость поворота"
+            leaningForceMultiplier: "Множитель силы поворота при наклоне"
+            leaningForceScaleWithSpeed: "Изменять силу поворота при наклоне на скорости"
+            leaningForceSpeedExponent: "Экспонента силы поворота при наклоне"
           airTurnResponsiveness: "Чувствительность поворота в воздухе"
           staminaBoost: "Ускорение за счёт выносливости"
           staminaPowered: "Использует энергию персонажа"
@@ -763,6 +767,10 @@ keys:
           wheelBalancingForceMultiplier: "Множитель силы балансировки колеса"
           wheelBalancingUprightExponent: "Экспонента балансировки колеса вверх"
           rollAngularVelocityDamping: "Погашение скорости наклона"
+          crawlerTrackSteering:
+            torque: "Крутящий момент гусениц"
+            sidewaysFrictionMultiplier: "Множитель трения гусениц под углом"
+            maxSpeedScale: "Множитель максимальной скорости на гусеницах"
         explosion:
           header: "Взрыв"
           effect: "Эффект взрыва"
