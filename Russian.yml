@@ -1064,7 +1064,6 @@ keys:
             isSilenced: "Заглушает выстрелы"
             volume: "Громкость"
             durability: "Количество прочности за выстрел"
-            ballisticDrop: "Сила баллистики"
             gunshotRolloffDistanceMultiplier: "Множитель дальности слышимости выстрела"
           grip:
             type: "Цевье"
