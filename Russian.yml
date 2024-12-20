@@ -777,6 +777,7 @@ keys:
           effect: "Эффект взрыва"
           causeDamage: "Взрыв причиняет урон"
           burnMaterials: 'Взрыв "сжигает" материалы'
+          burnSections: "Секции сожжёных материалов"
           force:
             min: "Мин. сила взрыва"
             max: "Макс. сила взрыва"
@@ -840,6 +841,7 @@ keys:
         paint:
           header: "Покраска"
           sections: "Окрашиваемые сегменты"
+          crawlerTrackTilingMaterials: "Повторяющиеся материалы гусеничной цепи"
           isPaintable: "Может быть покрашено"
         skins:
           header: "Скины"
@@ -1538,6 +1540,13 @@ keys:
           display: "Материал #{1} по пути: {0}"
           path: "Путь к игровому объекту"
           materialIndex: "Индекс материала"
+        crawlerTrackTilingMaterial:
+          display: "Материал #{1} по пути: {0}"
+          repeatDistance: "Расстояние повтора"
+          wheelIndices: "Индексы колёс"
+          path: "Путь к игровому объекту"
+          materialIndex: "Индекс материала"
+          uvDirection: "Направление UV"
         rpmEngineSoundConfiguration:
           display: "Высота [{0:P2}->{2:P2}]; Громкость [{1:P2}->{3:P2}]"
           idlePitch: "Высота звука в простое"

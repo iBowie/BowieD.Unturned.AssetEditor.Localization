@@ -777,6 +777,7 @@ keys:
           effect: "Explosion Effect"
           causeDamage: "Should Explosion Cause Damage"
           burnMaterials: "Should Explosion Burn Materials"
+          burnSections: "Burn Materials Sections"
           force:
             min: "Min Explosion Force"
             max: "Max Explosion Force"
@@ -840,6 +841,7 @@ keys:
         paint:
           header: "Paint"
           sections: "Paintable Sections"
+          crawlerTrackTilingMaterials: "Crawler Track Tiling Materials"
           isPaintable: "Is Paintable"
         skins:
           header: "Skins"
@@ -1538,6 +1540,13 @@ keys:
           display: "Material #{1} at path: {0}"
           path: "GameObject Path"
           materialIndex: "Material Index"
+        crawlerTrackTilingMaterial:
+          display: "Material #{1} at path: {0}"
+          repeatDistance: "Repeat Distance"
+          wheelIndices: "Wheel Indices"
+          path: "GameObject Path"
+          materialIndex: "Material Index"
+          uvDirection: "UV Direction"
         rpmEngineSoundConfiguration:
           display: "Pitch [{0:P2}->{2:P2}]; Volume [{1:P2}->{3:P2}]"
           idlePitch: "Idle Pitch"
