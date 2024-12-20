@@ -214,45 +214,45 @@ keys:
         general:
           header: "General"
           localization:
-            location: "Localization File Location"
+            location: "Localization file location"
             select: "Select"
             export: "Dump loaded localization"
-          builtInLocalization: "Built-In Localization"
+          builtInLocalization: "Built-in localization"
           doNotAskBeforeDeleting: "Do not ask before deleting"
           virtualFeatures:
-            header: "Virtual Features"
+            header: "Virtual features"
             pageConditionsAndRewards: "Enable page conditions and rewards"
             flagPlaceholder: "Enable flag placeholder"
-            goToIssueTracker: "Open Issue Tracker for details"
+            goToIssueTracker: "Open issue tracker for details"
         interface:
           header: "Interface"
           theme:
             header: "Theme"
-            selected: "Selected Theme"
+            selected: "Selected theme"
             settings:
               header: "Settings"
               shared:
-                accentColor: "Accent Color"
-                isDarkMode: "Use Dark Mode"
+                accentColor: "Accent color"
+                isDarkMode: "Use dark mode"
           uiScale: "UI Scale"
           background:
-            workArea: "Work Area Background"
-            welcomeScreen: "Welcome Screen Background"
-            workAreaUsesWelcomeScreen: "Work Area uses Welcome Screen Settings"
-          disableAdvancedToolTips: "Disable Advanced ToolTips"
+            workArea: "Work area background"
+            welcomeScreen: "Welcome screen background"
+            workAreaUsesWelcomeScreen: "Work area uses welcome screen settings"
+          disableAdvancedToolTips: "Disable advanced tooltips"
           doNotSaveAndRestoreUi: "Do not save and restore UI"
           displayClassicMoveButtons: "Display classic move buttons"
         import:
           header: "Link"
           autoImportOnStartUp: "Automatically link assets on startup"
           includes:
-            vanilla: "Link Vanilla Assets"
-            workshop: "Link Workshop Assets"
-          location: "Unturned Location"
+            vanilla: "Link vanilla assets"
+            workshop: "Link workshop assets"
+          location: "Unturned location"
           setManual: "Set manually"
           findAuto: "Find automatically"
           modFilter:
-            header: "Mod Filter"
+            header: "Mod filter"
             isAllowList:
               label: "Load only selected mods"
               toolTip: "If enabled, only mods from the list below will be loaded. Otherwise, mods from the list below will be excluded from loading."
@@ -268,13 +268,13 @@ keys:
             header: "Obfuscation"
             isEnabled: "Obfuscate exported assets"
             garbage:
-              isEnabled: "Enable Garbage"
-              amount: "Garbage Amount"
+              isEnabled: "Enable garbage"
+              amount: "Garbage amount"
             dupe:
-              isEnabled: "Enable Duplication"
-              amount: "Duplication Amount"
+              isEnabled: "Enable duplication"
+              amount: "Duplication amount"
             randomExportName:
-              isEnabled: "Randomize Export Names"
+              isEnabled: "Randomize export names"
           globalAssetWatermark:
             notInDemo:
               text: "Asset watermark is only available in full version."
@@ -282,14 +282,14 @@ keys:
             name: "Global asset watermark"
             toolTip: "This watermark will be written in every project you export."
           writeDescriptiveComments:
-            name: "Write Descriptive Comments"
+            name: "Write descriptive comments"
             toolTip: "Writes descriptive comments (i.e. item names next to item IDs) in exported assets. This significantly increases exporting time."
         addons:
           notInDemo:
             text: "Addons are only available in full version."
             link: "Get the full version by supporting development on Boosty."
           header: "Add-ons"
-          enableAddons: "Enable Add-ons & Custom Themes"
+          enableAddons: "Enable add-ons & custom themes"
           goToAddonsFolder: "Go to add-ons folder"
           installAddonFromZip:
             button: "Install from .zip file"
@@ -313,22 +313,22 @@ keys:
           rawTextEditorByDefault: "Raw Text Editor by default"
           useClassicCharacterEditor: "Use classic character editor"
           useClassicCollectionEditor: "Use classic collection editor"
-          saveMainForegroundInRichText: "Save Main Foreground In Rich Text"
+          saveMainForegroundInRichText: "Save main foreground in rich text"
         advanced:
           header: "Advanced"
-          forceSoftwareRendering: "Force Software Rendering"
+          forceSoftwareRendering: "Force software rendering"
           useFastDialogueUI: "Use fast dialogue UI (less fancy, more speed)"
           useOldAssetExportWhenPossible: "Use legacy asset export system when possible"
           versionControlCompatibility:
-            label: "Version Control Compatibility"
+            label: "Version control compatibility"
             toolTip: "Indents project structure on save, which takes more space on hard drive, but allows for line-based version control"
           goToDataFolder: "Go to data folder"
           copySourceTranslationToTarget:
             label: "Copy source translation to target language"
             toolTip: "Copy source translation to target language when switching between languages and text is not yet have been created"
-          selectedClipboardManager: "Clipboard Manager"
+          selectedClipboardManager: "Clipboard manager"
       buttons:
-        loadDefaults: "Load Defaults"
+        loadDefaults: "Load defaults"
         close: "Close"
         apply: "Apply"
         saveClose: "Save"
