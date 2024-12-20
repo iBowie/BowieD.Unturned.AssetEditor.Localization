@@ -241,6 +241,7 @@ keys:
             workAreaUsesWelcomeScreen: "Work Area uses Welcome Screen Settings"
           disableAdvancedToolTips: "Disable Advanced ToolTips"
           doNotSaveAndRestoreUi: "Do not save and restore UI"
+          displayClassicMoveButtons: "Display classic move buttons"
         import:
           header: "Link"
           autoImportOnStartUp: "Automatically link assets on startup"
