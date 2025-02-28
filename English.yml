@@ -1898,6 +1898,7 @@ keys:
         aprilFools: "April Fools"
         valentines: "Valentine's Day"
         prideMonth: "Pride Month"
+        lunarNewYear: "Lunar New Year"
       logic:
         normal:
           none: "None"
@@ -2546,6 +2547,7 @@ keys:
       cost: "Cost"
       conditions: "Conditions"
       rewards: "Rewards"
+      descriptionOverride: "Description Override"
     buying:
       item:
         display: "Item '{0}' for {1}"

@@ -1898,6 +1898,7 @@ keys:
         aprilFools: "Первое апреля"
         valentines: "День святого Валентина"
         prideMonth: "Месяц гордости"
+        lunarNewYear: "Лунный новый год"
       logic:
         normal:
           none: "Нет"
@@ -2546,6 +2547,7 @@ keys:
       cost: "Цена"
       conditions: "Условия"
       rewards: "Награды"
+      descriptionOverride: "Описание"
     buying:
       item:
         display: "Предмет '{0}' за {1}"
