@@ -2824,6 +2824,7 @@ keys:
         taken: "ID '{0}' уже используется '{1}'."
       unity3dBundle:
         missing: "Указанный файл ассета Unity не найден. При экспорте он не будет скопирован."
+        notExcluded: "Вы указали файл ассета Unity без исключения ассета из Master Bundle."
       bypassidlimit: "Рекомендуется не использовать 'Обход лимита ID'."
       item:
         useable:

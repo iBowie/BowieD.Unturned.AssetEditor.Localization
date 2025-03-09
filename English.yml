@@ -2824,6 +2824,7 @@ keys:
         taken: "ID '{0}' is already taken by '{1}'."
       unity3dBundle:
         missing: "Specified unity asset bundle file is missing. It will not be copied upon export."
+        notExcluded: "You have specified asset bundle file without excluding asset from master bundles."
       bypassidlimit: "It is recommended to leave 'Bypass ID Limit' disabled."
       item:
         useable:
