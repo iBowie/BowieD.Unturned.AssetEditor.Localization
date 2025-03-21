@@ -1474,6 +1474,8 @@ keys:
         item: "Предмет"
         amount: "Количество"
         isCritical: "Необходим для отображения"
+        prioritization: "Приоритизация"
+        shouldTreatEmptyAsOne: "Разрешить пустые предметы"
         contextMenu:
           convertToOutput: "Преобразовать в результат"
       blueprintOutput:
@@ -1715,6 +1717,9 @@ keys:
       utilities: "Вспомогательное"
       furniture: "Мебель"
       repair: "Ремонт"
+    craftingInputPrioritization:
+      lowestAmount: "Сначала низкое количество"
+      lowestQuality: "Сначала низкая прочность"
     bones:
       none: "Нет"
       heal: "Вылечить"
@@ -3126,6 +3131,7 @@ externalKeys:
   "System.Windows.Media.Stretch.Fill": "Заполнить"
   "System.Windows.Media.Stretch.Uniform": "Вместить"
   "System.Windows.Media.Stretch.UniformToFill": "Вместить без краёв"
+  "BowieD.Unturned.AssetEditor.Models.Enums.ECraftingInputPrioritization.Null": "Автоматически"
 tips:
   - "Вы можете клонировать связанные ассеты в свой проект нажав кнопку 'Клонировать в проект'"
   - "Вы можете связать ассеты из игры в программу для просмотра и улучшения функционала"

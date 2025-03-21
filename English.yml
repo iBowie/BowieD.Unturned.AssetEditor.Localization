@@ -1474,6 +1474,8 @@ keys:
         item: "Item"
         amount: "Amount"
         isCritical: "Is Critical"
+        prioritization: "Item Prioritization"
+        shouldTreatEmptyAsOne: "Allow Empty"
         contextMenu:
           convertToOutput: "Convert To Output"
       blueprintOutput:
@@ -1715,6 +1717,9 @@ keys:
       utilities: "Utility"
       furniture: "Furniture"
       repair: "Repair"
+    craftingInputPrioritization:
+      lowestAmount: "Lowest Amount First"
+      lowestQuality: "Lowest Quality First"
     bones:
       none: "None"
       heal: "Heal"
@@ -3126,6 +3131,7 @@ externalKeys:
   "System.Windows.Media.Stretch.Fill": "Fill"
   "System.Windows.Media.Stretch.Uniform": "Uniform"
   "System.Windows.Media.Stretch.UniformToFill": "Uniform To Fill"
+  "BowieD.Unturned.AssetEditor.Models.Enums.ECraftingInputPrioritization.Null": "Auto"
 tips:
   - "You can clone linked assets to your project by clicking 'Clone to project' button"
   - "You can link game assets to view them in app as if they were made in it"
