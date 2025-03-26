@@ -327,6 +327,7 @@ keys:
             label: "Copy source translation to target language"
             toolTip: "Copy source translation to target language when switching between languages and text is not yet have been created"
           selectedClipboardManager: "Clipboard manager"
+          registerExtensions: "Associate the app with project files"
       buttons:
         loadDefaults: "Load defaults"
         close: "Close"
