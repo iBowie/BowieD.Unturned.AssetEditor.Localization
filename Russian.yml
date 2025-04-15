@@ -521,7 +521,7 @@ keys:
         header: "Начало"
         communityRepo: "Полезные ресурсы"
         reportIssue: "Сообщить об ошибке"
-        wiki: "Оффициальная вики"
+        wiki: "Официальная вики"
         videoTutorialsOfficial: "Смотреть официальные туториалы"
         videoTutorialsCommunity: "Смотреть туториалы сообщества"
       quickActions:
