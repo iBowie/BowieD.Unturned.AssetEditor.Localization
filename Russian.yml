@@ -920,6 +920,10 @@
         "type": "Таблица наград"
         "conditions": "Условия"
         "rewards": "Награды"
+      "crafting":
+        "type": "Список чертежей"
+      "tag":
+        "type": "Метка чертежа"
       "item":
         "base":
           "type": "Предмет"
@@ -1460,16 +1464,18 @@
             "level": "Требуемый уровень навыка"
           "effect": "Эффект при создании"
           "map": "Карта"
+          "targetItem": "Целевой предмет"
           "conditions": "Условия"
           "rewards": "Награды"
-        "normal":
           "products": "Результат"
           "transferState": "Перенос состояния"
           "transferStateWithoutAttachments": "Перенос состояния без модулей на оружие"
-        "repair":
-          "displayText": "Ремонт при помощи: {0}"
-        "ammo":
-          "displayText": "Заполнение патронов при помощи: {0}"
+          "operation": "Операция"
+          "categoryTag": "Категория"
+          "canBeVisibleWhenSearchedWithoutRequiredItems": "Отображается при поиске даже если нет требуемых предметов"
+          "canBeVisibleWithUnmetConditions": "Отображается даже если не соблюдены условия"
+          "name": "Имя"
+          "requiredNearbyCraftingTags": "Требуемые метки чертежей поблизости"
       "blueprintSupply":
         "shouldRefParentItem": "Использовать содержащий предмет как ID"
         "item": "Предмет"
@@ -1477,6 +1483,11 @@
         "isCritical": "Необходим для отображения"
         "prioritization": "Приоритизация"
         "shouldTreatEmptyAsOne": "Разрешить пустые предметы"
+        "countingMethod": "Метод подсчёта"
+        "shouldIncludeMaxQuality": "Включить в расчёт максимальное качество"
+        "shouldConsume": "Потратить при крафте"
+        "shouldExcludeFullAmount": "Исключить из расчёта полное количество"
+        "shouldIncludeEmptyAmount": "Включить в расчёт пустое количество"
         "contextMenu":
           "convertToOutput": "Преобразовать в результат"
       "blueprintOutput":
@@ -1490,11 +1501,14 @@
         "type": "Тип действия"
         "sourceItemId": "ID исходного предмета"
         "text": "Текст"
+        "textId": "ID текста"
         "toolTip": "Подсказка"
+        "toolTipId": "ID текста подсказки"
         "blueprints": "Связанные чертежи"
       "craftActionBlueprint":
         "blueprintIndex": "Индекс чертежа"
         "isBlueprintLink": "Ссылка на чертёж"
+        "blueprintName": "Имя чертежа"
       "currencyItem":
         "item": "Предмет"
         "value": "Стоимость"
@@ -1704,8 +1718,27 @@
       "cut": "Наложить кровотечение"
     "blueprintSkill":
       "none": "Не требуется"
-      "craft": "Ремесло / Crafting"
+      "overkill": "Твёрдая рука / Overkill"
+      "sharpshooter": "Снайпер / Sharpshooter"
+      "dexterity": "Ловкость рук / Dexterity"
+      "cardio": "Мощное сердце / Cardio"
+      "exercise": "Упорные тренировки / Exercise"
+      "diving": "Дайвинг / Diving"
+      "parkour": "Паркур / Parkour"
+      "sneakyBeaky": "Скрытность / Sneakybeaky"
+      "vitality": "Регенерация / Vitality"
+      "immunity": "Иммунитет / Immunity"
+      "toughness": "Крепость / Toughness"
+      "strength": "Стойкость / Strength"
+      "warmblooded": "Теплокровный / Warmblooded"
+      "survival": "Мастер выживания / Survival"
+      "healing": "Медик / Healing"
+      "craft": "Плотник / Crafting"
+      "outdoors": "Разнорабочий / Outdoors"
       "cook": "Готовка / Cooking"
+      "fishing": "Рыбак / Fishing"
+      "agriculture": "Фермер / Agriculture"
+      "mechanic": "Механик/ Mechanic"
       "repair": "Ремонт / Repair"
     "blueprintType":
       "tool": "Инструмент"
@@ -1718,9 +1751,18 @@
       "utilities": "Вспомогательное"
       "furniture": "Мебель"
       "repair": "Ремонт"
+    "blueprintOperation":
+      "none": "Нет"
+      "repairTargetItem": "Чинить целевой предмет"
+      "fillTargetItem": "Заполнить целевой предмет"
     "craftingInputPrioritization":
       "lowestAmount": "Сначала низкое количество"
+      "highestAmount": "Сначала высокое количество"
       "lowestQuality": "Сначала низкая прочность"
+      "highestQuality": "Сначала высокая прочность"
+    "craftingInputCountingMethod":
+      "totalItems": "Количество предметов"
+      "totalAmount": "Сумма количества у каждого предмета"
     "bones":
       "none": "Нет"
       "heal": "Вылечить"
@@ -2198,6 +2240,7 @@
   "condition":
     "base":
       "text": "Текст"
+      "textId": "ID текста"
       "reset": "Сброс"
       "logic":
         "logic": "Логика"
@@ -2423,6 +2466,7 @@
   "reward":
     "base":
       "text": "Текст"
+      "textId": "ID текста"
       "grantDelay": "Задержка выдачи"
       "grantDelayApplyWhenInterrupted": "Применить если задержка выдачи была прервана"
     "experience":
@@ -2960,11 +3004,17 @@
           "zero": "Результат чертежа #{0} имеет нулевой ID предмета."
     "craftAction":
       "text":
-        "empty": "Craft Action #{0} has empty action text."
+        "empty": "Действие чертежа #{0} имеет пустой текст действия."
       "blueprint":
-        "invalidIndex": "Craft Action #{0}'s related blueprint #{1} has invalid blueprint index."
+        "invalidIndex": "Действие чертежа #{0}, и связанный чертёж #{1} имеет невалидный индекс чертежа."
+        "legacyIndex": "Действие чертежа #{0}, и связанный чертёж #{1} использует устаревший индекс чертежа. Обновите до нового формата."
+        "invalidName": "Действие чертежа #{0}, и связанный чертёж #{1} использует невалидное имя чертежа."
+      "legacyId": "Действие чертежа #{0} использует устаревший ID предмета."
     "condition":
       "base":
+        "textId":
+          "empty": "В условии #{0} нет ID текста."
+          "duplicate": "В условии #{0} есть дублированный ID текста. Не всегда это ошибка."
         "uiRequirements":
           "parseError": "В условии #{0} индекс требуемого условия '{1}' не является числом."
           "outOfBounds": "В условии #{0} индекс требуемого условия '{1}' находится вне корректного диапазона (от 0 до {2})."
@@ -3026,6 +3076,10 @@
         "divisor":
           "zero": "Условие #{0} имеет деление на ноль."
     "reward":
+      "base":
+        "textId":
+          "empty": "В награде #{0} нет ID текста."
+          "duplicate": "В награде #{0} есть дублированный ID текста. Не всегда это ошибка."
       "achievement":
         "id":
           "none": "Награда #{0} не имеет указанного ID достижения."
@@ -3133,6 +3187,7 @@
   "System.Windows.Media.Stretch.Uniform": "Вместить"
   "System.Windows.Media.Stretch.UniformToFill": "Вместить без краёв"
   "BowieD.Unturned.AssetEditor.Models.Enums.ECraftingInputPrioritization.Null": "Автоматически"
+  "BowieD.Unturned.AssetEditor.Models.Enums.ECraftingInputCountingMethod.Null": "Автоматически"
 "tips":
 - "Вы можете клонировать связанные ассеты в свой проект нажав кнопку 'Клонировать в проект'"
 - "Вы можете связать ассеты из игры в программу для просмотра и улучшения функционала"

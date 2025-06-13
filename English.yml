@@ -920,6 +920,10 @@
         "type": "Rewards Table"
         "conditions": "Conditions"
         "rewards": "Rewards"
+      "crafting":
+        "type": "Crafting Recipe List"
+      "tag":
+        "type": "Crafting Tag"
       "item":
         "base":
           "type": "Item"
@@ -1460,16 +1464,18 @@
             "level": "Required Skill Level"
           "effect": "Craft Effect"
           "map": "Map"
+          "targetItem": "Target Item"
           "conditions": "Conditions"
           "rewards": "Rewards"
-        "normal":
           "products": "Products"
           "transferState": "Transfer State"
           "transferStateWithoutAttachments": "Transfer State Without Attachments"
-        "repair":
-          "displayText": "Repair with: {0}"
-        "ammo":
-          "displayText": "Fill ammo with: {0}"
+          "operation": "Operation"
+          "categoryTag": "Category"
+          "canBeVisibleWhenSearchedWithoutRequiredItems": "Can Be Visible When Searched Without Required Items"
+          "canBeVisibleWithUnmetConditions": "Can Be Visible With Unmet Conditions"
+          "name": "Name"
+          "requiredNearbyCraftingTags": "Required Nearby Crafting Tags"
       "blueprintSupply":
         "shouldRefParentItem": "Use Parent Item as ID"
         "item": "Item"
@@ -1477,6 +1483,11 @@
         "isCritical": "Is Critical"
         "prioritization": "Item Prioritization"
         "shouldTreatEmptyAsOne": "Allow Empty"
+        "countingMethod": "Counting Method"
+        "shouldIncludeMaxQuality": "Should Include Max Quality"
+        "shouldConsume": "Should Consume"
+        "shouldExcludeFullAmount": "Should Exclude Full Amount"
+        "shouldIncludeEmptyAmount": "Should Include Empty Amount"
         "contextMenu":
           "convertToOutput": "Convert To Output"
       "blueprintOutput":
@@ -1490,11 +1501,14 @@
         "type": "Action Type"
         "sourceItemId": "Source Item ID"
         "text": "Action Text"
+        "textId": "Action Text ID"
         "toolTip": "Action ToolTip"
+        "toolTipId": "Action ToolTip ID"
         "blueprints": "Related Blueprints"
       "craftActionBlueprint":
         "blueprintIndex": "Blueprint Index"
         "isBlueprintLink": "Is Blueprint Link"
+        "blueprintName": "Blueprint Name"
       "currencyItem":
         "item": "Item"
         "value": "Value"
@@ -1704,9 +1718,28 @@
       "cut": "Apply Bleeding"
     "blueprintSkill":
       "none": "None"
+      "overkill": "Overkill"
+      "sharpshooter": "Sharpshooter"
+      "dexterity": "Dexterity"
+      "cardio": "Cardio"
+      "exercise": "Exercise"
+      "diving": "Diving"
+      "parkour": "Parkour"
+      "sneakyBeaky": "Sneakybeaky"
+      "vitality": "Vitality"
+      "immunity": "Immunity"
+      "toughness": "Toughness"
+      "strength": "Strength"
+      "warmblooded": "Warmblooded"
+      "survival": "Survival"
+      "healing": "Healing"
       "craft": "Crafting"
+      "outdoors": "Outdoors"
       "cook": "Cooking"
-      "repair": "Repair"
+      "fishing": "Fishing"
+      "agriculture": "Agriculture"
+      "mechanic": "Mechanic"
+      "repair": "Engineer"
     "blueprintType":
       "tool": "Tool"
       "apparel": "Apparel"
@@ -1718,9 +1751,18 @@
       "utilities": "Utility"
       "furniture": "Furniture"
       "repair": "Repair"
+    "blueprintOperation":
+      "none": "None"
+      "repairTargetItem": "Repair Target Item"
+      "fillTargetItem": "Fill Target Item"
     "craftingInputPrioritization":
       "lowestAmount": "Lowest Amount First"
+      "highestAmount": "Highest Amount First"
       "lowestQuality": "Lowest Quality First"
+      "highestQuality": "Highest Quality First"
+    "craftingInputCountingMethod":
+      "totalItems": "Total Items"
+      "totalAmount": "Total Amount"
     "bones":
       "none": "None"
       "heal": "Heal"
@@ -2198,6 +2240,7 @@
   "condition":
     "base":
       "text": "Localization"
+      "textId": "Localization ID"
       "reset": "Reset"
       "logic":
         "logic": "Logic"
@@ -2423,6 +2466,7 @@
   "reward":
     "base":
       "text": "Localization"
+      "textId": "Localization ID"
       "grantDelay": "Grant Delay"
       "grantDelayApplyWhenInterrupted": "Apply If Grant Delay Is Interrupted"
     "experience":
@@ -2963,8 +3007,14 @@
         "empty": "Craft Action #{0} has empty action text."
       "blueprint":
         "invalidIndex": "Craft Action #{0}'s related blueprint #{1} has invalid blueprint index."
+        "legacyIndex": "Craft Action #{0}'s related blueprint #{1} uses legacy blueprint index. Upgrade to blueprint name is required."
+        "invalidName": "Craft Action #{0}'s related blueprint #{1} uses invalid blueprint name."
+      "legacyId": "Craft Action #{0} uses legacy ID for its blueprint owner."
     "condition":
       "base":
+        "textId":
+          "empty": "Condition #{0} has no localization text ID."
+          "duplicate": "Condition #{0} has a duplicate localization text ID. This may be intentional."
         "uiRequirements":
           "parseError": "In condition #{0} UI requirements index '{1}' is not a number."
           "outOfBounds": "In condition #{0} UI requirements index '{1}' is out of bounds (allowed range is from 0 to {2})."
@@ -3026,6 +3076,10 @@
         "divisor":
           "zero": "Condition #{0} has division by zero."
     "reward":
+      "base":
+        "textId":
+          "empty": "Reward #{0} has no localization text ID."
+          "duplicate": "Reward #{0} has a duplicate localization text ID. This may be intentional."
       "achievement":
         "id":
           "none": "Reward #{0} has no achievement ID specified."
@@ -3133,6 +3187,7 @@
   "System.Windows.Media.Stretch.Uniform": "Uniform"
   "System.Windows.Media.Stretch.UniformToFill": "Uniform To Fill"
   "BowieD.Unturned.AssetEditor.Models.Enums.ECraftingInputPrioritization.Null": "Auto"
+  "BowieD.Unturned.AssetEditor.Models.Enums.ECraftingInputCountingMethod.Null": "Auto"
 "tips":
 - "You can clone linked assets to your project by clicking 'Clone to project' button"
 - "You can link game assets to view them in app as if they were made in it"
