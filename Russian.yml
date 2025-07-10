@@ -787,7 +787,16 @@
             "max": "Макс. выпадающих предметов"
             "tableId": "Таблица выпадающих предметов"
         "exit": "Расстояние для выхода"
-        "bumperMultiplier": "Множитель бампера"
+        "bumper":
+          "header": "Свойства бампера"
+          "multiplier": "Множитель урона"
+          "playerDamage": "Урон по игроку"
+          "zombieDamage": "Урон по зомби"
+          "animalDamage": "Урон по животным"
+          "objectDamage": "Урон по объектам"
+          "resourceDamage": "Урон по ресурсам"
+          "speedDamageThreshold": "Порог нанесения урона"
+          "selfDamageMultiplier": "Множитель само-урона"
         "tireId": "ID колёс"
         "buildablePlacementRule": "Правило размещения построек"
         "train":
@@ -975,6 +984,9 @@
               "label": "Бросать на пол при смерти игрока"
               "toolTip": "Внимание: выключение этого параметра будет уничтожать предмет при смерти игрока, а не сохранять внутри инвентаря!"
             "shouldDeleteAtZeroQuality": "Удалять при нулевом качестве"
+            "deletedAtZeroQualityEffect": "Эффект при удалении при нулевом качестве"
+            "deletedAtZeroQualityRewards": "Награды при удалении при нулевом качестве"
+            "shouldDeleteAtZeroAmount": "Удалять при нулевом количестве"
             "allowManualDrop": "Разрешить игроку выбрасывать предмет"
             "shouldDestroyItemColliders": "Уничтожать коллайдеры предмета"
             "instantiatedItemNameOverride": "Перезапись имени объекта в Unity при спавне"
@@ -1025,6 +1037,10 @@
             "isHolographic": "Является голографическим"
             "shouldOffsetScopeOverlayByOneTexel": "Нужно ли сместить оверлей прицела на один тексель"
             "distanceMarkers": "Метки расстояния"
+            "aimAlignment":
+              "owner": "Источник для ориентировочного объекта для прицела"
+              "path": "Путь до ориентировочного объекта для прицела"
+              "localOffset": "Смещение прицела"
           "tactical":
             "type": "Тактический модуль"
             "header": "Свойства тактического модуля"
@@ -1037,7 +1053,20 @@
             "rangefinder":
               "toggled": "Дальномер"
             "melee":
+              "properties": "Свойства штыка"
               "toggled": "Штык"
+              "range": "Расстояние"
+              "damage":
+                "player":
+                  "multiplier": "Множитель урона по игроку"
+                  "bleeding": "Модификатор кровотечения игрока"
+                  "bones": "Модификатор костей игрока"
+                "zombie":
+                  "multiplier": "Множитель урона по зомби"
+                  "stunOverride": "Оглушение зомби"
+                  "ragdollForceMultiplier": "Множитель силы, применимой к трупу зомби"
+                "animal":
+                  "multiplier": "Множитель урона по животным"
           "magazine":
             "type": "Магазин"
             "header": "Свойства магазина"
@@ -1176,6 +1205,7 @@
             "aid": "Можно использовать на других игроках"
             "shouldDelete": "Удалять после использования"
             "consumeAudio": "Звук использования"
+            "shouldRandomizeUseAudioPitch": "Использовать случайную высоту звука при использовании"
           "food":
             "type": "Еда"
             "header": "Свойства еды"
@@ -1664,6 +1694,13 @@
       "internal":
         "label": "Встроенный буфер обмена"
         "toolTip": "Не использовать системный буфер обмена. Экспериментально. \nСпособен сохранять несколько разных видов данных одновременно."
+    "aimAlignmentTransformOwner":
+      "sight": "Прицел"
+      "gun": "Оружие"
+    "rechamberGunAfterReloadMode":
+      "ifAmmoWasEmpty": "Если магазин был пустым"
+      "never": "Никогда"
+      "always": "Всегда"
     "addonState":
       "none": "Нет"
       "loaded": "Загружено"
@@ -1946,6 +1983,7 @@
         "aprilFools": "Первое апреля"
         "valentines": "День святого Валентина"
         "prideMonth": "Месяц гордости"
+        "anniversary": "Годовщина Unturned"
         "lunarNewYear": "Лунный новый год"
       "logic":
         "normal":
@@ -2042,6 +2080,7 @@
         "rewardsList": "Таблица наград"
         "cutsceneMode": "Режим катсцены"
         "effect": "Эффект"
+        "airdrop": "Аирдроп"
       "weather":
         "status":
           "active": "Активно"
@@ -2575,6 +2614,13 @@
       "spawnpoint": "ID точки появления"
       "overrideRelevantDistance": "Максимальное расстояние спавна"
       "isReliable": "Надёжный спавн"
+    "airdrop":
+      "display":
+        "random": "Вызвать аирдроп '{0}' на случайной точке спавна"
+        "set": "Вызвать аирдроп '{0}' на '{1}'"
+      "shouldUseRandomSpawnpoint": "Использовать случайную точку спавна"
+      "spawnpoint": "Точка спавна"
+      "cargo": "Ассет спавна для аирдропа"
   "vendorItem":
     "virtual":
       "buying":

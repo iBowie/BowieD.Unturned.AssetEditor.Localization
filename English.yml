@@ -787,7 +787,16 @@
             "max": "Max Drops"
             "tableId": "Drops Table ID"
         "exit": "Exit Distance"
-        "bumperMultiplier": "Bumper Multiplier"
+        "bumper":
+          "header": "Bumper Properties"
+          "multiplier": "Damage Multiplier"
+          "playerDamage": "Player Damage"
+          "zombieDamage": "Zombie Damage"
+          "animalDamage": "Animal Damage"
+          "objectDamage": "Object Damage"
+          "resourceDamage": "Resource Damage"
+          "speedDamageThreshold": "Speed Damage Threshold"
+          "selfDamageMultiplier": "Self Damage Multiplier"
         "tireId": "Tire ID"
         "buildablePlacementRule": "Buildable Placement Rule"
         "train":
@@ -975,6 +984,9 @@
               "label": "Should Drop On Death"
               "toolTip": "Note: disabling this will destroy item on death instead of keeping it in players inventory!"
             "shouldDeleteAtZeroQuality": "Should Delete At Zero Quality"
+            "deletedAtZeroQualityEffect": "Deleted At Zero Quality Effect"
+            "deletedAtZeroQualityRewards": "Deleted At Zero Quality Rewards"
+            "shouldDeleteAtZeroAmount": "Should Delete At Zero Amount"
             "allowManualDrop": "Allow Manual Drop"
             "shouldDestroyItemColliders": "Should Destroy Item Colliders"
             "instantiatedItemNameOverride": "Instantiated Item Name Override"
@@ -1025,6 +1037,10 @@
             "isHolographic": "Is Holographic"
             "shouldOffsetScopeOverlayByOneTexel": "Should Offset Scope Overlay By One Texel"
             "distanceMarkers": "Distance Markers"
+            "aimAlignment":
+              "owner": "Aim Alignment Transform Owner"
+              "path": "Aim Alignment Transform Path"
+              "localOffset": "Aim Alignment Local Offset"
           "tactical":
             "type": "Tactical"
             "header": "Tactical Properties"
@@ -1037,7 +1053,20 @@
             "rangefinder":
               "toggled": "Is Rangefinder"
             "melee":
+              "properties": "Melee Properties"
               "toggled": "Is Melee"
+              "range": "Range"
+              "damage":
+                "player":
+                  "multiplier": "Player Damage Multiplier"
+                  "bleeding": "Player Bleeding Modifier"
+                  "bones": "Player Bones Modifier"
+                "zombie":
+                  "multiplier": "Zombie Damage Multiplier"
+                  "stunOverride": "Zombie Stun Override"
+                  "ragdollForceMultiplier": "Zombie Ragdoll Force Multiplier"
+                "animal":
+                  "multiplier": "Animal Damage Multiplier"
           "magazine":
             "type": "Magazine"
             "header": "Magazine Properties"
@@ -1063,7 +1092,6 @@
             "tracer": "Tracer Effect"
             "impact": "Impact Effect"
             "spawnExplosionOnServer": "Spawn Explosion On Server"
-            "deleteEmpty": "Delete Empty"
             "shouldFillAfterDetach": "Should Fill After Detach"
           "barrel":
             "type": "Barrel"
@@ -1176,6 +1204,7 @@
             "aid": "Can Be Used On Other Players"
             "shouldDelete": "Should Delete After Use"
             "consumeAudio": "Consume Audio"
+            "shouldRandomizeUseAudioPitch": "Should Randomize Consume Audio Pitch"
           "food":
             "type": "Food"
             "header": "Food Properties"
@@ -1664,6 +1693,13 @@
       "internal":
         "label": "App Clipboard"
         "toolTip": "Does not use System Clipboard. Experimental.\nCapable of storing text and objects alongside each other."
+    "aimAlignmentTransformOwner":
+      "sight": "Sight"
+      "gun": "Gun"
+    "rechamberGunAfterReloadMode":
+      "ifAmmoWasEmpty": "If Ammo Was Empty"
+      "never": "Never"
+      "always": "Always"
     "addonState":
       "none": "None"
       "loaded": "Loaded"
@@ -1946,6 +1982,7 @@
         "aprilFools": "April Fools"
         "valentines": "Valentine's Day"
         "prideMonth": "Pride Month"
+        "anniversary": "Unturned Anniversary"
         "lunarNewYear": "Lunar New Year"
       "logic":
         "normal":
@@ -2042,6 +2079,7 @@
         "rewardsList": "Rewards List"
         "cutsceneMode": "Cutscene Mode"
         "effect": "Effect"
+        "airdrop": "Airdrop"
       "weather":
         "status":
           "active": "Active"
@@ -2575,6 +2613,13 @@
       "spawnpoint": "Spawnpoint"
       "overrideRelevantDistance": "Override Relevant Distance"
       "isReliable": "Is Reliable"
+    "airdrop":
+      "display":
+        "random": "Spawn airdrop '{0}' at random spawnpoint"
+        "set": "Spawn airdrop '{0}' at '{1}'"
+      "shouldUseRandomSpawnpoint": "Should Use Random Spawnpoint"
+      "spawnpoint": "Spawnpoint"
+      "cargo": "Cargo Spawn Table Asset"
   "vendorItem":
     "virtual":
       "buying":
