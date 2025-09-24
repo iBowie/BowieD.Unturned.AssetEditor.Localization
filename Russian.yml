@@ -242,6 +242,7 @@
           "disableAdvancedToolTips": "Отключить продвинутые подсказки"
           "doNotSaveAndRestoreUi": "Не сохранять положение и размеры интерфейса"
           "displayClassicMoveButtons": "Отображать классические кнопки для перемещения элементов в списках"
+          "disableErrorRefreshIcon": "Отключить иконку при поиске ошибок"
         "import":
           "header": "Связка"
           "autoImportOnStartUp": "Автоматически связывать ассеты при запуске"
@@ -851,6 +852,7 @@
         "paint":
           "header": "Покраска"
           "sections": "Окрашиваемые сегменты"
+          "additionalTransparentSections": "Дополнительные прозрачные сегменты"
           "crawlerTrackTilingMaterials": "Повторяющиеся материалы гусеничной цепи"
           "isPaintable": "Может быть покрашено"
         "skins":
@@ -1701,6 +1703,9 @@
       "ifAmmoWasEmpty": "Если магазин был пустым"
       "never": "Никогда"
       "always": "Всегда"
+    "textFormatMode":
+      "none": "Стандартный"
+      "flagValues": "Подстановка значений"
     "addonState":
       "none": "Нет"
       "loaded": "Загружено"
@@ -2537,6 +2542,7 @@
         "flagB": "ID флага Б"
         "valueB": "Значение флага Б"
         "operation": "Операция"
+        "textFormatMode": "Режим подстановки текста"
         "display": "Флаг '{0}' {1} значение флага '{2}' или стандартное значение '{3}'"
     "quest":
       "id": "ID задания"
@@ -2572,6 +2578,7 @@
       "display": "Телепортировать игрока на '{0}'"
     "event":
       "id": "Event ID"
+      "shouldReplicate": "Вызывать на клиенте"
       "display": "Вызвать event '{0}'"
     "currency":
       "guid": "ID валюты"
@@ -2611,6 +2618,7 @@
     "effect":
       "display": "Заспавнить эффект '{0}' на '{1}'"
       "asset": "Эффект"
+      "atPlayerPosition": "Спавнить на позиции игрока"
       "spawnpoint": "ID точки появления"
       "overrideRelevantDistance": "Максимальное расстояние спавна"
       "isReliable": "Надёжный спавн"

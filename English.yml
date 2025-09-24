@@ -242,6 +242,7 @@
           "disableAdvancedToolTips": "Disable advanced tooltips"
           "doNotSaveAndRestoreUi": "Do not save and restore UI"
           "displayClassicMoveButtons": "Display classic move buttons"
+          "disableErrorRefreshIcon": "Disable refresh icon when checking for errors"
         "import":
           "header": "Link"
           "autoImportOnStartUp": "Automatically link assets on startup"
@@ -851,6 +852,7 @@
         "paint":
           "header": "Paint"
           "sections": "Paintable Sections"
+          "additionalTransparentSections": "Additional Transparent Sections"
           "crawlerTrackTilingMaterials": "Crawler Track Tiling Materials"
           "isPaintable": "Is Paintable"
         "skins":
@@ -1700,6 +1702,9 @@
       "ifAmmoWasEmpty": "If Ammo Was Empty"
       "never": "Never"
       "always": "Always"
+    "textFormatMode":
+      "none": "None"
+      "flagValues": "Flag Values"
     "addonState":
       "none": "None"
       "loaded": "Loaded"
@@ -2536,6 +2541,7 @@
         "flagB": "Flag B ID"
         "valueB": "Flag Value B"
         "operation": "Operation"
+        "textFormatMode": "Text Format Mode"
         "display": "Flag '{0}' {1} value of flag '{2}' or default value '{3}'"
     "quest":
       "id": "Quest ID"
@@ -2571,6 +2577,7 @@
       "display": "Teleport player to '{0}'"
     "event":
       "id": "Event ID"
+      "shouldReplicate": "Replicate To Client"
       "display": "Trigger event '{0}'"
     "currency":
       "guid": "Currency ID"
@@ -2610,6 +2617,7 @@
     "effect":
       "display": "Spawn effect '{0}' at '{1}'"
       "asset": "Effect"
+      "atPlayerPosition": "Spawn At Player Position"
       "spawnpoint": "Spawnpoint"
       "overrideRelevantDistance": "Override Relevant Distance"
       "isReliable": "Is Reliable"
