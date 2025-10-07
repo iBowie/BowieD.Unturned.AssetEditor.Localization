@@ -1425,6 +1425,9 @@
           "bossElverStomper": "Шанс давящего мега-зомби (Elver)"
         "stunThresholdNormal": "Порог оглушения обычного зомби"
         "stunThresholdMega": "Порог оглушения мега-зомби"
+        "healthOverrideMode": "Режим перезаписи здоровья"
+        "healthOverride":
+          "header": "Перезаписи здоровья"
       "foliage":
         "base":
           "header": "Общие свойства растительности"
@@ -2251,6 +2254,12 @@
           "item": "Предмет"
           "vehicle": "Транспорт"
     "zombie":
+      "difficulty":
+        "healthOverrideMode":
+          "none": "Нет"
+          "multiplyEditorHealth": "Умножить здоровье из редактора"
+          "multiplyDefaultHealth": "Умножить стандартное здоровье"
+          "replace": "Замена"
       "speciality":
         "none": "Любой"
         "normal": "Обычный"

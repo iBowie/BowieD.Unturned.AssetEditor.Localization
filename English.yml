@@ -1094,6 +1094,7 @@
             "tracer": "Tracer Effect"
             "impact": "Impact Effect"
             "spawnExplosionOnServer": "Spawn Explosion On Server"
+            "deleteEmpty": "Should Delete Empty"
             "shouldFillAfterDetach": "Should Fill After Detach"
           "barrel":
             "type": "Barrel"
@@ -1424,6 +1425,9 @@
           "bossElverStomper": "Elver Stomper Boss Chance"
         "stunThresholdNormal": "Normal Stun Threshold"
         "stunThresholdMega": "Mega Stun Threshold"
+        "healthOverrideMode": "Health Override Mode"
+        "healthOverride":
+          "header": "Health Overrides"
       "foliage":
         "base":
           "header": "Common Foliage Properties"
@@ -2250,6 +2254,12 @@
           "item": "Item"
           "vehicle": "Vehicle"
     "zombie":
+      "difficulty":
+        "healthOverrideMode":
+          "none": "None"
+          "multiplyEditorHealth": "Multiply Editor Health"
+          "multiplyDefaultHealth": "Multiply Default Health"
+          "replace": "Replace"
       "speciality":
         "none": "Any"
         "normal": "Normal"
