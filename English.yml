@@ -1,5 +1,5 @@
 "authors":
-- "BowieD"
+  - "BowieD"
 "version": "1"
 "cultureCode": "en-US"
 "keys":
@@ -604,6 +604,10 @@
             "label": "Hair Color"
             "random":
               "toolTip": "Random Hair Color"
+          "beardColor":
+            "label": "Beard Color"
+            "random":
+              "toolTip": "Random Beard Color"
           "pose":
             "header": "Pose Settings"
             "pose": "Pose"
@@ -1748,6 +1752,7 @@
       "v3": "3: Unity 2018/2019 (LTS)"
       "v4": "4: Unity 2020 (LTS)"
       "v5": "5: Unity 2021 (LTS)"
+      "v6": "6: Unity 2022 (LTS)"
     "assetOrigin":
       "official": "Official"
       "curated": "Curated"
@@ -3020,7 +3025,9 @@
               "withOldRubble": "Do not use interactability rubble and normal rubble together."
             "npc": "Do not use interactability NPC. Use Character asset instead."
             "dialogue":
-              "empty": "Dialogue is not specified for interaction type 'Dialogue'"
+              "empty": "Dialogue is not specified for interaction type 'Dialogue'."
+            "binaryState":
+              "remote": "Do not use 'Execute on server only' with binary state interactability."
       "vehicle":
         "turrets":
           "max": "Max count of turrets ({0}/{1}) exceeded."
@@ -3252,9 +3259,9 @@
   "BowieD.Unturned.AssetEditor.Models.Enums.ECraftingInputPrioritization.Null": "Auto"
   "BowieD.Unturned.AssetEditor.Models.Enums.ECraftingInputCountingMethod.Null": "Auto"
 "tips":
-- "You can clone linked assets to your project by clicking 'Clone to project' button"
-- "You can link game assets to view them in app as if they were made in it"
-- "You can drag most items in lists"
-- "Hold 'Ctrl' and drag item to copy it"
-- "Hold 'Ctrl' to duplicate element in collection while clicking on 'Copy' button"
-- "Hold 'Ctrl + Shift' to duplicate element in collection and place it next to original item while clicking on 'Copy' button"
+  - "You can clone linked assets to your project by clicking 'Clone to project' button"
+  - "You can link game assets to view them in app as if they were made in it"
+  - "You can drag most items in lists"
+  - "Hold 'Ctrl' and drag item to copy it"
+  - "Hold 'Ctrl' to duplicate element in collection while clicking on 'Copy' button"
+  - "Hold 'Ctrl + Shift' to duplicate element in collection and place it next to original item while clicking on 'Copy' button"
