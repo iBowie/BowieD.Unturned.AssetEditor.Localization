@@ -456,6 +456,19 @@
       "severity": "Severity"
       "text": "Text"
       "pathToAsset": "Path"
+    "importVendorCsv":
+      "title": "Importing vendor from a table"
+      "column":
+        "id": "ID"
+        "vendorType": "Vendor Type"
+        "itemType": "Item Type"
+        "cost": "Cost"
+        "spawnpoint": "Spawnpoint"
+      "default":
+        "vendorType": "Default Vendor Type"
+        "itemType": "Default Item Type"
+      "button":
+        "proceed": "Proceed"
   "task":
     "importFolder":
       "title": "Importing folder"
@@ -695,12 +708,12 @@
           "header": "Selling"
         "csv":
           "import":
-            "toolTip": "Import from .csv table"
-            "fail": "Could not import .csv table. Error: {0}"
-            "errors": "Could not import some parts of .csv table. Data is not complete."
+            "toolTip": "Import from a file"
+            "fail": "Could not import the table. Error: {0}"
+            "errors": "Could not import some parts of the table. Data is not complete."
           "export":
-            "toolTip": "Export as .csv table"
-            "fail": "Could not export .csv table. Error: {0}"
+            "toolTip": "Export as a file"
+            "fail": "Could not export items as a table. Error: {0}"
       "quest":
         "properties":
           "header": "Quest Properties"
@@ -2842,7 +2855,10 @@
       "project": "Asset Editor Project"
       "legacyProject": "NPC Maker Project"
       "addon": "Compressed Zip Archive"
-      "vendorTable": "CSV Table"
+      "vendorTable":
+        "csv": "CSV Table"
+        "xls": "Excel Workbook 97-2003"
+        "xlsx": "Excel Workbook"
       "image": "Supported Background Format"
     "findReplace":
       "character":
@@ -3022,12 +3038,12 @@
         "normal":
           "interactability":
             "rubble":
-              "withOldRubble": "Do not use interactability rubble and normal rubble together."
-            "npc": "Do not use interactability NPC. Use Character asset instead."
+              "withOldRubble": "Do not use interactability '[$enum_object_interactability_type_rubble]' and normal rubble together."
+            "npc": "Do not use interactability '[$enum_object_interactability_type_npc]'. Use Character asset instead."
             "dialogue":
-              "empty": "Dialogue is not specified for interaction type 'Dialogue'."
+              "empty": "Dialogue is not specified for interaction type '[$enum_object_interactability_type_dialogue]'."
             "binaryState":
-              "remote": "Do not use 'Execute on server only' with binary state interactability."
+              "remote": "Do not use 'Execute on server only' with interactability '[$enum_object_interactability_type_binaryState]'."
       "vehicle":
         "turrets":
           "max": "Max count of turrets ({0}/{1}) exceeded."
@@ -3118,7 +3134,7 @@
             "nonPositive": "Condition #{0} has value less than one, resulting in condition instantly completing."
       "quest":
         "reset":
-          "noneStatus": "Condition #{0} tries to reset a quest with a 'none' status."
+          "noneStatus": "Condition #{0} tries to reset a quest with a '[$enum_npc_quest_status_none]' status."
         "id":
           "none": "Condition #{0} has no quest GUID/ID specified."
       "player":
