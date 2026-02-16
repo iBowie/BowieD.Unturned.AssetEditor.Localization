@@ -125,12 +125,16 @@
                     "header": "Consumeable"
                   "weapon":
                     "header": "Weapon"
+                  "tool":
+                    "header": "Tool"
                 "vehicle":
                   "header": "Vehicles"
                 "object":
                   "header": "Object"
                 "foliage":
                   "header": "Foliage"
+                "level":
+                  "header": "Level"
               "addAssetGroup":
                 "header": "Add Asset Group"
               "addFolder": "Add Folder"
@@ -913,6 +917,12 @@
         "paintColor":
           "header": "Paint Colors"
   "controls":
+    "common":
+      "armorFalloff":
+        "header": "Armor falloff"
+        "maxRange": "Max range"
+        "range": "Range"
+        "multiplier": "Multiplier"
     "asset":
       "idControl":
         "contextMenu":
@@ -1159,43 +1169,43 @@
                 "firstPerson": "Has First Person Mesh Override"
                 "lods": "Third Person Mesh Override LODs"
               "hasMaterialOverride": "Has Material Override"
-              "ignoreHand": "Ignore Hand"
+              "ignoreHand": "Ignore hand"
             "pants":
               "type": "Pants"
-              "header": "Pants Properties"
+              "header": "Pants properties"
             "vest":
               "type": "Vest"
-              "header": "Vest Properties"
+              "header": "Vest properties"
             "backpack":
               "type": "Backpack"
-              "header": "Backpack Properties"
+              "header": "Backpack properties"
           "gear":
             "base":
               "type": "Gear"
-              "header": "Common Gear Properties"
-              "hairOverride": "Hair Override Model"
+              "header": "Common gear properties"
+              "hairOverride": "Hair override model"
             "glasses":
               "type": "Glasses"
-              "header": "Glasses Properties"
-              "isBlindfold": "Is Blindfold"
-              "vision": "Vision Type"
+              "header": "Glasses properties"
+              "isBlindfold": "Is blindfold"
+              "vision": "Vision type"
               "nightVision":
-                "color": "Night Vision Color"
-                "fogIntensity": "Night Vision Fog Intensity"
-                "isAllowedInThirdPerson": "Is Night Vision Allowed In Third Person"
-              "spotLight": "Spotlight Configuration"
+                "color": "Night vision color"
+                "fogIntensity": "Night vision fog intensity"
+                "isAllowedInThirdPerson": "Is night vision allowed in third person"
+              "spotLight": "Spotlight configuration"
             "mask":
               "type": "Mask"
-              "header": "Mask Properties"
-              "isEarpiece": "Is Earpiece"
-              "filterDegradationRateMultiplier": "Filter Degradation Rate Multiplier"
+              "header": "Mask properties"
+              "isEarpiece": "Is earpiece"
+              "filterDegradationRateMultiplier": "Filter degradation rate multiplier"
             "hat":
               "type": "Hat"
-              "header": "Hat Properties"
+              "header": "Hat properties"
         "consumeable":
           "base":
             "type": "Consumeable"
-            "header": "Common Consumeable Properties"
+            "header": "Common consumeable properties"
             "health":
               "add": "Health"
             "food":
@@ -1214,26 +1224,26 @@
               "add": "Warmth"
             "experience": "Experience"
             "rewards":
-              "spawn": "Reward Spawn ID"
-              "min": "Min Rewards"
-              "max": "Max Rewards"
-              "quest": "Rewards On Use"
-            "bleeding": "Bleeding Modifier"
-            "bones": "Bones Modifier"
-            "effect": "Effect On Use"
-            "aid": "Can Be Used On Other Players"
-            "shouldDelete": "Should Delete After Use"
-            "consumeAudio": "Consume Audio"
-            "shouldRandomizeUseAudioPitch": "Should Randomize Consume Audio Pitch"
+              "spawn": "Reward spawn ID"
+              "min": "Min rewards"
+              "max": "Max rewards"
+              "quest": "Rewards on use"
+            "bleeding": "Bleeding modifier"
+            "bones": "Bones modifier"
+            "effect": "Effect on use"
+            "aid": "Can be used on other players"
+            "shouldDelete": "Should delete after use"
+            "consumeAudio": "Consume audio"
+            "shouldRandomizeUseAudioPitch": "Should randomize consume audio pitch"
           "food":
             "type": "Food"
-            "header": "Food Properties"
+            "header": "Food properties"
           "water":
             "type": "Drinkable"
-            "header": "Drinkable Properties"
+            "header": "Drinkable properties"
           "medical":
             "type": "Medical"
-            "header": "Medical Properties"
+            "header": "Medical properties"
         "placeable":
           "base":
             "type": "Placeable"
@@ -1243,7 +1253,7 @@
             "base":
               "type": "Barricade"
             "beacon":
-              "type": "Horde Beacon"
+              "type": "Horde beacon"
             "charge":
               "type": "Charge"
             "farm":
@@ -1253,7 +1263,7 @@
             "library":
               "type": "Library"
             "oilPump":
-              "type": "Oil Pump"
+              "type": "Oil pump"
             "storage":
               "base":
                 "type": "Storage"
@@ -1269,60 +1279,60 @@
           "gun":
             "type": "Gun"
           "melee":
-            "type": "Melee Weapon"
+            "type": "Melee weapon"
           "throwable":
             "type": "Throwable"
         "arrestStart":
-          "type": "Arrest Start"
-          "header": "Arrest Start Properties"
+          "type": "Arrest start"
+          "header": "Arrest start properties"
           "strength": "Strength"
         "arrestEnd":
-          "type": "Arrest End"
-          "header": "Arrest End Properties"
-          "recover": "Recover From"
+          "type": "Arrest end"
+          "header": "Arrest end properties"
+          "recover": "Recover from"
         "cloud":
           "type": "Umbrella"
-          "header": "Umbrella Properties"
-          "gravity": "Gravity Multiplier"
+          "header": "Umbrella properties"
+          "gravity": "Gravity multiplier"
         "detonator":
           "type": "Detonator"
         "filter":
           "type": "Filter"
         "fisher":
-          "type": "Fishing Rod"
-          "header": "Fishing Rod Properties"
-          "reward": "Spawn Table Reward"
-          "rewardExperienceMin": "Min Experience Reward"
-          "rewardExperienceMax": "Max Experience Reward"
+          "type": "Fishing rod"
+          "header": "Fishing rod properties"
+          "reward": "Spawn table reward"
+          "rewardExperienceMin": "Min experience reward"
+          "rewardExperienceMax": "Max experience reward"
           "questRewards": "Rewards"
         "fuel":
           "type": "Fuel"
-          "header": "Fuel Properties"
+          "header": "Fuel properties"
           "fuelAmount":
-            "value": "Fuel Amount"
+            "value": "Fuel amount"
             "estimation": "x{0} normal gas cans / x{1} industrial gas cans"
-          "deleteAfterFillingTarget": "Delete After Filling Target"
-          "alwaysSpawnFull": "Always Spawn Full"
+          "deleteAfterFillingTarget": "Delete after filling target"
+          "alwaysSpawnFull": "Always spawn full"
         "grower":
           "type": "Fertilizer"
         "map":
           "type": "Map"
-          "header": "Map Properties"
-          "enableCompass": "Enables Compass"
-          "enableChart": "Enables Chart"
+          "header": "Map properties"
+          "enableCompass": "Enables compass"
+          "enableChart": "Enables chart"
           "enableGPS": "Enables GPS"
         "optic":
           "type": "Optic"
-          "header": "Optic Properties"
-          "zoom": "Zoom Factor"
+          "header": "Optic properties"
+          "zoom": "Zoom factor"
         "refill":
           "type": "Refillable"
-          "header": "Refillable Properties"
-          "consumeAudioClip": "Consume Audio Clip"
+          "header": "Refillable properties"
+          "consumeAudioClip": "Consume audio clip"
           "waterStats":
-            "clean": "Clean Water Stats"
-            "salty": "Salty Water Stats"
-            "dirty": "Dirty Water Stats"
+            "clean": "Clean water stats"
+            "salty": "Salty water stats"
+            "dirty": "Dirty water stats"
             "stat":
               "health": "Health"
               "food": "Food"
@@ -1337,30 +1347,32 @@
             "type": "Tool"
           "vehicleRepairTool":
             "base":
-              "type": "Vehicle Repair Tool"
+              "type": "Vehicle repair tool"
             "tire":
               "type": "Tire"
-              "header": "Tire Properties"
+              "header": "Tire properties"
               "mode": "Mode"
           "vehiclePaintTool":
             "base":
-              "type": "Vehicle Paint"
-              "header": "Vehicle Paint Properties"
-              "paintColor": "Paint Color"
+              "type": "Vehicle paint"
+              "header": "Vehicle paint properties"
+              "paintColor": "Paint color"
+          "vehicleLockpickTool":
+            "type": "Vehicle lockpick"
       "currency":
         "type": "Currency"
         "error": "ERROR"
       "npc":
         "dialogue":
-          "type": "NPC Dialogue"
+          "type": "NPC dialogue"
           "message":
-            "addPageButton": "Add Page"
-            "nextDialogue": "Next Dialogue"
+            "addPageButton": "Add page"
+            "nextDialogue": "Next dialogue"
             "conditions": "Conditions"
             "rewards": "Rewards"
-            "editVisibleResponsesButton": "Edit Visible Responses"
+            "editVisibleResponsesButton": "Edit visible responses"
             "faceOverride":
-              "label": "Face Override"
+              "label": "Face override"
               "clear": "Use default face"
           "page":
             "conditions": "Conditions"
@@ -1378,16 +1390,60 @@
             "copy": "Copy"
             "delete": "Delete"
         "vendor":
-          "type": "NPC Vendor"
+          "type": "NPC vendor"
         "quest":
-          "type": "NPC Quest"
+          "type": "NPC quest"
       "object":
         "base":
           "type": "Object"
+          "header": "Common object properties"
+          "name": "Object name"
+          "holidayRestriction": "Holiday restriction"
+          "christmasRedirect": "Christmas redirect"
+          "halloweenRedirect": "Halloween redirect"
+          "isGore": "Contains gore"
+          "excludeFromSatelliteCapture": "Exclude from satellite capture"
+          "shouldLoadNavInEditor": "Should load nav in editor"
+          "shouldLoadNavOnServer": "Should load nav on server"
+          "conditions": "Conditions"
         "decal":
           "type": "Decal"
+          "header": "Common decal properties"
+          "sizeX": "Size X"
+          "sizeY": "Size Y"
+          "lodBias": "LOD bias"
+          "alpha": "Has transparency"
         "normal":
           "type": "Object"
+          "objType": "Object type"
+          "chart": "Chart"
+          "landmarkQuality": "Landmark quality"
+          "interactability":
+            "header": "Interactability properties"
+            "type": "Interactability type"
+          "rubble":
+            "type": "Rubble type"
+            "header": "Rubble properties"
+          "interactabilityDialogueDisplayName": "Display name in dialogues"
+          "materialPalette": "Material palette"
+          "foliage": "Foliage"
+          "isSoft": "Is soft"
+          "causesFallDamage": "Causes fall damage"
+          "isCollisionImportant": "Is collision important"
+          "useWaterHeightTransparentSort": "Use water height transparent sort"
+          "shouldAddNightLightScript": "Should add night light script"
+          "shouldAddKillTriggers": "Should add kill triggers"
+          "allowStructures": "Allow structures"
+          "isSnowshoe": "Is snowshoe"
+          "hasClipPrefab": "Has clip prefab"
+          "excludeFromCullingVolumes": "Exclude from culling volumes"
+          "excludeFromLevelBatching": "Exclude from level batching"
+          "interiorCulling":
+            "header": "Interior culling / LOD"
+            "type": "Culling type"
+            "bias": "Bias"
+            "center": "Center"
+            "size": "Size"
         "npc":
           "type": "NPC Character"
       "animal":
@@ -1572,8 +1628,72 @@
         "side": "Side"
         "hasLabel": "Has Label"
         "color": "Color"
+      "object":
+        "interactability":
+          "normal":
+            "delay": "Use Delay"
+            "resetDelay": "Reset Delay"
+            "hint": "Hint"
+            "emission": "Emission"
+            "power": "Power"
+            "editor": "Editor"
+            "nav": "Nav"
+            "resource": "Resource"
+            "rewardId": "Reward table ID"
+            "rewardItemOrigin": "Reward item origin"
+            "effect": "Use effect"
+            "text": "Text"
+            "drops": "Drops"
+            "conditions": "Conditions"
+            "rewards": "Rewards"
+            "remote": "Execute on server only"
+          "binaryState":
+            "animationComponentPath": "Override animation component path"
+          "dialogue":
+            "dialogueRef": "Dialogue"
+            "text": "Interact text"
+          "rubble":
+            "resetDelay": "[$controls_editable_object_rubble_resetDelay]"
+            "health": "[$controls_editable_object_rubble_health]"
+            "effect": "[$controls_editable_object_rubble_effect]"
+            "finale": "[$controls_editable_object_rubble_finale]"
+            "rewardId": "[$controls_editable_object_rubble_rewardId]"
+            "bladeId": "[$controls_editable_object_rubble_bladeId]"
+            "rewardProbability": "[$controls_editable_object_rubble_rewardProbability]"
+            "rewardsMin": "[$controls_editable_object_rubble_rewardsMin]"
+            "rewardsMax": "[$controls_editable_object_rubble_rewardsMax]"
+            "rewardXp": "[$controls_editable_object_rubble_rewardXp]"
+            "isVulnerable": "[$controls_editable_object_rubble_isVulnerable]"
+            "proofExplosion": "[$controls_editable_object_rubble_proofExplosion]"
+            "canZombiesDamage": "[$controls_editable_object_rubble_canZombiesDamage]"
+            "zombieDamageMultiplier": "[$controls_editable_object_rubble_zombieDamageMultiplier]"
+            "sectionDestroyedAlertRadius": "[$controls_editable_object_rubble_sectionDestroyedAlertRadius]"
+            "allSectionsDestroyedAlertRadius": "[$controls_editable_object_rubble_allSectionsDestroyedAlertRadius]"
+            "respawnAllSectionsSimultaneously": "[$controls_editable_object_rubble_respawnAllSectionsSimultaneously]"
+            "navMode": "[$controls_editable_object_rubble_navMode]"
+            "editor": "[$controls_editable_object_rubble_editor]"
+        "rubble":
+          "resetDelay": "Reset delay"
+          "health": "Health"
+          "effect": "Hit effect"
+          "finale": "Destroy effect"
+          "rewardId": "Reward table ID"
+          "bladeId": "Required blade ID"
+          "rewardProbability": "Probability of a reward"
+          "rewardsMin": "Minimum amount of rewards"
+          "rewardsMax": "Maximum amount of rewards"
+          "rewardXp": "Experience"
+          "isVulnerable": "Is vulnerable"
+          "proofExplosion": "Is explosion proof"
+          "canZombiesDamage": "Can be damaged by zombies"
+          "zombieDamageMultiplier": "Zombie damage multiplier"
+          "sectionDestroyedAlertRadius": "Alert radius upon section destruction"
+          "allSectionsDestroyedAlertRadius": "Alert radius upon complete destruction"
+          "respawnAllSectionsSimultaneously": "Respawn all sections simultaneously"
+          "navMode": "Navigation mode"
+          "editor": "Behaviour in editor"
       "spotLight":
-        "isEnabled": "Is Enabled"
+        "isEnabled": "Is enabled"
         "range": "Range"
         "angle": "Angle"
         "intensity": "Intensity"
@@ -1591,7 +1711,7 @@
         "root":
           "base":
             "weight": "Weight"
-            "isOverride": "Is Override"
+            "isOverride": "Is override"
           "legacySpawn":
             "id": "Spawn"
           "v2":
@@ -1599,72 +1719,72 @@
       "vehicle":
         "wheelConfiguration":
           "display": "Collider: {0}; Model: {1}"
-          "wheelColliderPath": "Path to Wheel Collider"
-          "isColliderSteered": "Is Collider Steered"
-          "isColliderPowered": "Is Collider Powered"
-          "modelPath": "Path to Wheel Model"
-          "isModelSteered": "Is Model Steered"
-          "modelUseColliderPose": "Model Uses Collider Pose"
+          "wheelColliderPath": "Path to wheel collider"
+          "isColliderSteered": "Is collider steered"
+          "isColliderPowered": "Is collider powered"
+          "modelPath": "Path to wheel model"
+          "isModelSteered": "Is model steered"
+          "modelUseColliderPose": "Model uses collider pose"
         "paintableSection":
           "display": "Material #{1} at path: {0}"
-          "path": "GameObject Path"
-          "materialIndex": "Material Index"
+          "path": "GameObject path"
+          "materialIndex": "Material index"
         "crawlerTrackTilingMaterial":
           "display": "Material #{1} at path: {0}"
-          "repeatDistance": "Repeat Distance"
-          "wheelIndices": "Wheel Indices"
-          "path": "GameObject Path"
-          "materialIndex": "Material Index"
-          "uvDirection": "UV Direction"
+          "repeatDistance": "Repeat distance"
+          "wheelIndices": "Wheel indices"
+          "path": "GameObject path"
+          "materialIndex": "Material index"
+          "uvDirection": "UV direction"
         "rpmEngineSoundConfiguration":
           "display": "Pitch [{0:P2}->{2:P2}]; Volume [{1:P2}->{3:P2}]"
-          "idlePitch": "Idle Pitch"
-          "maxPitch": "Max Pitch"
-          "idleVolume": "Idle Volume"
-          "maxVolume": "Max Volume"
+          "idlePitch": "Idle pitch"
+          "maxPitch": "Max pitch"
+          "idleVolume": "Idle volume"
+          "maxVolume": "Max volume"
         "steeringTireInfo":
-          "display": "Tire Index: {0}"
-          "tireIndex": "Tire Index"
+          "display": "Tire index: {0}"
+          "tireIndex": "Tire index"
         "turretInfo":
-          "display": "Seat Index: {0}"
-          "seatIndex": "Seat Index"
+          "display": "Seat index: {0}"
+          "seatIndex": "Seat index"
           "itemId": "Item"
           "yaw":
-            "min": "Min Yaw"
-            "max": "Max Yaw"
+            "min": "Min yaw"
+            "max": "Max yaw"
           "pitch":
-            "min": "Min Pitch"
-            "max": "Max Pitch"
-          "useAimCamera": "Use Aim Camera"
-          "aimOffset": "Aim Offset"
+            "min": "Min pitch"
+            "max": "Max pitch"
+          "useAimCamera": "Use aim camera"
+          "aimOffset": "Aim offset"
     "genericCollection":
-      "addButton": "Add New"
+      "addButton": "Add new"
       "pasteButton":
         "toolTip": "Paste"
       "selection":
         "header": "Selected {0} items:"
         "unselectButton":
-          "toolTip": "De-select All"
+          "toolTip": "De-select all"
         "copyButton":
-          "toolTip": "Copy Selected"
+          "toolTip": "Copy selected"
         "deleteButton":
-          "toolTip": "Delete Selected"
+          "toolTip": "Delete selected"
     "richTextBox":
       "context":
         "common":
           "copy": "Copy (Ctrl + C)"
           "paste": "Paste (Ctrl + V)"
           "cut": "Cut (Ctrl + X)"
-          "bold": "Bold Text (Ctrl + B)"
-          "italic": "Italic Text (Ctrl + I)"
+          "bold": "Bold (Ctrl + B)"
+          "italic": "Italic (Ctrl + I)"
           "superScript": "SuperScript²"
           "subScript": "SubScript₂"
-          "textColor": "Text Color"
-          "backColor": "Background Color"
+          "textColor": "Text color"
+          "backColor": "Background color"
           "dialogue":
-            "charName": "Insert Player Name"
-            "npcName": "Insert NPC Name"
-            "pause": "Insert Pause (Pause)"
+            "charName": "Insert player name"
+            "npcName": "Insert NPC name"
+            "pause": "Insert pause (Pause)"
           "color":
             "unity": "Unity"
             "unturned":
@@ -1674,7 +1794,7 @@
               "rarity": "Rarity"
               "other": "Other"
             "custom":
-              "header": "Custom Color..."
+              "header": "Custom color..."
               "value": "Color"
         "raw":
           "toggleRich": "Enter rich edit mode"
@@ -1690,46 +1810,46 @@
       "angle": "Angle"
       "intensity": "Intensity"
       "color": "Color"
-      "isEnabled": "Is Enabled"
+      "isEnabled": "Is enabled"
     "bgSetting":
       "imageLocation":
-        "label": "Image(s) Location"
+        "label": "Image(s) location"
         "buttons":
           "file": "File"
           "folder": "Folder"
       "opacity": "Opacity"
       "blurRadius": "Blur Radius"
       "alignment":
-        "horizontal": "Horizontal Alignment"
-        "vertical": "Vertical Alignment"
+        "horizontal": "Horizontal alignment"
+        "vertical": "Vertical alignment"
       "stretch": "Stretch"
       "volume": "Volume"
       "preview": "Preview"
       "normal": "Normal"
-      "tabOpen": "With Tab Open"
-      "simulateOpenTab": "Simulate Open Tab"
+      "tabOpen": "With tab open"
+      "simulateOpenTab": "Simulate open tab"
   "enum":
     "clipboardManager":
       "system":
-        "label": "System Clipboard"
-        "toolTip": "Uses System Clipboard.\nCapable of storing data in between two instances of the app."
+        "label": "System clipboard"
+        "toolTip": "Uses system clipboard.\nCapable of storing data in between two instances of the app."
       "internal":
-        "label": "App Clipboard"
-        "toolTip": "Does not use System Clipboard. Experimental.\nCapable of storing text and objects alongside each other."
+        "label": "App clipboard"
+        "toolTip": "Does not use the system clipboard. Experimental.\nCapable of storing text and objects alongside each other.\nCannot transfer between two running instances of the app."
     "aimAlignmentTransformOwner":
       "sight": "Sight"
       "gun": "Gun"
     "rechamberGunAfterReloadMode":
-      "ifAmmoWasEmpty": "If Ammo Was Empty"
+      "ifAmmoWasEmpty": "If ammo was empty"
       "never": "Never"
       "always": "Always"
     "textFormatMode":
       "none": "None"
-      "flagValues": "Flag Values"
+      "flagValues": "Flag values"
     "addonState":
       "none": "None"
       "loaded": "Loaded"
-      "notLoaded": "Not Loaded"
+      "notLoaded": "Not loaded"
       "unloaded": "Unloaded"
       "error": "Error"
     "addonTag":
@@ -1747,7 +1867,7 @@
       "rail": "Railgun"
       "string": "Bow-like"
       "break": "Break"
-      "rocket": "Rocket Launcher"
+      "rocket": "Rocket launcher"
       "minigun": "Minigun"
     "actionType":
       "blueprint": "Blueprint"
@@ -1778,7 +1898,7 @@
     "bleeding":
       "none": "None"
       "heal": "Heal"
-      "cut": "Apply Bleeding"
+      "cut": "Apply bleeding"
     "blueprintSkill":
       "none": "None"
       "overkill": "Overkill"
@@ -1816,49 +1936,49 @@
       "repair": "Repair"
     "blueprintOperation":
       "none": "None"
-      "repairTargetItem": "Repair Target Item"
-      "fillTargetItem": "Fill Target Item"
+      "repairTargetItem": "Repair target item"
+      "fillTargetItem": "Fill target item"
     "craftingInputPrioritization":
-      "lowestAmount": "Lowest Amount First"
-      "highestAmount": "Highest Amount First"
-      "lowestQuality": "Lowest Quality First"
-      "highestQuality": "Highest Quality First"
+      "lowestAmount": "Lowest amount first"
+      "highestAmount": "Highest amount first"
+      "lowestQuality": "Lowest quality first"
+      "highestQuality": "Highest quality first"
     "craftingInputCountingMethod":
-      "totalItems": "Total Items"
-      "totalAmount": "Total Amount"
+      "totalItems": "Total items"
+      "totalAmount": "Total amount"
     "bones":
       "none": "None"
       "heal": "Heal"
-      "break": "Break Bones"
+      "break": "Break bones"
     "barricade":
       "build":
         "fortification": "Fortification"
         "barricade":
           "generic": "Barricade"
-          "wall": "Wall Barricade"
+          "wall": "Wall barricade"
         "door": "Door"
         "gate": "Gate"
         "bed": "Bed"
         "ladder": "Ladder"
         "storage":
           "normal": "Storage"
-          "wall": "Wall Storage"
+          "wall": "Wall storage"
         "farm": "Crop"
         "torch": "Torch"
         "campfire": "Campfire"
         "spike": "Spike"
-        "wire": "Barbed Wire"
+        "wire": "Barbed wire"
         "generator": "Generator"
         "spot": "Spotlight"
         "safezone": "Safezone"
         "freeform": "Freeform"
         "sign":
           "normal": "Sign"
-          "wall": "Wall Sign"
+          "wall": "Wall sign"
         "vehicle": "Vehicle"
-        "claim": "Claim Flag"
+        "claim": "Claim flag"
         "beacon": "Beacon"
-        "barrelRain": "Rain Barrel"
+        "barrelRain": "Rain barrel"
         "oil": "Oil Pump"
         "cage": "Cage"
         "shutter": "Shutter"
@@ -1866,9 +1986,9 @@
         "charge": "Charge"
         "sentry":
           "normal": "Sentry"
-          "freeform": "Freeform Sentry"
+          "freeform": "Freeform sentry"
         "oven": "Oven"
-        "library": "XP Storage"
+        "library": "XP storage"
         "oxygenator": "Oxygenator"
         "glass": "Glass"
         "note": "Note"
@@ -1879,12 +1999,12 @@
     "construct":
       "floor":
         "normal": "Floor"
-        "poly": "Triangular Floor"
+        "poly": "Triangular floor"
       "wall": "Wall"
       "rampart": "Rampart"
       "roof":
         "normal": "Roof"
-        "poly": "Triangular Roof"
+        "poly": "Triangular roof"
       "pillar": "Pillar"
       "post": "Post"
     "engine":
@@ -1905,11 +2025,11 @@
       "useableType":
         "none": "None"
         "barricade": "Barricade"
-        "batteryVehicle": "Vehicle Battery"
+        "batteryVehicle": "Vehicle battery"
         "carjack": "Carjack"
         "clothing": "Clothing"
         "consumeable": "Consumeable"
-        "fisher": "Fishing Tool"
+        "fisher": "Fishing tool"
         "fuel": "Fuel"
         "grower": "Grower"
         "gun": "Gun"
@@ -1919,17 +2039,17 @@
         "structure": "Structure"
         "throwable": "Throwable"
         "tire": "Tire"
-        "cloud": "Fall Speed Decreaser"
+        "cloud": "Fall speed decreaser"
         "arrest":
           "start": "Handcuffs"
-          "end": "Handcuff Breaker"
+          "end": "Handcuff breaker"
         "detonator": "Detonator"
         "filter": "Filter"
-        "carLockPick": "Car Lockpick"
-        "walkieTalkie": "Walkie Talkie"
-        "housingPlanner": "Housing Planner"
+        "carLockPick": "Car lockpick"
+        "walkieTalkie": "Walkie talkie"
+        "housingPlanner": "Housing planner"
       "origin":
-        "world": "Natural Spawn"
+        "world": "Natural spawn"
         "admin": "Given via commands"
         "craft": "Crafting"
         "nature": "Nature"
@@ -1942,9 +2062,9 @@
         "mythical": "Mythical"
       "gun":
         "driverTurretViewModelMode":
-          "offscreenWhileAiming": "Offscreen While Aiming"
-          "alwaysOffscreen": "Always Offscreen"
-          "alwaysOnscreen": "Always Onscreen"
+          "offscreenWhileAiming": "Offscreen while aiming"
+          "alwaysOffscreen": "Always offscreen"
+          "alwaysOnscreen": "Always onscreen"
     "lighting":
       "color":
         "sun": "Sun"
@@ -1958,25 +2078,25 @@
         "ambientGround": "Ambient - Ground"
         "clouds": "Clouds"
         "rays": "Rays"
-        "particleLighting": "Particle Lighting"
+        "particleLighting": "Particle lighting"
         "customOverride": "Custom"
       "vision":
         "none": "None"
-        "military": "Military Night Vision"
-        "civilian": "Civilian Night Vision"
+        "military": "Military night vision"
+        "civilian": "Civilian night vision"
         "headlamp": "Headlamp"
     "npc":
       "conditionType":
         "virtual":
           "flag":
-            "shortRange": "[Virtual] Flag Range (Number)"
-          "timeRange": "[Virtual] Time Range"
+            "shortRange": "[Virtual] Flag range (Number)"
+          "timeRange": "[Virtual] Time range"
         "experience": "Experience"
         "reputation": "Reputation"
         "flag":
           "bool": "Flag (Boolean)"
           "short": "Flag (Number)"
-          "compare": "Compare Flags"
+          "compare": "Compare flags"
         "quest": "Quest"
         "skillset": "Skillset"
         "item": "Item"
@@ -1987,14 +2107,14 @@
           "player": "Kills (Players)"
           "object": "Kills (Objects)"
           "tree": "Kills (Resources)"
-        "timeOfDay": "Time of Day"
+        "timeOfDay": "Time of day"
         "player":
           "life":
-            "health": "Player Life (Health)"
-            "food": "Player Life (Food)"
-            "water": "Player Life (Water)"
-            "virus": "Player Life (Virus)"
-            "stamina": "Player Life (Stamina)"
+            "health": "Player life (Health)"
+            "food": "Player life (Food)"
+            "water": "Player life (Water)"
+            "virus": "Player life (Virus)"
+            "stamina": "Player life (Stamina)"
         "holiday": "Holiday"
         "currency": "Currency"
         "weather":
@@ -2003,7 +2123,7 @@
         "isFullMoon": "Is Full Moon"
         "dateCounter": "Date Counter"
       "holiday":
-        "none": "Normal Day"
+        "none": "Normal day"
         "halloween": "Halloween"
         "christmas": "Christmas"
         "aprilFools": "April Fools"
@@ -2022,12 +2142,12 @@
           "gt": ">"
         "alt":
           "none": "None"
-          "lt": "Less Than"
-          "ltoreq": "Less Than or Equal"
+          "lt": "Less than"
+          "ltoreq": "Less than or equal"
           "eq": "Equal"
-          "noteq": "Not Equal"
-          "gtoreq": "Greater Than or Equal"
-          "gt": "Greater Than"
+          "noteq": "Not equal"
+          "gtoreq": "Greater than or equal"
+          "gt": "Greater than"
       "modification":
         "normal":
           "none": "None"
@@ -2069,14 +2189,14 @@
         "passive": "Stand (Passive)"
         "crouch": "Crouching"
         "prone": "Proning"
-        "underArrest": "In Handcuffs"
+        "underArrest": "In handcuffs"
         "rest": "Resting"
         "surrender": "Surrending"
       "quest":
         "status":
           "none": "None"
           "active": "Active"
-          "ready": "Ready to Complete"
+          "ready": "Ready"
           "completed": "Completed"
       "rewardType":
         "experience": "Experience"
@@ -2084,7 +2204,7 @@
         "flag":
           "bool": "Flag (Boolean)"
           "short": "Flag (Number)"
-          "shortRandom": "Flag (Random Number)"
+          "shortRandom": "Flag (Random number)"
           "math": "Flag (Math)"
         "quest": "Quest"
         "item": "Item"
@@ -2092,28 +2212,28 @@
         "achievement": "Steam Achievement"
         "vehicle": "Vehicle"
         "teleport": "Teleport"
-        "event": "Mod Event Hook"
+        "event": "Mod event hook"
         "currency": "Currency"
-        "hint": "Text Message"
-        "playerSpawnpoint": "Player Spawnpoint"
+        "hint": "Text message"
+        "playerSpawnpoint": "Player spawnpoint"
         "player":
           "life":
-            "health": "Player Life (Health)"
-            "food": "Player Life (Food)"
-            "water": "Player Life (Water)"
-            "virus": "Player Life (Virus)"
-            "stamina": "Player Life (Stamina)"
-        "rewardsList": "Rewards List"
-        "cutsceneMode": "Cutscene Mode"
+            "health": "Player life (Health)"
+            "food": "Player life (Food)"
+            "water": "Player life (Water)"
+            "virus": "Player life (Virus)"
+            "stamina": "Player life (Stamina)"
+        "rewardsList": "Rewards list"
+        "cutsceneMode": "Cutscene mode"
         "effect": "Effect"
         "airdrop": "Airdrop"
       "weather":
         "status":
           "active": "Active"
-          "fadeIn": "Fading In"
-          "fadedIn": "Faded In"
-          "fadeOut": "Fading Out"
-          "fadedOut": "Faded Out"
+          "fadeIn": "Fading in"
+          "fadedIn": "Faded in"
+          "fadeOut": "Fading out"
+          "fadedOut": "Faded out"
           "transition": "Transition"
     "object":
       "chart":
@@ -2124,14 +2244,14 @@
         "road": "Road"
         "street": "Street"
         "path": "Path"
-        "large": "Large Object"
-        "medium": "Medium Object"
+        "large": "Large object"
+        "medium": "Medium object"
         "water": "Water"
         "cliff": "Cliff"
       "interactability":
         "type":
           "none": "None"
-          "binaryState": "Binary State"
+          "binaryState": "Binary state"
           "dropper": "Dropper"
           "note": "Note"
           "water": "Water"
@@ -2149,7 +2269,7 @@
           "fire": "Fire"
           "generator": "Generator"
           "use": "Use"
-          "custom": "Custom Text"
+          "custom": "Custom text"
         "nav":
           "none": "None"
           "true": "On"
@@ -2171,7 +2291,7 @@
           "dead": "Destroyed"
         "navMode":
           "unaffected": "Unaffected"
-          "deactivateIfAllDead": "Deactivate If All Dead"
+          "deactivateIfAllDead": "Deactivate if all dead"
       "type":
         "large": "Large"
         "medium": "Medium"
@@ -2227,7 +2347,7 @@
     "projectPreset":
       "empty": "Empty"
       "npcs": "NPCs"
-      "fullBundles": "Full Bundles"
+      "fullBundles": "Full bundles"
     "sentryMode":
       "neutral": "Neutral"
       "friendly": "Friendly"
@@ -2262,21 +2382,21 @@
       "buying":
         "type":
           "virtual":
-            "itemMultiple": "[Virtual] Multiple Item Types"
+            "itemMultiple": "[Virtual] Multiple item types"
           "item": "Item"
       "selling":
         "type":
           "virtual":
-            "itemMultiple": "[Virtual] Multiple Item Types"
-            "vehicleMultiple": "[Virtual] Multiple Vehicle Types"
+            "itemMultiple": "[Virtual] Multiple item types"
+            "vehicleMultiple": "[Virtual] Multiple vehicle types"
           "item": "Item"
           "vehicle": "Vehicle"
     "zombie":
       "difficulty":
         "healthOverrideMode":
           "none": "None"
-          "multiplyEditorHealth": "Multiply Editor Health"
-          "multiplyDefaultHealth": "Multiply Default Health"
+          "multiplyEditorHealth": "Multiply editor health"
+          "multiplyDefaultHealth": "Multiply default health"
           "replace": "Replace"
       "speciality":
         "none": "Any"
@@ -3043,7 +3163,7 @@
             "dialogue":
               "empty": "Dialogue is not specified for interaction type '[$enum_object_interactability_type_dialogue]'."
             "binaryState":
-              "remote": "Do not use 'Execute on server only' with interactability '[$enum_object_interactability_type_binaryState]'."
+              "remote": "Do not use '[$controls_editable_object_interactability_normal_remote]' with interactability '[$enum_object_interactability_type_binaryState]'."
       "vehicle":
         "turrets":
           "max": "Max count of turrets ({0}/{1}) exceeded."

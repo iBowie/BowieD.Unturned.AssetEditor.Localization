@@ -125,12 +125,16 @@
                     "header": "Потребляемое"
                   "weapon":
                     "header": "Оружие"
+                  "tool":
+                    "header": "Инструмент"
                 "vehicle":
                   "header": "Транспорт"
                 "object":
                   "header": "Объект"
                 "foliage":
                   "header": "Растительность"
+                "level":
+                  "header": "Уровень"
               "addAssetGroup":
                 "header": "Добавить группу ассетов"
               "addFolder": "Добавить папку"
@@ -913,6 +917,12 @@
         "paintColor":
           "header": "Цвета покраски"
   "controls":
+    "common":
+      "armorFalloff":
+        "header": "Уменьшение брони с расстоянием"
+        "maxRange": "Максимальное расстояние"
+        "range": "Расстояние"
+        "multiplier": "Множитель"
     "asset":
       "idControl":
         "contextMenu":
@@ -1347,6 +1357,8 @@
               "type": "Покраска транспорта"
               "header": "Свойства покраски транспорта"
               "paintColor": "Цвет"
+          "vehicleLockpickTool":
+            "type": "Отмычка"
       "currency":
         "type": "Валюта"
         "error": "Ошибка"
@@ -1384,10 +1396,54 @@
       "object":
         "base":
           "type": "Объект"
+          "header": "Общие свойства объектов"
+          "name": "Имя объекта"
+          "holidayRestriction": "Ограничение по праздникам"
+          "christmasRedirect": "Перенаправление в рождество"
+          "halloweenRedirect": "Перенаправление в хэллоуин"
+          "isGore": "Содержит кровь"
+          "excludeFromSatelliteCapture": "Исключить из спутникового снимка"
+          "shouldLoadNavInEditor": "Загружать навигацию в редакторе"
+          "shouldLoadNavOnServer": "Загружать навигацию на сервере"
+          "conditions": "Условия видимости"
         "decal":
           "type": "Декаль"
+          "header": "Общие свойства декалей"
+          "sizeX": "Размер X"
+          "sizeY": "Размер Y"
+          "lodBias": "Биас LOD"
+          "alpha": "Есть прозрачность"
         "normal":
           "type": "Объект"
+          "objType": "Тип объекта"
+          "chart": "Вид на карте"
+          "landmarkQuality": "Качество модели"
+          "interactability":
+            "header": "Свойства взаимодействия"
+            "type": "Тип взаимодействия"
+          "rubble":
+            "type": "Тип разрушаемости"
+            "header": "Свойства разрушаемости"
+          "interactabilityDialogueDisplayName": "Отображаемое имя в диалоге"
+          "materialPalette": "Палитра материалов"
+          "foliage": "Растительность"
+          "isSoft": "Мягкий"
+          "causesFallDamage": "Причиняет урон от падения"
+          "isCollisionImportant": "Коллизия важна"
+          "useWaterHeightTransparentSort": "Использовать сортировку по высоте воды"
+          "shouldAddNightLightScript": "Добавить скрипты ночного света"
+          "shouldAddKillTriggers": "Добавить килл-триггеры"
+          "allowStructures": "Разрешить установку структур"
+          "isSnowshoe": "Is snowshoe (если знаете что это - сообщите)"
+          "hasClipPrefab": "Есть префаб Clip"
+          "excludeFromCullingVolumes": "Исключить из зон куллинга"
+          "excludeFromLevelBatching": "Исключить из батчинга уровней"
+          "interiorCulling":
+            "header": "Куллинг интерьера / LOD"
+            "type": "Тип куллинга"
+            "bias": "Биас"
+            "center": "Центр"
+            "size": "Размер"
         "npc":
           "type": "Персонаж NPC"
       "animal":
@@ -1572,6 +1628,70 @@
         "side": "Сторона"
         "hasLabel": "Есть метка"
         "color": "Цвет"
+      "object":
+        "interactability":
+          "normal":
+            "delay": "Задержка перед повторным использованием"
+            "resetDelay": "Задержка перед сбросом"
+            "hint": "Подсказка"
+            "emission": "Свечение"
+            "power": "Энергия"
+            "editor": "Поведение в редакторе"
+            "nav": "Навигация"
+            "resource": "Ресурс"
+            "rewardId": "ID таблицы наград"
+            "rewardItemOrigin": "Источник предмета"
+            "effect": "Эффект использования"
+            "text": "Текст"
+            "drops": "Дропы"
+            "conditions": "Условия использования"
+            "rewards": "Награды по использованию"
+            "remote": "Исполнять только на сервере"
+          "binaryState":
+            "animationComponentPath": "Оверрайд пути к компоненту с анимацией"
+          "dialogue":
+            "dialogueRef": "Диалог"
+            "text": "Текст взаимодействия"
+          "rubble":
+            "resetDelay": "[$controls_editable_object_rubble_resetDelay]"
+            "health": "[$controls_editable_object_rubble_health]"
+            "effect": "[$controls_editable_object_rubble_effect]"
+            "finale": "[$controls_editable_object_rubble_finale]"
+            "rewardId": "[$controls_editable_object_rubble_rewardId]"
+            "bladeId": "[$controls_editable_object_rubble_bladeId]"
+            "rewardProbability": "[$controls_editable_object_rubble_rewardProbability]"
+            "rewardsMin": "[$controls_editable_object_rubble_rewardsMin]"
+            "rewardsMax": "[$controls_editable_object_rubble_rewardsMax]"
+            "rewardXp": "[$controls_editable_object_rubble_rewardXp]"
+            "isVulnerable": "[$controls_editable_object_rubble_isVulnerable]"
+            "proofExplosion": "[$controls_editable_object_rubble_proofExplosion]"
+            "canZombiesDamage": "[$controls_editable_object_rubble_canZombiesDamage]"
+            "zombieDamageMultiplier": "[$controls_editable_object_rubble_zombieDamageMultiplier]"
+            "sectionDestroyedAlertRadius": "[$controls_editable_object_rubble_sectionDestroyedAlertRadius]"
+            "allSectionsDestroyedAlertRadius": "[$controls_editable_object_rubble_allSectionsDestroyedAlertRadius]"
+            "respawnAllSectionsSimultaneously": "[$controls_editable_object_rubble_respawnAllSectionsSimultaneously]"
+            "navMode": "[$controls_editable_object_rubble_navMode]"
+            "editor": "[$controls_editable_object_rubble_editor]"
+        "rubble":
+          "resetDelay": "Задержка перед сбросом"
+          "health": "Прочность"
+          "effect": "Эффект удара"
+          "finale": "Эффект уничтожения"
+          "rewardId": "ID таблицы наград"
+          "bladeId": "Требуемый ID лезвия"
+          "rewardProbability": "Шанс награды"
+          "rewardsMin": "Минимальное число наград"
+          "rewardsMax": "Максимальное число наград"
+          "rewardXp": "Опыт"
+          "isVulnerable": "Уязвим"
+          "proofExplosion": "Взрывостойкий"
+          "canZombiesDamage": "Может быть повреждён зомби"
+          "zombieDamageMultiplier": "Множитель урона зомби"
+          "sectionDestroyedAlertRadius": "Радиус обнаружения по уничтожению секции"
+          "allSectionsDestroyedAlertRadius": "Радиус обнаружения по полному уничтожению"
+          "respawnAllSectionsSimultaneously": "Восстанавливать все секции сразу"
+          "navMode": "Режим навигации"
+          "editor": "Поведение в редакторе"
       "spotLight":
         "isEnabled": "Включено"
         "range": "Дальность"
@@ -3043,7 +3163,7 @@
             "dialogue":
               "empty": "Диалог не указан для взаимодействия '[$enum_object_interactability_type_dialogue]'."
             "binaryState":
-              "remote": "Не используйте 'Выполнять на сервере' с взаимодействием '[$enum_object_interactability_type_binaryState]'."
+              "remote": "Не используйте '[$controls_editable_object_interactability_normal_remote]' с взаимодействием '[$enum_object_interactability_type_binaryState]'."
       "vehicle":
         "turrets":
           "max": "Максимальное количество турелей ({0}/{1}) превышено."
