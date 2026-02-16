@@ -14,9 +14,6 @@
           "save": "_Сохранить проект"
           "saveAs": "Сохранить проект _как..."
           "close": "_Закрыть проект"
-          "legacy":
-            "header": "_Устаревшее"
-            "openNpcMakerProject": "_Открыть проект NPC Maker"
           "recent":
             "header": "_Недавние проекты"
           "recover":
@@ -430,6 +427,8 @@
       "controls":
         "select": "Выбрать"
         "random": "Случайный"
+      "questFlag":
+        "description": "Этот флаг используется для отслеживания статуса квеста с тем же ID."
   "modal":
     "newProject":
       "name": "Название"
@@ -546,7 +545,6 @@
         "header": "Быстрые действия"
         "newProject": "Новый проект"
         "loadProject": "Открыть проект"
-        "loadLegacyProject": "Открыть проект NPC Maker"
         "options": "Настройки"
       "recent":
         "header": "Недавние проекты"
@@ -950,6 +948,7 @@
           "excludeFromMasterBundle": "Исключить из Master Bundle"
           "enableShaderConsolidation": "Включить консолидацию шейдеров"
           "unityBundleLocation": "Расположение файла .unity3d"
+          "keepLocalizationLoaded": "Держать локализацию загруженной"
         "editor":
           "header": "Редактор"
           "comment": "Комментарий"
@@ -2973,7 +2972,6 @@
   "format":
     "file":
       "project": "Проект Asset Editor"
-      "legacyProject": "Проект NPC Maker"
       "addon": "Сжатый Zip архив"
       "vendorTable":
         "csv": "Таблица CSV"

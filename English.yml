@@ -14,9 +14,6 @@
           "save": "_Save Project"
           "saveAs": "Save Project _As"
           "close": "_Close Project"
-          "legacy":
-            "header": "_Legacy"
-            "openNpcMakerProject": "_Open NPC Maker Project"
           "recent":
             "header": "_Recent Projects"
           "recover":
@@ -430,6 +427,8 @@
       "controls":
         "select": "Select"
         "random": "Random"
+      "questFlag":
+        "description": "This is a quest flag marker to track status of the quest with the same ID."
   "modal":
     "newProject":
       "name": "Project Name"
@@ -546,7 +545,6 @@
         "header": "Quick Actions"
         "newProject": "New Project"
         "loadProject": "Load Project"
-        "loadLegacyProject": "Load NPC Maker Project"
         "options": "Options"
       "recent":
         "header": "Recent Projects"
@@ -926,13 +924,13 @@
     "asset":
       "idControl":
         "contextMenu":
-          "selectAsset": "Select Asset"
-          "goToAsset": "Go to Asset"
-          "createAsset": "Create Asset"
+          "selectAsset": "Select asset"
+          "goToAsset": "Go to asset"
+          "createAsset": "Create asset"
           "findUnusedId": "Find unused ID"
       "base":
-        "header": "Common Asset Properties"
-        "exportName": "Export Name"
+        "header": "Common asset properties"
+        "exportName": "Export name"
         "guid": "Guid"
         "id": "ID"
         "advanced":
@@ -941,15 +939,16 @@
             "label": "Ignore NPOT"
             "toolTip": "Ignore errors in Unity related to texture being the size of non-power of two"
           "ignoreTexRW":
-            "label": "Ignore Texture Read/Write"
+            "label": "Ignore texture read/write"
             "toolTip": "Ignore errors in Unity related to material being allowed to disable read/write to save perfomance"
-          "bypassIdLimit": "Bypass ID Limit"
-          "masterBundle": "Master Bundle Override"
-          "bundlePath": "Bundle Path"
-          "assetBundleVersion": "Asset Bundle Version"
-          "excludeFromMasterBundle": "Exclude from Master Bundle"
-          "enableShaderConsolidation": "Enable Shader Consolidation"
-          "unityBundleLocation": ".unity3d Bundle Location"
+          "bypassIdLimit": "Bypass ID limit"
+          "masterBundle": "Master bundle override"
+          "bundlePath": "Bundle path"
+          "assetBundleVersion": "Asset bundle version"
+          "excludeFromMasterBundle": "Exclude from master bundle"
+          "enableShaderConsolidation": "Enable shader consolidation"
+          "unityBundleLocation": ".unity3d bundle location"
+          "keepLocalizationLoaded": "Keep localization loaded"
         "editor":
           "header": "Editor"
           "comment": "Comment"
@@ -2973,7 +2972,6 @@
   "format":
     "file":
       "project": "Asset Editor Project"
-      "legacyProject": "NPC Maker Project"
       "addon": "Compressed Zip Archive"
       "vendorTable":
         "csv": "CSV Table"
