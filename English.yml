@@ -162,6 +162,7 @@
               "findIn": "Search In"
               "findReplaceIn": "Search & Replace In"
               "regenerateGuids": "Regenerate GUIDs"
+              "regenerateGuidsRetaining": "Regenerate GUIDs (retaining references)"
               "delete": "Delete (Del)"
         "errors":
           "header": "Errors"

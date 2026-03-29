@@ -162,6 +162,7 @@
               "findIn": "Поиск в..."
               "findReplaceIn": "Поиск и замена в..."
               "regenerateGuids": "Перегенерировать GUIDы"
+              "regenerateGuidsRetaining": "Перегенерировать GUIDы (сохраняя ссылки)"
               "delete": "Удалить (Del)"
         "errors":
           "header": "Ошибки"
