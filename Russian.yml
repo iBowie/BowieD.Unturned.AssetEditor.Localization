@@ -1025,6 +1025,7 @@
             "automaticallyAddAutoStatDescriptions": "Автоматически добавлять описание статистики предмета"
             "shouldLeftHandedCharactersMirrorEquippedItem": "Должен ли этот предмет отражаться для игроков-левш"
             "econIconUseId": "Иконка скина использует ID"
+            "fishingCatchableProperties": "Свойства рыбы"
             "inventoryAudio": "Звук перетаскивания в инвентаре"
             "equipAudio": "Звук экипировки"
             "inspectAudio": "Звук осмотра"
@@ -1184,6 +1185,9 @@
               "type": "Снаряжение"
               "header": "Общие свойства снаряжения"
               "hairOverride": "Модель для замены волос"
+              "hairOverrideNonGoldColor": "Цвет модели волос для игроков без Gold"
+              "beardOverride": "Модель для замены бороды"
+              "beardOverrideNonGoldColor": "Цвет модели бороды для игроков без Gold"
             "glasses":
               "type": "Очки"
               "header": "Свойства очков"
@@ -1305,6 +1309,18 @@
           "rewardExperienceMin": "Мин. опыта в награду"
           "rewardExperienceMax": "Макс. опыта в награду"
           "questRewards": "Награды"
+          "enableCatchChallenge": "Включить мини-игру с рыбалкой"
+          "catchChallenge":
+            "header": "Свойства мини-игры с рыбалкой"
+            "fishBiteIntervalMultiplier": "Множитель интервала поклёва"
+            "fishingRewardMode": "Режим наград"
+            "cursorSize": "Размер курсора"
+            "gravity": "Гравитация"
+            "acceleration": "Ускорение"
+            "upperRestitution": "Верхняя реституция"
+            "lowerRestitution": "Нижняя реституция"
+            "captureSpeedMultiplier": "Множитель скорости поимки"
+            "escapeSpeedMultiplier": "Множитель скорости срыва с крючка"
         "fuel":
           "type": "Канистра"
           "header": "Свойства канистры"
@@ -1559,6 +1575,23 @@
         "assetCategoryOverride": "Категория"
         "targetGuid": "Целевой ассет"
     "editable":
+      "fishingCatchableProperties":
+        "minRelocateInterval": "Минимальный интервал релоцирования"
+        "maxRelocateInterval": "Максимальный интервал релоцирования"
+        "maxUpwardAcceleration": "Максимальное ускорение движения вверх"
+        "maxDownwardAcceleration": "Максимальное ускорение движения вниз"
+        "maxUpwardSpeed": "Максимальная скорость вверх"
+        "maxDownwardSpeed": "Максимальная скорость вниз"
+        "upperRestitution": "Верхняя реституция"
+        "lowerRestitution": "Нижняя реституция"
+        "minTargetDelta": "Минимальное изменение цели"
+        "maxTargetDelta": "Максимальное изменение цели"
+        "minTargetPosition": "Минимальная позиция цели"
+        "maxTargetPosition": "Максимальная позиция цели"
+        "captureDuration": "Длительность поимки"
+        "escapeDuration": "Длительность побега"
+        "springStiffness": "Твёрдость пружины"
+        "springDamping": "Дампинг пружины"
       "foliageCollectionElement":
         "asset": "Ассет растительности"
         "weight": "Вес"
@@ -1829,6 +1862,9 @@
       "tabOpen": "С открытой вкладкой"
       "simulateOpenTab": "Симулировать открытую вкладку"
   "enum":
+    "fishingRewardMode":
+      "rod": "Удочка (Старый)"
+      "waterVolumes": "Объёмы воды"
     "clipboardManager":
       "system":
         "label": "Системный буфер обмена"

@@ -1025,6 +1025,7 @@
             "automaticallyAddAutoStatDescriptions": "Automatically Add Stat Descriptions"
             "shouldLeftHandedCharactersMirrorEquippedItem": "Should Left Handed Players Have This Item Mirrored"
             "econIconUseId": "Econ Icon Uses ID"
+            "fishingCatchableProperties": "Fishing catchable properties"
             "inventoryAudio": "Inventory Audio"
             "equipAudio": "Equip Audio"
             "inspectAudio": "Inspect Audio"
@@ -1184,6 +1185,9 @@
               "type": "Gear"
               "header": "Common gear properties"
               "hairOverride": "Hair override model"
+              "hairOverrideNonGoldColor": "Hair override model color for non-gold players"
+              "beardOverride": "Beard override model"
+              "beardOverrideNonGoldColor": "Beard override model color for non-gold players"
             "glasses":
               "type": "Glasses"
               "header": "Glasses properties"
@@ -1305,6 +1309,18 @@
           "rewardExperienceMin": "Min experience reward"
           "rewardExperienceMax": "Max experience reward"
           "questRewards": "Rewards"
+          "enableCatchChallenge": "Enable catch minigame"
+          "catchChallenge":
+            "header": "Catch minigame properties"
+            "fishBiteIntervalMultiplier": "Fish bite interval multiplier"
+            "fishingRewardMode": "Reward mode"
+            "cursorSize": "Cursor size"
+            "gravity": "Gravity"
+            "acceleration": "Acceleration"
+            "upperRestitution": "Upper restitution"
+            "lowerRestitution": "Lower Restitution"
+            "captureSpeedMultiplier": "Capture speed multiplier"
+            "escapeSpeedMultiplier": "Escape speed multiplier"
         "fuel":
           "type": "Fuel"
           "header": "Fuel properties"
@@ -1559,6 +1575,23 @@
         "assetCategoryOverride": "Category"
         "targetGuid": "Target Asset"
     "editable":
+      "fishingCatchableProperties":
+        "minRelocateInterval": "Minimal relocate interval"
+        "maxRelocateInterval": "Maximal relocate interval"
+        "maxUpwardAcceleration": "Max upward acceleration"
+        "maxDownwardAcceleration": "Max downward acceleration"
+        "maxUpwardSpeed": "Max upward speed"
+        "maxDownwardSpeed": "Max downward speed"
+        "upperRestitution": "Upper restitution"
+        "lowerRestitution": "Lower restitution"
+        "minTargetDelta": "Min target delta"
+        "maxTargetDelta": "Max target delta"
+        "minTargetPosition": "Min target position"
+        "maxTargetPosition": "Max target position"
+        "captureDuration": "Capture duration"
+        "escapeDuration": "Escape duration"
+        "springStiffness": "Spring stiffness"
+        "springDamping": "Spring damping"
       "foliageCollectionElement":
         "asset": "Foliage Asset"
         "weight": "Weight"
@@ -1829,6 +1862,9 @@
       "tabOpen": "With tab open"
       "simulateOpenTab": "Simulate open tab"
   "enum":
+    "fishingRewardMode":
+      "rod": "Rod (Legacy)"
+      "waterVolumes": "Water volumes"
     "clipboardManager":
       "system":
         "label": "System clipboard"
