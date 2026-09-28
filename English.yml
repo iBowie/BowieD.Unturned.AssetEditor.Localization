@@ -473,6 +473,22 @@
         "itemType": "Default Item Type"
       "button":
         "proceed": "Proceed"
+    "addonPermissions":
+      "title": "Add-on permissions"
+      "intro": "This add-on requests the following permissions:"
+      "legacy": "This add-on was made before permissions existed. The permissions below were detected from its code."
+      "undeclared": "Detected in code, but not declared by the add-on."
+      "details": "Code that requires full access"
+      "remember": "Your choice is remembered until the add-on is updated."
+      "allow": "Allow"
+      "deny": "Don't allow"
+      "description":
+        "fileSystem": "Read, create, modify and delete any file or folder your account can access."
+        "network": "Connect to the internet and other computers."
+        "ipc": "Communicate with other programs running on this computer, e.g. Discord."
+        "process": "Start and control other programs. This is effectively full access to your computer."
+        "registry": "Read and modify the Windows registry."
+        "fullTrust": "Run outside of the sandbox with no restrictions. The add-on can do anything you can."
   "task":
     "importFolder":
       "title": "Importing folder"
@@ -1896,6 +1912,14 @@
       "fix": "Fix"
       "tool": "Tool"
       "theme": "Theme"
+    "addonPermission":
+      "none": "None"
+      "fileSystem": "File system"
+      "network": "Network"
+      "ipc": "Communication with other programs"
+      "process": "Running programs"
+      "registry": "Windows registry"
+      "fullTrust": "Full access"
     "actionGun":
       "trigger": "Trigger"
       "bolt": "Bolt"
