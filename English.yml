@@ -53,6 +53,7 @@
           "origin":
             "vanilla": "Unturned"
             "workshop": "Installed Workshop"
+            "unknownMod": "Unknown Mod"
           "quickSearch":
             "watermark": "Quick Search..."
         "masterBundleBrowser":
@@ -164,6 +165,8 @@
               "regenerateGuids": "Regenerate GUIDs"
               "regenerateGuidsRetaining": "Regenerate GUIDs (retaining references)"
               "delete": "Delete (Del)"
+            "assetGroup":
+              "addSubAsset": "Add sub-asset"
         "errors":
           "header": "Errors"
           "grid":
@@ -210,6 +213,15 @@
           "buttons":
             "link": "Link Unturned Assets"
             "cancel": "Cancel"
+      "statusBar":
+        "errorCount": "{0} error(s)"
+        "warningCount": "{0} warning(s)"
+        "tipCount": "{0} tip(s)"
+        "build":
+          "demo": "DEMO"
+          "earlyAccess": "EARLY ACCESS"
+          "nightly": "NIGHTLY"
+        "noErrors": "No errors"
     "configurationWindow":
       "title": "Configuration"
       "tabs":
@@ -236,6 +248,9 @@
               "shared":
                 "accentColor": "Accent color"
                 "isDarkMode": "Use dark mode"
+              "error": "ERROR"
+              "rainbow":
+                "duration": "Duration"
           "uiScale": "UI Scale"
           "background":
             "workArea": "Work area background"
@@ -340,6 +355,8 @@
         "reloadRequired": "Requires restart to apply"
     "about":
       "title": "About"
+      "usedLibraries": "Used Libraries"
+      "activeSupporters": "Active Supporters on"
     "setup":
       "title": "First Setup"
       "buttons":
@@ -366,6 +383,11 @@
         "add": "Add Flag"
         "edit": "Edit Flag"
         "delete": "Delete Flag"
+      "columns":
+        "id": "ID"
+        "name": "Name"
+        "description": "Description"
+        "possibleValues": "Possible Values"
     "addonListWindow":
       "title": "Add-ons"
       "buttons":
@@ -430,6 +452,55 @@
         "random": "Random"
       "questFlag":
         "description": "This is a quest flag marker to track status of the quest with the same ID."
+      "vanilla":
+        "flag":
+          "coalitionRank":
+            "name": "Coalition Rank"
+            "description": "1 - Ensign, 2 - Lieutenant, 3 - Major"
+        "blade":
+          "woodChopping":
+            "name": "Wood Chopping"
+            "description": "Allows to chop wood"
+          "metalMining":
+            "name": "Metal Mining"
+            "description": "Allows to mine rocks"
+          "candyCane":
+            "name": "Candy Cane"
+            "description": "Allows to chop XMas Event Candy Cane"
+          "snowPile":
+            "name": "Snow Pile"
+            "description": "Allows to dig XMas Event Snow Pile"
+        "caliber":
+          "description": "{0} caliber"
+    "idTableGenerator":
+      "comparer":
+        "guidAscending": "Guid Ascending"
+        "guidDescending": "Guid Descending"
+        "idAscending": "ID Ascending"
+        "idDescending": "ID Descending"
+        "nameAscending": "Name Ascending"
+        "nameDescending": "Name Descending"
+        "typeAscending": "Type Ascending"
+        "typeDescending": "Type Descending"
+      "invalidFormat": "INVALID"
+      "tableStyle":
+        "generic": "Generic"
+      "title": "ID Table Generator"
+      "style": "Style"
+      "orderBy": "Order By"
+      "thenBy": "Then By"
+      "include":
+        "header": "Include"
+        "type": "Type"
+        "name": "Name"
+      "removeMarkup": "Remove Unity Rich Text"
+      "format":
+        "header": "Format"
+        "guid": "GUID Format"
+        "id": "ID Format"
+      "filter":
+        "header": "Filter Asset Types"
+      "generate": "Generate"
   "modal":
     "newProject":
       "name": "Project Name"
@@ -460,6 +531,19 @@
       "severity": "Severity"
       "text": "Text"
       "pathToAsset": "Path"
+      "error":
+        "parse": "Error parsing: \"{0}\"."
+        "readFailed": "Unable to read file."
+        "readException": "Caught exception while reading file: {0}."
+        "metadataGuid": "Unable to parse Metadata.GUID."
+        "metadataType": "Unable to parse Metadata.Type."
+        "emptyGuid": "Cannot use empty GUID."
+        "missingType": "Missing asset Type."
+        "unhandledType": "Unhandled asset type \"{0}\"."
+        "invalidType": "Type \"{0}\" is not a valid asset type."
+        "constructException": "Caught exception while constructing \"{0}\"."
+        "constructFailed": "Failed to construct \"{0}\"."
+        "populateException": "Caught exception while populating \"{0}\": {1}."
     "importVendorCsv":
       "title": "Importing vendor from a table"
       "column":
@@ -495,6 +579,10 @@
       "step":
         "scan": "Scanning folder"
         "load": "Importing assets [{0:P0}]"
+    "openProject":
+      "title": "Opening project"
+      "step":
+        "load": "Loading project file"
   "status":
     "welcome": "Welcome back!"
     "project":
@@ -549,6 +637,23 @@
     "askRegenerateGuids":
       "caption": "Confirm Guid regeneration"
       "text": "Are you sure you want to regenerate Guids in this folder ({0})? This action cannot be undone."
+    "loadProjectBackup":
+      "caption": "Couldn't load a project file"
+      "text": "Couldn't load a project file. Error: {0}\n\nYou can try loading a backup file from '{1:F}' (project file that you tried to load is from '{2:F}')"
+    "copyObject":
+      "error": "Could not copy this object."
+    "exportHasErrors":
+      "caption": "Cannot export"
+      "text": "There are {0} errors. You can't export your project until you fix them."
+    "exportHasWarnings":
+      "caption": "Warning"
+      "text": "There are {0} warnings. Are you sure you want to export it?"
+    "crash":
+      "caption": "Asset Editor has crashed!"
+      "text":
+        "windows": "Try rebooting your PC, if the issue persists - contact me with this crash report.\nThis issue is most likely related to Windows itself, not the Asset Editor.\n\n{0}"
+        "unauthorizedAccess": "This crash stems from the fact that the app tried to access a file or a folder that it doesn't have access to.\nIn most cases running the app as administrator will help, but I'd suggest checking if you really needed to access this specific file or a folder first.\n\n{0}"
+        "notImplemented": "You have encountered a part of the app that is not fully implemented yet. Congratulations!\nStill report this issue because this shouldn't normally happen.\n\n{0}"
   "page":
     "welcome":
       "getStarted":
@@ -568,6 +673,8 @@
         "location": "Location:"
         "assetCount": "Assets:"
         "lastSave": "last saved on"
+        "contextMenu":
+          "remove": "Remove selected project from recent list"
       "footer":
         "patreon":
           "part1": "Consider supporting on"
@@ -699,6 +806,12 @@
           "secondAsset":
             "guid": "Second Character Guid"
             "id": "Second Character ID"
+        "contextMenu":
+          "randomName":
+            "male": "Random Male Name"
+            "maleWithLastName": "Random Male Name + Last Name"
+            "female": "Random Female Name"
+            "femaleWithLastName": "Random Female Name + Last Name"
       "dialogue":
         "messages":
           "header": "Messages"
@@ -711,6 +824,26 @@
           "pasteButton":
             "toolTip": "Paste Response"
         "orderMode": "Order Mode"
+        "contextMenu":
+          "message":
+            "addWithEmptyPage": "Add message with empty page"
+            "addEmpty": "Add empty message"
+            "paste": "Paste message"
+          "response":
+            "addBlank": "Add blank response"
+            "vendor":
+              "header": "Vendor"
+              "add": "Add Vendor Response"
+            "quest":
+              "header": "Quest"
+              "give": "Add Quest Give Response"
+              "complete": "Add Quest Complete Response"
+            "paste": "Paste response"
+            "params":
+              "vendorId": "Vendor ID"
+              "questId": "Quest ID"
+              "dialogueId": "Dialogue ID"
+              "isRepeatable": "Is Repeatable"
       "vendor":
         "properties":
           "header": "Vendor Properties"
@@ -733,6 +866,12 @@
           "export":
             "toolTip": "Export as a file"
             "fail": "Could not export items as a table. Error: {0}"
+        "preview":
+          "buying": "[$page_editor_vendor_buying_header]:"
+          "selling": "[$page_editor_vendor_selling_header]:"
+          "cost": "Cost:"
+          "price": "Price:"
+          "experience": "Experience:"
       "quest":
         "properties":
           "header": "Quest Properties"
@@ -741,6 +880,8 @@
         "conditions": "Conditions / Goals"
         "rewards": "Rewards"
         "abandonmentRewards": "Quest Abandonment Rewards"
+        "preview":
+          "goals": "Goals"
       "currency":
         "valueFormat": "Value Format"
         "conditionValueFormat": "Condition Value Format"
@@ -931,6 +1072,71 @@
         "wheelConfigurations": "Wheel Configurations"
         "paintColor":
           "header": "Paint Colors"
+      "animal":
+        "animalName": "Animal Name"
+        "speed":
+          "walk": "Walking Speed"
+          "run": "Running Speed"
+        "behaviour": "Behaviour"
+        "health": "Health"
+        "regen": "Regeneration Rate (seconds)"
+        "damage": "Damage"
+        "attackInterval": "Attack Interval (seconds)"
+        "attackRange":
+          "horizontal": "Horizontal Attack Range"
+          "vertical": "Vertical Attack Range"
+          "horizontalVehicle": "Horizontal Vehicle Attack Range"
+        "loot":
+          "tableId": "Loot Table ID"
+          "legacy":
+            "meat": "Meat ID"
+            "pelt": "Pelt ID"
+            "meatPreview": "Will drop 2-4 meat items"
+            "peltPreview": "Will drop 2-4 pelt items"
+            "header": "Legacy Animal Loot Settings"
+          "rewardXp": "Reward Experience"
+          "header": "Loot"
+          "table":
+            "header": "Loot Table Settings"
+        "sounds":
+          "roars": "Roar Variants"
+          "panics": "Panic Variants"
+          "header": "Sounds"
+        "animation":
+          "attacks": "Attack Variants"
+          "eats": "Eat Variants"
+          "glances": "Glance Variants"
+          "startles": "Startle Variants"
+          "header": "Animation"
+          "playOnServer": "Play animations on server"
+          "preventMoveDuringStartle": "Prevent move when playing startle animation"
+      "resource":
+        "resourceName": "Resource Name"
+        "bladeId": "Blade ID"
+        "radius": "Radius"
+        "scale": "Scale"
+        "verticalOffset": "Vertical Offset"
+        "levelBatching":
+          "preview":
+            "ifTrue": "Will be excluded from level batching"
+            "ifFalse": "Will be included in level batching"
+        "interactText": "Interaction Text"
+        "rewards":
+          "rewardId": "Reward ID"
+          "rewardXp": "Reward XP"
+          "log": "Log"
+          "stick": "Stick"
+          "forageRewardXp": "Forage Reward XP"
+          "isForage": "Is Forage"
+          "header": "Rewards"
+        "model":
+          "isSpeedTree": "Is Using SpeedTree"
+          "defaultLodWeights": "Use Default LOD Weights"
+          "hasDebris": "Has Debris"
+          "hasAutoSkybox": "Has Auto Skybox"
+          "header": "Model"
+        "isVulnerableToFists": "Is Vulnerable To Fists"
+        "isVulnerableToAllMelee": "Is Vulnerable To All Melee"
   "controls":
     "common":
       "armorFalloff":
@@ -938,6 +1144,9 @@
         "maxRange": "Max range"
         "range": "Range"
         "multiplier": "Multiplier"
+      "revertValue":
+        "header": "Revert to default value"
+        "toolTip": "Revert to value '{0}'"
     "asset":
       "idControl":
         "contextMenu":
@@ -978,6 +1187,11 @@
         "type": "Crafting Recipe List"
       "tag":
         "type": "Crafting Tag"
+        "name": "Name"
+        "nameColor": "Name Color"
+        "hasIcon": "Has Icon"
+        "iconPath": "Icon Path"
+        "tintIcon": "Tint Icon"
       "item":
         "base":
           "type": "Item"
@@ -1046,6 +1260,7 @@
             "equipAudio": "Equip Audio"
             "inspectAudio": "Inspect Audio"
             "equipablePrefab": "Equipable Prefab"
+            "preferredDescriptionFlags": "Preferred Description Flags"
         "caliber":
           "base":
             "type": "Caliber"
@@ -1172,6 +1387,8 @@
             "shouldDestroyClothingColliders": "Should Destroy Clothing Colliders"
             "priorityOverCosmeticOverride": "Override Priority Over Cosmetic"
             "skinOverride": "Skin Override"
+            "display":
+              "header": "Display"
           "bag":
             "base":
               "type": "Bag"
@@ -1204,6 +1421,7 @@
               "hairOverrideNonGoldColor": "Hair override model color for non-gold players"
               "beardOverride": "Beard override model"
               "beardOverrideNonGoldColor": "Beard override model color for non-gold players"
+              "hairOverrideToolTip": "Override model material with hair one"
             "glasses":
               "type": "Glasses"
               "header": "Glasses properties"
@@ -1267,41 +1485,314 @@
         "placeable":
           "base":
             "type": "Placeable"
+            "health": "Health"
+            "armorTier": "Armor Tier"
+            "canBeDamaged": "Can Be Damaged"
+            "isVulnerable": "Is Vulnerable"
+            "isRepairable": "Is Repairable"
+            "isExplosionProof": "Is Explosion Proof"
+            "canBePickedUp": "Can Be Picked Up"
+            "canBeSalvaged": "Can Be Salvaged"
+            "salvageDurationMultiplier": "Salvage Duration Multiplier"
+            "placementRange": "Placement Range"
+            "explosionEffect": "Explosion Effect"
+            "placeAudioClip": "Place Audio Clip"
+            "eligibleForPooling": "Eligible For Pooling"
+            "isSaveable": "Is Saveable"
+            "header": "Placeable"
+            "canZombiesTarget": "Can Zombies Target"
+            "salvageFullHealthMin": "Min Items Recovered On Full Health Salvage"
+            "salvageFullHealthMax": "Max Items Recovered On Full Health Salvage"
+            "salvageFullHealthItem": "Dropped Item On Full Health Salvage"
+            "salvageMin": "Min Items Recovered On Salvage"
+            "salvageMax": "Max Items Recovered On Salvage"
+            "salvageItem": "Dropped Item On Salvage"
+            "destroyDropsMin": "Min Items Dropped On Destroy"
+            "destroyDropsMax": "Max Items Dropped On Destroy"
+            "destroyDropsTable": "Dropped Items On Destroy"
+            "craftingTags": "Crafting Tags"
+            "effectCopyModelPosition": "Effect Copy Model Position"
+            "effectCopyModelRotation": "Effect Copy Model Rotation"
           "structure":
             "type": "Structure"
+            "header": "Structure"
+            "construct": "Construct Type"
+            "requiresPillars": "Requires Pillars"
+            "foliageCutRadius": "Foliage Cut Radius"
+            "terrainTestHeight": "Terrain Test Height"
           "barricade":
             "base":
               "type": "Barricade"
+              "header": "Barricade"
+              "build": "Build Type"
+              "bypassPickupOwnership": "Bypass Pickup Ownership"
+              "placeRadius": "Place Radius"
+              "placeOffset": "Place Offset"
+              "bypassClaim": "Bypass Claim"
+              "allowPlacementOnVehicle": "Allow Placement On Vehicle"
+              "allowPlacementInsideClipVolumes": "Allow Placement Inside Clip Volumes"
+              "vehicleToSpawn": "Vehicle To Spawn"
+              "isLocked": "Is Locked"
+              "hasClipPrefab": "Has Clip Prefab"
+              "allowCollisionWhileAnimating": "Allow Collision While Animating"
+              "useWaterHeightTransparentSort": "Use Water Height Transparent Sort"
+              "placementPreviewPrefab": "Placement Preview Prefab"
             "beacon":
               "type": "Horde beacon"
+              "header": "Horde Beacon"
+              "wave": "Zombies Per Wave"
+              "waveUnit": "zombies"
+              "reward": "Reward"
+              "rewardCount": "Reward Count"
+              "rewardCountUnit": "rewards"
+              "enableParticipantScaling": "Scale With Participant Count"
             "charge":
               "type": "Charge"
+              "header": "Charge"
+              "blastRange": "Blast Range"
+              "blastEffect": "Blast Effect"
+              "damage":
+                "header": "Damage"
+                "player": "Player"
+                "zombie": "Zombie"
+                "animal": "Animal"
+                "barricade": "Barricade"
+                "structure": "Structure"
+                "vehicle": "Vehicle"
+                "resource": "Resource"
+                "object": "Object"
+              "explosionLaunchSpeed": "Explosion Launch Speed"
             "farm":
               "type": "Crop"
+              "header": "Crop"
+              "growth": "Grow Time"
+              "grow": "Harvest Item"
+              "growSpawnTable": "Harvest Spawn Table"
+              "harvestRewardExperience": "Harvest Reward Experience"
+              "harvestRewards": "Harvest Rewards"
+              "ignoreSoilRestrictions": "Allow Planting Anywhere"
+              "allowFertilizer": "Allow Fertilizer"
+              "isAffectedByAgricultureSkill": "Is Affected By Agriculture Skill"
+              "rainAffectsGrowth": "Rain Affects Growth"
             "generator":
               "type": "Generator"
+              "header": "Generator"
+              "capacity": "Capacity"
+              "wireRange": "Wire Range"
+              "burn": "Burn Rate"
+              "workTime": "Generator will work for {0} seconds"
             "library":
               "type": "Library"
+              "header": "XP Storage"
+              "capacity": "Capacity"
+              "tax": "Transfer Tax"
             "oilPump":
               "type": "Oil pump"
+              "header": "Oil Pump"
+              "capacity": "Capacity"
             "storage":
               "base":
                 "type": "Storage"
+                "header": "Storage"
+                "capacityX": "Capacity Horizontal"
+                "capacityY": "Capacity Vertical"
+                "isDisplay": "Is Display"
+                "shouldCloseWhenFar": "Should Close When Far"
+                "canPlayersOpen": "Can Players Open"
+                "deleteContainedItemsOnDestroy": "Delete Contained Items On Destroy"
+                "defaultContainedItems": "Default Contained Items"
               "sentry":
                 "type": "Sentry"
+                "header": "Sentry"
+                "sentryMode": "Sentry Mode"
+                "canTargetPlayers": "Can Target Players"
+                "canTargetZombies": "Can Target Zombies"
+                "canTargetVehicles": "Can Target Vehicles"
+                "canTargetAnimals": "Can Target Animals"
+                "bypassesPvE": "Bypasses PvE"
+                "canReactToAttacks": "Can React To Attacks"
+                "requiresPower": "Requires Power"
+                "infiniteAmmo": "Has Infinite Ammo"
+                "ammoConsumptionProbability": "Ammo Consumption Probability"
+                "infiniteQuality": "Has Infinite Quality"
+                "qualityConsumptionProbability": "Quality Consumption Probability"
+                "detectionRadius": "Detection Radius"
+                "targetLossRadius": "Target Loss Radius"
+                "targetAcquiredEffect": "Target Acquired Effect"
+                "targetLostEffect": "Target Lost Effect"
+                "sweepHalfYaw": "Sweep Half-Yaw"
+                "sweepPeriod": "Sweep Period"
             "tank":
               "type": "Tank"
+              "header": "Resource Tank"
+              "tankSource": "Resource Type"
+              "capacity": "Tank Capacity"
             "trap":
               "type": "Trap"
+              "header": "Trap"
+              "isExplosive": "Is Explosive"
+              "damageTires": "Damages Tires"
+              "blastRange": "Blast Range"
+              "damage":
+                "header": "Damage Settings"
+                "player": "Player Damage"
+                "zombie": "Zombie Damage"
+                "animal": "Animal Damage"
+                "barricade": "Barricade Damage"
+                "structure": "Structure Damage"
+                "vehicle": "Vehicle Damage"
+                "resource": "Resource Damage"
+                "object": "Object Damage"
+                "explosion": "Explosion Effect"
+              "isBroken": "Breaks Bones"
+              "trapSetupDelay": "Trap Setup Delay"
+              "trapCooldown": "Trap Cooldown"
+              "explosionLaunchSpeed": "Explosion Launch Speed"
+              "requiresPower": "Requires Power"
         "weapon":
           "base":
             "type": "Weapon"
+            "damageMultiplier":
+              "damage": "Damage"
+              "legMultiplier": "Leg Multiplier"
+              "legDamage": "Leg Damage"
+              "armMultiplier": "Arm Multiplier"
+              "armDamage": "Arm Damage"
+              "spineMultiplier": "Spine Multiplier"
+              "spineDamage": "Spine Damage"
+              "headMultiplier": "Head Multiplier"
+              "headDamage": "Head Damage"
+            "alertRadius": "Alert Radius"
+            "durabilityChance": "Durability Decrease Chance"
+            "durabilityAmount": "Durability Decrease Amount"
+            "isInvulnerable": "Is Invulnerable"
+            "allowFleshFx": "Allow Flesh FX"
+            "bypassAllowedToDamagePlayer": "Always Allow Player Damage"
+            "blades": "Blades"
           "gun":
             "type": "Gun"
+            "spawn":
+              "ammoMin": "Min Ammo"
+              "ammoMax": "Max Ammo"
+              "defaultSight": "Default Sight"
+              "defaultTactical": "Default Tactical"
+              "defaultGrip": "Default Grip"
+              "defaultBarrel": "Default Barrel"
+              "defaultMagazine": "Default Magazine"
+            "behaviour":
+              "header": "Gun Behaviour"
+              "unplace": "Unplace Duration"
+              "replace": "Replace Duration"
+              "reloadTime": "Reload Time"
+              "hammerTime": "Hammer Time"
+              "fireDelaySeconds": "Fire Delay Seconds"
+              "aimInDuration": "Aim In Duration"
+              "rechamberAfterShotDelay": "Rechamber After Shot Delay"
+              "ejectAfterHammerDelay": "Eject After Hammer Delay"
+              "ejectAfterReloadDelay": "Eject After Reload Delay"
+              "rechamberAfterShotCount": "Rechamber After Shot Count"
+              "casingEjectCountAfterReload": "Casing Eject Count After Reload"
+              "casingEjectCountAfterRechambering": "Casing Eject Count After Rechambering After Shooting"
+              "rechamberAfterMagazineAttached": "Rechamber After Magazine Attached"
+              "rechamberAfterMagazineDetached": "Rechamber After Magazine Detached"
+              "scaleAimAnimationSpeed": "Scale Aim Animation Speed"
+              "shouldForceStopAimingAfterShooting": "Should Force Stop Aiming After Shooting"
+              "shouldEjectCasingAfterShooting": "Should Eject Casing After Shooting"
+            "hasSight": "Has Sight Attachment Slot"
+            "hasTactical": "Has Tactical Attachment Slot"
+            "hasGrip": "Has Grip Attachment Slot"
+            "hasBarrel": "Has Barrel Attachment Slot"
+            "magazineCalibers": "Magazine Calibers"
+            "attachmentCalibers": "Attachment Calibers"
+            "allowMagazineChange": "Allow Magazine Change"
+            "action": "Action Type"
+            "ammoPerShot": "Ammo per Shot"
+            "fireRate": "Firerate"
+            "bursts": "Bursts"
+            "spread":
+              "angle": "Angle Degrees"
+              "aim": "Aim"
+              "sprint": "Sprint"
+              "crouch": "Crouch"
+              "prone": "Prone"
+              "swimming": "Swimming"
+              "midair": "Midair"
+            "recoil":
+              "header": "Recoil"
+              "sprint": "Sprint Multiplier"
+              "crouch": "Crouch Multiplier"
+              "prone": "Prone Multiplier"
+              "swimming": "Swimming Multiplier"
+              "midair": "Midair Multiplier"
+            "axis":
+              "minX": "Min X"
+              "minY": "Min Y"
+              "minZ": "Min Z"
+              "maxX": "Max X"
+              "maxY": "Max Y"
+              "maxZ": "Max Z"
+            "recover":
+              "header": "Recover"
+              "horizontal": "Horizontal"
+              "vertical": "Vertical"
+            "ballistics":
+              "header": "Ballistics"
+              "steps": "Steps"
+              "travel": "Travel"
+              "force": "Force"
+            "damageFalloffRange": "Damage Falloff Range Multiplier"
+            "damageFalloffMaxRange": "Damage Falloff Max Range Multiplier"
+            "damageFalloffMultiplier": "Damage Falloff Multiplier"
+            "projectileLifespan": "Projectile Lifespan"
+            "projectilePenetrateBuildables": "Projectiles Penetrate Buildables"
+            "projectileExplosionLaunchSpeed": "Projectile Explosion Launch Speed"
+            "hasSafety": "Has Safety Fire Mode"
+            "hasSemi": "Has Semi Fire Mode"
+            "hasAuto": "Has Auto Fire Mode"
+            "isTurret": "Is Turret"
+            "driverTurretViewModelMode": "Driver Turret ViewModel Mode"
+            "instakillHeadshots": "Instakill Headshots"
+            "isInfiniteAmmo": "Has Infinite Ammo"
+            "canAimDuringSprint": "Can Aim During Sprint"
+            "shouldDeleteEmptyMagazines": "Delete Empty Magazines"
+            "canEverJam": "Can Ever Jam"
+            "jam":
+              "header": "Jamming Settings"
+              "qualityThreshold": "Quality Threshold"
+              "maxChance": "Max Chance"
+              "unjamChamberAnim": "Unjam Chamber Animation Name"
+            "shell": "Shell Effect"
+            "muzzle": "Muzzle Effect"
+            "mustAimToShoot": "Must Aim To Shoot"
+            "gunshotRolloffDistance": "Gunshot Rolloff Distance"
+            "rangeRangefinder": "Rangefinder Range"
+            "requiresNonZeroAttachmentCaliber": "Requires non-zero attachment caliber"
+            "shootRewards": "Shoot Rewards"
+            "magazineReplacements": "Magazine Replacements"
           "melee":
             "type": "Melee weapon"
+            "isRepair": "Is Repair Tool"
+            "isRepeated": "Can Attack Be Held Down"
+            "isLight": "Has Light"
+            "strength": "Strong Attack Multiplier"
+            "weak": "Weak Animation Speed"
+            "strong": "Strong Animation Speed"
+            "stamina": "Strong Attack Stamina Use"
+            "impactAudio": "Impact Audio"
+            "weakAttackRewards": "Weak Attack Rewards"
+            "strongAttackRewards": "Strong Attack Rewards"
           "throwable":
             "type": "Throwable"
+            "isFlash": "Is Flash"
+            "isSticky": "Is Sticky"
+            "explodeOnImpact": "Explodes On Impact"
+            "explodeOnImpactDestroyOnClient": "Explodes On Impact (Destroy On Client)"
+            "fuseLength": "Fuse Length"
+            "throwForce":
+              "header": "Throw Force"
+              "strong": "Strong"
+              "weak": "Weak"
+            "boostForceMultiplier": "Boost Force Multiplier"
         "arrestStart":
           "type": "Arrest start"
           "header": "Arrest start properties"
@@ -1391,6 +1882,53 @@
               "paintColor": "Paint color"
           "vehicleLockpickTool":
             "type": "Vehicle lockpick"
+            "header": "Vehicle lockpick properties"
+            "failureEffect": "Failure effect"
+            "failureProbability": "Failure probability"
+        "barricade":
+          "base":
+            "header": "Common Barricade Properties"
+            "build": "Build Type"
+            "health": "Health"
+            "canBeDamaged": "Can Be Damaged"
+            "isRepairable": "Can Be Repaired"
+            "isVulnerable": "Is Vulnerable"
+            "isExplosionProof": "Is Explosion Proof"
+            "range": "Placement Range"
+            "radius": "Placement Radius"
+            "offset": "Placement Offset"
+            "allowPlacementInsideClipVolumes":
+              "label": "Allow Placement Inside Clip Volumes"
+              "preview":
+                "ifTrue": "Will be placeable inside of clip volumes"
+                "ifFalse": "Won't be placeable inside of clip volumes"
+            "allowPlacementOnVehicle":
+              "label": "Allow Placement On Vehicle"
+              "preview":
+                "ifTrue": "Will be allowed to place on vehicles"
+                "ifFalse": "Won't be allowed to place on vehicles"
+            "bypassClaim": "Bypass Claim"
+            "explosionEffect":
+              "effect": "Explosion Effect"
+              "vehicle": "Vehicle to Spawn"
+            "isSalvageable": "Can Be Salvaged"
+            "isPickupable": "Can Be Picked Up"
+            "salvageDurationMultiplier": "Salvage Duration Multiplier"
+            "armorTier": "Armor Tier"
+            "isLocked": "Is Locked"
+            "bypassPickupOwnership":
+              "label": "Bypass Pickup Ownership"
+              "preview":
+                "ifTrue": "Will bypass pickup ownership"
+                "ifFalse": "Won't bypass pickup ownership"
+            "isSaveable": "Is Saveable"
+            "allowCollisionWhileAnimating": "Allow Collision While Animating"
+            "useWaterHeightTransparentSort": "Use Water Height Transparent Sort"
+            "eligibleForPooling":
+              "label": "Eligible for Pooling"
+              "preview":
+                "ifTrue": "Will be eligible for pooling"
+                "ifFalse": "Won't be eligible for pooling"
       "currency":
         "type": "Currency"
         "error": "ERROR"
@@ -1482,20 +2020,99 @@
         "type": "Animal"
       "effect":
         "type": "Effect"
+        "splatter": "Splatter Game Object Count"
+        "splatters": "Splatters Count"
+        "isSplatterLiquid": "Is Splatter Liquid"
+        "splatterTemperature": "Splatter Temperature"
+        "splatterLifetime": "Splatter Lifetime"
+        "splatterLifetimeSpread": "Splatter Lifetime Spread"
+        "lifetime": "Effect Lifetime"
+        "lifetimeSpread": "Effect Lifetime Spread"
+        "isStatic": "Is Static"
+        "preload": "Preload"
+        "splatterPreload": "Splatter Preload"
+        "blast": "Blast Mark"
+        "relevantDistance": "Relevant Distance"
+        "spawnOnServer": "Spawn On Server"
+        "randomizeRotation": "Randomize Rotation"
+        "cameraShakeRadius": "Camera Shake Radius"
+        "cameraShakeMagnitudeDegrees": "Camera Shake Magnitude Degrees"
       "airdrop":
         "type": "Airdrop"
+        "barricade": "Barricade"
+        "model": "Model"
       "craftingBlockList":
         "type": "Crafting Blocklist"
+        "sourceItem": "Source Item"
+        "inputItems": "Blocked Input Items"
+        "outputItems": "Blocked Output Items"
+        "blueprints": "Blocked Blueprints"
+        "allowCoreBlueprints": "Allow Core Blueprints"
       "level":
         "type": "Level"
+        "header": "Level Asset"
+        "dropship": "Dropship"
+        "craftingBlocklists": "Crafting Blocklists"
+        "weatherTypes": "Weather Types"
+        "perpetualWeather": "Perpetual Weather"
+        "loadingScreenMusic": "Loading Screen Music"
+        "deathMusic": "Death Music"
+        "animateBackgroundImage": "Animate Background Image"
+        "globalWeatherMask": "Global Weather Mask"
+        "skillRules": "Skill Rules"
+        "terrainColorRules": "Terrain Color Rules"
+        "minStealthRadius": "Min Stealth Radius"
+        "fallDamageSpeedThreshold": "Fall Damage Speed Threshold"
+        "enableAdminFasterSalvageDuration": "Enable Admin Faster Salvage Duration"
+        "hasClouds": "Has Clouds"
+        "weather":
+          "minDuration": "Min Duration"
+          "maxDuration": "Max Duration"
+          "minFrequency": "Min Frequency"
+          "maxFrequency": "Max Frequency"
+        "music":
+          "loop": "Loop"
+          "loopVolume": "Loop Volume"
+          "outro": "Outro"
+          "outroVolume": "Outro Volume"
+        "skillRule":
+          "skill": "Skill"
+          "defaultLevel": "Default Level"
+          "maxUnlockableLevel": "Max Unlockable Level"
+          "costMultiplier": "Cost Multiplier"
+        "terrainColorRule":
+          "hueThreshold": "Hue Threshold"
+          "saturationThreshold": "Saturation Threshold"
+          "valueThreshold": "Value Threshold"
+          "colorPreview": "Color Preview"
+          "minHueDiff": "Min Hue Diff"
+          "maxHueDiff": "Max Hue Diff"
+          "minSaturationDiff": "Min Saturation Diff"
+          "maxSaturationDiff": "Max Saturation Diff"
+          "minValueDiff": "Min Value Diff"
+          "maxValueDiff": "Max Value Diff"
       "outfit":
         "type": "Outfit"
       "skin":
         "type": "Skin"
+        "isPattern": "Is Pattern"
+        "lightingTime": "Lighting Time"
+        "hasSight": "Has Sight"
+        "hasTactical": "Has Tactical"
+        "hasGrip": "Has Grip"
+        "hasBarrel": "Has Barrel"
+        "hasMagazine": "Has Magazine"
+        "ragdollEffect": "Ragdoll Effect"
+        "overrideMeshes": "Override Meshes"
+        "secondarySkins": "Secondary Skins"
       "song":
         "type": "Song"
+        "title": "Title"
+        "isLooping": "Is Looping"
+        "linkUrl": "Link URL"
       "resource":
         "type": "Resource"
+        "name": "Resource Name"
       "spawn":
         "type": "Spawn"
         "header": "Spawn Asset Properties"
@@ -1505,11 +2122,54 @@
         "type": "Vehicle"
       "vehiclePhysicsProfile":
         "type": "Vehicle Physics Profile"
+        "friction":
+          "extremumSlip": "Extremum Slip"
+          "extremumValue": "Extremum Value"
+          "asymptoteSlip": "Asymptote Slip"
+          "asymptoteValue": "Asymptote Value"
+          "stiffness": "Stiffness"
+        "rootMass": "Root Mass"
+        "rootMassMultiplier": "Root Mass Multiplier"
+        "rootDragMultiplier": "Root Drag Multiplier"
+        "rootAngularDragMultiplier": "Root Angular Drag Multiplier"
+        "carjackForceMultiplier": "Carjack Force Multiplier"
+        "wheelMass": "Wheel Mass"
+        "wheelMassMultiplier": "Wheel Mass Multiplier"
+        "wheelDampingRate": "Wheel Damping Rate"
+        "wheelStiffnessTractionMultiplier": "Wheel Stiffness Traction Multiplier"
+        "wheelSuspensionForce": "Wheel Suspension Force"
+        "wheelSuspensionDamper": "Wheel Suspension Damper"
+        "wheelFrictionSideways": "Wheel Friction Sideways"
+        "wheelFrictionForward": "Wheel Friction Forward"
+        "motorTorqueMultiplier": "Motor Torque Multiplier"
+        "motorTorqueClampMultiplier": "Motor Torque Clamp Multiplier"
+        "brakeTorqueMultiplier": "Brake Torque Multiplier"
+        "brakeTorqueTractionMultiplier": "Brake Torque Traction Multiplier"
+        "wheelDriveModel": "Wheel Drive Model"
+        "wheelBrakeModel": "Wheel Brake Model"
       "weather":
         "base":
           "type": "Weather Base"
+          "fadeInDuration": "Fade In Duration"
+          "fadeOutDuration": "Fade Out Duration"
+          "ambientAudioClip": "Ambient Audio Clip"
+          "isAudioHigherPriorityThanAmbianceVolumes": "Does Weather Audio Takes Priority Over Volumes"
+          "volumeMask": "Volume Mask"
+          "hasLightning": "Has Lightning"
+          "minLightningInterval": "Min Lightning Interval"
+          "maxLightningInterval": "Max Lightning Interval"
+          "lightningTargetRadius": "Lightning Target Radius"
+          "componentType": "Component Type"
+          "fishBiteIntervalMultiplier": "Fish Bite Interval Multiplier"
         "basic":
           "type": "Weather"
+          "lightingColor": "Lighting Color"
+          "customColor": "Custom Color"
+          "fogColor": "Fog Color"
+          "fogDensity": "Fog Density"
+          "cloudColor": "Cloud Color"
+          "cloudRimColor": "Cloud Rim Color"
+          "brightnessMultiplier": "Brightness Multiplier"
       "zombieDifficulty":
         "type": "Zombie Difficulty"
         "header": "Zombie Difficulty Properties"
@@ -1633,6 +2293,7 @@
           "canBeVisibleWithUnmetConditions": "Can Be Visible With Unmet Conditions"
           "name": "Name"
           "requiredNearbyCraftingTags": "Required Nearby Crafting Tags"
+          "requiredStaticTags": "Required Static Tags"
       "blueprintSupply":
         "shouldRefParentItem": "Use Parent Item as ID"
         "item": "Item"
@@ -1662,6 +2323,9 @@
         "toolTip": "Action ToolTip"
         "toolTipId": "Action ToolTip ID"
         "blueprints": "Related Blueprints"
+        "pickOwner":
+          "title": "Pick a new blueprint owner for action"
+          "useSourceItem": "Use source item ({0})"
       "craftActionBlueprint":
         "blueprintIndex": "Blueprint Index"
         "isBlueprintLink": "Is Blueprint Link"
@@ -1806,6 +2470,25 @@
             "max": "Max pitch"
           "useAimCamera": "Use aim camera"
           "aimOffset": "Aim offset"
+        "paintColor":
+          "list": "Color list"
+          "random": "Random"
+          "minSaturation": "Min Saturation"
+          "maxSaturation": "Max Saturation"
+          "minValue": "Min Value"
+          "maxValue": "Max Value"
+          "grayscaleChance": "Grayscale Chance"
+      "common":
+        "asset": "Asset"
+        "value": "Value"
+        "color": "Color"
+        "hasColor": "Has Color"
+        "unknownAsset": "Unknown Asset"
+        "unknown": "Unknown"
+      "masterBundleReference":
+        "contentBundle": "Content Bundle"
+        "masterBundle": "Master Bundle"
+        "path": "Path"
     "genericCollection":
       "addButton": "Add new"
       "pasteButton":
@@ -1818,6 +2501,7 @@
           "toolTip": "Copy selected"
         "deleteButton":
           "toolTip": "Delete selected"
+      "defaultHeader": "Items"
     "richTextBox":
       "context":
         "common":
@@ -1877,6 +2561,19 @@
       "normal": "Normal"
       "tabOpen": "With tab open"
       "simulateOpenTab": "Simulate open tab"
+    "guidUpDown":
+      "context":
+        "generate": "Generate GUID"
+    "redirectableAsset":
+      "bundle": "Bundle"
+      "path": "Path"
+    "assetGroup":
+      "item":
+        "header": "Item"
+        "sizeWidth": "Size Width"
+        "sizeHeight": "Size Height"
+        "additionalBlueprints": "Additional Blueprints"
+        "additionalActions": "Additional Craft Actions"
   "enum":
     "fishingRewardMode":
       "rod": "Rod (Legacy)"
@@ -2108,6 +2805,7 @@
         "carLockPick": "Car lockpick"
         "walkieTalkie": "Walkie talkie"
         "housingPlanner": "Housing planner"
+        "vehiclePaint": "Vehicle Paint Tool"
       "origin":
         "world": "Natural spawn"
         "admin": "Given via commands"
@@ -2145,6 +2843,12 @@
         "military": "Military night vision"
         "civilian": "Civilian night vision"
         "headlamp": "Headlamp"
+      "time":
+        "none": "None"
+        "dawn": "Dawn"
+        "midday": "Noon"
+        "dusk": "Dusk"
+        "midnight": "Midnight"
     "npc":
       "conditionType":
         "virtual":
@@ -2182,6 +2886,7 @@
           "blendAlpha": "Weather (Blend)"
         "isFullMoon": "Is Full Moon"
         "dateCounter": "Date Counter"
+        "volumeOverlap": "Volume Overlap"
       "holiday":
         "none": "Normal day"
         "halloween": "Halloween"
@@ -2287,6 +2992,9 @@
         "cutsceneMode": "Cutscene mode"
         "effect": "Effect"
         "airdrop": "Airdrop"
+        "zombie":
+          "spawn": "Spawn Zombies"
+          "remove": "Remove Zombies"
       "weather":
         "status":
           "active": "Active"
@@ -2295,6 +3003,11 @@
           "fadeOut": "Fading out"
           "fadedOut": "Faded out"
           "transition": "Transition"
+      "event":
+        "replicationMode":
+          "authorityOnly": "Server Only"
+          "authorityAndClients": "Server And Clients"
+          "instigatorOnly": "Instigator Only"
     "object":
       "chart":
         "none": "None"
@@ -2488,6 +3201,13 @@
         "none": "Default"
         "never": "Never stun"
         "always": "Always stun"
+    "ragdoll":
+      "effect":
+        "none": "None"
+        "bronze": "Bronze"
+        "silver": "Silver"
+        "gold": "Gold"
+        "zeroKelvin": "Zero Kelvin"
   "condition":
     "base":
       "text": "Localization"
@@ -2529,12 +3249,14 @@
       "formatArgs":
         "arg0": "Current Player Experience"
         "arg1": "Required Player Experience"
+      "defaultText": "{0}/{1} Experience"
     "reputation":
       "value": "Value"
       "display": "Player's reputation {1} {0}"
       "formatArgs":
         "arg0": "Current Reputation"
         "arg1": "Required Reputation"
+      "defaultText": "{0}/{1} Reputation"
     "flagBool":
       "value": "Flag Value"
       "reset": "Make flag unset"
@@ -2553,6 +3275,7 @@
       "status": "Status"
       "reset": "Advance quest status"
       "display": "Quest Status of '{0}' {1} '{2}'"
+      "ignoreNpc": "Ignore NPC"
     "skillset":
       "value": "Skillset"
       "display": "Player has skillset {1} '{0}'"
@@ -2565,6 +3288,11 @@
         "arg0": "Current Item Amount"
         "arg1": "Required Item Amount"
         "arg2": "Required Item Name"
+      "fix":
+        "caption": "Choose a fix for the condition.\n\n{0}"
+        "title": "Resetting item condition only compatible with >= comparison"
+        "setLogic": "Set logic type to 'greater than or equal to'"
+        "noReset": "Make condition not take the item"
     "kills":
       "zombie":
         "speciality": "Speciality"
@@ -2581,6 +3309,7 @@
         "formatArgs":
           "arg0": "Current Count"
           "arg1": "Required Count"
+        "defaultText": "{0}/{1} Zombie Kills"
       "horde":
         "nav": "Navigation ID"
         "value": "Count"
@@ -2590,6 +3319,7 @@
         "formatArgs":
           "arg0": "Current Count"
           "arg1": "Required Count"
+        "defaultText": "{0}/{1} Horde Kills"
       "animal":
         "animal": "Animal ID"
         "value": "Count"
@@ -2599,6 +3329,7 @@
         "formatArgs":
           "arg0": "Current Count"
           "arg1": "Required Count"
+        "defaultText": "{0}/{1} Animal Kills"
       "player":
         "value": "Count"
         "flag": "Storing Flag ID"
@@ -2607,6 +3338,7 @@
         "formatArgs":
           "arg0": "Current Count"
           "arg1": "Required Count"
+        "defaultText": "{0}/{1} Player Kills"
       "object":
         "object": "Object ID"
         "value": "Count"
@@ -2617,6 +3349,7 @@
         "formatArgs":
           "arg0": "Current Count"
           "arg1": "Required Count"
+        "defaultText": "{0}/{1} Object Kills"
       "tree":
         "guid": "Resource ID"
         "value": "Count"
@@ -2696,6 +3429,7 @@
       "display": "Player has {1} {2} of currency '{0}'"
       "formatArgs":
         "arg0": "Value In Player Inventory"
+      "defaultText": "{0} Currency"
     "weather":
       "status":
         "value": "Status"
@@ -2714,18 +3448,28 @@
       "value": "Value"
       "divisor": "Divisor"
       "display": "Once per {0} days ({2} Day #{1}/{0})"
+      "matchingValues": "Matching Values: {0}"
+      "matchingValuesNone": "NONE"
+    "volumeOverlap":
+      "display": "Players in volume '{0}' {1} {2}"
+      "volumeId": "Volume ID"
+      "playerCount": "Player Count"
+      "selectVolume": "Select Volume"
   "reward":
     "base":
       "text": "Localization"
       "textId": "Localization ID"
       "grantDelay": "Grant Delay"
       "grantDelayApplyWhenInterrupted": "Apply If Grant Delay Is Interrupted"
+      "selectSpawnpoint": "Select Spawnpoint"
     "experience":
       "value": "Value"
       "display": "Give {0} XP"
+      "defaultText": "{0} Experience"
     "reputation":
       "value": "Value"
       "display": "Change reputation by {0}"
+      "defaultText": "{0} Reputation"
     "flag":
       "bool":
         "id": "Flag ID"
@@ -2751,6 +3495,7 @@
         "operation": "Operation"
         "textFormatMode": "Text Format Mode"
         "display": "Flag '{0}' {1} value of flag '{2}' or default value '{3}'"
+        "previewError": "ERROR: {0}"
     "quest":
       "id": "Quest ID"
       "display": "Give quest '{0}'"
@@ -2772,6 +3517,7 @@
       "autoEquip": "Equip when given"
       "origin": "Origin"
       "display": "Give x{1} items from spawn table '{0}'"
+      "defaultText": "Random Item x{0}"
     "achievement":
       "id": "Steam Achievement ID"
       "display": "Give Steam Achievement '{0}'"
@@ -2787,10 +3533,12 @@
       "id": "Event ID"
       "shouldReplicate": "Replicate To Client"
       "display": "Trigger event '{0}'"
+      "replicationMode": "Replication Mode"
     "currency":
       "guid": "Currency ID"
       "value": "Value"
       "display": "Give {0} of currency '{1}'"
+      "defaultText": "{0} Currency"
     "hint":
       "duration": "Duration (seconds)"
       "display": "Display hint with text '{0}' for {1:0.##} seconds"
@@ -2810,18 +3558,23 @@
         "health":
           "value": "Value"
           "display": "Change health by {0}"
+          "defaultText": "{0} Health"
         "food":
           "value": "Value"
           "display": "Change food by {0}"
+          "defaultText": "{0} Food"
         "water":
           "value": "Value"
           "display": "Change water by {0}"
+          "defaultText": "{0} Water"
         "virus":
           "value": "Value"
           "display": "Change virus by {0}"
+          "defaultText": "{0} Virus"
         "stamina":
           "value": "Value"
           "display": "Change stamina by {0}"
+          "defaultText": "{0} Stamina"
     "effect":
       "display": "Spawn effect '{0}' at '{1}'"
       "asset": "Effect"
@@ -2829,6 +3582,7 @@
       "spawnpoint": "Spawnpoint"
       "overrideRelevantDistance": "Override Relevant Distance"
       "isReliable": "Is Reliable"
+      "isOnlyRelevantToInstigator": "Is Only Relevant To Instigator"
     "airdrop":
       "display":
         "random": "Spawn airdrop '{0}' at random spawnpoint"
@@ -2836,6 +3590,20 @@
       "shouldUseRandomSpawnpoint": "Should Use Random Spawnpoint"
       "spawnpoint": "Spawnpoint"
       "cargo": "Cargo Spawn Table Asset"
+    "zombie":
+      "remove":
+        "display": "Remove zombies at nav '{1}'"
+        "navmeshIndex": "Navigation ID"
+        "speciality": "Speciality"
+      "spawn":
+        "display": "Spawn zombies at '{1}'"
+        "speciality": "Speciality"
+        "spawnpointId": "Spawnpoint ID"
+        "spawnQuantity": "Spawn Quantity"
+        "levelTableUniqueId": "Level Table Unique ID"
+        "cooldown":
+          "id": "Cooldown ID"
+          "duration": "Cooldown Duration"
   "vendorItem":
     "virtual":
       "buying":
@@ -3038,7 +3806,11 @@
         "csv": "CSV Table"
         "xls": "Excel Workbook 97-2003"
         "xlsx": "Excel Workbook"
+        "any": "Vendor Table"
       "image": "Supported Background Format"
+      "supported": "Supported types"
+      "all": "All files"
+      "localization": "Localization File"
     "findReplace":
       "character":
         "id": "Character ID"
@@ -3091,6 +3863,9 @@
         "vanilla": "Only Vanilla Assets"
         "workshop": "Only Workshop Assets"
         "project": "Only Project Assets"
+      "matchingCalibers": "Matching Calibers"
+      "spawnTable":
+        "validTypes": "Valid Spawn Table Types"
   "link":
     "step":
       "assets":
@@ -3119,6 +3894,15 @@
         "upgrade": "It is highly discouraged to continue using old IDs."
       "conditionType":
         "notSupported": "Condition of type '{0}' is not supported in '{1}'."
+        "parent":
+          "dialogueElement": "Dialogue Element"
+          "dialogueMessage": "Dialogue Message"
+          "dialogueMessagePage": "Dialogue Message Page"
+          "dialogueResponse": "Dialogue Response"
+          "objectInteractability": "Object Interactability"
+          "vendorItem": "Vendor Item"
+          "quest": "Quest"
+          "object": "Object"
       "limit":
         "normal":
           "exceed": "There are more items in collection ({0}) than supported ({1})"

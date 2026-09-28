@@ -53,6 +53,7 @@
           "origin":
             "vanilla": "Unturned"
             "workshop": "Установленные моды Workshop"
+            "unknownMod": "Неизвестный мод"
           "quickSearch":
             "watermark": "Быстрый поиск..."
         "masterBundleBrowser":
@@ -164,6 +165,8 @@
               "regenerateGuids": "Перегенерировать GUIDы"
               "regenerateGuidsRetaining": "Перегенерировать GUIDы (сохраняя ссылки)"
               "delete": "Удалить (Del)"
+            "assetGroup":
+              "addSubAsset": "Добавить вложенный ассет"
         "errors":
           "header": "Ошибки"
           "grid":
@@ -210,6 +213,15 @@
           "buttons":
             "link": "Связать ассеты Unturned"
             "cancel": "Отмена"
+      "statusBar":
+        "errorCount": "Ошибок: {0}"
+        "warningCount": "Предупреждений: {0}"
+        "tipCount": "Советов: {0}"
+        "build":
+          "demo": "ДЕМО"
+          "earlyAccess": "РАННИЙ ДОСТУП"
+          "nightly": "NIGHTLY"
+        "noErrors": "Нет ошибок"
     "configurationWindow":
       "title": "Настройки"
       "tabs":
@@ -236,6 +248,9 @@
               "shared":
                 "accentColor": "Цвет"
                 "isDarkMode": "Тёмный режим"
+              "error": "ОШИБКА"
+              "rainbow":
+                "duration": "Длительность"
           "uiScale": "Масштаб"
           "background":
             "workArea": "Фон рабочей области"
@@ -340,6 +355,8 @@
         "reloadRequired": "Требуется перезапуск для применения"
     "about":
       "title": "О программе"
+      "usedLibraries": "Используемые библиотеки"
+      "activeSupporters": "Активные спонсоры на"
     "setup":
       "title": "Первый старт"
       "buttons":
@@ -366,6 +383,11 @@
         "add": "Добавить"
         "edit": "Редактировать"
         "delete": "Удалить"
+      "columns":
+        "id": "ID"
+        "name": "Название"
+        "description": "Описание"
+        "possibleValues": "Возможные значения"
     "addonListWindow":
       "title": "Аддоны"
       "buttons":
@@ -430,6 +452,55 @@
         "random": "Случайный"
       "questFlag":
         "description": "Этот флаг используется для отслеживания статуса квеста с тем же ID."
+      "vanilla":
+        "flag":
+          "coalitionRank":
+            "name": "Звание в Коалиции"
+            "description": "1 - Прапорщик, 2 - Лейтенант, 3 - Майор"
+        "blade":
+          "woodChopping":
+            "name": "Рубка деревьев"
+            "description": "Позволяет рубить деревья"
+          "metalMining":
+            "name": "Добыча металла"
+            "description": "Позволяет добывать камни"
+          "candyCane":
+            "name": "Леденец"
+            "description": "Позволяет рубить леденцы рождественского ивента"
+          "snowPile":
+            "name": "Сугроб"
+            "description": "Позволяет раскапывать сугробы рождественского ивента"
+        "caliber":
+          "description": "Калибр {0}"
+    "idTableGenerator":
+      "comparer":
+        "guidAscending": "Guid по возрастанию"
+        "guidDescending": "Guid по убыванию"
+        "idAscending": "ID по возрастанию"
+        "idDescending": "ID по убыванию"
+        "nameAscending": "Имя по возрастанию"
+        "nameDescending": "Имя по убыванию"
+        "typeAscending": "Тип по возрастанию"
+        "typeDescending": "Тип по убыванию"
+      "invalidFormat": "НЕВЕРНО"
+      "tableStyle":
+        "generic": "Обычный"
+      "title": "Генератор таблицы ID"
+      "style": "Стиль"
+      "orderBy": "Сортировать по"
+      "thenBy": "Затем по"
+      "include":
+        "header": "Включить"
+        "type": "Тип"
+        "name": "Название"
+      "removeMarkup": "Удалить разметку Unity Rich Text"
+      "format":
+        "header": "Формат"
+        "guid": "Формат GUID"
+        "id": "Формат ID"
+      "filter":
+        "header": "Фильтр типов ассетов"
+      "generate": "Сгенерировать"
   "modal":
     "newProject":
       "name": "Название"
@@ -460,6 +531,19 @@
       "severity": "Серьёзность"
       "text": "Сообщение"
       "pathToAsset": "Путь до ассета"
+      "error":
+        "parse": "Ошибка разбора: \"{0}\"."
+        "readFailed": "Не удалось прочитать файл."
+        "readException": "Возникло исключение при чтении файла: {0}."
+        "metadataGuid": "Не удалось прочитать Metadata.GUID."
+        "metadataType": "Не удалось прочитать Metadata.Type."
+        "emptyGuid": "Нельзя использовать пустой GUID."
+        "missingType": "Отсутствует Type ассета."
+        "unhandledType": "Необрабатываемый тип ассета \"{0}\"."
+        "invalidType": "Тип \"{0}\" не является допустимым типом ассета."
+        "constructException": "Возникло исключение при создании \"{0}\"."
+        "constructFailed": "Не удалось создать \"{0}\"."
+        "populateException": "Возникло исключение при заполнении \"{0}\": {1}."
     "importVendorCsv":
       "title": "Импорт магазина из таблицы"
       "column":
@@ -495,6 +579,10 @@
       "step":
         "scan": "Сканирование папки"
         "load": "Импорт ассетов [{0:P0}]"
+    "openProject":
+      "title": "Открытие проекта"
+      "step":
+        "load": "Загрузка файла проекта"
   "status":
     "welcome": "С возвращением!"
     "project":
@@ -549,6 +637,23 @@
     "askRegenerateGuids":
       "caption": "Подтвердите перегенерацию Guidов"
       "text": "Вы уверены что хотите заново сгенерировать Guidы в этой папке ({0})? Это действие нельзя отменить."
+    "loadProjectBackup":
+      "caption": "Не удалось загрузить файл проекта"
+      "text": "Не удалось загрузить файл проекта. Ошибка: {0}\n\nВы можете попробовать загрузить резервную копию от '{1:F}' (файл проекта, который вы пытались загрузить, от '{2:F}')"
+    "copyObject":
+      "error": "Не удалось скопировать этот объект."
+    "exportHasErrors":
+      "caption": "Экспорт невозможен"
+      "text": "Найдено ошибок: {0}. Вы не сможете экспортировать проект, пока не исправите их."
+    "exportHasWarnings":
+      "caption": "Предупреждение"
+      "text": "Найдено предупреждений: {0}. Вы уверены, что хотите экспортировать проект?"
+    "crash":
+      "caption": "Asset Editor аварийно завершил работу!"
+      "text":
+        "windows": "Попробуйте перезагрузить компьютер. Если проблема сохранится - свяжитесь со мной и приложите этот отчёт.\nСкорее всего, проблема связана с самой Windows, а не с Asset Editor.\n\n{0}"
+        "unauthorizedAccess": "Сбой произошёл из-за того, что приложение попыталось обратиться к файлу или папке, к которым у него нет доступа.\nВ большинстве случаев поможет запуск приложения от имени администратора, но сначала рекомендую проверить, действительно ли вам нужен доступ к этому файлу или папке.\n\n{0}"
+        "notImplemented": "Вы наткнулись на часть приложения, которая ещё не до конца реализована. Поздравляю!\nВсё равно сообщите об этой проблеме, так как обычно такого происходить не должно.\n\n{0}"
   "page":
     "welcome":
       "getStarted":
@@ -568,6 +673,8 @@
         "location": "Расположение:"
         "assetCount": "Ассеты:"
         "lastSave": "последнее сохранение:"
+        "contextMenu":
+          "remove": "Убрать выбранный проект из списка недавних"
       "footer":
         "patreon":
           "part1": "Поддержите разработку на"
@@ -699,6 +806,12 @@
           "secondAsset":
             "guid": "Guid второго персонажа"
             "id": "ID второго персонажа"
+        "contextMenu":
+          "randomName":
+            "male": "Случайное мужское имя"
+            "maleWithLastName": "Случайное мужское имя + фамилия"
+            "female": "Случайное женское имя"
+            "femaleWithLastName": "Случайное женское имя + фамилия"
       "dialogue":
         "messages":
           "header": "Сообщения"
@@ -711,6 +824,26 @@
           "pasteButton":
             "toolTip": "Вставить ответ"
         "orderMode": "Режим сортировки"
+        "contextMenu":
+          "message":
+            "addWithEmptyPage": "Добавить сообщение с пустой страницей"
+            "addEmpty": "Добавить пустое сообщение"
+            "paste": "Вставить сообщение"
+          "response":
+            "addBlank": "Добавить пустой ответ"
+            "vendor":
+              "header": "Магазин"
+              "add": "Добавить ответ с магазином"
+            "quest":
+              "header": "Задание"
+              "give": "Добавить ответ с выдачей задания"
+              "complete": "Добавить ответ с завершением задания"
+            "paste": "Вставить ответ"
+            "params":
+              "vendorId": "ID магазина"
+              "questId": "ID задания"
+              "dialogueId": "ID диалога"
+              "isRepeatable": "Повторяемое"
       "vendor":
         "properties":
           "header": "Свойства магазина"
@@ -733,6 +866,12 @@
           "export":
             "toolTip": "Экспорт в таблицу"
             "fail": "Не удалось экспортировать таблицу в файл. Ошибка: {0}"
+        "preview":
+          "buying": "[$page_editor_vendor_buying_header]:"
+          "selling": "[$page_editor_vendor_selling_header]:"
+          "cost": "Стоимость:"
+          "price": "Цена:"
+          "experience": "Опыт:"
       "quest":
         "properties":
           "header": "Свойства задания"
@@ -741,6 +880,8 @@
         "conditions": "Условия / Цели"
         "rewards": "Награды"
         "abandonmentRewards": "Награды при отмене задания"
+        "preview":
+          "goals": "Цели"
       "currency":
         "valueFormat": "Формат валюты"
         "conditionValueFormat": "Формат валюты в условиях"
@@ -931,6 +1072,71 @@
         "wheelConfigurations": "Конфигурация колёс"
         "paintColor":
           "header": "Цвета покраски"
+      "animal":
+        "animalName": "Имя животного"
+        "speed":
+          "walk": "Скорость ходьбы"
+          "run": "Скорость бега"
+        "behaviour": "Поведение"
+        "health": "Здоровье"
+        "regen": "Скорость регенерации (секунды)"
+        "damage": "Урон"
+        "attackInterval": "Интервал атаки (секунды)"
+        "attackRange":
+          "horizontal": "Дальность атаки по горизонтали"
+          "vertical": "Дальность атаки по вертикали"
+          "horizontalVehicle": "Дальность атаки по транспорту по горизонтали"
+        "loot":
+          "tableId": "ID таблицы добычи"
+          "legacy":
+            "meat": "ID мяса"
+            "pelt": "ID шкуры"
+            "meatPreview": "Выпадет 2-4 предмета мяса"
+            "peltPreview": "Выпадет 2-4 предмета шкуры"
+            "header": "Устаревшие настройки добычи с животного"
+          "rewardXp": "Опыт в награду"
+          "header": "Добыча"
+          "table":
+            "header": "Настройки таблицы добычи"
+        "sounds":
+          "roars": "Варианты рёва"
+          "panics": "Варианты паники"
+          "header": "Звуки"
+        "animation":
+          "attacks": "Варианты атаки"
+          "eats": "Варианты поедания"
+          "glances": "Варианты осматривания"
+          "startles": "Варианты испуга"
+          "header": "Анимация"
+          "playOnServer": "Проигрывать анимации на сервере"
+          "preventMoveDuringStartle": "Запретить движение во время анимации испуга"
+      "resource":
+        "resourceName": "Название ресурса"
+        "bladeId": "ID лезвия"
+        "radius": "Радиус"
+        "scale": "Масштаб"
+        "verticalOffset": "Вертикальное смещение"
+        "levelBatching":
+          "preview":
+            "ifTrue": "Будет исключён из батчинга уровней"
+            "ifFalse": "Будет включён в батчинг уровней"
+        "interactText": "Текст взаимодействия"
+        "rewards":
+          "rewardId": "ID награды"
+          "rewardXp": "Опыт в награду"
+          "log": "Бревно"
+          "stick": "Палка"
+          "forageRewardXp": "Опыт за сбор"
+          "isForage": "Собирается руками"
+          "header": "Награды"
+        "model":
+          "isSpeedTree": "Использует SpeedTree"
+          "defaultLodWeights": "Использовать стандартные веса LOD"
+          "hasDebris": "Имеет обломки"
+          "hasAutoSkybox": "Автоматический скайбокс"
+          "header": "Модель"
+        "isVulnerableToFists": "Уязвим к кулакам"
+        "isVulnerableToAllMelee": "Уязвим ко всему оружию ближнего боя"
   "controls":
     "common":
       "armorFalloff":
@@ -938,6 +1144,9 @@
         "maxRange": "Максимальное расстояние"
         "range": "Расстояние"
         "multiplier": "Множитель"
+      "revertValue":
+        "header": "Вернуть значение по умолчанию"
+        "toolTip": "Вернуть значение '{0}'"
     "asset":
       "idControl":
         "contextMenu":
@@ -978,6 +1187,11 @@
         "type": "Список чертежей"
       "tag":
         "type": "Метка чертежа"
+        "name": "Название"
+        "nameColor": "Цвет названия"
+        "hasIcon": "Есть иконка"
+        "iconPath": "Путь к иконке"
+        "tintIcon": "Окрашивать иконку"
       "item":
         "base":
           "type": "Предмет"
@@ -1046,6 +1260,7 @@
             "equipAudio": "Звук экипировки"
             "inspectAudio": "Звук осмотра"
             "equipablePrefab": "Префаб экипируемого предмета"
+            "preferredDescriptionFlags": "Предпочитаемые флаги описания"
         "caliber":
           "base":
             "type": "Модуль"
@@ -1172,6 +1387,8 @@
             "shouldDestroyClothingColliders": "Уничтожать коллайдеры одежды"
             "priorityOverCosmeticOverride": "Имеет приоритет над скином"
             "skinOverride": "Перезапись скина"
+            "display":
+              "header": "Отображение"
           "bag":
             "base":
               "type": "Сумка"
@@ -1204,6 +1421,7 @@
               "hairOverrideNonGoldColor": "Цвет модели волос для игроков без Gold"
               "beardOverride": "Модель для замены бороды"
               "beardOverrideNonGoldColor": "Цвет модели бороды для игроков без Gold"
+              "hairOverrideToolTip": "Перезаписать материал модели на материал волос"
             "glasses":
               "type": "Очки"
               "header": "Свойства очков"
@@ -1267,41 +1485,314 @@
         "placeable":
           "base":
             "type": "Постройка"
+            "health": "Прочность"
+            "armorTier": "Уровень брони"
+            "canBeDamaged": "Может получать урон"
+            "isVulnerable": "Уязвим"
+            "isRepairable": "Можно починить"
+            "isExplosionProof": "Защищено от взрывов"
+            "canBePickedUp": "Можно подобрать"
+            "canBeSalvaged": "Можно разобрать"
+            "salvageDurationMultiplier": "Множитель длительности разбора"
+            "placementRange": "Дальность установки"
+            "explosionEffect": "Эффект взрыва"
+            "placeAudioClip": "Звук установки"
+            "eligibleForPooling": "Разрешить пулинг объектов"
+            "isSaveable": "Сохраняется"
+            "header": "Постройка"
+            "canZombiesTarget": "Зомби могут атаковать"
+            "salvageFullHealthMin": "Мин. предметов при разборе с полной прочностью"
+            "salvageFullHealthMax": "Макс. предметов при разборе с полной прочностью"
+            "salvageFullHealthItem": "Предмет при разборе с полной прочностью"
+            "salvageMin": "Мин. предметов при разборе"
+            "salvageMax": "Макс. предметов при разборе"
+            "salvageItem": "Предмет при разборе"
+            "destroyDropsMin": "Мин. выпадающих предметов при уничтожении"
+            "destroyDropsMax": "Макс. выпадающих предметов при уничтожении"
+            "destroyDropsTable": "Выпадающие предметы при уничтожении"
+            "craftingTags": "Метки чертежей"
+            "effectCopyModelPosition": "Эффект копирует позицию модели"
+            "effectCopyModelRotation": "Эффект копирует поворот модели"
           "structure":
             "type": "Структура"
+            "header": "Структура"
+            "construct": "Тип конструкции"
+            "requiresPillars": "Требует опоры"
+            "foliageCutRadius": "Радиус вырезания растительности"
+            "terrainTestHeight": "Высота проверки ландшафта"
           "barricade":
             "base":
               "type": "Баррикада"
+              "header": "Баррикада"
+              "build": "Тип баррикады"
+              "bypassPickupOwnership": "Игнорировать владельца при подборе"
+              "placeRadius": "Радиус установки"
+              "placeOffset": "Смещение установки"
+              "bypassClaim": "Игнорировать чужие клейм-зоны"
+              "allowPlacementOnVehicle": "Разрешить установку на транспорт"
+              "allowPlacementInsideClipVolumes": "Разрешить установку внутри Clip Volume"
+              "vehicleToSpawn": "Спавнящийся транспорт"
+              "isLocked": "Запирается"
+              "hasClipPrefab": "Есть Clip префаб"
+              "allowCollisionWhileAnimating": "Коллизия во время анимации"
+              "useWaterHeightTransparentSort": "Сортировка прозрачности по высоте воды"
+              "placementPreviewPrefab": "Префаб предпросмотра установки"
             "beacon":
               "type": "Маяк"
+              "header": "Маяк орды"
+              "wave": "Зомби за волну"
+              "waveUnit": "зомби"
+              "reward": "Таблица наград"
+              "rewardCount": "Количество наград"
+              "rewardCountUnit": "наград"
+              "enableParticipantScaling": "Масштабировать по числу участников"
             "charge":
               "type": "Взрывчатка"
+              "header": "Взрывчатка"
+              "blastRange": "Радиус взрыва"
+              "blastEffect": "Эффект взрыва"
+              "damage":
+                "header": "Урон"
+                "player": "Игроки"
+                "zombie": "Зомби"
+                "animal": "Животные"
+                "barricade": "Баррикады"
+                "structure": "Структуры"
+                "vehicle": "Транспорт"
+                "resource": "Ресурсы"
+                "object": "Объекты"
+              "explosionLaunchSpeed": "Скорость отброса"
             "farm":
               "type": "Растение"
+              "header": "Растение"
+              "growth": "Время роста"
+              "grow": "Собираемый предмет"
+              "growSpawnTable": "Таблица спавна урожая"
+              "harvestRewardExperience": "Опыт за сбор урожая"
+              "harvestRewards": "Награды за сбор урожая"
+              "ignoreSoilRestrictions": "Можно сажать где угодно"
+              "allowFertilizer": "Разрешить удобрение"
+              "isAffectedByAgricultureSkill": "Зависит от навыка сельского хозяйства"
+              "rainAffectsGrowth": "Дождь влияет на рост"
             "generator":
               "type": "Генератор"
+              "header": "Генератор"
+              "capacity": "Вместимость топлива"
+              "wireRange": "Дальность проводов"
+              "burn": "Скорость сжигания топлива"
+              "workTime": "Генератор будет работать {0} сек."
             "library":
               "type": "Библиотека"
+              "header": "Хранилище опыта"
+              "capacity": "Вместимость"
+              "tax": "Налог на перевод"
             "oilPump":
               "type": "Нефтяной насос"
+              "header": "Нефтяной насос"
+              "capacity": "Вместимость"
             "storage":
               "base":
                 "type": "Хранилище"
+                "header": "Хранилище"
+                "capacityX": "Вместимость по горизонтали"
+                "capacityY": "Вместимость по вертикали"
+                "isDisplay": "Витрина"
+                "shouldCloseWhenFar": "Закрывать при отдалении"
+                "canPlayersOpen": "Игроки могут открыть"
+                "deleteContainedItemsOnDestroy": "Удалять содержимое при уничтожении"
+                "defaultContainedItems": "Содержимое по умолчанию"
               "sentry":
                 "type": "Турель"
+                "header": "Турель"
+                "sentryMode": "Режим турели"
+                "canTargetPlayers": "Атакует игроков"
+                "canTargetZombies": "Атакует зомби"
+                "canTargetVehicles": "Атакует транспорт"
+                "canTargetAnimals": "Атакует животных"
+                "bypassesPvE": "Игнорирует режим PvE"
+                "canReactToAttacks": "Реагирует на атаки"
+                "requiresPower": "Требует электричество"
+                "infiniteAmmo": "Бесконечные патроны"
+                "ammoConsumptionProbability": "Вероятность расхода патронов"
+                "infiniteQuality": "Бесконечное качество"
+                "qualityConsumptionProbability": "Вероятность расхода качества"
+                "detectionRadius": "Радиус обнаружения"
+                "targetLossRadius": "Радиус потери цели"
+                "targetAcquiredEffect": "Эффект обнаружения цели"
+                "targetLostEffect": "Эффект потери цели"
+                "sweepHalfYaw": "Половина угла поворота при поиске"
+                "sweepPeriod": "Период поворота при поиске"
             "tank":
               "type": "Цистерна"
+              "header": "Цистерна"
+              "tankSource": "Тип ресурса"
+              "capacity": "Вместимость цистерны"
             "trap":
               "type": "Ловушка"
+              "header": "Ловушка"
+              "isExplosive": "Взрывная"
+              "damageTires": "Повреждает колёса"
+              "blastRange": "Радиус взрыва"
+              "damage":
+                "header": "Настройки урона"
+                "player": "Урон игрокам"
+                "zombie": "Урон зомби"
+                "animal": "Урон животным"
+                "barricade": "Урон баррикадам"
+                "structure": "Урон структурам"
+                "vehicle": "Урон транспорту"
+                "resource": "Урон ресурсам"
+                "object": "Урон объектам"
+                "explosion": "Эффект взрыва"
+              "isBroken": "Ломает кости"
+              "trapSetupDelay": "Задержка взвода"
+              "trapCooldown": "Перезарядка ловушки"
+              "explosionLaunchSpeed": "Скорость отброса"
+              "requiresPower": "Требует электричество"
         "weapon":
           "base":
             "type": "Оружие"
+            "damageMultiplier":
+              "damage": "Урон"
+              "legMultiplier": "Множитель по ногам"
+              "legDamage": "Урон по ногам"
+              "armMultiplier": "Множитель по рукам"
+              "armDamage": "Урон по рукам"
+              "spineMultiplier": "Множитель по торсу"
+              "spineDamage": "Урон по торсу"
+              "headMultiplier": "Множитель по голове"
+              "headDamage": "Урон по голове"
+            "alertRadius": "Радиус привлечения внимания"
+            "durabilityChance": "Шанс уменьшения прочности"
+            "durabilityAmount": "Количество уменьшаемой прочности"
+            "isInvulnerable": "Наносит урон неуязвимым объектам"
+            "allowFleshFx": "Эффекты попадания по плоти"
+            "bypassAllowedToDamagePlayer": "Всегда разрешать урон игрокам"
+            "blades": "Лезвия"
           "gun":
             "type": "Огнестрельное оружие"
+            "spawn":
+              "ammoMin": "Мин. патронов"
+              "ammoMax": "Макс. патронов"
+              "defaultSight": "Прицел по умолчанию"
+              "defaultTactical": "Тактический модуль по умолчанию"
+              "defaultGrip": "Цевье по умолчанию"
+              "defaultBarrel": "Ствол по умолчанию"
+              "defaultMagazine": "Магазин по умолчанию"
+            "behaviour":
+              "header": "Поведение оружия"
+              "unplace": "Длительность снятия магазина"
+              "replace": "Длительность установки магазина"
+              "reloadTime": "Время перезарядки"
+              "hammerTime": "Время взвода"
+              "fireDelaySeconds": "Задержка между выстрелами в секундах"
+              "aimInDuration": "Время прицеливания"
+              "rechamberAfterShotDelay": "Задержка досылания патрона после выстрела"
+              "ejectAfterHammerDelay": "Задержка выброса гильзы после взвода"
+              "ejectAfterReloadDelay": "Задержка выброса гильзы после перезарядки"
+              "rechamberAfterShotCount": "Количество выстрелов до досылания патрона"
+              "casingEjectCountAfterReload": "Количество гильз, выбрасываемых после перезарядки"
+              "casingEjectCountAfterRechambering": "Количество гильз, выбрасываемых при досылании патрона после выстрела"
+              "rechamberAfterMagazineAttached": "Досылание патрона после установки магазина"
+              "rechamberAfterMagazineDetached": "Досылание патрона после снятия магазина"
+              "scaleAimAnimationSpeed": "Масштабировать скорость анимации прицеливания"
+              "shouldForceStopAimingAfterShooting": "Принудительно прекращать прицеливание после выстрела"
+              "shouldEjectCasingAfterShooting": "Выбрасывать гильзу после выстрела"
+            "hasSight": "Есть слот для прицела"
+            "hasTactical": "Есть слот для тактического модуля"
+            "hasGrip": "Есть слот для цевья"
+            "hasBarrel": "Есть слот для ствола"
+            "magazineCalibers": "Калибры магазинов"
+            "attachmentCalibers": "Калибры модулей"
+            "allowMagazineChange": "Разрешить смену магазина"
+            "action": "Тип механизма"
+            "ammoPerShot": "Патронов за выстрел"
+            "fireRate": "Скорострельность"
+            "bursts": "Выстрелов в очереди"
+            "spread":
+              "angle": "Угол"
+              "aim": "При прицеливании"
+              "sprint": "На бегу"
+              "crouch": "Сидя"
+              "prone": "Лёжа"
+              "swimming": "В воде"
+              "midair": "В воздухе"
+            "recoil":
+              "header": "Отдача"
+              "sprint": "Множитель на бегу"
+              "crouch": "Множитель сидя"
+              "prone": "Множитель лёжа"
+              "swimming": "Множитель в воде"
+              "midair": "Множитель в воздухе"
+            "axis":
+              "minX": "Мин. X"
+              "minY": "Мин. Y"
+              "minZ": "Мин. Z"
+              "maxX": "Макс. X"
+              "maxY": "Макс. Y"
+              "maxZ": "Макс. Z"
+            "recover":
+              "header": "Восстановление после отдачи"
+              "horizontal": "По горизонтали"
+              "vertical": "По вертикали"
+            "ballistics":
+              "header": "Баллистика"
+              "steps": "Шаги"
+              "travel": "Расстояние за шаг"
+              "force": "Сила"
+            "damageFalloffRange": "Множитель дальности начала падения урона"
+            "damageFalloffMaxRange": "Множитель максимальной дальности падения урона"
+            "damageFalloffMultiplier": "Множитель падения урона"
+            "projectileLifespan": "Время жизни снаряда"
+            "projectilePenetrateBuildables": "Снаряды пробивают постройки"
+            "projectileExplosionLaunchSpeed": "Скорость отброса от взрыва снаряда"
+            "hasSafety": "Есть режим предохранителя"
+            "hasSemi": "Есть одиночный режим огня"
+            "hasAuto": "Есть автоматический режим огня"
+            "isTurret": "Является турелью"
+            "driverTurretViewModelMode": "Режим модели от первого лица для турели водителя"
+            "instakillHeadshots": "Мгновенное убийство при попадании в голову"
+            "isInfiniteAmmo": "Бесконечные патроны"
+            "canAimDuringSprint": "Можно прицеливаться на бегу"
+            "shouldDeleteEmptyMagazines": "Удалять пустые магазины"
+            "canEverJam": "Может заклинить"
+            "jam":
+              "header": "Настройки заклинивания"
+              "qualityThreshold": "Порог качества"
+              "maxChance": "Макс. шанс"
+              "unjamChamberAnim": "Название анимации устранения заклинивания"
+            "shell": "Эффект гильзы"
+            "muzzle": "Эффект дульной вспышки"
+            "mustAimToShoot": "Стрельба только при прицеливании"
+            "gunshotRolloffDistance": "Дальность слышимости выстрела"
+            "rangeRangefinder": "Дальность дальномера"
+            "requiresNonZeroAttachmentCaliber": "Требуется ненулевой калибр модуля"
+            "shootRewards": "Награды за выстрел"
+            "magazineReplacements": "Замены магазинов"
           "melee":
             "type": "Оружие ближнего боя"
+            "isRepair": "Инструмент для ремонта"
+            "isRepeated": "Можно атаковать с зажатой кнопкой"
+            "isLight": "Есть свет"
+            "strength": "Множитель сильной атаки"
+            "weak": "Скорость анимации слабой атаки"
+            "strong": "Скорость анимации сильной атаки"
+            "stamina": "Расход энергии на сильную атаку"
+            "impactAudio": "Звук удара"
+            "weakAttackRewards": "Награды за слабую атаку"
+            "strongAttackRewards": "Награды за сильную атаку"
           "throwable":
             "type": "Бросаемое оружие"
+            "isFlash": "Светошумовая"
+            "isSticky": "Липкая"
+            "explodeOnImpact": "Взрывается при ударе"
+            "explodeOnImpactDestroyOnClient": "Взрывается при ударе (уничтожается на клиенте)"
+            "fuseLength": "Время до взрыва"
+            "throwForce":
+              "header": "Сила броска"
+              "strong": "Сильный"
+              "weak": "Слабый"
+            "boostForceMultiplier": "Множитель силы броска при ускорении"
         "arrestStart":
           "type": "Наручники"
           "header": "Свойства наручников"
@@ -1391,6 +1882,53 @@
               "paintColor": "Цвет"
           "vehicleLockpickTool":
             "type": "Отмычка"
+            "header": "Свойства отмычки"
+            "failureEffect": "Эффект при неудаче"
+            "failureProbability": "Вероятность неудачи"
+        "barricade":
+          "base":
+            "header": "Свойства баррикады"
+            "build": "Тип"
+            "health": "Прочность"
+            "canBeDamaged": "Может быть повреждено"
+            "isRepairable": "Может быть починено"
+            "isVulnerable": "Уязвимо"
+            "isExplosionProof": "Взрывоустойчивость"
+            "range": "Расстояние установки"
+            "radius": "Радиус установки"
+            "offset": "Смещение установки"
+            "allowPlacementInsideClipVolumes":
+              "label": "Разрешить установку внутри Clip Volume"
+              "preview":
+                "ifTrue": "Можно ставить внутри Clip Volume"
+                "ifFalse": "Нельзя ставить внутри Clip Volume"
+            "allowPlacementOnVehicle":
+              "label": "Разрешить установку на транспорт"
+              "preview":
+                "ifTrue": "Можно ставить на транспорт"
+                "ifFalse": "Нельзя ставить на транспорт"
+            "bypassClaim": "Обход защиты флага"
+            "explosionEffect":
+              "effect": "Эффект взрыва"
+              "vehicle": "Транспорт для спавна"
+            "isSalvageable": "Можно разобрать"
+            "isPickupable": "Можно поднять"
+            "salvageDurationMultiplier": "Множитель скорости разборки"
+            "armorTier": "Уровень брони"
+            "isLocked": "Заперто"
+            "bypassPickupOwnership":
+              "label": "Обход владельца при подъёме"
+              "preview":
+                "ifTrue": "Можно поднять даже если не владелец"
+                "ifFalse": "Может поднять только владелец"
+            "isSaveable": "Сохранять"
+            "allowCollisionWhileAnimating": "Разрешить коллизию во время анимации"
+            "useWaterHeightTransparentSort": "Использовать сортировку прозрачности по высоте воды"
+            "eligibleForPooling":
+              "label": "Разрешить пулинг"
+              "preview":
+                "ifTrue": "Будет использоваться пулинг"
+                "ifFalse": "Пулинг не будет использован"
       "currency":
         "type": "Валюта"
         "error": "Ошибка"
@@ -1482,20 +2020,99 @@
         "type": "Животное"
       "effect":
         "type": "Эффект"
+        "splatter": "Количество объектов брызг"
+        "splatters": "Количество брызг"
+        "isSplatterLiquid": "Брызги жидкие"
+        "splatterTemperature": "Температура брызг"
+        "splatterLifetime": "Время жизни брызг"
+        "splatterLifetimeSpread": "Разброс времени жизни брызг"
+        "lifetime": "Время жизни эффекта"
+        "lifetimeSpread": "Разброс времени жизни эффекта"
+        "isStatic": "Статичный"
+        "preload": "Предзагрузка"
+        "splatterPreload": "Предзагрузка брызг"
+        "blast": "След взрыва"
+        "relevantDistance": "Дистанция видимости"
+        "spawnOnServer": "Спавнить на сервере"
+        "randomizeRotation": "Случайный поворот"
+        "cameraShakeRadius": "Радиус тряски камеры"
+        "cameraShakeMagnitudeDegrees": "Сила тряски камеры (в градусах)"
       "airdrop":
         "type": "Аирдроп"
+        "barricade": "Баррикада"
+        "model": "Модель"
       "craftingBlockList":
         "type": "Запрещённые чертежи"
+        "sourceItem": "Исходный предмет"
+        "inputItems": "Запрещённые входные предметы"
+        "outputItems": "Запрещённые выходные предметы"
+        "blueprints": "Запрещённые чертежи"
+        "allowCoreBlueprints": "Разрешить базовые чертежи"
       "level":
         "type": "Уровень"
+        "header": "Ассет уровня"
+        "dropship": "Транспортный самолёт"
+        "craftingBlocklists": "Списки запрещённых чертежей"
+        "weatherTypes": "Типы погоды"
+        "perpetualWeather": "Постоянная погода"
+        "loadingScreenMusic": "Музыка экрана загрузки"
+        "deathMusic": "Музыка при смерти"
+        "animateBackgroundImage": "Анимировать фоновое изображение"
+        "globalWeatherMask": "Глобальная маска погоды"
+        "skillRules": "Правила навыков"
+        "terrainColorRules": "Правила цвета ландшафта"
+        "minStealthRadius": "Мин. радиус скрытности"
+        "fallDamageSpeedThreshold": "Порог скорости для урона от падения"
+        "enableAdminFasterSalvageDuration": "Ускоренный разбор для администраторов"
+        "hasClouds": "Есть облака"
+        "weather":
+          "minDuration": "Мин. длительность"
+          "maxDuration": "Макс. длительность"
+          "minFrequency": "Мин. частота"
+          "maxFrequency": "Макс. частота"
+        "music":
+          "loop": "Цикл"
+          "loopVolume": "Громкость цикла"
+          "outro": "Концовка"
+          "outroVolume": "Громкость концовки"
+        "skillRule":
+          "skill": "Навык"
+          "defaultLevel": "Стандартный уровень"
+          "maxUnlockableLevel": "Макс. открываемый уровень"
+          "costMultiplier": "Множитель стоимости"
+        "terrainColorRule":
+          "hueThreshold": "Порог оттенка"
+          "saturationThreshold": "Порог насыщенности"
+          "valueThreshold": "Порог яркости"
+          "colorPreview": "Предпросмотр цвета"
+          "minHueDiff": "Мин. разница оттенка"
+          "maxHueDiff": "Макс. разница оттенка"
+          "minSaturationDiff": "Мин. разница насыщенности"
+          "maxSaturationDiff": "Макс. разница насыщенности"
+          "minValueDiff": "Мин. разница яркости"
+          "maxValueDiff": "Макс. разница яркости"
       "outfit":
         "type": "Костюм"
       "skin":
         "type": "Скин"
+        "isPattern": "Является паттерном"
+        "lightingTime": "Время освещения"
+        "hasSight": "Есть прицел"
+        "hasTactical": "Есть тактический модуль"
+        "hasGrip": "Есть рукоять"
+        "hasBarrel": "Есть ствол"
+        "hasMagazine": "Есть магазин"
+        "ragdollEffect": "Эффект рэгдолла"
+        "overrideMeshes": "Перезапись мешей"
+        "secondarySkins": "Вторичные скины"
       "song":
         "type": "Музыка"
+        "title": "Название"
+        "isLooping": "Зациклена"
+        "linkUrl": "Ссылка"
       "resource":
         "type": "Ресурс"
+        "name": "Название ресурса"
       "spawn":
         "type": "Спавн"
         "header": "Свойства таблицы спавнов"
@@ -1505,11 +2122,54 @@
         "type": "Транспорт"
       "vehiclePhysicsProfile":
         "type": "Физический профиль транспорта"
+        "friction":
+          "extremumSlip": "Скольжение в экстремуме"
+          "extremumValue": "Значение в экстремуме"
+          "asymptoteSlip": "Скольжение в асимптоте"
+          "asymptoteValue": "Значение в асимптоте"
+          "stiffness": "Жёсткость"
+        "rootMass": "Масса корневого объекта"
+        "rootMassMultiplier": "Множитель массы корневого объекта"
+        "rootDragMultiplier": "Множитель сопротивления корневого объекта"
+        "rootAngularDragMultiplier": "Множитель углового сопротивления корневого объекта"
+        "carjackForceMultiplier": "Множитель силы толкания транспорта"
+        "wheelMass": "Масса колеса"
+        "wheelMassMultiplier": "Множитель массы колеса"
+        "wheelDampingRate": "Коэффициент демпфирования колеса"
+        "wheelStiffnessTractionMultiplier": "Множитель жёсткости сцепления колеса"
+        "wheelSuspensionForce": "Сила подвески колеса"
+        "wheelSuspensionDamper": "Демпфер подвески колеса"
+        "wheelFrictionSideways": "Боковое трение колеса"
+        "wheelFrictionForward": "Продольное трение колеса"
+        "motorTorqueMultiplier": "Множитель крутящего момента двигателя"
+        "motorTorqueClampMultiplier": "Множитель ограничения крутящего момента двигателя"
+        "brakeTorqueMultiplier": "Множитель тормозного момента"
+        "brakeTorqueTractionMultiplier": "Множитель сцепления при торможении"
+        "wheelDriveModel": "Модель привода колёс"
+        "wheelBrakeModel": "Модель торможения колёс"
       "weather":
         "base":
           "type": "База для погоды"
+          "fadeInDuration": "Длительность появления"
+          "fadeOutDuration": "Длительность исчезновения"
+          "ambientAudioClip": "Фоновый звук"
+          "isAudioHigherPriorityThanAmbianceVolumes": "Звук погоды имеет приоритет над звуковыми зонами"
+          "volumeMask": "Маска зон"
+          "hasLightning": "Есть молнии"
+          "minLightningInterval": "Мин. интервал молний"
+          "maxLightningInterval": "Макс. интервал молний"
+          "lightningTargetRadius": "Радиус удара молний"
+          "componentType": "Тип компонента"
+          "fishBiteIntervalMultiplier": "Множитель интервала поклёвки"
         "basic":
           "type": "Погода"
+          "lightingColor": "Цвет освещения"
+          "customColor": "Свой цвет"
+          "fogColor": "Цвет тумана"
+          "fogDensity": "Плотность тумана"
+          "cloudColor": "Цвет облаков"
+          "cloudRimColor": "Цвет краёв облаков"
+          "brightnessMultiplier": "Множитель яркости"
       "zombieDifficulty":
         "type": "Сложность зомби"
         "header": "Свойства сложности зомби"
@@ -1633,6 +2293,7 @@
           "canBeVisibleWithUnmetConditions": "Отображается даже если не соблюдены условия"
           "name": "Имя"
           "requiredNearbyCraftingTags": "Требуемые метки чертежей поблизости"
+          "requiredStaticTags": "Требуемые статические метки"
       "blueprintSupply":
         "shouldRefParentItem": "Использовать содержащий предмет как ID"
         "item": "Предмет"
@@ -1662,6 +2323,9 @@
         "toolTip": "Подсказка"
         "toolTipId": "ID текста подсказки"
         "blueprints": "Связанные чертежи"
+        "pickOwner":
+          "title": "Выберите нового владельца чертежа для действия"
+          "useSourceItem": "Использовать исходный предмет ({0})"
       "craftActionBlueprint":
         "blueprintIndex": "Индекс чертежа"
         "isBlueprintLink": "Ссылка на чертёж"
@@ -1806,6 +2470,25 @@
             "max": "Максимальный наклон"
           "useAimCamera": "Использовать камеру прицела"
           "aimOffset": "Смещение прицела"
+        "paintColor":
+          "list": "Список цветов"
+          "random": "Случайный"
+          "minSaturation": "Мин. насыщенность"
+          "maxSaturation": "Макс. насыщенность"
+          "minValue": "Мин. яркость"
+          "maxValue": "Макс. яркость"
+          "grayscaleChance": "Шанс оттенков серого"
+      "common":
+        "asset": "Ассет"
+        "value": "Значение"
+        "color": "Цвет"
+        "hasColor": "Есть цвет"
+        "unknownAsset": "Неизвестный ассет"
+        "unknown": "Неизвестно"
+      "masterBundleReference":
+        "contentBundle": "Контент-бандл"
+        "masterBundle": "Master Bundle"
+        "path": "Путь"
     "genericCollection":
       "addButton": "Добавить"
       "pasteButton":
@@ -1818,6 +2501,7 @@
           "toolTip": "Копировать выделенное"
         "deleteButton":
           "toolTip": "Удалить выделенное"
+      "defaultHeader": "Элементы"
     "richTextBox":
       "context":
         "common":
@@ -1877,6 +2561,19 @@
       "normal": "Обычный режим"
       "tabOpen": "С открытой вкладкой"
       "simulateOpenTab": "Симулировать открытую вкладку"
+    "guidUpDown":
+      "context":
+        "generate": "Сгенерировать GUID"
+    "redirectableAsset":
+      "bundle": "Бандл"
+      "path": "Путь"
+    "assetGroup":
+      "item":
+        "header": "Предмет"
+        "sizeWidth": "Ширина"
+        "sizeHeight": "Высота"
+        "additionalBlueprints": "Дополнительные чертежи"
+        "additionalActions": "Дополнительные действия крафта"
   "enum":
     "fishingRewardMode":
       "rod": "Удочка (Старый)"
@@ -2108,6 +2805,7 @@
         "carLockPick": "Отмычка"
         "walkieTalkie": "Карманная рация"
         "housingPlanner": "Планировщик"
+        "vehiclePaint": "Покраска транспорта"
       "origin":
         "world": "Обычный спавн"
         "admin": "Выдано через команды"
@@ -2145,6 +2843,12 @@
         "military": "Военный ПНВ"
         "civilian": "Гражданский ПНВ"
         "headlamp": "Фонарик"
+      "time":
+        "none": "Нет"
+        "dawn": "Рассвет"
+        "midday": "Полдень"
+        "dusk": "Закат"
+        "midnight": "Полночь"
     "npc":
       "conditionType":
         "virtual":
@@ -2182,6 +2886,7 @@
           "blendAlpha": "Погода (Значение)"
         "isFullMoon": "Полнолуние"
         "dateCounter": "Счётчик дней"
+        "volumeOverlap": "Игроки в зоне"
       "holiday":
         "none": "Обычный день"
         "halloween": "Хэллоуин"
@@ -2287,6 +2992,9 @@
         "cutsceneMode": "Режим катсцены"
         "effect": "Эффект"
         "airdrop": "Аирдроп"
+        "zombie":
+          "spawn": "Спавн зомби"
+          "remove": "Удаление зомби"
       "weather":
         "status":
           "active": "Активно"
@@ -2295,6 +3003,11 @@
           "fadeOut": "Заканчивается"
           "fadedOut": "Закончилось"
           "transition": "Переходит"
+      "event":
+        "replicationMode":
+          "authorityOnly": "Только сервер"
+          "authorityAndClients": "Сервер и клиенты"
+          "instigatorOnly": "Только инициатор"
     "object":
       "chart":
         "none": "Нет"
@@ -2488,6 +3201,13 @@
         "none": "По умолчанию"
         "never": "Никогда не оглушать"
         "always": "Всегда оглушать"
+    "ragdoll":
+      "effect":
+        "none": "Нет"
+        "bronze": "Бронза"
+        "silver": "Серебро"
+        "gold": "Золото"
+        "zeroKelvin": "Абсолютный ноль"
   "condition":
     "base":
       "text": "Текст"
@@ -2529,12 +3249,14 @@
       "formatArgs":
         "arg0": "Текущий опыт игрока"
         "arg1": "Требуемый опыт игрока"
+      "defaultText": "{0}/{1} опыта"
     "reputation":
       "value": "Значение"
       "display": "Репутация игрока {1} {0}"
       "formatArgs":
         "arg0": "Текущая репутация"
         "arg1": "Требуемая репутация"
+      "defaultText": "{0}/{1} репутации"
     "flagBool":
       "value": "Значение флага"
       "reset": "Сбросить флаг"
@@ -2553,6 +3275,7 @@
       "status": "Статус"
       "reset": "Продвинуть статус задания"
       "display": "Статус задания '{0}' {1} '{2}'"
+      "ignoreNpc": "Игнорировать NPC"
     "skillset":
       "value": "Набор навыков"
       "display": "Набор навыков игрока {1} '{0}'"
@@ -2565,6 +3288,11 @@
         "arg0": "Текущее количество предмета"
         "arg1": "Требуемое количество предмета"
         "arg2": "Название требуемого предмета"
+      "fix":
+        "caption": "Выберите исправление для условия.\n\n{0}"
+        "title": "Сброс условия предмета совместим только со сравнением >="
+        "setLogic": "Установить логику 'больше или равно'"
+        "noReset": "Не забирать предмет у игрока"
     "kills":
       "zombie":
         "speciality": "Разновидность"
@@ -2581,6 +3309,7 @@
         "formatArgs":
           "arg0": "Текущее количество"
           "arg1": "Требуемое количество"
+        "defaultText": "{0}/{1} убийств зомби"
       "horde":
         "nav": "ID навигации"
         "value": "Количество"
@@ -2590,6 +3319,7 @@
         "formatArgs":
           "arg0": "Текущее количество"
           "arg1": "Требуемое количество"
+        "defaultText": "{0}/{1} зачищенных орд"
       "animal":
         "animal": "ID животного"
         "value": "Количество"
@@ -2599,6 +3329,7 @@
         "formatArgs":
           "arg0": "Текущее количество"
           "arg1": "Требуемое количество"
+        "defaultText": "{0}/{1} убийств животных"
       "player":
         "value": "Количество"
         "flag": "ID флага"
@@ -2607,6 +3338,7 @@
         "formatArgs":
           "arg0": "Текущее количество"
           "arg1": "Требуемое количество"
+        "defaultText": "{0}/{1} убийств игроков"
       "object":
         "object": "ID объекта"
         "value": "Количество"
@@ -2617,6 +3349,7 @@
         "formatArgs":
           "arg0": "Текущее количество"
           "arg1": "Требуемое количество"
+        "defaultText": "{0}/{1} уничтоженных объектов"
       "tree":
         "guid": "ID ресурса"
         "value": "Количество"
@@ -2696,6 +3429,7 @@
       "display": "У игрока {1} {2} валюты '{0}'"
       "formatArgs":
         "arg0": "Количество в инвентаре"
+      "defaultText": "{0} валюты"
     "weather":
       "status":
         "value": "Статус"
@@ -2714,18 +3448,28 @@
       "value": "Значение"
       "divisor": "Делитель"
       "display": "Раз в {0} дней ({2} День #{1}/{0})"
+      "matchingValues": "Подходящие значения: {0}"
+      "matchingValuesNone": "НЕТ"
+    "volumeOverlap":
+      "display": "Игроков в зоне '{0}' {1} {2}"
+      "volumeId": "ID зоны"
+      "playerCount": "Количество игроков"
+      "selectVolume": "Выбрать зону"
   "reward":
     "base":
       "text": "Текст"
       "textId": "ID текста"
       "grantDelay": "Задержка выдачи"
       "grantDelayApplyWhenInterrupted": "Применить если задержка выдачи была прервана"
+      "selectSpawnpoint": "Выбрать точку появления"
     "experience":
       "value": "Количество"
       "display": "Выдать {0} опыта"
+      "defaultText": "{0} опыта"
     "reputation":
       "value": "Значение"
       "display": "Изменить репутацию на {0}"
+      "defaultText": "{0} репутации"
     "flag":
       "bool":
         "id": "ID флага"
@@ -2751,6 +3495,7 @@
         "operation": "Операция"
         "textFormatMode": "Режим подстановки текста"
         "display": "Флаг '{0}' {1} значение флага '{2}' или стандартное значение '{3}'"
+        "previewError": "ОШИБКА: {0}"
     "quest":
       "id": "ID задания"
       "display": "Выдать задание '{0}'"
@@ -2772,6 +3517,7 @@
       "autoEquip": "Взять в руки"
       "origin": "Источник"
       "display": "Выдать x{1} предметов из таблицы спавна '{0}'"
+      "defaultText": "Случайный предмет x{0}"
     "achievement":
       "id": "ID достижения Steam"
       "display": "Выдать достижение в Steam '{0}'"
@@ -2787,10 +3533,12 @@
       "id": "Event ID"
       "shouldReplicate": "Вызывать на клиенте"
       "display": "Вызвать event '{0}'"
+      "replicationMode": "Режим репликации"
     "currency":
       "guid": "ID валюты"
       "value": "Количество"
       "display": "Выдать {0} валюты '{1}'"
+      "defaultText": "{0} валюты"
     "hint":
       "duration": "Продолжительность (секунды)"
       "display": "Показать сообщение с текстом '{0}' на {1:0.##} секунд"
@@ -2810,18 +3558,23 @@
         "health":
           "value": "Количество"
           "display": "Изменить здоровье на {0}"
+          "defaultText": "{0} здоровья"
         "food":
           "value": "Количество"
           "display": "Изменить сытость на {0}"
+          "defaultText": "{0} еды"
         "water":
           "value": "Количество"
           "display": "Изменить жажду на {0}"
+          "defaultText": "{0} воды"
         "virus":
           "value": "Количество"
           "display": "Изменить заражение на {0}"
+          "defaultText": "{0} заражения"
         "stamina":
           "value": "Количество"
           "display": "Изменить энергию на {0}"
+          "defaultText": "{0} энергии"
     "effect":
       "display": "Заспавнить эффект '{0}' на '{1}'"
       "asset": "Эффект"
@@ -2829,6 +3582,7 @@
       "spawnpoint": "ID точки появления"
       "overrideRelevantDistance": "Максимальное расстояние спавна"
       "isReliable": "Надёжный спавн"
+      "isOnlyRelevantToInstigator": "Только для инициатора"
     "airdrop":
       "display":
         "random": "Вызвать аирдроп '{0}' на случайной точке спавна"
@@ -2836,6 +3590,20 @@
       "shouldUseRandomSpawnpoint": "Использовать случайную точку спавна"
       "spawnpoint": "Точка спавна"
       "cargo": "Ассет спавна для аирдропа"
+    "zombie":
+      "remove":
+        "display": "Удалить зомби на навигации '{1}'"
+        "navmeshIndex": "ID навигации"
+        "speciality": "Разновидность"
+      "spawn":
+        "display": "Заспавнить зомби на '{1}'"
+        "speciality": "Разновидность"
+        "spawnpointId": "ID точки появления"
+        "spawnQuantity": "Количество спавна"
+        "levelTableUniqueId": "Уникальный ID таблицы зомби уровня"
+        "cooldown":
+          "id": "ID перезарядки"
+          "duration": "Длительность перезарядки"
   "vendorItem":
     "virtual":
       "buying":
@@ -3038,7 +3806,11 @@
         "csv": "Таблица CSV"
         "xls": "Книга Excel 97-2003"
         "xlsx": "Книга Excel"
+        "any": "Таблица магазина"
       "image": "Поддерживаемый формат для заднего фона"
+      "supported": "Поддерживаемые типы"
+      "all": "Все файлы"
+      "localization": "Файл локализации"
     "findReplace":
       "character":
         "id": "ID персонажа"
@@ -3091,6 +3863,9 @@
         "vanilla": "Только официальные ассеты"
         "workshop": "Только ассеты из модов"
         "project": "Только ассеты из проекта"
+      "matchingCalibers": "Подходящие калибры"
+      "spawnTable":
+        "validTypes": "Допустимые типы для таблицы спавна"
   "link":
     "step":
       "assets":
@@ -3119,6 +3894,15 @@
         "upgrade": "Крайне не рекомендуется продолжать использовать старые ID."
       "conditionType":
         "notSupported": "Условие типа '{0}' не поддерживается в '{1}'."
+        "parent":
+          "dialogueElement": "Элемент диалога"
+          "dialogueMessage": "Сообщение диалога"
+          "dialogueMessagePage": "Страница сообщения диалога"
+          "dialogueResponse": "Ответ диалога"
+          "objectInteractability": "Взаимодействие объекта"
+          "vendorItem": "Товар магазина"
+          "quest": "Задание"
+          "object": "Объект"
       "limit":
         "normal":
           "exceed": "В списке больше элементов ({0}) чем поддерживается ({1})"
