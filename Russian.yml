@@ -86,6 +86,7 @@
                 "toDirectory": "...в папку"
                 "toSandbox": "...в песочницу Unturned"
               "delete": "Удалить (Del)"
+              "convertToGroup": "Преобразовать в группу ассетов"
             "multiAsset":
               "copyAsset":
                 "full": "Копировать группу ассетов"
@@ -133,6 +134,8 @@
                   "header": "Растительность"
                 "level":
                   "header": "Уровень"
+                "physicsMaterial":
+                  "header": "Физический материал"
               "addAssetGroup":
                 "header": "Добавить группу ассетов"
               "addFolder": "Добавить папку"
@@ -167,6 +170,14 @@
               "delete": "Удалить (Del)"
             "assetGroup":
               "addSubAsset": "Добавить вложенный ассет"
+            "file":
+              "ref":
+                "edit": "Редактировать"
+                "export":
+                  "header": "Экспорт..."
+                  "toDirectory": "...в папку"
+                  "toSandbox": "...в песочницу Unturned"
+                "delete": "Удалить (Del)"
         "errors":
           "header": "Ошибки"
           "grid":
@@ -544,6 +555,7 @@
         "constructException": "Возникло исключение при создании \"{0}\"."
         "constructFailed": "Не удалось создать \"{0}\"."
         "populateException": "Возникло исключение при заполнении \"{0}\": {1}."
+        "abstractType": "Тип \"{0}\" является абстрактным и не может использоваться как тип ассета."
     "importVendorCsv":
       "title": "Импорт магазина из таблицы"
       "column":
@@ -918,6 +930,8 @@
           "canBeLocked": "Можно закрыть на замок"
           "canStealBattery": "Можно украсть батарею"
           "bypassHashVerify": "Обход проверки целостности ассета"
+          "hasHorn": "Есть гудок"
+          "hasHornToolTip": "Отмечено: у транспорта есть гудок. Снято: гудка нет. Неопределённо: значение игры по умолчанию."
         "handling":
           "header": "Управление"
           "speed":
@@ -944,6 +958,7 @@
           "wheelColliderMassOverride": "Перезапись массы коллайдера колеса"
           "engine":
             "maxTorque": "Максимальный крутящий момент"
+            "forceMultiplier": "Множитель силы двигателя"
           "wheelBalancingForceMultiplier": "Множитель силы балансировки колеса"
           "wheelBalancingUprightExponent": "Экспонента балансировки колеса вверх"
           "rollAngularVelocityDamping": "Погашение скорости наклона"
@@ -964,6 +979,7 @@
             "min": "Мин. выпадающих предметов"
             "max": "Макс. выпадающих предметов"
             "tableId": "Таблица выпадающих предметов"
+          "forceMultiplier": "Множитель силы взрыва"
         "exit": "Расстояние для выхода"
         "bumper":
           "header": "Свойства бампера"
@@ -1043,6 +1059,7 @@
             "horizontal": "Валидная скорость по горизонтали"
             "up": "Валидная скорость вверх"
             "down": "Валидная скорость вниз"
+          "hitDistanceMultiplier": "Множитель допустимой дистанции попадания"
         "sound":
           "header": "Звук"
           "ignitionAudioClip": "Звук зажигания двигателя"
@@ -1069,6 +1086,17 @@
           "engineRpmIncreaseRate": "Скорость повышения оборотов двигателя"
           "engineRpmDecreaseRate": "Скорость уменьшения оборотов двигателя"
           "isVisibleInHud": "Видно в интерфейсе"
+          "allowSkippingGears": "Разрешить пропуск передач"
+          "includeAirbornWheelsInAverageRpm": "Учитывать колёса в воздухе при расчёте средних оборотов"
+          "rpmMismatch":
+            "header": "Рассогласование оборотов двигателя"
+            "torqueReductionEnabled": "Снижать крутящий момент при рассогласовании оборотов"
+            "torqueReductionThreshold": "Порог снижения крутящего момента"
+            "preventShifting": "Запрещать переключение при рассогласовании оборотов"
+            "upMinThreshold": "Мин. порог переключения вверх"
+            "upMaxThreshold": "Макс. порог переключения вверх"
+            "downMinThreshold": "Мин. порог переключения вниз"
+            "downMaxThreshold": "Макс. порог переключения вниз"
         "wheelConfigurations": "Конфигурация колёс"
         "paintColor":
           "header": "Цвета покраски"
@@ -1352,6 +1380,8 @@
             "spawnExplosionOnServer": "Спавнить эффект взрыва на сервере"
             "deleteEmpty": "Удалять пустой"
             "shouldFillAfterDetach": "Заполнять после открепления"
+            "explosionPlaysImpactEffects": "Взрыв воспроизводит эффекты попадания"
+            "explosionPenetratesBuildables": "Взрыв пробивает постройки"
           "barrel":
             "type": "Ствол"
             "header": "Свойства ствола"
@@ -1472,6 +1502,8 @@
             "shouldDelete": "Удалять после использования"
             "consumeAudio": "Звук использования"
             "shouldRandomizeUseAudioPitch": "Использовать случайную высоту звука при использовании"
+            "weaponKeys":
+              "header": "Свойства оружия"
           "food":
             "type": "Еда"
             "header": "Свойства еды"
@@ -1934,6 +1966,19 @@
               "preview":
                 "ifTrue": "Будет использоваться пулинг"
                 "ifFalse": "Пулинг не будет использован"
+        "box":
+          "type": "Коробка"
+          "header": "Свойства коробки"
+          "generate": "Генерируется"
+          "destroy": "Уничтожается"
+          "drops": "Выпадающие предметы"
+          "itemOrigin": "Источник предметов"
+          "probabilityModel": "Модель вероятностей"
+          "containsBonusItems": "Содержит бонусные предметы"
+        "key":
+          "type": "Ключ"
+          "header": "Свойства ключа"
+          "exchangeWithTargetItem": "Обмениваться на целевой предмет"
       "currency":
         "type": "Валюта"
         "error": "Ошибка"
@@ -2090,6 +2135,8 @@
           "defaultLevel": "Стандартный уровень"
           "maxUnlockableLevel": "Макс. открываемый уровень"
           "costMultiplier": "Множитель стоимости"
+          "baseCost": "Базовая стоимость"
+          "perLevelCostIncrease": "Рост стоимости за уровень"
         "terrainColorRule":
           "hueThreshold": "Порог оттенка"
           "saturationThreshold": "Порог насыщенности"
@@ -2101,6 +2148,20 @@
           "maxSaturationDiff": "Макс. разница насыщенности"
           "minValueDiff": "Мин. разница яркости"
           "maxValueDiff": "Макс. разница яркости"
+        "allowBuildingInSafezoneInSingleplayer": "Разрешить строительство в безопасной зоне в одиночной игре"
+        "cloudOverrideParticleSystems": "Системы частиц для замены облаков"
+        "cloudOverridePrefab": "Префаб для замены облаков"
+        "defaultFishSpawnTable": "Таблица спавна рыбы по умолчанию"
+        "defaultGameMode": "Игровой режим по умолчанию"
+        "supportedGameModes": "Поддерживаемые игровые режимы"
+        "skillsetLoadouts": "Наборы снаряжения для профессий"
+        "skillsetLoadout":
+          "skillset": "Профессия"
+          "items": "Предметы"
+        "supportsFishingVolumes": "Поддерживает зоны рыбалки"
+        "tags": "Теги"
+        "underwaterFogDensity": "Плотность тумана под водой"
+        "zombieDifficultyAssetPrioritization": "Приоритет ассета сложности зомби"
       "outfit":
         "type": "Костюм"
       "skin":
@@ -2183,6 +2244,21 @@
           "cloudColor": "Цвет облаков"
           "cloudRimColor": "Цвет краёв облаков"
           "brightnessMultiplier": "Множитель яркости"
+          "overrideFog": "Переопределять туман"
+          "overrideAtmosphericFog": "Переопределять атмосферный туман"
+          "overrideCloudColors": "Переопределять цвета облаков"
+          "shadowStrengthMultiplier": "Множитель силы теней"
+          "fogBlendExponent": "Экспонента смешивания тумана"
+          "cloudBlendExponent": "Экспонента смешивания облаков"
+          "windMain": "Основной ветер"
+          "perSecond":
+            "header": "Эффекты в секунду"
+          "effects": "Эффекты"
+          "staminaPerSecond": "Выносливость в секунду"
+          "healthPerSecond": "Здоровье в секунду"
+          "foodPerSecond": "Еда в секунду"
+          "waterPerSecond": "Вода в секунду"
+          "virusPerSecond": "Вирус в секунду"
       "zombieDifficulty":
         "type": "Сложность зомби"
         "header": "Свойства сложности зомби"
@@ -2267,6 +2343,70 @@
         "header": "Свойства перенаправления ассета"
         "assetCategoryOverride": "Категория"
         "targetGuid": "Целевой ассет"
+      "mythic":
+        "type": "Мифический эффект"
+        "header": "Свойства мифического эффекта"
+        "particleTagName": "Имя тега частиц"
+        "bodyCosmeticsUseSystemArea": "Косметика тела использует префаб области системы"
+      "road":
+        "type": "Дорога"
+        "header": "Свойства дороги"
+        "name": "Название дороги"
+        "texture": "Текстура"
+        "width": "Ширина"
+        "depth": "Глубина"
+        "offsetAlongNormal": "Смещение вдоль нормали"
+        "repeatDistanceScale": "Масштаб дистанции повторения"
+        "chart": "Тип на карте"
+        "vanillaPhysicsMaterial": "Стандартный физический материал"
+        "physicsMaterial": "Физический материал"
+      "landscapeMaterial":
+        "type": "Материал ландшафта"
+        "header": "Свойства материала ландшафта"
+        "texture": "Текстура"
+        "mask": "Маска"
+        "physicsMaterial": "Название физического материала"
+        "foliage": "Растительность"
+        "christmasRedirect": "Замена на Рождество"
+        "halloweenRedirect": "Замена на Хэллоуин"
+        "aprilFoolsRedirect": "Замена на 1 апреля"
+        "useAutoSlope": "Автоматически по уклону"
+        "autoMinAngleBegin": "Авто: начало мин. угла"
+        "autoMinAngleEnd": "Авто: конец мин. угла"
+        "autoMaxAngleBegin": "Авто: начало макс. угла"
+        "autoMaxAngleEnd": "Авто: конец макс. угла"
+        "useAutoFoundation": "Автоматически по основанию"
+        "autoRayRadius": "Авто: радиус луча"
+        "autoRayLength": "Авто: длина луча"
+        "autoRayMask": "Авто: маска луча"
+      "physicsMaterial":
+        "type": "Физический материал"
+        "unityNames": "Названия материалов Unity"
+        "fallback": "Резервный материал"
+        "tireMotionEffect": "Эффект движения шин"
+        "isArable": "Пригоден для обработки земли"
+        "hasOil": "Содержит нефть"
+        "characterFrictionMode": "Режим трения персонажа"
+        "characterAccelerationMultiplier": "Множитель ускорения персонажа"
+        "characterDecelerationMultiplier": "Множитель замедления персонажа"
+        "characterMaxSpeedMultiplier": "Множитель макс. скорости персонажа"
+      "physicsMaterialBase":
+        "audioDefs": "Определения звуков"
+      "physicsMaterialExtension":
+        "type": "Расширение физического материала"
+        "base": "Базовый физический материал"
+      "materialPalette":
+        "type": "Палитра материалов"
+        "header": "Свойства палитры материалов"
+        "materials": "Материалы"
+      "serverListCuration":
+        "type": "Курирование списка серверов"
+        "header": "Свойства курирования списка серверов"
+        "name": "Название"
+        "iconPath": "Иконка"
+        "iconUrl": "URL иконки"
+        "labels": "Метки"
+        "rules": "Правила"
     "editable":
       "fishingCatchableProperties":
         "minRelocateInterval": "Минимальный интервал релоцирования"
@@ -2456,6 +2596,17 @@
           "modelPath": "Путь к модели колеса"
           "isModelSteered": "Рулевая модель"
           "modelUseColliderPose": "Модель использует угол коллайдера"
+          "advanced": "Дополнительно"
+          "steeringMode": "Режим поворота"
+          "crawlerTrackForwardMode": "Направление вращения гусеницы вперёд"
+          "steeringAngleMultiplier": "Множитель угла поворота"
+          "modelRadius": "Радиус модели"
+          "copyColliderRpmIndex": "Индекс коллайдера для копирования оборотов"
+          "copyCrawlerTrackSpeedIndex": "Индекс гусеницы для копирования скорости"
+          "modelSuspensionOffset": "Смещение модели относительно подвески"
+          "modelSuspensionSpeed": "Скорость перемещения модели к подвеске"
+          "motionEffects": "Эффекты движения"
+          "canExplode": "Может взорваться"
         "paintableSection":
           "display": "Материал #{1} по пути: {0}"
           "path": "Путь к игровому объекту"
@@ -2507,6 +2658,38 @@
         "contentBundle": "Контент-бандл"
         "masterBundle": "Master Bundle"
         "path": "Путь"
+      "level":
+        "cloudOverrideParticleSystem":
+          "path": "Путь"
+          "rateOverTimeScale": "Масштаб частоты испускания"
+          "warmupTime": "Время прогрева"
+          "materialColorPropertyNames": "Названия цветовых свойств материала"
+      "materialPaletteMaterial":
+        "material": "Материал"
+      "physicsMaterialAudioDef":
+        "key": "Ключ"
+        "reference": "Звук"
+      "serverListCurationLabel":
+        "name": "Название"
+        "text": "Текст"
+      "serverListCurationRule":
+        "type": "Тип"
+        "action": "Действие"
+        "inverted": "Инвертировать"
+        "description": "Описание"
+        "label": "Метка"
+        "values":
+          "Name": "Регулярные выражения для названия"
+          "IPv4": "Фильтры IPv4"
+          "ServerID": "Steam ID серверов"
+      "weather":
+        "effect":
+          "display": "Префаб: {0}"
+          "prefab": "Префаб"
+          "emissionExponent": "Экспонента излучения"
+          "pitch": "Тон"
+          "translateWithView": "Перемещать вместе с камерой"
+          "rotateYawWithWind": "Поворачивать по ветру"
     "genericCollection":
       "addButton": "Добавить"
       "pasteButton":
@@ -3277,6 +3460,12 @@
         "rosegold": "Розовое золото"
         "void": "Пустота"
         "rainbow": "Радужный"
+    "boxItemOrigin":
+      "unbox": "Открытие"
+      "unwrap": "Распаковка"
+    "boxProbabilityModel":
+      "original": "Оригинальная"
+      "equalized": "Равная"
   "condition":
     "base":
       "text": "Текст"
@@ -3717,6 +3906,7 @@
       "vehicle":
         "spawnpoint": "Точка появления"
         "display": "Транспорт '{0}' за {1} на '{2}'"
+        "paintColor": "Цвет покраски"
   "color":
     "none": "Нет"
     "red": "Красный"
@@ -3924,6 +4114,14 @@
         "guidid": "GUID/ID животного"
       "weather":
         "guid": "GUID погоды"
+      "generic":
+        "id": "Общий ID"
+        "guid": "Общий GUID"
+        "guidid": "Общий GUID/ID"
+      "effect":
+        "id": "ID эффекта"
+        "guid": "GUID эффекта"
+        "guidid": "GUID/ID эффекта"
   "filter":
     "asset":
       "equippable": "Можно взять в руки"

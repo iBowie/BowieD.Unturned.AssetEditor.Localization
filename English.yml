@@ -86,6 +86,7 @@
                 "toDirectory": "...to folder"
                 "toSandbox": "...to Unturned Sandbox"
               "delete": "Delete (Del)"
+              "convertToGroup": "Convert to Asset Group"
             "multiAsset":
               "copyAsset":
                 "full": "Copy Asset Group"
@@ -133,6 +134,8 @@
                   "header": "Foliage"
                 "level":
                   "header": "Level"
+                "physicsMaterial":
+                  "header": "Physics Material"
               "addAssetGroup":
                 "header": "Add Asset Group"
               "addFolder": "Add Folder"
@@ -167,6 +170,14 @@
               "delete": "Delete (Del)"
             "assetGroup":
               "addSubAsset": "Add sub-asset"
+            "file":
+              "ref":
+                "edit": "Edit"
+                "export":
+                  "header": "Export..."
+                  "toDirectory": "...to folder"
+                  "toSandbox": "...to Unturned Sandbox"
+                "delete": "Delete (Del)"
         "errors":
           "header": "Errors"
           "grid":
@@ -544,6 +555,7 @@
         "constructException": "Caught exception while constructing \"{0}\"."
         "constructFailed": "Failed to construct \"{0}\"."
         "populateException": "Caught exception while populating \"{0}\": {1}."
+        "abstractType": "Type \"{0}\" is abstract and cannot be used as an asset type."
     "importVendorCsv":
       "title": "Importing vendor from a table"
       "column":
@@ -918,6 +930,8 @@
           "canBeLocked": "Can Be Locked"
           "canStealBattery": "Can Battery Be Stolen"
           "bypassHashVerify": "Bypass Hash Verification"
+          "hasHorn": "Has Horn"
+          "hasHornToolTip": "Checked: the vehicle has a horn. Unchecked: no horn. Indeterminate: use the game default."
         "handling":
           "header": "Handling"
           "speed":
@@ -944,6 +958,7 @@
           "wheelColliderMassOverride": "Wheel Collider Mass Override"
           "engine":
             "maxTorque": "Max Torque"
+            "forceMultiplier": "Engine Force Multiplier"
           "wheelBalancingForceMultiplier": "Wheel Balancing Force Multiplier"
           "wheelBalancingUprightExponent": "Wheel Balancing Upright Exponent"
           "rollAngularVelocityDamping": "Roll Angular Velocity Damping"
@@ -964,6 +979,7 @@
             "min": "Min Drops"
             "max": "Max Drops"
             "tableId": "Drops Table ID"
+          "forceMultiplier": "Explosion Force Multiplier"
         "exit": "Exit Distance"
         "bumper":
           "header": "Bumper Properties"
@@ -1043,6 +1059,7 @@
             "horizontal": "Valid Speed Horizontal"
             "up": "Valid Speed Up"
             "down": "Valid Speed Down"
+          "hitDistanceMultiplier": "Valid Hit Distance Multiplier"
         "sound":
           "header": "Sound"
           "ignitionAudioClip": "Ignition Audio Clip"
@@ -1069,6 +1086,17 @@
           "engineRpmIncreaseRate": "Engine RPM Increase Rate"
           "engineRpmDecreaseRate": "Engine RPM Decrease Rate"
           "isVisibleInHud": "Is Visible In HUD"
+          "allowSkippingGears": "Allow Skipping Gears"
+          "includeAirbornWheelsInAverageRpm": "Include Airborne Wheels In Average RPM"
+          "rpmMismatch":
+            "header": "Engine RPM Mismatch"
+            "torqueReductionEnabled": "Reduce Torque On RPM Mismatch"
+            "torqueReductionThreshold": "Torque Reduction Threshold"
+            "preventShifting": "Prevent Shifting On RPM Mismatch"
+            "upMinThreshold": "Shift Up Min Threshold"
+            "upMaxThreshold": "Shift Up Max Threshold"
+            "downMinThreshold": "Shift Down Min Threshold"
+            "downMaxThreshold": "Shift Down Max Threshold"
         "wheelConfigurations": "Wheel Configurations"
         "paintColor":
           "header": "Paint Colors"
@@ -1352,6 +1380,8 @@
             "spawnExplosionOnServer": "Spawn Explosion On Server"
             "deleteEmpty": "Should Delete Empty"
             "shouldFillAfterDetach": "Should Fill After Detach"
+            "explosionPlaysImpactEffects": "Explosion Plays Impact Effects"
+            "explosionPenetratesBuildables": "Explosion Penetrates Buildables"
           "barrel":
             "type": "Barrel"
             "header": "Barrel Properties"
@@ -1472,6 +1502,8 @@
             "shouldDelete": "Should delete after use"
             "consumeAudio": "Consume audio"
             "shouldRandomizeUseAudioPitch": "Should randomize consume audio pitch"
+            "weaponKeys":
+              "header": "Weapon properties"
           "food":
             "type": "Food"
             "header": "Food properties"
@@ -1934,6 +1966,19 @@
               "preview":
                 "ifTrue": "Will be eligible for pooling"
                 "ifFalse": "Won't be eligible for pooling"
+        "box":
+          "type": "Box"
+          "header": "Box properties"
+          "generate": "Generate"
+          "destroy": "Destroy"
+          "drops": "Drops"
+          "itemOrigin": "Item Origin"
+          "probabilityModel": "Probability Model"
+          "containsBonusItems": "Contains Bonus Items"
+        "key":
+          "type": "Key"
+          "header": "Key properties"
+          "exchangeWithTargetItem": "Exchange With Target Item"
       "currency":
         "type": "Currency"
         "error": "ERROR"
@@ -2090,6 +2135,8 @@
           "defaultLevel": "Default Level"
           "maxUnlockableLevel": "Max Unlockable Level"
           "costMultiplier": "Cost Multiplier"
+          "baseCost": "Base Cost"
+          "perLevelCostIncrease": "Per Level Cost Increase"
         "terrainColorRule":
           "hueThreshold": "Hue Threshold"
           "saturationThreshold": "Saturation Threshold"
@@ -2101,6 +2148,20 @@
           "maxSaturationDiff": "Max Saturation Diff"
           "minValueDiff": "Min Value Diff"
           "maxValueDiff": "Max Value Diff"
+        "allowBuildingInSafezoneInSingleplayer": "Allow Building In Safezone In Singleplayer"
+        "cloudOverrideParticleSystems": "Cloud Override Particle Systems"
+        "cloudOverridePrefab": "Cloud Override Prefab"
+        "defaultFishSpawnTable": "Default Fish Spawn Table"
+        "defaultGameMode": "Default Game Mode"
+        "supportedGameModes": "Supported Game Modes"
+        "skillsetLoadouts": "Skillset Loadouts"
+        "skillsetLoadout":
+          "skillset": "Skillset"
+          "items": "Items"
+        "supportsFishingVolumes": "Supports Fishing Volumes"
+        "tags": "Tags"
+        "underwaterFogDensity": "Underwater Fog Density"
+        "zombieDifficultyAssetPrioritization": "Zombie Difficulty Asset Prioritization"
       "outfit":
         "type": "Outfit"
       "skin":
@@ -2183,6 +2244,21 @@
           "cloudColor": "Cloud Color"
           "cloudRimColor": "Cloud Rim Color"
           "brightnessMultiplier": "Brightness Multiplier"
+          "overrideFog": "Override Fog"
+          "overrideAtmosphericFog": "Override Atmospheric Fog"
+          "overrideCloudColors": "Override Cloud Colors"
+          "shadowStrengthMultiplier": "Shadow Strength Multiplier"
+          "fogBlendExponent": "Fog Blend Exponent"
+          "cloudBlendExponent": "Cloud Blend Exponent"
+          "windMain": "Main Wind"
+          "perSecond":
+            "header": "Per-second effects"
+          "effects": "Effects"
+          "staminaPerSecond": "Stamina Per Second"
+          "healthPerSecond": "Health Per Second"
+          "foodPerSecond": "Food Per Second"
+          "waterPerSecond": "Water Per Second"
+          "virusPerSecond": "Virus Per Second"
       "zombieDifficulty":
         "type": "Zombie Difficulty"
         "header": "Zombie Difficulty Properties"
@@ -2267,6 +2343,70 @@
         "header": "Asset Redirector Properties"
         "assetCategoryOverride": "Category"
         "targetGuid": "Target Asset"
+      "mythic":
+        "type": "Mythic"
+        "header": "Mythic properties"
+        "particleTagName": "Particle Tag Name"
+        "bodyCosmeticsUseSystemArea": "Body Cosmetics Use System Area Prefab"
+      "road":
+        "type": "Road"
+        "header": "Road properties"
+        "name": "Road Name"
+        "texture": "Texture"
+        "width": "Width"
+        "depth": "Depth"
+        "offsetAlongNormal": "Offset Along Normal"
+        "repeatDistanceScale": "Repeat Distance Scale"
+        "chart": "Chart"
+        "vanillaPhysicsMaterial": "Vanilla Physics Material"
+        "physicsMaterial": "Physics Material"
+      "landscapeMaterial":
+        "type": "Landscape Material"
+        "header": "Landscape material properties"
+        "texture": "Texture"
+        "mask": "Mask"
+        "physicsMaterial": "Physics Material Name"
+        "foliage": "Foliage"
+        "christmasRedirect": "Christmas Redirect"
+        "halloweenRedirect": "Halloween Redirect"
+        "aprilFoolsRedirect": "April Fools Redirect"
+        "useAutoSlope": "Use Auto Slope"
+        "autoMinAngleBegin": "Auto Min Angle Begin"
+        "autoMinAngleEnd": "Auto Min Angle End"
+        "autoMaxAngleBegin": "Auto Max Angle Begin"
+        "autoMaxAngleEnd": "Auto Max Angle End"
+        "useAutoFoundation": "Use Auto Foundation"
+        "autoRayRadius": "Auto Ray Radius"
+        "autoRayLength": "Auto Ray Length"
+        "autoRayMask": "Auto Ray Mask"
+      "physicsMaterial":
+        "type": "Physics Material"
+        "unityNames": "Unity Material Names"
+        "fallback": "Fallback"
+        "tireMotionEffect": "Tire Motion Effect"
+        "isArable": "Is Arable"
+        "hasOil": "Has Oil"
+        "characterFrictionMode": "Character Friction Mode"
+        "characterAccelerationMultiplier": "Character Acceleration Multiplier"
+        "characterDecelerationMultiplier": "Character Deceleration Multiplier"
+        "characterMaxSpeedMultiplier": "Character Max Speed Multiplier"
+      "physicsMaterialBase":
+        "audioDefs": "Audio Definitions"
+      "physicsMaterialExtension":
+        "type": "Physics Material Extension"
+        "base": "Base Physics Material"
+      "materialPalette":
+        "type": "Material Palette"
+        "header": "Material palette properties"
+        "materials": "Materials"
+      "serverListCuration":
+        "type": "Server List Curation"
+        "header": "Server list curation properties"
+        "name": "Name"
+        "iconPath": "Icon"
+        "iconUrl": "Icon URL"
+        "labels": "Labels"
+        "rules": "Rules"
     "editable":
       "fishingCatchableProperties":
         "minRelocateInterval": "Minimal relocate interval"
@@ -2456,6 +2596,17 @@
           "modelPath": "Path to wheel model"
           "isModelSteered": "Is model steered"
           "modelUseColliderPose": "Model uses collider pose"
+          "advanced": "Advanced"
+          "steeringMode": "Steering Mode"
+          "crawlerTrackForwardMode": "Crawler Track Forward Mode"
+          "steeringAngleMultiplier": "Steering Angle Multiplier"
+          "modelRadius": "Model Radius"
+          "copyColliderRpmIndex": "Copy Collider RPM Index"
+          "copyCrawlerTrackSpeedIndex": "Copy Crawler Track Speed Index"
+          "modelSuspensionOffset": "Model Suspension Offset"
+          "modelSuspensionSpeed": "Model Suspension Speed"
+          "motionEffects": "Motion Effects"
+          "canExplode": "Can Explode"
         "paintableSection":
           "display": "Material #{1} at path: {0}"
           "path": "GameObject path"
@@ -2507,6 +2658,38 @@
         "contentBundle": "Content Bundle"
         "masterBundle": "Master Bundle"
         "path": "Path"
+      "level":
+        "cloudOverrideParticleSystem":
+          "path": "Path"
+          "rateOverTimeScale": "Rate Over Time Scale"
+          "warmupTime": "Warmup Time"
+          "materialColorPropertyNames": "Material Color Property Names"
+      "materialPaletteMaterial":
+        "material": "Material"
+      "physicsMaterialAudioDef":
+        "key": "Key"
+        "reference": "Audio"
+      "serverListCurationLabel":
+        "name": "Name"
+        "text": "Text"
+      "serverListCurationRule":
+        "type": "Type"
+        "action": "Action"
+        "inverted": "Inverted"
+        "description": "Description"
+        "label": "Label"
+        "values":
+          "Name": "Name Regular Expressions"
+          "IPv4": "IPv4 Filters"
+          "ServerID": "Server Steam IDs"
+      "weather":
+        "effect":
+          "display": "Prefab: {0}"
+          "prefab": "Prefab"
+          "emissionExponent": "Emission Exponent"
+          "pitch": "Pitch"
+          "translateWithView": "Translate With View"
+          "rotateYawWithWind": "Rotate Yaw With Wind"
     "genericCollection":
       "addButton": "Add new"
       "pasteButton":
@@ -3277,6 +3460,12 @@
         "rosegold": "Rose Gold"
         "void": "Void"
         "rainbow": "Rainbow"
+    "boxItemOrigin":
+      "unbox": "Unbox"
+      "unwrap": "Unwrap"
+    "boxProbabilityModel":
+      "original": "Original"
+      "equalized": "Equalized"
   "condition":
     "base":
       "text": "Localization"
@@ -3717,6 +3906,7 @@
       "vehicle":
         "spawnpoint": "Spawnpoint"
         "display": "Vehicle '{0}' for {1} at '{2}'"
+        "paintColor": "Paint Color"
   "color":
     "none": "None"
     "red": "Red"
@@ -3924,6 +4114,14 @@
         "guidid": "Animal GUID/ID"
       "weather":
         "guid": "Weather GUID"
+      "generic":
+        "id": "Generic ID"
+        "guid": "Generic GUID"
+        "guidid": "Generic GUID/ID"
+      "effect":
+        "id": "Effect ID"
+        "guid": "Effect GUID"
+        "guidid": "Effect GUID/ID"
   "filter":
     "asset":
       "equippable": "Equippable"
