@@ -1113,7 +1113,6 @@
       "resource":
         "resourceName": "Название ресурса"
         "bladeId": "ID лезвия"
-        "radius": "Радиус"
         "scale": "Масштаб"
         "verticalOffset": "Вертикальное смещение"
         "levelBatching":
@@ -1130,8 +1129,6 @@
           "isForage": "Собирается руками"
           "header": "Награды"
         "model":
-          "isSpeedTree": "Использует SpeedTree"
-          "defaultLodWeights": "Использовать стандартные веса LOD"
           "hasDebris": "Имеет обломки"
           "hasAutoSkybox": "Автоматический скайбокс"
           "header": "Модель"
@@ -1236,7 +1233,6 @@
               "preview":
                 "ifTrue": "Предмет можно будет использовать под водой"
                 "ifFalse": "Предмет НЕЛЬЗЯ будет использовать под водой"
-            "isBackward": "Для левой руки"
             "shouldProcedurallyAnimateInertia": "Процедурная анимация инерции"
             "bypassHashVerify": "Обход проверки целостности ассета"
             "shouldDropOnDeath":
@@ -1260,6 +1256,7 @@
             "equipAudio": "Звук экипировки"
             "inspectAudio": "Звук осмотра"
             "equipablePrefab": "Префаб экипируемого предмета"
+            "equipableModelParent": "Родитель модели экипируемого предмета"
             "preferredDescriptionFlags": "Предпочитаемые флаги описания"
         "caliber":
           "base":
@@ -1410,6 +1407,8 @@
             "vest":
               "type": "Жилет"
               "header": "Свойства жилета"
+              "hasFallbackShirt": "Есть запасная рубашка"
+              "fallbackShirt": "Запасная рубашка"
             "backpack":
               "type": "Рюкзак"
               "header": "Свойства рюкзака"
@@ -1520,6 +1519,8 @@
             "requiresPillars": "Требует опоры"
             "foliageCutRadius": "Радиус вырезания растительности"
             "terrainTestHeight": "Высота проверки ландшафта"
+            "hasClipPrefab": "Есть префаб Clip"
+            "placementPreviewPrefab": "Префаб предпросмотра установки"
           "barricade":
             "base":
               "type": "Баррикада"
@@ -1531,6 +1532,8 @@
               "bypassClaim": "Игнорировать чужие клейм-зоны"
               "allowPlacementOnVehicle": "Разрешить установку на транспорт"
               "allowPlacementInsideClipVolumes": "Разрешить установку внутри Clip Volume"
+              "canParentVehicleBePickedUp": "Родительский транспорт можно подобрать"
+              "requiresHeatSourceCraftingTagConversion": "Требует преобразования тега крафта источника тепла"
               "vehicleToSpawn": "Спавнящийся транспорт"
               "isLocked": "Запирается"
               "hasClipPrefab": "Есть Clip префаб"
@@ -1868,6 +1871,8 @@
         "tool":
           "base":
             "type": "Инструмент"
+            "header": "Свойства инструмента"
+            "useAudio": "Звук использования"
           "vehicleRepairTool":
             "base":
               "type": "Инструмент для автомобиля"
@@ -1976,6 +1981,7 @@
           "shouldLoadNavInEditor": "Загружать навигацию в редакторе"
           "shouldLoadNavOnServer": "Загружать навигацию на сервере"
           "conditions": "Условия видимости"
+          "isClutter": "Является мусором"
         "decal":
           "type": "Декаль"
           "header": "Общие свойства декалей"
@@ -2006,6 +2012,7 @@
           "allowStructures": "Разрешить установку структур"
           "isSnowshoe": "Is snowshoe (если знаете что это - сообщите)"
           "hasClipPrefab": "Есть префаб Clip"
+          "hasEditorPrefab": "Есть префаб редактора"
           "excludeFromCullingVolumes": "Исключить из зон куллинга"
           "excludeFromLevelBatching": "Исключить из батчинга уровней"
           "interiorCulling":
@@ -2037,6 +2044,8 @@
         "randomizeRotation": "Случайный поворот"
         "cameraShakeRadius": "Радиус тряски камеры"
         "cameraShakeMagnitudeDegrees": "Сила тряски камеры (в градусах)"
+        "isMusic": "Является музыкой"
+        "oneShotAudio": "Одноразовый звук"
       "airdrop":
         "type": "Аирдроп"
         "barricade": "Баррикада"
@@ -2048,6 +2057,7 @@
         "outputItems": "Запрещённые выходные предметы"
         "blueprints": "Запрещённые чертежи"
         "allowCoreBlueprints": "Разрешить базовые чертежи"
+        "blueprintName": "Название чертежа"
       "level":
         "type": "Уровень"
         "header": "Ассет уровня"
@@ -2102,9 +2112,12 @@
         "hasGrip": "Есть рукоять"
         "hasBarrel": "Есть ствол"
         "hasMagazine": "Есть магазин"
+        "hideMagazine": "Скрыть магазин"
         "ragdollEffect": "Эффект рэгдолла"
         "overrideMeshes": "Перезапись мешей"
         "secondarySkins": "Вторичные скины"
+        "isLegacyCannedBeans": "Старые консервированные бобы"
+        "specialAudioOverride": "Переопределение особого звука"
       "song":
         "type": "Музыка"
         "title": "Название"
@@ -2187,6 +2200,7 @@
           "bossElectric": "Шанс электрического мега-зомби"
           "bossWind": "Шанс ветряного мега-зомби"
           "bossFire": "Шанс огненного мега-зомби"
+          "bossKuwait": "Шанс мега-зомби (Кувейт)"
           "bossElverStomper": "Шанс давящего мега-зомби (Elver)"
         "stunThresholdNormal": "Порог оглушения обычного зомби"
         "stunThresholdMega": "Порог оглушения мега-зомби"
@@ -2215,6 +2229,7 @@
           "scale":
             "min": "Мин. масштаб"
             "max": "Макс. масштаб"
+          "uniformScale": "Равномерный масштаб"
         "instancedMesh":
           "type": "Инстанцированный меш растительности"
           "header": "Свойства инстанцированного меша растительности"
@@ -2225,6 +2240,7 @@
           "drawDistance": "Дальности отрисовки"
           "christmasRedirect": "Перенаправление на рождество"
           "halloweenRedirect": "Перенаправление на хэллоуин"
+          "isClutter": "Является мусором"
         "object":
           "type": "Объект растительности"
           "header": "Свойства объекта растительности"
@@ -2235,6 +2251,7 @@
           "header": "Свойства ресурса растительности"
           "resourceGuid": "Ресурс"
           "obstructionRadius": "Радиус заграждения"
+          "usesLegacyRotationAndScale": "Использует старые поворот и масштаб"
       "foliageCollection":
         "type": "Список растительности"
         "header": "Свойства списка растительности"
@@ -2322,6 +2339,7 @@
         "textId": "ID текста"
         "toolTip": "Подсказка"
         "toolTipId": "ID текста подсказки"
+        "commonTextId": "ID общего текста"
         "blueprints": "Связанные чертежи"
         "pickOwner":
           "title": "Выберите нового владельца чертежа для действия"
@@ -2347,7 +2365,6 @@
             "delay": "Задержка перед повторным использованием"
             "resetDelay": "Задержка перед сбросом"
             "hint": "Подсказка"
-            "emission": "Свечение"
             "power": "Энергия"
             "editor": "Поведение в редакторе"
             "nav": "Навигация"
@@ -2362,6 +2379,7 @@
             "remote": "Исполнять только на сервере"
           "binaryState":
             "animationComponentPath": "Оверрайд пути к компоненту с анимацией"
+            "emissiveMaterialMode": "Режим светящегося материала"
           "dialogue":
             "dialogueRef": "Диалог"
             "text": "Текст взаимодействия"
@@ -2442,6 +2460,7 @@
           "display": "Материал #{1} по пути: {0}"
           "path": "Путь к игровому объекту"
           "materialIndex": "Индекс материала"
+          "allMaterials": "Все материалы"
         "crawlerTrackTilingMaterial":
           "display": "Материал #{1} по пути: {0}"
           "repeatDistance": "Расстояние повтора"
@@ -2469,7 +2488,6 @@
             "min": "Минимальный наклон"
             "max": "Максимальный наклон"
           "useAimCamera": "Использовать камеру прицела"
-          "aimOffset": "Смещение прицела"
         "paintColor":
           "list": "Список цветов"
           "random": "Случайный"
@@ -2609,6 +2627,7 @@
       "fix": "Фикс"
       "tool": "Инструмент"
       "theme": "Тема"
+      "fun": "Развлечение"
     "addonPermission":
       "none": "Нет"
       "fileSystem": "Файловая система"
@@ -2707,6 +2726,15 @@
       "none": "Нет"
       "heal": "Вылечить"
       "break": "Сломать кости"
+    "damageBleedingMode":
+      "default": "По умолчанию"
+      "always": "Всегда"
+      "never": "Никогда"
+      "heal": "Лечить"
+    "damageBonesMode":
+      "none": "Нет"
+      "always": "Всегда"
+      "heal": "Лечить"
     "barricade":
       "build":
         "fortification": "Укрепление"
@@ -2823,6 +2851,11 @@
           "offscreenWhileAiming": "За экраном при прицеливании"
           "alwaysOffscreen": "Всегда за экраном"
           "alwaysOnscreen": "Всегда на экране"
+      "equipableModelParent":
+        "rightHook": "Правый крюк"
+        "leftHook": "Левый крюк"
+        "spine": "Спина"
+        "spineHook": "Крюк на спине"
     "lighting":
       "color":
         "sun": "Солнце"
@@ -3051,6 +3084,10 @@
           "none": "Нет"
           "toggle": "Требует энергию для переключения"
           "stay": "Требует энергию для работы"
+        "binaryState":
+          "emissiveMaterialMode":
+            "auto": "Автоматически"
+            "none": "Нет"
       "lod":
         "none": "Нет"
         "mesh": "Модель"
@@ -3151,6 +3188,20 @@
         "none": "Без цвета по умолчанию"
         "list": "Список цветов по умолчанию"
         "randomHueOrGrayscale": "Случайный оттенок или серый цвет по умолчанию"
+      "wheel":
+        "motionEffectsMode":
+          "none": "Нет"
+          "bothDirections": "В обе стороны"
+          "forwardOnly": "Только вперёд"
+          "backwardOnly": "Только назад"
+        "steeringMode":
+          "none": "Нет"
+          "steeringAngle": "Угол поворота"
+          "crawlerTrack": "Гусеница"
+        "crawlerTrackForwardMode":
+          "auto": "Автоматически"
+          "clockwise": "По часовой стрелке"
+          "counterClockwise": "Против часовой стрелки"
     "vendor":
       "buying":
         "type":
@@ -3171,6 +3222,9 @@
           "multiplyEditorHealth": "Умножить здоровье из редактора"
           "multiplyDefaultHealth": "Умножить стандартное здоровье"
           "replace": "Замена"
+      "difficultyAssetPrioritization":
+        "navmeshOverridesTable": "Навмеш приоритетнее таблицы"
+        "tableOverridesNavmesh": "Таблица приоритетнее навмеша"
       "speciality":
         "none": "Любой"
         "normal": "Обычный"
@@ -3190,6 +3244,12 @@
           "magma": "Мега-зомби (Магматический)"
           "spirit": "Мега-зомби (Призрачный)"
           "nuclear": "Мега-зомби (Ядерный)"
+          "kuwait": "Мега-зомби (Кувейт)"
+          "buak":
+            "electric": "Мега-зомби (Буак, электрический)"
+            "wind": "Мега-зомби (Буак, ветровой)"
+            "fire": "Мега-зомби (Буак, огненный)"
+            "final": "Мега-зомби (Буак, финальный)"
           "elver":
             "stomper": "Elver - Мега-зомби (Давящий)"
         "spirit": "Призрачный"
@@ -3208,6 +3268,15 @@
         "silver": "Серебро"
         "gold": "Золото"
         "zeroKelvin": "Абсолютный ноль"
+        "jaded": "Нефритовый"
+        "soulCrystal":
+          "green": "Кристалл души (зелёный)"
+          "magenta": "Кристалл души (пурпурный)"
+          "red": "Кристалл души (красный)"
+          "yellow": "Кристалл души (жёлтый)"
+        "rosegold": "Розовое золото"
+        "void": "Пустота"
+        "rainbow": "Радужный"
   "condition":
     "base":
       "text": "Текст"

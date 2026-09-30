@@ -1113,7 +1113,6 @@
       "resource":
         "resourceName": "Resource Name"
         "bladeId": "Blade ID"
-        "radius": "Radius"
         "scale": "Scale"
         "verticalOffset": "Vertical Offset"
         "levelBatching":
@@ -1130,8 +1129,6 @@
           "isForage": "Is Forage"
           "header": "Rewards"
         "model":
-          "isSpeedTree": "Is Using SpeedTree"
-          "defaultLodWeights": "Use Default LOD Weights"
           "hasDebris": "Has Debris"
           "hasAutoSkybox": "Has Auto Skybox"
           "header": "Model"
@@ -1236,7 +1233,6 @@
               "preview":
                 "ifTrue": "Item will be useable underwater"
                 "ifFalse": "Item will NOT be useable underwater"
-            "isBackward": "Is Backward"
             "shouldProcedurallyAnimateInertia": "Should Procedurally Animate Inertia"
             "bypassHashVerify": "Bypass Hash Verification"
             "shouldDropOnDeath":
@@ -1260,6 +1256,7 @@
             "equipAudio": "Equip Audio"
             "inspectAudio": "Inspect Audio"
             "equipablePrefab": "Equipable Prefab"
+            "equipableModelParent": "Equipable Model Parent"
             "preferredDescriptionFlags": "Preferred Description Flags"
         "caliber":
           "base":
@@ -1410,6 +1407,8 @@
             "vest":
               "type": "Vest"
               "header": "Vest properties"
+              "hasFallbackShirt": "Has Fallback Shirt"
+              "fallbackShirt": "Fallback Shirt"
             "backpack":
               "type": "Backpack"
               "header": "Backpack properties"
@@ -1520,6 +1519,8 @@
             "requiresPillars": "Requires Pillars"
             "foliageCutRadius": "Foliage Cut Radius"
             "terrainTestHeight": "Terrain Test Height"
+            "hasClipPrefab": "Has Clip Prefab"
+            "placementPreviewPrefab": "Placement Preview Prefab"
           "barricade":
             "base":
               "type": "Barricade"
@@ -1531,6 +1532,8 @@
               "bypassClaim": "Bypass Claim"
               "allowPlacementOnVehicle": "Allow Placement On Vehicle"
               "allowPlacementInsideClipVolumes": "Allow Placement Inside Clip Volumes"
+              "canParentVehicleBePickedUp": "Can Parent Vehicle Be Picked Up"
+              "requiresHeatSourceCraftingTagConversion": "Requires Heat Source Crafting Tag Conversion"
               "vehicleToSpawn": "Vehicle To Spawn"
               "isLocked": "Is Locked"
               "hasClipPrefab": "Has Clip Prefab"
@@ -1868,6 +1871,8 @@
         "tool":
           "base":
             "type": "Tool"
+            "header": "Tool properties"
+            "useAudio": "Use Audio"
           "vehicleRepairTool":
             "base":
               "type": "Vehicle repair tool"
@@ -1976,6 +1981,7 @@
           "shouldLoadNavInEditor": "Should load nav in editor"
           "shouldLoadNavOnServer": "Should load nav on server"
           "conditions": "Conditions"
+          "isClutter": "Is clutter"
         "decal":
           "type": "Decal"
           "header": "Common decal properties"
@@ -2006,6 +2012,7 @@
           "allowStructures": "Allow structures"
           "isSnowshoe": "Is snowshoe"
           "hasClipPrefab": "Has clip prefab"
+          "hasEditorPrefab": "Has editor prefab"
           "excludeFromCullingVolumes": "Exclude from culling volumes"
           "excludeFromLevelBatching": "Exclude from level batching"
           "interiorCulling":
@@ -2037,6 +2044,8 @@
         "randomizeRotation": "Randomize Rotation"
         "cameraShakeRadius": "Camera Shake Radius"
         "cameraShakeMagnitudeDegrees": "Camera Shake Magnitude Degrees"
+        "isMusic": "Is Music"
+        "oneShotAudio": "One Shot Audio"
       "airdrop":
         "type": "Airdrop"
         "barricade": "Barricade"
@@ -2048,6 +2057,7 @@
         "outputItems": "Blocked Output Items"
         "blueprints": "Blocked Blueprints"
         "allowCoreBlueprints": "Allow Core Blueprints"
+        "blueprintName": "Blueprint Name"
       "level":
         "type": "Level"
         "header": "Level Asset"
@@ -2102,9 +2112,12 @@
         "hasGrip": "Has Grip"
         "hasBarrel": "Has Barrel"
         "hasMagazine": "Has Magazine"
+        "hideMagazine": "Hide Magazine"
         "ragdollEffect": "Ragdoll Effect"
         "overrideMeshes": "Override Meshes"
         "secondarySkins": "Secondary Skins"
+        "isLegacyCannedBeans": "Is Legacy Canned Beans"
+        "specialAudioOverride": "Special Audio Override"
       "song":
         "type": "Song"
         "title": "Title"
@@ -2187,6 +2200,7 @@
           "bossElectric": "Electric Boss Chance"
           "bossWind": "Wind Boss Chance"
           "bossFire": "Fire Boss Chance"
+          "bossKuwait": "Kuwait Boss Chance"
           "bossElverStomper": "Elver Stomper Boss Chance"
         "stunThresholdNormal": "Normal Stun Threshold"
         "stunThresholdMega": "Mega Stun Threshold"
@@ -2215,6 +2229,7 @@
           "scale":
             "min": "Min Scale"
             "max": "Max Scale"
+          "uniformScale": "Uniform Scale"
         "instancedMesh":
           "type": "Foliage Instanced Mesh"
           "header": "Foliage Instanced Mesh Properties"
@@ -2225,6 +2240,7 @@
           "drawDistance": "Draw Distance"
           "christmasRedirect": "Christmas Redirect"
           "halloweenRedirect": "Halloween Redirect"
+          "isClutter": "Is Clutter"
         "object":
           "type": "Foliage Object"
           "header": "Foliage Object Properties"
@@ -2235,6 +2251,7 @@
           "header": "Foliage Resource Properties"
           "resourceGuid": "Resource"
           "obstructionRadius": "Obstruction Radius"
+          "usesLegacyRotationAndScale": "Uses Legacy Rotation And Scale"
       "foliageCollection":
         "type": "Foliage Collection"
         "header": "Foliage Collection Properties"
@@ -2322,6 +2339,7 @@
         "textId": "Action Text ID"
         "toolTip": "Action ToolTip"
         "toolTipId": "Action ToolTip ID"
+        "commonTextId": "Common Text ID"
         "blueprints": "Related Blueprints"
         "pickOwner":
           "title": "Pick a new blueprint owner for action"
@@ -2347,7 +2365,6 @@
             "delay": "Use Delay"
             "resetDelay": "Reset Delay"
             "hint": "Hint"
-            "emission": "Emission"
             "power": "Power"
             "editor": "Editor"
             "nav": "Nav"
@@ -2362,6 +2379,7 @@
             "remote": "Execute on server only"
           "binaryState":
             "animationComponentPath": "Override animation component path"
+            "emissiveMaterialMode": "Emissive material mode"
           "dialogue":
             "dialogueRef": "Dialogue"
             "text": "Interact text"
@@ -2442,6 +2460,7 @@
           "display": "Material #{1} at path: {0}"
           "path": "GameObject path"
           "materialIndex": "Material index"
+          "allMaterials": "All materials"
         "crawlerTrackTilingMaterial":
           "display": "Material #{1} at path: {0}"
           "repeatDistance": "Repeat distance"
@@ -2469,7 +2488,6 @@
             "min": "Min pitch"
             "max": "Max pitch"
           "useAimCamera": "Use aim camera"
-          "aimOffset": "Aim offset"
         "paintColor":
           "list": "Color list"
           "random": "Random"
@@ -2609,6 +2627,7 @@
       "fix": "Fix"
       "tool": "Tool"
       "theme": "Theme"
+      "fun": "Fun"
     "addonPermission":
       "none": "None"
       "fileSystem": "File system"
@@ -2707,6 +2726,15 @@
       "none": "None"
       "heal": "Heal"
       "break": "Break bones"
+    "damageBleedingMode":
+      "default": "Default"
+      "always": "Always"
+      "never": "Never"
+      "heal": "Heal"
+    "damageBonesMode":
+      "none": "None"
+      "always": "Always"
+      "heal": "Heal"
     "barricade":
       "build":
         "fortification": "Fortification"
@@ -2823,6 +2851,11 @@
           "offscreenWhileAiming": "Offscreen while aiming"
           "alwaysOffscreen": "Always offscreen"
           "alwaysOnscreen": "Always onscreen"
+      "equipableModelParent":
+        "rightHook": "Right hook"
+        "leftHook": "Left hook"
+        "spine": "Spine"
+        "spineHook": "Spine hook"
     "lighting":
       "color":
         "sun": "Sun"
@@ -3051,6 +3084,10 @@
           "none": "None"
           "toggle": "Requires power to toggle"
           "stay": "Requires power to stay on"
+        "binaryState":
+          "emissiveMaterialMode":
+            "auto": "Automatic"
+            "none": "None"
       "lod":
         "none": "None"
         "mesh": "Mesh"
@@ -3151,6 +3188,20 @@
         "none": "No default paint color"
         "list": "List of default paint colors"
         "randomHueOrGrayscale": "Random hue or grayscale as paint color"
+      "wheel":
+        "motionEffectsMode":
+          "none": "None"
+          "bothDirections": "Both directions"
+          "forwardOnly": "Forward only"
+          "backwardOnly": "Backward only"
+        "steeringMode":
+          "none": "None"
+          "steeringAngle": "Steering angle"
+          "crawlerTrack": "Crawler track"
+        "crawlerTrackForwardMode":
+          "auto": "Automatic"
+          "clockwise": "Clockwise"
+          "counterClockwise": "Counter-clockwise"
     "vendor":
       "buying":
         "type":
@@ -3171,6 +3222,9 @@
           "multiplyEditorHealth": "Multiply editor health"
           "multiplyDefaultHealth": "Multiply default health"
           "replace": "Replace"
+      "difficultyAssetPrioritization":
+        "navmeshOverridesTable": "Navmesh overrides table"
+        "tableOverridesNavmesh": "Table overrides navmesh"
       "speciality":
         "none": "Any"
         "normal": "Normal"
@@ -3190,6 +3244,12 @@
           "magma": "Boss (Magma)"
           "spirit": "Boss (Spirit)"
           "nuclear": "Boss (Nuclear)"
+          "kuwait": "Boss (Kuwait)"
+          "buak":
+            "electric": "Boss (Buak Electric)"
+            "wind": "Boss (Buak Wind)"
+            "fire": "Boss (Buak Fire)"
+            "final": "Boss (Buak Final)"
           "elver":
             "stomper": "Elver - Boss (Stomp)"
         "spirit": "Spirit"
@@ -3208,6 +3268,15 @@
         "silver": "Silver"
         "gold": "Gold"
         "zeroKelvin": "Zero Kelvin"
+        "jaded": "Jaded"
+        "soulCrystal":
+          "green": "Soul Crystal (Green)"
+          "magenta": "Soul Crystal (Magenta)"
+          "red": "Soul Crystal (Red)"
+          "yellow": "Soul Crystal (Yellow)"
+        "rosegold": "Rose Gold"
+        "void": "Void"
+        "rainbow": "Rainbow"
   "condition":
     "base":
       "text": "Localization"
