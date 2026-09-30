@@ -962,6 +962,7 @@
           "wheelBalancingForceMultiplier": "Множитель силы балансировки колеса"
           "wheelBalancingUprightExponent": "Экспонента балансировки колеса вверх"
           "rollAngularVelocityDamping": "Погашение скорости наклона"
+          "carjackForceMultiplier": "Множитель силы домкрата"
           "crawlerTrackSteering":
             "torque": "Крутящий момент гусениц"
             "sidewaysFrictionMultiplier": "Множитель трения гусениц под углом"
@@ -1162,6 +1163,13 @@
           "header": "Модель"
         "isVulnerableToFists": "Уязвим к кулакам"
         "isVulnerableToAllMelee": "Уязвим ко всему оружию ближнего боя"
+        "randomUniformScaleMin": "Случайный равномерный масштаб (мин.)"
+        "randomUniformScaleMax": "Случайный равномерный масштаб (макс.)"
+        "randomAngleDeviationMin": "Случайное отклонение угла (мин.)"
+        "randomAngleDeviationMax": "Случайное отклонение угла (макс.)"
+        "debrisVerticalOffset": "Вертикальное смещение обломков"
+        "ignoreCollisionBetweenStumpAndDebris": "Игнорировать столкновение пня и обломков"
+        "hasClipPrefab": "Имеет префаб клипа"
   "controls":
     "common":
       "armorFalloff":
@@ -1195,6 +1203,7 @@
           "bypassIdLimit": "Обход лимита ID"
           "masterBundle": "Master Bundle"
           "bundlePath": "Путь в Master Bundle"
+          "bundlePathIncludeFilename": "Путь в бандле включает имя файла"
           "assetBundleVersion": "Версия ассет бандла"
           "excludeFromMasterBundle": "Исключить из Master Bundle"
           "enableShaderConsolidation": "Включить консолидацию шейдеров"
@@ -1274,6 +1283,7 @@
             "shouldDestroyItemColliders": "Уничтожать коллайдеры предмета"
             "instantiatedItemNameOverride": "Перезапись имени объекта в Unity при спавне"
             "useableType": "Используемый тип"
+            "customUseableType": "Свой тип использования (имя типа плагина)"
             "sharedSkinLookupId": "ID предмета для общих скинов"
             "sharedSkinShouldApplyVisuals": "Применять визуал с общего скина"
             "automaticallyAddAutoStatDescriptions": "Автоматически добавлять описание статистики предмета"
@@ -1798,6 +1808,15 @@
               "unjamChamberAnim": "Название анимации устранения заклинивания"
             "shell": "Эффект гильзы"
             "muzzle": "Эффект дульной вспышки"
+            "audio":
+              "header": "Звуки"
+              "shoot": "Звук выстрела"
+              "reload": "Звук перезарядки"
+              "hammer": "Звук взвода курка"
+              "aim": "Звук прицеливания"
+              "minigun": "Звук миниган"
+              "chamberJammed": "Звук заклинивания патронника"
+              "fireDelay": "Звук задержки выстрела"
             "mustAimToShoot": "Стрельба только при прицеливании"
             "gunshotRolloffDistance": "Дальность слышимости выстрела"
             "rangeRangefinder": "Дальность дальномера"
@@ -1814,6 +1833,7 @@
             "strong": "Скорость анимации сильной атаки"
             "stamina": "Расход энергии на сильную атаку"
             "impactAudio": "Звук удара"
+            "attackAudio": "Звук атаки"
             "weakAttackRewards": "Награды за слабую атаку"
             "strongAttackRewards": "Награды за сильную атаку"
           "throwable":
@@ -2390,7 +2410,9 @@
         "characterAccelerationMultiplier": "Множитель ускорения персонажа"
         "characterDecelerationMultiplier": "Множитель замедления персонажа"
         "characterMaxSpeedMultiplier": "Множитель макс. скорости персонажа"
+        "bulletImpactEffect": "Эффект попадания пули"
       "physicsMaterialBase":
+        "type": "Базовый физический материал"
         "audioDefs": "Определения звуков"
       "physicsMaterialExtension":
         "type": "Расширение физического материала"

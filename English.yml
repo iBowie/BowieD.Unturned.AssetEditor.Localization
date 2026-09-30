@@ -962,6 +962,7 @@
           "wheelBalancingForceMultiplier": "Wheel Balancing Force Multiplier"
           "wheelBalancingUprightExponent": "Wheel Balancing Upright Exponent"
           "rollAngularVelocityDamping": "Roll Angular Velocity Damping"
+          "carjackForceMultiplier": "Carjack force multiplier"
           "crawlerTrackSteering":
             "torque": "Crawler Track Torque"
             "sidewaysFrictionMultiplier": "Crawler Track Sideways Friction Multiplier"
@@ -1162,6 +1163,13 @@
           "header": "Model"
         "isVulnerableToFists": "Is Vulnerable To Fists"
         "isVulnerableToAllMelee": "Is Vulnerable To All Melee"
+        "randomUniformScaleMin": "Random uniform scale (min)"
+        "randomUniformScaleMax": "Random uniform scale (max)"
+        "randomAngleDeviationMin": "Random angle deviation (min)"
+        "randomAngleDeviationMax": "Random angle deviation (max)"
+        "debrisVerticalOffset": "Debris vertical offset"
+        "ignoreCollisionBetweenStumpAndDebris": "Ignore collision between stump and debris"
+        "hasClipPrefab": "Has clip prefab"
   "controls":
     "common":
       "armorFalloff":
@@ -1195,6 +1203,7 @@
           "bypassIdLimit": "Bypass ID limit"
           "masterBundle": "Master bundle override"
           "bundlePath": "Bundle path"
+          "bundlePathIncludeFilename": "Bundle Path Includes File Name"
           "assetBundleVersion": "Asset bundle version"
           "excludeFromMasterBundle": "Exclude from master bundle"
           "enableShaderConsolidation": "Enable shader consolidation"
@@ -1274,6 +1283,7 @@
             "shouldDestroyItemColliders": "Should Destroy Item Colliders"
             "instantiatedItemNameOverride": "Instantiated Item Name Override"
             "useableType": "Useable Type"
+            "customUseableType": "Custom useable type (plugin type name)"
             "sharedSkinLookupId": "Shared Skin Lookup ID"
             "sharedSkinShouldApplyVisuals": "Shared Skin Should Apply Visuals"
             "automaticallyAddAutoStatDescriptions": "Automatically Add Stat Descriptions"
@@ -1798,6 +1808,15 @@
               "unjamChamberAnim": "Unjam Chamber Animation Name"
             "shell": "Shell Effect"
             "muzzle": "Muzzle Effect"
+            "audio":
+              "header": "Audio"
+              "shoot": "Shoot audio"
+              "reload": "Reload audio"
+              "hammer": "Hammer audio"
+              "aim": "Aim audio"
+              "minigun": "Minigun audio"
+              "chamberJammed": "Chamber jammed audio"
+              "fireDelay": "Fire delay audio"
             "mustAimToShoot": "Must Aim To Shoot"
             "gunshotRolloffDistance": "Gunshot Rolloff Distance"
             "rangeRangefinder": "Rangefinder Range"
@@ -1814,6 +1833,7 @@
             "strong": "Strong Animation Speed"
             "stamina": "Strong Attack Stamina Use"
             "impactAudio": "Impact Audio"
+            "attackAudio": "Attack audio"
             "weakAttackRewards": "Weak Attack Rewards"
             "strongAttackRewards": "Strong Attack Rewards"
           "throwable":
@@ -2390,7 +2410,9 @@
         "characterAccelerationMultiplier": "Character Acceleration Multiplier"
         "characterDecelerationMultiplier": "Character Deceleration Multiplier"
         "characterMaxSpeedMultiplier": "Character Max Speed Multiplier"
+        "bulletImpactEffect": "Bullet impact effect"
       "physicsMaterialBase":
+        "type": "Physics Material Base"
         "audioDefs": "Audio Definitions"
       "physicsMaterialExtension":
         "type": "Physics Material Extension"
